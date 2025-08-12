@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <title>Portfolio – ASF Visuals LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Browse albums by country and city from ASF Visuals LLC." />
+  <meta name="description" content="Browse albums by country, then city from ASF Visuals LLC." />
   <link rel="canonical" href="https://www.asfvisualsllc.com/gallery.html" />
   <meta property="og:title" content="Portfolio – ASF Visuals LLC" />
-  <meta property="og:description" content="Curated albums by country and city." />
+  <meta property="og:description" content="Country and city albums in a clean, modern grid." />
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#10437a" />
@@ -32,7 +32,7 @@
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
 
-    /* Header (matches site) */
+    /* Header (site match) */
     .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease}
     .logo-link img{height:60px;width:auto;object-fit:contain}
     .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
@@ -52,58 +52,65 @@
     }
 
     /* Page header */
-    .page-hero{margin-top:80px;padding:28px clamp(16px,4vw,48px) 12px}
+    .page-hero{margin-top:80px;padding:28px clamp(16px,4vw,48px) 8px}
     .page-hero h1{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.6rem);margin:0}
     .page-hero p{margin:6px 0 0;color:#2a3a55}
 
-    /* Breadcrumbs + Back */
+    /* Breadcrumbs + back */
     .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:12px clamp(16px,4vw,48px)}
     .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:600;color:#2a3a55}
     .breadcrumbs a{color:var(--primary)}
     .crumb-sep{opacity:.5}
-    .back-btn{display:none;margin-left:clamp(16px,4vw,48px);margin-bottom:6px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
+    .back-btn{display:none;margin-left:clamp(16px,4vw,48px);margin-bottom:10px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
     .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
-    /* Tiles */
-    .grid{display:grid;gap:10px;margin:0 clamp(16px,4vw,48px) 28px}
-    .grid.countries{grid-template-columns:repeat(6,1fr)}
-    .grid.cities{grid-template-columns:repeat(6,1fr)}
-    .grid.photos{grid-template-columns:repeat(6,1fr)}
-    @media (max-width:1200px){.grid.countries,.grid.cities,.grid.photos{grid-template-columns:repeat(4,1fr)}}
-    @media (max-width:700px){.grid.countries,.grid.cities,.grid.photos{grid-template-columns:repeat(2,1fr)}}
+    /* Cards grid */
+    .album-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 clamp(16px,4vw,48px)}
+    @media (max-width:1200px){.album-grid{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:700px){.album-grid{grid-template-columns:repeat(2,1fr)}}
+    .album-card{position:relative;border-radius:14px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3;box-shadow:0 3px 14px rgba(0,0,0,.06);cursor:pointer;isolation:isolate;transition:transform .25s ease, box-shadow .25s ease}
+    .album-card:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 8px 28px rgba(16,67,122,.18)}
+    .album-card img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
+    .album-card img.loaded{opacity:1}
+    .album-card:hover img{transform:scale(1.03)}
+    .album-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.55))}
+    .album-meta{position:absolute;left:10px;right:10px;bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;color:#fff;z-index:1}
+    .album-title{font-weight:800;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+    .album-count{background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:6px 10px;font-size:.9rem;font-weight:700}
 
-    .card{position:relative;border-radius:14px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3;box-shadow:0 3px 14px rgba(0,0,0,.06);cursor:pointer;isolation:isolate}
-    .card img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease, opacity .35s ease;opacity:0}
-    .card img.loaded{opacity:1}
-    .card:hover img{transform:scale(1.03)}
-    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.55))}
-    .meta{position:absolute;left:10px;right:10px;bottom:10px;display:flex;justify-content:space-between;align-items:end;color:#fff;z-index:1}
-    .title{font-weight:800;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
-    .count{background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:6px 10px;font-size:.9rem;font-weight:700}
-
-    /* Photo tile (click -> lightbox) */
+    /* Photo grid */
+    .photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px clamp(16px,4vw,48px) 28px}
+    @media (max-width:1200px){.photo-grid{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:700px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
     .photo{position:relative;border-radius:12px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3}
     .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
     .photo img.loaded{opacity:1}
     .photo:hover img{transform:scale(1.02)}
+    .empty{margin:24px clamp(16px,4vw,48px);opacity:.75}
 
     /* Footer */
     .site-footer{background:#10233a;color:#f5f5f5;padding:36px clamp(16px,4vw,48px) 28px;border-radius:var(--radius) var(--radius) 0 0;margin-top:42px;text-align:center}
     .social{display:flex;gap:14px;justify-content:center;margin-top:10px}
     .social img{width:28px;height:28px;border-radius:50%;background:#fff;padding:2px;box-shadow:0 1px 8px rgba(0,0,0,.08)}
+
+    /* a11y / motion */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:12px;top:6px;width:auto;height:auto;background:#fff;color:#103047;border-radius:10px;padding:8px 22px;z-index:101}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" id="header">
     <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
+      <!-- Use same logo file as other pages for consistency -->
       <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html" class="active">Portfolio</a></li>
+        <li><a href="gallery.html" class="active" aria-current="page">Portfolio</a></li>
         <li><a href="real-estate.html">Real Estate</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
@@ -118,7 +125,7 @@
   <main id="main">
     <section class="page-hero">
       <h1>Portfolio</h1>
-      <p>Explore albums by country, then city — and open any image in a lightbox.</p>
+      <p>Explore albums by <strong>country</strong>, then <strong>city</strong>. Click any image to open the lightbox.</p>
     </section>
 
     <div class="controls">
@@ -127,9 +134,9 @@
 
     <button class="back-btn" id="backBtn">◀ Back</button>
 
-    <section id="countriesView" class="grid countries" aria-label="Countries"></section>
-    <section id="citiesView" class="grid cities" aria-label="Cities" style="display:none;"></section>
-    <section id="photosView" class="grid photos" aria-label="Photos" style="display:none;"></section>
+    <section id="albumsView" class="album-grid" aria-label="Albums"></section>
+    <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
+    <p id="emptyState" class="empty" hidden>No results found.</p>
   </main>
 
   <footer class="site-footer">
@@ -148,299 +155,259 @@
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
   <script>
-    // ---------- Mobile nav + header behavior ----------
+    // ---------- Mobile nav ----------
     (function navInit(){
-      const menuBtn = document.getElementById('menuToggle');
+      const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if (menuBtn && nav) {
-        menuBtn.addEventListener('click', () => {
-          const open = nav.classList.toggle('open');
-          menuBtn.classList.toggle('open');
-          menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
-        });
-        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-          if (window.innerWidth <= 860) { nav.classList.remove('open'); menuBtn.classList.remove('open'); document.body.classList.remove('no-scroll'); menuBtn.setAttribute('aria-expanded','false'); }
-        }));
-      }
-      // Hide on scroll
-      let lastY = window.scrollY; const header = document.getElementById('header');
-      window.addEventListener('scroll', () => {
-        const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
-      }, { passive: true });
+      if (!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+        if (window.innerWidth <= 860) { nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
+      }));
 
-      // Mark active link
-      (function setActiveNav(){
-        const page = 'gallery.html';
-        document.querySelectorAll('.site-nav a[href]').forEach(a=>{
-          const href = a.getAttribute('href').split('#')[0].split('?')[0];
-          const match = href === page;
-          a.classList.toggle('active', match);
-          if (match) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
-        });
-      })();
+      // Hide header on scroll down
+      let lastY = window.scrollY; const header = document.getElementById('header');
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
+      }, { passive:true });
     })();
 
-    // ---------- Data loading ----------
+    // ---------- Load manifest ----------
     const MANIFEST_PATH = '/gallery/imagePaths.json';
 
     async function loadManifest(){
-      try {
-        const res = await fetch(MANIFEST_PATH, { cache: 'no-cache' });
+      try{
+        const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
         if (!res.ok) throw new Error('manifest not found');
         return await res.json();
-      } catch (e) {
+      }catch(e){
         console.error('Failed to load imagePaths.json', e);
-        return null;
+        return { categories:{} };
       }
     }
 
-    // Helpers to derive Country & City from file path
-    function splitPath(p){
-      const clean = p.replaceAll('\\','/');         // normalize
-      const parts = clean.split('/');               // e.g., ["gallery","UK","England","London","BigBen-3_1600.jpg"]
-      const gi = parts.indexOf('gallery');
-      const segs = gi >= 0 ? parts.slice(gi + 1) : parts; // ["UK","England","London","BigBen-3_1600.jpg"]
-      const country = segs[0] || 'Unknown';
-      const city = segs.length >= 3 ? segs[segs.length - 2] : (segs[1] || 'Unknown'); // ignore middle region if present
-      return { country, city };
+    // ---------- Helpers ----------
+    function firstTruthy(...vals){ return vals.find(Boolean); }
+
+    function pickThumbAndSrc(item){
+      const widths = (item.widths || []).slice().sort((a,b)=>a-b);
+      const largest = widths.length ? widths[widths.length-1] : null;
+      const mid = widths.find(w => w >= 960) || widths[0] || largest;
+
+      const avifMid = item.variants?.avif?.[mid];
+      const jpgLargest = item.variants?.jpg?.[largest];
+      const avifLargest = item.variants?.avif?.[largest];
+
+      const thumb = firstTruthy(avifMid, jpgLargest, avifLargest);
+      const src   = firstTruthy(jpgLargest, avifLargest, avifMid);
+      return { thumb, src };
     }
 
-    function stripSuffixToStem(fp){
-      // remove _480/_960/_1600.extension OR plain extension to get a base
-      return fp
-        .replace(/_(480|960|1600)\.(avif|jpg)$/i,'')
-        .replace(/\.(jpg|jpeg|png|webp|avif)$/i,'');
-    }
-
-    function encodeSegments(path){
-      return path.split('/').map(encodeURIComponent).join('/');
-    }
-
-    function buildSources(stem){
-      const safe = encodeSegments(stem);
-      return {
-        avif: `${safe}_480.avif 480w, ${safe}_960.avif 960w, ${safe}_1600.avif 1600w`,
-        jpg: `${safe}_1600.jpg`,
-        thumb: `${safe}_960.avif`
-      };
-    }
-
-    // Flexible manifest parsing (supports {files:[]} or {categories:{}} forms)
-    function manifestItems(m){
-      if (!m) return [];
-      if (Array.isArray(m.files)) return m.files;   // preferred
-      if (m.categories){
-        const arr = [];
-        Object.values(m.categories).forEach(list => arr.push(...list));
-        return arr;
+    function pathPartsFromAnyVariant(item){
+      // Prefer a JPG largest path for parsing; fall back to any available
+      const all = [
+        ...Object.values(item.variants?.jpg || {}),
+        ...Object.values(item.variants?.avif || {})
+      ];
+      const p = all[0] || '';
+      // Expect like: "gallery/Country/.../City/Filename.jpg"
+      const parts = p.split('/').filter(Boolean);
+      const iGallery = parts.indexOf('gallery');
+      if (iGallery === -1 || parts.length < iGallery+3) {
+        return { country:'Unknown', city:'Album', parts };
       }
-      return [];
+      const country = parts[iGallery+1] || 'Unknown';
+      const city = parts[parts.length-2] || 'Album';
+      return { country, city, parts };
     }
 
-    function toHierarchy(manifest){
-      const items = manifestItems(manifest);
-      const map = new Map(); // country -> { title, cover, cities: Map(city -> {title, cover, photos:[]}) }
+    // Build nested data: Country -> City -> photos[]
+    function buildCountryCity(manifest){
+      const byCountry = new Map();
+      const cats = manifest.categories || {};
 
-      items.forEach(it => {
-        const anyPath = it.jpg1600 || it.avif1600 || it.path || it.stem || '';
-        if (!anyPath) return;
-        const stem = it.stem || stripSuffixToStem(anyPath);
-        const { country, city } = splitPath(anyPath);
+      Object.keys(cats).forEach(cat => {
+        const items = cats[cat] || [];
+        items.forEach(item=>{
+          const { country, city } = pathPartsFromAnyVariant(item);
+          const { thumb, src } = pickThumbAndSrc(item);
+          const photo = { title: item.alt || city, caption:'', thumb, src };
 
-        const cKey = country;
-        const cityKey = city;
-
-        if (!map.has(cKey)) map.set(cKey, { title: country, cover: null, cities: new Map() });
-        const countryObj = map.get(cKey);
-
-        if (!countryObj.cities.has(cityKey)) countryObj.cities.set(cityKey, { title: city, cover: null, photos: [] });
-        const cityObj = countryObj.cities.get(cityKey);
-
-        const srcs = buildSources(stem);
-        const photo = {
-          title: it.alt || city,
-          thumb: srcs.thumb,
-          avif: srcs.avif,
-          jpg: srcs.jpg
-        };
-        cityObj.photos.push(photo);
-        if (!cityObj.cover) cityObj.cover = photo.thumb;
-        if (!countryObj.cover) countryObj.cover = photo.thumb;
+          if (!byCountry.has(country)) byCountry.set(country, new Map());
+          const byCity = byCountry.get(country);
+          if (!byCity.has(city)) byCity.set(city, []);
+          byCity.get(city).push(photo);
+        });
       });
 
-      // Sort countries/cities A→Z
-      const countries = Array.from(map.values()).sort((a,b)=>a.title.localeCompare(b.title));
-      countries.forEach(c => {
-        c.cities = Array.from(c.cities.values()).sort((a,b)=>a.title.localeCompare(b.title));
-      });
-      return countries;
+      // Convert Maps to arrays, sort alphabetically, and attach covers
+      const countries = Array.from(byCountry.entries()).map(([country, cityMap])=>{
+        const cities = Array.from(cityMap.entries()).map(([city, photos])=>{
+          const cover = photos[0]?.thumb || 'images/social-preview.jpg';
+          return { id: city, title: city, cover, photos };
+        }).sort((a,b)=>a.title.localeCompare(b.title));
+
+        const cover = cities[0]?.cover || 'images/social-preview.jpg';
+        return { id: country, title: country, cover, children: cities };
+      }).sort((a,b)=>a.title.localeCompare(b.title));
+
+      return { title:'All Albums', children: countries };
     }
 
-    // ---------- Router ( #/Country/City ) ----------
+    // ---------- Router ----------
     function getPath(){
       const hash = decodeURI(location.hash || '#/');
-      return hash.replace(/^#\//,'').split('/').filter(Boolean); // [Country, City?]
+      return hash.replace(/^#\//,'').split('/').filter(Boolean);
     }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
-    // ---------- DOM ----------
-    const crumbs = document.getElementById('breadcrumbs');
+    // ---------- UI Refs ----------
+    const breadcrumbsEl = document.getElementById('breadcrumbs');
+    const albumsView = document.getElementById('albumsView');
+    const photosView = document.getElementById('photosView');
+    const emptyState = document.getElementById('emptyState');
     const backBtn = document.getElementById('backBtn');
-    const viewCountries = document.getElementById('countriesView');
-    const viewCities = document.getElementById('citiesView');
-    const viewPhotos = document.getElementById('photosView');
 
-    function lazyImg(img){
+    let ROOT = { title:'All Albums', children:[] };
+
+    function findNode(parts){
+      if (!parts.length) return ROOT;
+      // parts[0] = country
+      const country = ROOT.children.find(c => (c.id||c.title).toLowerCase() === parts[0].toLowerCase());
+      if (!country) return null;
+      if (parts.length === 1) return country; // show cities
+      // parts[1] = city
+      const city = country.children.find(ci => (ci.id||ci.title).toLowerCase() === parts[1].toLowerCase());
+      return city || null; // show photos
+    }
+
+    function buildCrumbs(parts){
+      const frag = document.createDocumentFragment();
+      const mkLink = (label, toParts)=>{
+        const a = document.createElement('a');
+        a.href = '#/' + toParts.map(encodeURI).join('/');
+        a.textContent = label;
+        a.addEventListener('click', e=>{ e.preventDefault(); setPath(toParts); });
+        return a;
+      };
+      frag.appendChild(mkLink('All Albums', []));
+      if (parts[0]){
+        const sep = document.createElement('span'); sep.textContent='›'; sep.className='crumb-sep'; sep.style.margin='0 6px';
+        frag.appendChild(sep);
+        frag.appendChild(mkLink(parts[0], [parts[0]]));
+      }
+      if (parts[1]){
+        const sep2 = document.createElement('span'); sep2.textContent='›'; sep2.className='crumb-sep'; sep2.style.margin='0 6px';
+        frag.appendChild(sep2);
+        frag.appendChild(mkLink(parts[1], [parts[0], parts[1]]));
+      }
+      breadcrumbsEl.innerHTML = '';
+      breadcrumbsEl.appendChild(frag);
+    }
+
+    function lazyImage(img){
       const io = new IntersectionObserver((entries, obs)=>{
-        entries.forEach(e=>{
-          if (!e.isIntersecting) return;
-          const el = e.target;
-          const src = el.getAttribute('data-src');
-          if (src) {
-            el.src = src;
-            el.onload = () => el.classList.add('loaded');
-          }
+        entries.forEach(entry=>{
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          el.src = el.dataset.src;
+          el.onload = ()=> el.classList.add('loaded');
           obs.unobserve(el);
         });
       }, { threshold:.15 });
       io.observe(img);
     }
 
-    function buildCrumbs(parts){
-      const frag = document.createDocumentFragment();
-      const link = (label, toParts) => {
+    function renderAlbums(nodes){
+      albumsView.innerHTML = '';
+      photosView.style.display = 'none';
+      albumsView.style.display = 'grid';
+
+      if (!nodes.length){ emptyState.hidden = false; return; }
+      emptyState.hidden = true;
+
+      nodes.forEach(n=>{
+        const card = document.createElement('a');
+        card.className='album-card';
+        card.href='#';
+
+        const img = document.createElement('img');
+        img.alt = n.title;
+        img.dataset.src = n.cover || 'images/social-preview.jpg';
+        lazyImage(img);
+
+        const overlay = document.createElement('span'); overlay.className='album-overlay';
+        const meta = document.createElement('div'); meta.className='album-meta';
+        const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
+        const count = document.createElement('div'); count.className='album-count';
+        const subCount = (n.children && n.children.length) || (n.photos && n.photos.length) || 0;
+        count.textContent = subCount + (n.children ? ' cities' : ' photos');
+
+        meta.appendChild(title); meta.appendChild(count);
+        card.appendChild(img); card.appendChild(overlay); card.appendChild(meta);
+
+        card.addEventListener('click', e=>{
+          e.preventDefault();
+          const parts = getPath();
+          parts.push(n.id || n.title);
+          setPath(parts);
+        });
+
+        albumsView.appendChild(card);
+      });
+    }
+
+    function renderPhotos(node){
+      photosView.innerHTML = '';
+      albumsView.style.display='none';
+      photosView.style.display='grid';
+
+      const photos = node.photos || [];
+      if (!photos.length){ emptyState.hidden=false; return; }
+      emptyState.hidden = true;
+
+      photos.forEach((p)=>{
         const a = document.createElement('a');
-        a.href = '#/' + toParts.map(encodeURI).join('/');
-        a.textContent = label;
-        a.addEventListener('click', e => { e.preventDefault(); setPath(toParts); });
-        return a;
-      };
-      frag.appendChild(link('Countries', []));
-      if (parts[0]) { frag.appendChild(Object.assign(document.createElement('span'), {textContent:'›', className:'crumb-sep', style:'margin:0 6px'})); frag.appendChild(link(parts[0], [parts[0]])); }
-      if (parts[1]) { frag.appendChild(Object.assign(document.createElement('span'), {textContent:'›', className:'crumb-sep', style:'margin:0 6px'})); frag.appendChild(link(parts[1], [parts[0], parts[1]])); }
-      crumbs.innerHTML = ''; crumbs.appendChild(frag);
-    }
+        a.href = p.src; // largest JPG (good compatibility)
+        a.setAttribute('data-fancybox', node.title || 'album');
+        if (p.title) a.setAttribute('data-caption', p.title);
 
-    function show(view){
-      viewCountries.style.display = (view==='countries') ? 'grid' : 'none';
-      viewCities.style.display    = (view==='cities')    ? 'grid' : 'none';
-      viewPhotos.style.display    = (view==='photos')    ? 'grid' : 'none';
-      backBtn.style.display = (view!=='countries') ? 'inline-flex' : 'none';
-    }
+        const tile = document.createElement('div'); tile.className='photo';
+        const img = document.createElement('img'); img.alt = p.title || 'Photo'; img.dataset.src = p.thumb || p.src;
+        lazyImage(img);
 
-    let DATA = []; // [{title, cover, cities:[{title, cover, photos:[]}, ...]}]
+        tile.appendChild(img);
+        a.appendChild(tile);
+        photosView.appendChild(a);
+      });
+    }
 
     function render(){
       const parts = getPath();
       buildCrumbs(parts);
+      backBtn.style.display = parts.length ? 'inline-flex' : 'none';
 
-      if (!parts.length){
-        // Countries
-        show('countries');
-        viewCountries.innerHTML = '';
-        DATA.forEach(country=>{
-          const card = document.createElement('a');
-          card.className = 'card';
-          card.href = '#';
-          const img = document.createElement('img');
-          img.alt = country.title;
-          img.setAttribute('data-src', country.cover || 'images/social-preview.jpg');
-          lazyImg(img);
-          const overlay = Object.assign(document.createElement('span'), {className:'overlay'});
-          const meta = Object.assign(document.createElement('div'), {className:'meta'});
-          const t = Object.assign(document.createElement('div'), {className:'title', textContent: country.title});
-          const count = Object.assign(document.createElement('div'), {className:'count', textContent: `${country.cities.length} cities`});
-          meta.append(t, count); card.append(img, overlay, meta);
-          card.addEventListener('click', e=>{ e.preventDefault(); setPath([country.title]); });
-          viewCountries.appendChild(card);
-        });
-        return;
-      }
+      const node = findNode(parts);
+      if (!node){ setPath([]); return; }
 
-      const country = DATA.find(c => c.title.toLowerCase() === parts[0].toLowerCase());
-      if (!country){
-        setPath([]); return;
-      }
-
-      if (parts.length === 1){
-        // Cities
-        show('cities');
-        viewCities.innerHTML = '';
-        country.cities.forEach(city=>{
-          const card = document.createElement('a');
-          card.className='card'; card.href='#';
-          const img = document.createElement('img');
-          img.alt = city.title;
-          img.setAttribute('data-src', city.cover || 'images/social-preview.jpg');
-          lazyImg(img);
-          const overlay = Object.assign(document.createElement('span'), {className:'overlay'});
-          const meta = Object.assign(document.createElement('div'), {className:'meta'});
-          const t = Object.assign(document.createElement('div'), {className:'title', textContent: city.title});
-          const count = Object.assign(document.createElement('div'), {className:'count', textContent: `${city.photos.length} photos`});
-          meta.append(t, count); card.append(img, overlay, meta);
-          card.addEventListener('click', e=>{ e.preventDefault(); setPath([country.title, city.title]); });
-          viewCities.appendChild(card);
-        });
-        return;
-      }
-
-      // Photos
-      const city = country.cities.find(ct => ct.title.toLowerCase() === parts[1].toLowerCase());
-      if (!city){
-        setPath([country.title]); return;
-      }
-      show('photos');
-      viewPhotos.innerHTML = '';
-      city.photos.forEach(p=>{
-        const a = document.createElement('a');
-        a.href = p.jpg; // open largest JPG in lightbox
-        a.setAttribute('data-fancybox', `${country.title} – ${city.title}`);
-        a.setAttribute('data-caption', `${city.title}`);
-
-        const tile = document.createElement('div'); tile.className='photo';
-        const pic = document.createElement('picture');
-
-        const srcAvif = document.createElement('source');
-        srcAvif.type = 'image/avif';
-        srcAvif.setAttribute('data-srcset', p.avif);
-        pic.appendChild(srcAvif);
-
-        const img = document.createElement('img');
-        img.alt = p.title || 'Photo';
-        img.setAttribute('data-src', p.thumb || p.jpg);
-        lazyImg(img);
-
-        pic.appendChild(img);
-        tile.appendChild(pic);
-        a.appendChild(tile);
-        viewPhotos.appendChild(a);
-
-        // activate avif srcset lazily
-        const obs = new IntersectionObserver((entries, o)=>{
-          entries.forEach(entry=>{
-            if (!entry.isIntersecting) return;
-            srcAvif.srcset = srcAvif.getAttribute('data-srcset');
-            o.unobserve(entry.target);
-          });
-        }, { threshold:.15 });
-        obs.observe(pic);
-      });
+      if (node.children) renderAlbums(node.children);
+      else renderPhotos(node);
     }
-
-    // Back button
-    document.getElementById('backBtn').addEventListener('click', () => {
-      const parts = getPath();
-      parts.pop();
-      setPath(parts);
-    });
 
     // ---------- Boot ----------
     (async function init(){
       const manifest = await loadManifest();
-      DATA = toHierarchy(manifest || {});
+      ROOT = buildCountryCity(manifest);
       render();
       window.addEventListener('hashchange', render);
+      backBtn.addEventListener('click', ()=>{
+        const parts = getPath(); parts.pop(); setPath(parts);
+      });
     })();
   </script>
 </body>
