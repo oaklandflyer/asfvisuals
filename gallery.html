@@ -2,158 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Portfolio – ASF Visuals LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASF Visuals LLC – Drone & Landscape Photography</title>
-  <meta name="description" content="ASF Visuals — stunning drone & landscape photography in Pittsburgh and beyond." />
-  <link rel="canonical" href="https://www.asfvisualsllc.com/" />
-  <meta property="og:title" content="ASF Visuals LLC – Drone & Landscape Photography" />
-  <meta property="og:description" content="Explore breathtaking aerial & landscape images by ASF Visuals LLC." />
+  <meta name="description" content="Browse albums by country, region, and city from ASF Visuals LLC." />
+  <link rel="canonical" href="https://www.asfvisualsllc.com/gallery.html" />
+  <meta property="og:title" content="Portfolio – ASF Visuals LLC" />
+  <meta property="og:description" content="Pixieset-style albums by country, region and city." />
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#10437a" />
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Optional lightbox for hero thumbnails (kept minimal) -->
+  <!-- Fancybox (lightbox) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VBF13JPLGF');
-  </script>
-
   <style>
-    :root {
-      /* ASF palette */
-      --primary: #10437a; /* deep blue */
-      --accent: #e8bc56; /* gold */
-      --ink: #172135;
-      --bg: #fafbfc;
-      --panel: rgba(255,255,255,.92);
-      --shadow: 0 10px 40px rgba(0,0,0,.08);
-      --radius: 18px;
+    :root{
+      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#fafbfc;
+      --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
+      --radius:18px; --chip:#0f172a; --chip-ink:#fff;
     }
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--ink); }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
 
-    /* ===== Header (Pixieset-like minimal) ===== */
-    .site-header {
-      position: fixed; inset-inline: 0; top: 0; z-index: 1000;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 14px clamp(16px, 4vw, 64px);
-      background: rgba(255,255,255,.85);
-      -webkit-backdrop-filter: saturate(140%) blur(10px);
-      backdrop-filter: saturate(140%) blur(10px);
-      box-shadow: 0 1px 12px rgba(16,67,122,.06);
-      transition: transform .32s ease;
-    }
-    .logo-link img { height: 60px; width: auto; object-fit: contain; }
-    .site-nav ul { list-style: none; display: flex; gap: clamp(10px, 2vw, 28px); margin: 0; padding: 0; }
-    .site-nav a { font-weight: 600; padding: 8px 14px; border-radius: 999px; color: var(--primary); transition: background .2s, color .2s; }
-    .site-nav a:hover, .site-nav a.active { background: var(--accent); color: #111; }
-
-    .menu-toggle { display: none; width: 44px; height: 44px; border: none; background: none; cursor: pointer; }
-    .menu-toggle .bar { display: block; width: 26px; height: 3px; margin: 5px auto; background: var(--primary); border-radius: 2px; transition: .3s; }
-    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
-    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
-    @media (max-width: 860px) {
-      .menu-toggle { display: block; }
-      .site-nav { position: fixed; right: 0; top: 74px; width: min(68vw, 360px); height: calc(100dvh - 74px); background: #fff; transform: translateX(100%); transition: transform .24s cubic-bezier(.4,2.2,.3,1); box-shadow: -2px 0 18px rgba(0,0,0,.08); }
-      .site-nav.open { transform: translateX(0); }
-      .site-nav ul { flex-direction: column; padding: 26px; gap: 12px; }
+    /* Header (match site) */
+    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease}
+    .logo-link img{height:60px;width:auto;object-fit:contain}
+    .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
+    .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
+    .site-nav a:hover,.site-nav a.active,.site-nav a[aria-current="page"]{background:var(--accent);color:#111}
+    .menu-toggle{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer}
+    .menu-toggle .bar{display:block;width:26px;height:3px;margin:5px auto;background:var(--primary);border-radius:2px;transition:.3s}
+    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .menu-toggle.open .bar:nth-child(2){opacity:0}
+    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    @media (max-width:860px){
+      .menu-toggle{display:block}
+      .site-nav{position:fixed;right:0;top:74px;width:min(68vw,360px);height:calc(100dvh - 74px);background:#fff;transform:translateX(100%);transition:transform .24s cubic-bezier(.4,2.2,.3,1);box-shadow:-2px 0 18px rgba(0,0,0,.08)}
+      .site-nav.open{transform:translateX(0)}
+      .site-nav ul{flex-direction:column;padding:26px;gap:12px}
+      body.no-scroll{overflow:hidden}
     }
 
-    /* ===== Hero ===== */
-    .hero {
-      margin-top: 80px; /* header offset */
-      min-height: 78dvh; width: 100%; position: relative; overflow: hidden;
-      display: grid; place-items: center;
-      background: #0d1b2a;
-    }
-    .hero::before {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(16,67,122,.25) 0%, rgba(16,67,122,.15) 35%, rgba(0,0,0,.25) 100%),
-                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
-      filter: saturate(105%);
-      transform: scale(1.02);
-    }
-    .hero-panel {
-      position: relative; z-index: 1; text-align: center;
-      background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: clamp(18px, 4vw, 40px) clamp(16px, 5vw, 56px);
-      width: min(720px, 92vw);
-      animation: riseIn 900ms cubic-bezier(.21,1.02,.35,1) both;
-    }
-    .brand {
-      display: inline-flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 10px;
-    }
-    .brand img { height: 46px; width: auto; }
-    .brand-name { font-weight: 800; letter-spacing: .02em; color: var(--primary); }
+    /* Page header */
+    .page-hero{margin-top:80px;padding:28px clamp(16px,4vw,48px) 12px}
+    .page-hero h1{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.6rem);margin:0}
+    .page-hero p{margin:6px 0 0;color:#2a3a55}
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif; font-weight: 700;
-      font-size: clamp(2rem, 4.4vw, 3.2rem);
-      color: var(--primary); margin: 8px 0 8px;
-    }
-    .hero p { font-size: clamp(1rem, 1.8vw, 1.15rem); color: #2a3a55; margin: 0 0 18px; }
+    /* Controls */
+    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:12px clamp(16px,4vw,48px)}
+    .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:600;color:#2a3a55}
+    .breadcrumbs a{color:var(--primary)}
+    .crumb-sep{opacity:.5}
+    .search{position:relative;flex:1 1 280px;max-width:520px}
+    .search input{width:100%;padding:12px 14px;border-radius:12px;border:1.5px solid #d5e4f3;background:#f8fafc;outline:none}
+    .search input:focus{border-color:var(--primary)}
 
-    .hero-cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
-    .btn { background: var(--primary); color: #fff; font-weight: 700; padding: 12px 22px; border-radius: 999px; box-shadow: var(--shadow); border: none; cursor: pointer; letter-spacing: .02em; transition: background .2s, transform .15s; }
-    .btn:hover { background: var(--accent); color: #111; transform: translateY(-1px); }
-    .btn-outline { background: #fff; color: var(--primary); border: 2px solid var(--primary); }
-    .btn-outline:hover { background: var(--primary); color: #fff; }
+    /* Albums grid (Pixieset-style tiles) */
+    .album-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:0 clamp(16px,4vw,48px)}
+    @media (max-width:1200px){.album-grid{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:700px){.album-grid{grid-template-columns:repeat(2,1fr)}}
+    .album-card{position:relative;border-radius:14px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3;box-shadow:0 3px 14px rgba(0,0,0,.06);cursor:pointer;isolation:isolate}
+    .album-card img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease, opacity .35s ease;opacity:0}
+    .album-card img.loaded{opacity:1}
+    .album-card:hover img{transform:scale(1.03)}
+    .album-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.55));}
+    .album-meta{position:absolute;left:10px;right:10px;bottom:10px;display:flex;justify-content:space-between;align-items:end;color:#fff;z-index:1}
+    .album-title{font-weight:800;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+    .album-count{background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:6px 10px;font-size:.9rem;font-weight:700}
 
-    /* ===== Featured strip (Pixieset style: clean tiles) ===== */
-    .featured {
-      max-width: 1200px; margin: clamp(28px, 6vw, 60px) auto; padding: 0 clamp(16px, 4vw, 24px);
-    }
-    .section-title { text-align: center; font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--primary); font-family: 'Playfair Display', serif; margin-bottom: clamp(16px, 2vw, 24px); }
+    /* Photos grid */
+    .photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px clamp(16px,4vw,48px) 28px}
+    @media (max-width:1200px){.photo-grid{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:700px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    .photo{position:relative;border-radius:12px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3}
+    .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
+    .photo img.loaded{opacity:1}
+    .photo:hover img{transform:scale(1.02)}
+    .empty{margin:24px clamp(16px,4vw,48px);opacity:.75}
 
-    .tile-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
-    @media (max-width: 900px) { .tile-grid { grid-template-columns: repeat(4, 1fr); } }
-    @media (max-width: 600px) { .tile-grid { grid-template-columns: repeat(2, 1fr); } }
+    /* Back button */
+    .back-btn{margin:0 clamp(16px,4vw,48px) 10px;display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
+    .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
-    .tile {
-      position: relative; border-radius: 14px; overflow: hidden; background: #e9eef5; aspect-ratio: 4/3;
-      box-shadow: 0 3px 14px rgba(0,0,0,.06);
-    }
-    .tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease, filter .4s ease, opacity .4s; filter: saturate(102%); opacity: 0; }
-    .tile img.loaded { opacity: 1; }
-    .tile:hover img { transform: scale(1.03); }
-    .tile .label {
-      position: absolute; inset: auto 10px 10px 10px; display: inline-block; padding: 8px 12px; border-radius: 999px;
-      background: rgba(0,0,0,.5); color: #fff; font-weight: 700; letter-spacing: .02em; font-size: .92rem;
-    }
-
-    /* ===== CTA banner ===== */
-    .cta-banner {
-      margin: clamp(24px, 7vw, 72px) auto; max-width: 1100px; padding: clamp(16px, 3.6vw, 28px);
-      background: linear-gradient(135deg, rgba(16,67,122,.07), rgba(232,188,86,.12));
-      border-radius: var(--radius); text-align: center; box-shadow: var(--shadow);
-    }
-    .cta-banner h3 { margin: 0 0 8px; font-size: clamp(1.25rem, 2.4vw, 1.6rem); color: var(--primary); }
-    .cta-banner p { margin: 0 0 14px; color: #2a3a55; }
-
-    /* ===== Footer ===== */
-    .site-footer { background: #10233a; color: #f5f5f5; padding: 40px clamp(16px, 4vw, 48px); margin-top: 60px; border-radius: var(--radius) var(--radius) 0 0; }
-    .footer-cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
-    .social { display: flex; gap: 14px; justify-content: center; margin-top: 10px; }
-    .social img { width: 28px; height: 28px; border-radius: 50%; background: #fff; padding: 2px; box-shadow: 0 1px 8px rgba(0,0,0,.08); }
-    .copyright { text-align: center; opacity: .85; font-size: .95rem; margin-top: 10px; }
-
-    /* Animations */
-    @keyframes riseIn { from { opacity: 0; transform: translateY(18px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    /* Footer */
+    .site-footer{background:#10233a;color:#f5f5f5;padding:36px clamp(16px,4vw,48px) 28px;border-radius:var(--radius) var(--radius) 0 0;margin-top:42px;text-align:center}
+    .social{display:flex;gap:14px;justify-content:center;margin-top:10px}
+    .social img{width:28px;height:28px;border-radius:50%;background:#fff;padding:2px;box-shadow:0 1px 8px rgba(0,0,0,.08)}
   </style>
 </head>
 <body>
@@ -165,7 +107,7 @@
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="gallery.html">Portfolio</a></li>
         <li><a href="real-estate.html">Real Estate</a></li>
         <li><a href="services.html">Services</a></li>
@@ -179,71 +121,27 @@
   </header>
 
   <main id="main">
-    <!-- Pixieset-style hero: big visual + centered title/pill buttons -->
-    <section class="hero" id="hero">
-      <div class="hero-panel">
-        <div class="brand">
-          <img src="images/ASF Logo.png" alt="ASF Visuals emblem" width="46" height="46" loading="lazy" />
-          <span class="brand-name">ASF VISUALS LLC</span>
-        </div>
-        <h1>Drone & Landscape Photography</h1>
-        <p>Capturing authentic moments and sweeping cityscapes across Pittsburgh and beyond.</p>
-        <div class="hero-cta">
-          <a href="https://asfvisualsllc.pixieset.com/" class="btn" target="_blank" rel="noopener">Shop Prints</a>
-          <a href="gallery.html" class="btn btn-outline">View Portfolio</a>
-          <a href="contact.html" class="btn">Book a Shoot</a>
-        </div>
-      </div>
+    <section class="page-hero">
+      <h1>Portfolio</h1>
+      <p>Explore albums by country, region, and city — then dive into each collection.</p>
     </section>
 
-    <!-- Featured categories in clean tiles, similar cadence to Pixieset collections -->
-    <section class="featured" aria-label="Featured collections">
-      <h2 class="section-title">Featured Collections</h2>
-      <div class="tile-grid">
-        <!-- Each tile can link to a filtered gallery section or external set -->
-        <a class="tile" href="gallery.html#Drone Aerials" aria-label="Open Drone Aerials">
-          <img data-src="images/DowntownSunset.jpg" alt="Drone Aerials" loading="lazy" />
-          <span class="label">Drone Aerials</span>
-        </a>
-        <a class="tile" href="gallery.html#Landscapes" aria-label="Open Landscapes">
-          <img data-src="images/Chamonix-10.jpg" alt="Landscapes" loading="lazy" />
-          <span class="label">Landscapes</span>
-        </a>
-        <a class="tile" href="gallery.html#Portraits" aria-label="Open Portraits">
-          <img data-src="images/AndrewGrad-01.jpg" alt="Portraits" loading="lazy" />
-          <span class="label">Portraits</span>
-        </a>
-        <a class="tile" href="gallery.html#Cityscapes" aria-label="Open Cityscapes">
-          <img data-src="images/DowntownCloudsReduced.webp" alt="Cityscapes" loading="lazy" />
-          <span class="label">Cityscapes</span>
-        </a>
-        <a class="tile" href="gallery.html#Travel" aria-label="Open Travel">
-          <img data-src="images/Chamonix-12.jpg" alt="Travel" loading="lazy" />
-          <span class="label">Travel</span>
-        </a>
-        <a class="tile" href="real-estate.html" aria-label="Open Real Estate">
-          <img data-src="images/RealEstateSample.jpg" alt="Real Estate" loading="lazy" />
-          <span class="label">Real Estate</span>
-        </a>
+    <div class="controls">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
+      <div class="search">
+        <label for="search" class="visually-hidden" style="position:absolute;left:-9999px;">Search</label>
+        <input id="search" type="search" placeholder="Search albums & photos…" autocomplete="off">
       </div>
-    </section>
+    </div>
 
-    <!-- Soft CTA like Pixieset footer banner -->
-    <section class="cta-banner" aria-label="Booking">
-      <h3>Ready to create something unforgettable?</h3>
-      <p>From aerials to portraits, I blend artistry and precision to tell your story.</p>
-      <div class="hero-cta">
-        <a href="contact.html" class="btn">Get in Touch</a>
-        <a href="https://asfvisualsllc.pixieset.com/" class="btn btn-outline" target="_blank" rel="noopener">Buy Prints</a>
-      </div>
-    </section>
+    <button class="back-btn" id="backBtn" style="display:none;">◀ Back</button>
+
+    <section id="albumsView" class="album-grid" aria-label="Albums"></section>
+    <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
+    <p id="emptyState" class="empty" hidden>No results found.</p>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-cta">
-      <a href="vlog.html" class="btn btn-outline">Watch Our Vlog</a>
-      <a href="services.html" class="btn">Services</a>
-    </div>
     <div class="social">
       <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <img src="images/linkedin-icon.png" alt="LinkedIn" width="28" height="28" loading="lazy" />
@@ -252,41 +150,230 @@
         <img src="images/instagram-icon.png" alt="Instagram" width="28" height="28" loading="lazy" />
       </a>
     </div>
-    <p class="copyright">© 2025 ASF Visuals LLC. All rights reserved.</p>
+    <p style="opacity:.85">© 2025 ASF Visuals LLC. All rights reserved.</p>
   </footer>
 
-  <!-- Minimal JS: mobile nav, header hide on scroll, lazy image loader -->
+  <!-- Fancybox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
   <script>
-    // Mobile menu
-    const menuBtn = document.getElementById('menuToggle');
-    const nav = document.getElementById('navbar');
-    if (menuBtn && nav) {
-      menuBtn.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        menuBtn.classList.toggle('open');
-        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        if (window.innerWidth <= 860) { nav.classList.remove('open'); menuBtn.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
-      }));
+    // --------- Mobile menu + header behavior ----------
+    (function navInit(){
+      const menuBtn = document.getElementById('menuToggle');
+      const nav = document.getElementById('navbar');
+      if (menuBtn && nav) {
+        menuBtn.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          menuBtn.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          if (window.innerWidth <= 860) { nav.classList.remove('open'); menuBtn.classList.remove('open'); document.body.classList.remove('no-scroll'); menuBtn.setAttribute('aria-expanded','false'); }
+        }));
+      }
+      // Hide on scroll
+      let lastY = window.scrollY; const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
+      }, { passive: true });
+
+      // Set active nav link
+      (function setActiveNav(){
+        const raw = location.pathname.replace(/\/+$/,'');
+        let page = raw.split('/').pop() || 'index.html';
+        const aliases = { '': 'index.html', 'index': 'index.html', 'gallery':'gallery.html' };
+        page = aliases[page] || page;
+        document.querySelectorAll('.site-nav a[href]').forEach(a=>{
+          const href = a.getAttribute('href').split('#')[0].split('?')[0];
+          const match = href === page || (page==='index.html' && (href==='/' || href.endsWith('index.html')));
+          a.classList.toggle('active', match);
+          if (match) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+        });
+      })();
+    })();
+
+    // --------- Data loader (tries multiple paths) ----------
+    const DATA_PATHS = [
+      'images/gallery/gallery.json',
+      'data/gallery.json',
+      'gallery.json'
+    ];
+
+    async function loadData(){
+      for (const p of DATA_PATHS) {
+        try {
+          const res = await fetch(p, { cache: 'no-cache' });
+          if (res.ok) return await res.json();
+        } catch(e){ /* try next */ }
+      }
+      return { albums: [] };
     }
 
-    // Header show/hide on scroll (subtle Pixieset feel)
-    let lastY = window.scrollY; const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
-    }, { passive: true });
+    // --------- Simple router: #/Country/Region/City ----------
+    function getPath(){
+      const hash = decodeURI(location.hash || '#/');
+      const parts = hash.replace(/^#\//,'').split('/').filter(Boolean);
+      return parts;
+    }
 
-    // Lazy load featured tiles
-    const tiles = document.querySelectorAll('.tile img');
-    const io = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const img = entry.target; img.src = img.dataset.src; img.onload = () => img.classList.add('loaded');
-        obs.unobserve(img);
+    function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
+
+    // --------- Renderers ----------
+    const breadcrumbsEl = document.getElementById('breadcrumbs');
+    const albumsView = document.getElementById('albumsView');
+    const photosView = document.getElementById('photosView');
+    const emptyState = document.getElementById('emptyState');
+    const backBtn = document.getElementById('backBtn');
+    const searchInput = document.getElementById('search');
+
+    let DATA = { albums: [] };
+    let CURRENT_NODE = null; // album node at current path
+
+    function findNodeByPath(data, parts){
+      let node = { title: 'All Albums', children: data.albums };
+      for (const slug of parts) {
+        if (!node.children) return null;
+        node = node.children.find(n => (n.id||n.title).toLowerCase() === slug.toLowerCase());
+        if (!node) return null;
+      }
+      return node;
+    }
+
+    function buildCrumbs(parts){
+      const frag = document.createDocumentFragment();
+      const link = (label, toParts) => {
+        const a = document.createElement('a');
+        a.href = '#/' + toParts.map(encodeURI).join('/');
+        a.textContent = label;
+        a.addEventListener('click', e => { e.preventDefault(); setPath(toParts); });
+        return a;
+      };
+      // Root
+      frag.appendChild(link('All Albums', []));
+      let acc = [];
+      parts.forEach((p, i) => {
+        const sep = document.createElement('span'); sep.textContent = '›'; sep.className='crumb-sep'; sep.style.margin='0 6px';
+        frag.appendChild(sep);
+        acc = parts.slice(0, i+1);
+        frag.appendChild(link(p, acc));
       });
-    }, { threshold: .2 });
-    tiles.forEach(img => io.observe(img));
+      breadcrumbsEl.innerHTML = '';
+      breadcrumbsEl.appendChild(frag);
+    }
+
+    function lazyImage(img){
+      const io = new IntersectionObserver((entries, obs)=>{
+        entries.forEach(entry=>{
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          el.src = el.dataset.src;
+          el.onload = ()=> el.classList.add('loaded');
+          obs.unobserve(el);
+        });
+      }, { threshold:.15 });
+      io.observe(img);
+    }
+
+    function renderAlbums(node){
+      albumsView.innerHTML = '';
+      photosView.style.display = 'none';
+      albumsView.style.display = 'grid';
+
+      const term = (searchInput.value||'').trim().toLowerCase();
+      const items = (node.children||[]).filter(n => n.title.toLowerCase().includes(term));
+
+      if (!items.length){ emptyState.hidden = false; return; }
+      emptyState.hidden = true;
+
+      items.forEach(n=>{
+        const card = document.createElement('a');
+        card.className='album-card';
+        card.href='#';
+
+        const img = document.createElement('img');
+        img.alt = n.title;
+        img.dataset.src = n.cover || (n.photos && n.photos[0] && n.photos[0].src) || 'images/social-preview.jpg';
+        lazyImage(img);
+
+        const overlay = document.createElement('span'); overlay.className='album-overlay';
+        const meta = document.createElement('div'); meta.className='album-meta';
+        const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
+        const count = document.createElement('div'); count.className='album-count';
+        const subCount = (n.children && n.children.length) || (n.photos && n.photos.length) || 0;
+        count.textContent = subCount + (n.children ? ' items' : ' photos');
+
+        meta.appendChild(title); meta.appendChild(count);
+        card.appendChild(img); card.appendChild(overlay); card.appendChild(meta);
+
+        card.addEventListener('click', e=>{
+          e.preventDefault();
+          const nextSlug = (n.id||n.title);
+          const parts = getPath(); parts.push(nextSlug);
+          setPath(parts);
+        });
+
+        albumsView.appendChild(card);
+      });
+    }
+
+    function renderPhotos(node){
+      photosView.innerHTML = '';
+      albumsView.style.display='none';
+      photosView.style.display='grid';
+
+      const term = (searchInput.value||'').trim().toLowerCase();
+      const photos = (node.photos||[]).filter(p=>{
+        const t = (p.title||'') + ' ' + (p.caption||'');
+        return t.toLowerCase().includes(term);
+      });
+
+      if (!photos.length){ emptyState.hidden=false; return; }
+      emptyState.hidden = true;
+
+      photos.forEach((p, idx)=>{
+        const wrap = document.createElement('a');
+        wrap.href = p.src;
+        wrap.setAttribute('data-fancybox', node.title || 'album');
+        if (p.title) wrap.setAttribute('data-caption', p.title + (p.caption? ' — ' + p.caption : ''));
+
+        const tile = document.createElement('div'); tile.className='photo';
+        const img = document.createElement('img'); img.alt = p.title || 'Photo'; img.dataset.src = p.thumb || p.src;
+        lazyImage(img);
+
+        tile.appendChild(img);
+        wrap.appendChild(tile);
+        photosView.appendChild(wrap);
+      });
+    }
+
+    function render(){
+      const parts = getPath();
+      buildCrumbs(parts);
+      backBtn.style.display = parts.length ? 'inline-flex' : 'none';
+
+      CURRENT_NODE = findNodeByPath(DATA, parts);
+      if (!CURRENT_NODE){ // 404 path
+        setPath([]); return;
+      }
+
+      if (CURRENT_NODE.children && CURRENT_NODE.children.length){
+        renderAlbums(CURRENT_NODE);
+      } else {
+        renderPhotos(CURRENT_NODE);
+      }
+    }
+
+    // --------- Wire up ---------
+    (async function init(){
+      DATA = await loadData();
+      render();
+      window.addEventListener('hashchange', render);
+      searchInput.addEventListener('input', () => render());
+      backBtn.addEventListener('click', () => {
+        const parts = getPath(); parts.pop(); setPath(parts);
+      });
+    })();
   </script>
 </body>
 </html>
