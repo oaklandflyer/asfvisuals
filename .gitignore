@@ -1,3 +1,20 @@
-/images/           # keep originals out of git
-*.psd
-*.tif*
+# ---- Originals: keep out of git ----
+images/                 # all source/original photos stay local
+
+# ---- Keep optimized output in repo ----
+# (No need for negation unless you ignore everything else)
+# !gallery/
+# !gallery/**
+
+# ---- Node / tooling ----
+image-pipeline/node_modules/
+image-pipeline/package-lock.json
+
+# ---- OS & editor files ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.zip
+.vscode/
+.env
