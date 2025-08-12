@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages (static)
 
 on:
   push:
@@ -24,24 +24,17 @@ jobs:
           lfs: true
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install
-        run: npm ci
-
-      - name: Build
-        run: npm run build
+      # Optional: keep your custom domain active after each deploy
+      # - name: Ensure CNAME
+      #   run: echo "asfvisualsllc.com" > ./CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload artifact (site root)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist  # ← change to your build output
+          path: .   # deploy the repository root
 
   deploy:
     needs: build
@@ -50,6 +43,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
