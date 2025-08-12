@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASF Visuals LLC – Drone & Landscape Photography</title>
+  <meta name="description" content="ASF Visuals — stunning drone & landscape photography in Pittsburgh and beyond." />
+  <link rel="canonical" href="https://www.asfvisualsllc.com/" />
+  <meta property="og:title" content="ASF Visuals LLC – Drone & Landscape Photography" />
+  <meta property="og:description" content="Explore breathtaking aerial & landscape images by ASF Visuals LLC." />
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Optional lightbox for hero thumbnails (kept minimal) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-VBF13JPLGF');
+  </script>
+
+  <style>
+    :root {
+      /* ASF palette */
+      --primary: #10437a; /* deep blue */
+      --accent: #e8bc56; /* gold */
+      --ink: #172135;
+      --bg: #fafbfc;
+      --panel: rgba(255,255,255,.92);
+      --shadow: 0 10px 40px rgba(0,0,0,.08);
+      --radius: 18px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--ink); }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    /* ===== Header (Pixieset-like minimal) ===== */
+    .site-header {
+      position: fixed; inset-inline: 0; top: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px clamp(16px, 4vw, 64px);
+      background: rgba(255,255,255,.85);
+      -webkit-backdrop-filter: saturate(140%) blur(10px);
+      backdrop-filter: saturate(140%) blur(10px);
+      box-shadow: 0 1px 12px rgba(16,67,122,.06);
+      transition: transform .32s ease;
+    }
+    .logo-link img { height: 60px; width: auto; object-fit: contain; }
+    .site-nav ul { list-style: none; display: flex; gap: clamp(10px, 2vw, 28px); margin: 0; padding: 0; }
+    .site-nav a { font-weight: 600; padding: 8px 14px; border-radius: 999px; color: var(--primary); transition: background .2s, color .2s; }
+    .site-nav a:hover, .site-nav a.active { background: var(--accent); color: #111; }
+
+    .menu-toggle { display: none; width: 44px; height: 44px; border: none; background: none; cursor: pointer; }
+    .menu-toggle .bar { display: block; width: 26px; height: 3px; margin: 5px auto; background: var(--primary); border-radius: 2px; transition: .3s; }
+    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    @media (max-width: 860px) {
+      .menu-toggle { display: block; }
+      .site-nav { position: fixed; right: 0; top: 74px; width: min(68vw, 360px); height: calc(100dvh - 74px); background: #fff; transform: translateX(100%); transition: transform .24s cubic-bezier(.4,2.2,.3,1); box-shadow: -2px 0 18px rgba(0,0,0,.08); }
+      .site-nav.open { transform: translateX(0); }
+      .site-nav ul { flex-direction: column; padding: 26px; gap: 12px; }
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      margin-top: 80px; /* header offset */
+      min-height: 78dvh; width: 100%; position: relative; overflow: hidden;
+      display: grid; place-items: center;
+      background: #0d1b2a;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(16,67,122,.25) 0%, rgba(16,67,122,.15) 35%, rgba(0,0,0,.25) 100%),
+                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+      filter: saturate(105%);
+      transform: scale(1.02);
+    }
+    .hero-panel {
+      position: relative; z-index: 1; text-align: center;
+      background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: clamp(18px, 4vw, 40px) clamp(16px, 5vw, 56px);
+      width: min(720px, 92vw);
+      animation: riseIn 900ms cubic-bezier(.21,1.02,.35,1) both;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 12px; justify-content: center; margin-bottom: 10px;
+    }
+    .brand img { height: 46px; width: auto; }
+    .brand-name { font-weight: 800; letter-spacing: .02em; color: var(--primary); }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif; font-weight: 700;
+      font-size: clamp(2rem, 4.4vw, 3.2rem);
+      color: var(--primary); margin: 8px 0 8px;
+    }
+    .hero p { font-size: clamp(1rem, 1.8vw, 1.15rem); color: #2a3a55; margin: 0 0 18px; }
+
+    .hero-cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 6px; }
+    .btn { background: var(--primary); color: #fff; font-weight: 700; padding: 12px 22px; border-radius: 999px; box-shadow: var(--shadow); border: none; cursor: pointer; letter-spacing: .02em; transition: background .2s, transform .15s; }
+    .btn:hover { background: var(--accent); color: #111; transform: translateY(-1px); }
+    .btn-outline { background: #fff; color: var(--primary); border: 2px solid var(--primary); }
+    .btn-outline:hover { background: var(--primary); color: #fff; }
+
+    /* ===== Featured strip (Pixieset style: clean tiles) ===== */
+    .featured {
+      max-width: 1200px; margin: clamp(28px, 6vw, 60px) auto; padding: 0 clamp(16px, 4vw, 24px);
+    }
+    .section-title { text-align: center; font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--primary); font-family: 'Playfair Display', serif; margin-bottom: clamp(16px, 2vw, 24px); }
+
+    .tile-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    @media (max-width: 900px) { .tile-grid { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 600px) { .tile-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .tile {
+      position: relative; border-radius: 14px; overflow: hidden; background: #e9eef5; aspect-ratio: 4/3;
+      box-shadow: 0 3px 14px rgba(0,0,0,.06);
+    }
+    .tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease, filter .4s ease, opacity .4s; filter: saturate(102%); opacity: 0; }
+    .tile img.loaded { opacity: 1; }
+    .tile:hover img { transform: scale(1.03); }
+    .tile .label {
+      position: absolute; inset: auto 10px 10px 10px; display: inline-block; padding: 8px 12px; border-radius: 999px;
+      background: rgba(0,0,0,.5); color: #fff; font-weight: 700; letter-spacing: .02em; font-size: .92rem;
+    }
+
+    /* ===== CTA banner ===== */
+    .cta-banner {
+      margin: clamp(24px, 7vw, 72px) auto; max-width: 1100px; padding: clamp(16px, 3.6vw, 28px);
+      background: linear-gradient(135deg, rgba(16,67,122,.07), rgba(232,188,86,.12));
+      border-radius: var(--radius); text-align: center; box-shadow: var(--shadow);
+    }
+    .cta-banner h3 { margin: 0 0 8px; font-size: clamp(1.25rem, 2.4vw, 1.6rem); color: var(--primary); }
+    .cta-banner p { margin: 0 0 14px; color: #2a3a55; }
+
+    /* ===== Footer ===== */
+    .site-footer { background: #10233a; color: #f5f5f5; padding: 40px clamp(16px, 4vw, 48px); margin-top: 60px; border-radius: var(--radius) var(--radius) 0 0; }
+    .footer-cta { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .social { display: flex; gap: 14px; justify-content: center; margin-top: 10px; }
+    .social img { width: 28px; height: 28px; border-radius: 50%; background: #fff; padding: 2px; box-shadow: 0 1px 8px rgba(0,0,0,.08); }
+    .copyright { text-align: center; opacity: .85; font-size: .95rem; margin-top: 10px; }
+
+    /* Animations */
+    @keyframes riseIn { from { opacity: 0; transform: translateY(18px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+
+  <header class="site-header" id="header">
+    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
+    </a>
+    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Portfolio</a></li>
+        <li><a href="real-estate.html">Real Estate</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- Pixieset-style hero: big visual + centered title/pill buttons -->
+    <section class="hero" id="hero">
+      <div class="hero-panel">
+        <div class="brand">
+          <img src="images/ASF Logo.png" alt="ASF Visuals emblem" width="46" height="46" loading="lazy" />
+          <span class="brand-name">ASF VISUALS LLC</span>
+        </div>
+        <h1>Drone & Landscape Photography</h1>
+        <p>Capturing authentic moments and sweeping cityscapes across Pittsburgh and beyond.</p>
+        <div class="hero-cta">
+          <a href="https://asfvisualsllc.pixieset.com/" class="btn" target="_blank" rel="noopener">Shop Prints</a>
+          <a href="gallery.html" class="btn btn-outline">View Portfolio</a>
+          <a href="contact.html" class="btn">Book a Shoot</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured categories in clean tiles, similar cadence to Pixieset collections -->
+    <section class="featured" aria-label="Featured collections">
+      <h2 class="section-title">Featured Collections</h2>
+      <div class="tile-grid">
+        <!-- Each tile can link to a filtered gallery section or external set -->
+        <a class="tile" href="gallery.html#Drone Aerials" aria-label="Open Drone Aerials">
+          <img data-src="images/DowntownSunset.jpg" alt="Drone Aerials" loading="lazy" />
+          <span class="label">Drone Aerials</span>
+        </a>
+        <a class="tile" href="gallery.html#Landscapes" aria-label="Open Landscapes">
+          <img data-src="images/Chamonix-10.jpg" alt="Landscapes" loading="lazy" />
+          <span class="label">Landscapes</span>
+        </a>
+        <a class="tile" href="gallery.html#Portraits" aria-label="Open Portraits">
+          <img data-src="images/AndrewGrad-01.jpg" alt="Portraits" loading="lazy" />
+          <span class="label">Portraits</span>
+        </a>
+        <a class="tile" href="gallery.html#Cityscapes" aria-label="Open Cityscapes">
+          <img data-src="images/DowntownCloudsReduced.webp" alt="Cityscapes" loading="lazy" />
+          <span class="label">Cityscapes</span>
+        </a>
+        <a class="tile" href="gallery.html#Travel" aria-label="Open Travel">
+          <img data-src="images/Chamonix-12.jpg" alt="Travel" loading="lazy" />
+          <span class="label">Travel</span>
+        </a>
+        <a class="tile" href="real-estate.html" aria-label="Open Real Estate">
+          <img data-src="images/RealEstateSample.jpg" alt="Real Estate" loading="lazy" />
+          <span class="label">Real Estate</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Soft CTA like Pixieset footer banner -->
+    <section class="cta-banner" aria-label="Booking">
+      <h3>Ready to create something unforgettable?</h3>
+      <p>From aerials to portraits, I blend artistry and precision to tell your story.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn">Get in Touch</a>
+        <a href="https://asfvisualsllc.pixieset.com/" class="btn btn-outline" target="_blank" rel="noopener">Buy Prints</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-cta">
+      <a href="vlog.html" class="btn btn-outline">Watch Our Vlog</a>
+      <a href="services.html" class="btn">Services</a>
+    </div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" width="28" height="28" loading="lazy" />
+      </a>
+      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram" width="28" height="28" loading="lazy" />
+      </a>
+    </div>
+    <p class="copyright">© 2025 ASF Visuals LLC. All rights reserved.</p>
+  </footer>
+
+  <!-- Minimal JS: mobile nav, header hide on scroll, lazy image loader -->
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuToggle');
+    const nav = document.getElementById('navbar');
+    if (menuBtn && nav) {
+      menuBtn.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        menuBtn.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        if (window.innerWidth <= 860) { nav.classList.remove('open'); menuBtn.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); }
+      }));
+    }
+
+    // Header show/hide on scroll (subtle Pixieset feel)
+    let lastY = window.scrollY; const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
+    }, { passive: true });
+
+    // Lazy load featured tiles
+    const tiles = document.querySelectorAll('.tile img');
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const img = entry.target; img.src = img.dataset.src; img.onload = () => img.classList.add('loaded');
+        obs.unobserve(img);
+      });
+    }, { threshold: .2 });
+    tiles.forEach(img => io.observe(img));
+  </script>
+</body>
+</html>
