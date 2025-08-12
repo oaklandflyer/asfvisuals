@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ASF Visuals LLC – Drone & Landscape Photography</title>
   <meta name="description" content="ASF Visuals — stunning drone & landscape photography in Pittsburgh and beyond.">
   <meta name="keywords" content="drone photography, portraits, landscapes, Pittsburgh photographer">
+  <link rel="canonical" href="https://www.asfvisualsllc.com/">
   <meta property="og:title" content="ASF Visuals LLC – Drone & Landscape Photography">
   <meta property="og:description" content="Explore breathtaking aerial & landscape images by ASF Visuals LLC.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://www.asfvisualsllc.com/">
-  <title>ASF Visuals LLC – Drone & Landscape Photography</title>
+  <meta name="theme-color" content="#10437a">
+
   <link rel="icon" href="images/ASF Logo.png" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VBF13JPLGF');
-</script>
+  <!-- Preload hero background (improves LCP slightly) -->
+  <link rel="preload" as="image" href="images/DowntownCloudsReduced.webp" imagesrcset="images/DowntownCloudsReduced.webp" imagesizes="100vw">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VBF13JPLGF');
+  </script>
+
   <style>
     :root {
       --primary: #10437a;
@@ -35,6 +44,7 @@
       --cta: #10437a;
       --cta-hover: #e8bc56;
     }
+    *, *::before, *::after { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0;
       font-family: 'Montserrat', Arial, sans-serif;
@@ -42,12 +52,13 @@
       color: #172135;
       scroll-behavior: smooth;
     }
+
     /* --- HEADER --- */
     .site-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 12px 5vw 12px 5vw;
+      padding: 12px 5vw;
       background: rgba(255,255,255,0.94);
       box-shadow: 0 2px 8px rgba(16,67,122,0.06);
       position: fixed;
@@ -56,348 +67,164 @@
       transition: top 0.32s cubic-bezier(.37,1.15,.43,0.96);
     }
     .logo-link img {
-      height: 62px;
-      width: auto;
-      max-width: 180px;
-      object-fit: contain;
-      display: block;
+      height: 62px; width: auto; max-width: 180px;
+      object-fit: contain; display: block;
     }
     .site-nav ul {
-      display: flex;
-      gap: 2vw;
-      list-style: none;
-      margin: 0; padding: 0;
+      display: flex; gap: 2vw; list-style: none; margin: 0; padding: 0;
     }
     .site-nav a {
-      font-weight: 600;
-      text-decoration: none;
-      color: var(--primary);
-      letter-spacing: 0.01em;
-      padding: 6px 14px;
-      border-radius: var(--radius);
+      font-weight: 600; text-decoration: none; color: var(--primary);
+      letter-spacing: 0.01em; padding: 6px 14px; border-radius: var(--radius);
       transition: background 0.2s, color 0.2s;
     }
-    .site-nav a.active, .site-nav a:hover {
-      background: var(--accent);
-      color: #111;
+    .site-nav a.active, .site-nav a[aria-current="page"], .site-nav a:hover {
+      background: var(--accent); color: #111;
     }
-    .cta-buttons {
-      display: flex;
-      gap: 12px;
-    }
+
     .btn {
-      background: var(--cta);
-      color: #fff;
-      font-weight: 700;
-      padding: 11px 28px;
-      border-radius: var(--radius);
-      border: none;
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      font-size: 1rem;
-      transition: background 0.2s, color 0.2s;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      outline: none;
-      border: none;
+      background: var(--cta); color: #fff; font-weight: 700;
+      padding: 11px 28px; border-radius: var(--radius);
+      border: none; cursor: pointer; box-shadow: var(--shadow);
+      font-size: 1rem; transition: background 0.2s, color 0.2s;
+      text-decoration: none; letter-spacing: 0.02em; outline: none;
     }
-    .btn:hover, .btn:focus {
-      background: var(--cta-hover);
-      color: #111;
-    }
+    .btn:hover, .btn:focus { background: var(--cta-hover); color: #111; }
+
     .menu-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 150;
+      display: none; flex-direction: column; justify-content: center; align-items: center;
+      width: 44px; height: 44px; background: none; border: none; cursor: pointer; z-index: 150;
     }
     .menu-toggle .bar {
-      display: block;
-      width: 28px;
-      height: 4px;
-      margin: 4px 0;
-      background: var(--primary);
-      border-radius: 2px;
-      transition: 0.3s;
+      display: block; width: 28px; height: 4px; margin: 4px 0;
+      background: var(--primary); border-radius: 2px; transition: 0.3s;
     }
-    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);}
-    .menu-toggle.open .bar:nth-child(2) { opacity: 0;}
-    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
+    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
     @media (max-width: 800px) {
       .menu-toggle { display: flex; }
       .site-nav {
-        position: fixed;
-        top: 70px; right: 0;
-        background: #fff;
-        box-shadow: -2px 0 16px #0002;
-        width: 65vw; max-width: 340px;
-        height: 100vh;
+        position: fixed; top: 70px; right: 0;
+        background: #fff; box-shadow: -2px 0 16px #0002;
+        width: 65vw; max-width: 340px; height: 100dvh;
         transform: translateX(100%);
         transition: transform 0.25s cubic-bezier(.4,2.2,.3,1);
-        z-index: 101;
-        display: block;
-        padding: 38px 0 0 0;
+        z-index: 101; display: block; padding: 38px 0 0 0;
       }
       .site-nav.open { transform: translateX(0); }
-      .site-nav ul {
-        flex-direction: column;
-        gap: 12px;
-        padding-left: 32px;
-      }
+      .site-nav ul { flex-direction: column; gap: 12px; padding-left: 32px; }
       .site-header { flex-wrap: wrap; }
+      body.no-scroll { overflow: hidden; }
     }
+
     /* --- FLOATING BUY PRINTS BUTTON --- */
     .floating-buy-btn {
-      position: fixed;
-      right: 32px;
-      bottom: 32px;
-      z-index: 1001;
-      background: var(--accent);
-      color: #173046;
-      font-weight: 800;
-      font-size: 1.16rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      text-decoration: none;
+      position: fixed; right: 32px; bottom: 32px; z-index: 1001;
+      background: var(--accent); color: #173046; font-weight: 800; font-size: 1.16rem;
+      border-radius: var(--radius); box-shadow: var(--shadow);
+      text-align: center; text-decoration: none;
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      padding: 16px 36px;
-      letter-spacing: 0.01em;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      display: block;
-      opacity: 0.98;
+      padding: 16px 36px; letter-spacing: 0.01em; border: none; outline: none; cursor: pointer; display: block; opacity: 0.98;
     }
-    .floating-buy-btn:hover {
-      background: var(--primary);
-      color: #fff;
-      box-shadow: 0 8px 28px rgba(16,67,122,0.18);
-    }
+    .floating-buy-btn:hover { background: var(--primary); color: #fff; box-shadow: 0 8px 28px rgba(16,67,122,0.18); }
     @media (max-width: 600px) {
-      .floating-buy-btn {
-        right: 12px;
-        bottom: 16px;
-        padding: 12px 18px;
-        font-size: 1rem;
-      }
+      .floating-buy-btn { right: 12px; bottom: 16px; padding: 12px 18px; font-size: 1rem; }
     }
+
     /* --- HERO --- */
     .hero {
-      position: relative;
-      min-height: 55vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative; min-height: 55vh;
+      display: flex; align-items: center; justify-content: center;
       background: linear-gradient(180deg,rgba(16,67,122,0.25) 0%,rgba(232,188,86,0.13) 80%), url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
-      border-radius: 0 0 var(--radius) var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
+      border-radius: 0 0 var(--radius) var(--radius); box-shadow: var(--shadow); overflow: hidden;
       margin-top: 82px;
     }
     .hero-text {
-      position: relative;
-      z-index: 1;
-      background: rgba(255,255,255,0.85);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 38px 38px 32px 38px;
-      max-width: 450px;
-      text-align: center;
-      margin: 6vh 0;
-      animation: fadeInUp 1.4s cubic-bezier(.23,1.04,.58,.98) both;
+      position: relative; z-index: 1; background: rgba(255,255,255,0.88);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px 28px 24px; max-width: 520px; text-align: center; margin: 6vh 2vw;
+      animation: fadeInUp 1.0s cubic-bezier(.23,1.04,.58,.98) both;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.6rem;
-      font-weight: 700;
-      margin: 0 0 15px 0;
-      color: var(--primary);
-      letter-spacing: 0.02em;
+      font-size: clamp(2rem, 4.6vw, 2.6rem);
+      font-weight: 700; margin: 0 0 12px 0; color: var(--primary); letter-spacing: 0.02em;
       text-shadow: 0 2px 12px #fff6;
     }
-    .hero p {
-      font-size: 1.2rem;
-      margin: 0 0 22px 0;
-      color: #253451;
-      font-weight: 400;
-    }
+    .hero p { font-size: 1.125rem; margin: 0 0 18px 0; color: #253451; font-weight: 400; }
+
     .hero-btns {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 22px;
-}
-@media (max-width: 500px) {
-  .hero-btns {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-  }
-}
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 18px;
+    }
+    @media (max-width: 500px) {
+      .hero-btns { flex-direction: column; gap: 12px; align-items: center; }
+    }
 
     /* --- SERVICES --- */
-    .services {
-      max-width: 1120px;
-      margin: 60px auto 0 auto;
-      padding: 0 5vw;
-    }
+    .services { max-width: 1120px; margin: 60px auto 0; padding: 0 5vw; }
     .services h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: 2.1rem;
-      margin-bottom: 30px;
-      color: var(--primary);
+      text-align: center; font-family: 'Playfair Display', serif; font-weight: 700;
+      font-size: 2.1rem; margin-bottom: 30px; color: var(--primary);
     }
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-      gap: 32px;
-    }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); gap: 32px; }
     .service-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px 24px 18px 24px;
-      text-align: center;
-      transition: box-shadow 0.25s, transform 0.19s;
-      position: relative;
-      min-height: 400px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: var(--card-bg); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px 24px 18px; text-align: center; transition: box-shadow 0.25s, transform 0.19s;
+      position: relative; min-height: 400px; display: flex; flex-direction: column; align-items: center;
     }
-    .service-card:hover {
-      box-shadow: 0 8px 28px rgba(16,67,122,0.18);
-      transform: translateY(-5px) scale(1.03);
-    }
+    .service-card:hover { box-shadow: 0 8px 28px rgba(16,67,122,0.18); transform: translateY(-5px) scale(1.03); }
     .service-card img {
-      width: 100%;
-      max-width: 275px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 12px #0001;
+      width: 100%; max-width: 275px; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 12px #0001;
     }
-    .service-card h3 {
-      font-size: 1.25rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      color: var(--cta);
-      margin: 10px 0 7px 0;
-    }
-    .service-card p {
-      font-size: 1rem;
-      color: #222;
-      margin-bottom: 13px;
-    }
-    .work-link {
-      margin-top: auto;
-      font-size: 0.98em;
-      color: var(--cta);
-      text-decoration: underline;
-      font-weight: 600;
-    }
+    .service-card h3 { font-size: 1.25rem; font-weight: 700; color: var(--cta); margin: 10px 0 7px; }
+    .service-card p { font-size: 1rem; color: #222; margin-bottom: 13px; }
+    .work-link { margin-top: auto; font-size: 0.98em; color: var(--cta); text-decoration: underline; font-weight: 600; }
+
     /* --- FOOTER --- */
     .site-footer {
-      background: #10233a;
-      color: #f5f5f5;
-      padding: 48px 6vw 36px 6vw;
-      border-radius: var(--radius) var(--radius) 0 0;
-      margin-top: 80px;
+      background: #10233a; color: #f5f5f5; padding: 48px 6vw 36px; border-radius: var(--radius) var(--radius) 0 0; margin-top: 80px;
     }
-    .subscribe-form {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-bottom: 26px;
-    }
-    .subscribe-form input[type="email"] {
-      padding: 10px;
-      border-radius: var(--radius);
-      border: none;
-      font-size: 1em;
-      width: 220px;
-    }
-    .subscribe-form button {
-      background: var(--accent);
-      color: #173046;
-      font-weight: 700;
-      border-radius: var(--radius);
-      border: none;
-      padding: 10px 22px;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    .subscribe-form button:hover {
-      background: #fff;
-      color: var(--cta);
-    }
-    .footer-cta {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      margin-bottom: 18px;
-    }
-    .social-links {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      margin-top: 16px;
-    }
-    .social-links img {
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 1px 8px #0001;
-      padding: 2px;
-    }
+    .footer-cta { display: flex; gap: 16px; justify-content: center; margin-bottom: 18px; }
+    .social-links { display: flex; gap: 16px; justify-content: center; margin-top: 16px; }
+    .social-links img { width: 28px; height: 28px; border-radius: 50%; background: #fff; box-shadow: 0 1px 8px #0001; padding: 2px; }
+
     @media (max-width: 750px) {
       .site-header { flex-direction: column; gap: 10px; }
       .site-nav ul { flex-wrap: wrap; gap: 7px; }
       .hero { min-height: 44vh; }
       .hero-text { max-width: 99vw; }
-      .services, .testimonials { padding: 0 2vw; }
+      .services { padding: 0 2vw; }
       .footer-cta { flex-direction: column; gap: 7px; }
-      .site-footer { padding: 36px 2vw 24px 2vw; }
+      .site-footer { padding: 36px 2vw 24px; }
     }
-    /* --- Animations --- */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to { opacity: 1; transform: translateY(0); }
+
+    /* --- Animations & a11y --- */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     }
+
     .fade-section { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(.25,.8,.25,1); }
     .fade-section.visible { opacity: 1; transform: translateY(0); }
+
     .skip-link {
-      position: absolute;
-      left: -999px;
-      top: auto;
-      width: 1px; height: 1px;
-      overflow: hidden;
-      z-index: 101;
-      background: #fff;
-      color: #103047;
-      border-radius: 0 0 10px 10px;
-      padding: 8px 22px;
+      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 101;
+      background: #fff; color: #103047; border-radius: 0 0 10px 10px; padding: 8px 22px;
     }
     .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
   </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
+
   <header class="site-header" id="site-header">
-    <a href="index.html" class="logo-link">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="62" loading="lazy">
+    <a href="index.html" class="logo-link" aria-label="ASF Visuals Home">
+      <!-- Eager load logo for better LCP -->
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="62" decoding="async">
     </a>
+
     <button id="menu-toggle"
       aria-controls="navbar"
       aria-expanded="false"
@@ -408,9 +235,10 @@
       <span class="bar"></span>
       <span class="bar"></span>
     </button>
+
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
         <li><a href="gallery.html">Portfolio</a></li>
         <li><a href="real-estate.html">Real Estate</a></li>
         <li><a href="services.html">Services</a></li>
@@ -419,32 +247,38 @@
       </ul>
     </nav>
   </header>
+
   <main id="main">
     <section class="hero fade-section" id="hero">
       <div class="hero-text">
         <h1>Capturing Moments, Telling Stories</h1>
-        <p>Drone, aerial & landscape photography serving Pittsburgh and beyond — where creativity meets precision.</p>
-        <a href="gallery.html" class="btn">View Portfolio</a>
-        <a href="contact.html" class="btn">Contact Us</a>
+        <p>Drone, aerial &amp; landscape photography serving Pittsburgh and beyond — where creativity meets precision.</p>
+        <div class="hero-btns">
+          <a href="gallery.html" class="btn">View Portfolio</a>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
       </div>
     </section>
+
     <section class="services fade-section" id="services">
       <h2>Our Services</h2>
       <div class="service-grid">
         <article class="service-card">
-          <img src="images/AndrewGrad-01.jpg" alt="Portrait session">
+          <img src="images/AndrewGrad-01.jpg" alt="Portrait session" decoding="async" loading="lazy">
           <h3>Portraits</h3>
           <p>Personalized sessions capturing you at your best — with a focus on natural light and creative angles.</p>
           <a href="gallery.html" class="work-link">View our work</a>
         </article>
+
         <article class="service-card">
-          <img src="images/DowntownSunset.jpg" alt="Drone aerial">
+          <img src="images/DowntownSunset.jpg" alt="Drone aerial" decoding="async" loading="lazy">
           <h3>Drone Aerials</h3>
           <p>Stunning aerial imagery for real estate, inspections, and creative campaigns. Part 107 certified and insured.</p>
           <a href="gallery.html" class="work-link">View our work</a>
         </article>
+
         <article class="service-card">
-          <img src="images/Chamonix-10.jpg" alt="Landscape photography">
+          <img src="images/Chamonix-10.jpg" alt="Landscape photography" decoding="async" loading="lazy">
           <h3>Landscape Photography</h3>
           <p>Authentic scenes and cityscapes that tell a story — available as prints or for commercial license.</p>
           <a href="gallery.html" class="work-link">View our work</a>
@@ -454,51 +288,57 @@
   </main>
 
   <!-- Floating Buy Prints Button -->
-  <a href="https://asfvisualsllc.pixieset.com/" class="floating-buy-btn" target="_blank" rel="noopener">Buy Prints</a>
+  <a href="https://asfvisualsllc.pixieset.com/" class="floating-buy-btn" target="_blank" rel="noopener noreferrer" aria-label="Open shop to buy prints">Buy Prints</a>
 
   <footer class="site-footer">
     <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" loading="lazy">
+      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" loading="lazy" decoding="async">
       </a>
-      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" width="24" height="24" loading="lazy">
+      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram" width="24" height="24" loading="lazy" decoding="async">
       </a>
     </div>
   </footer>
+
   <script>
-    // Hamburger menu toggle
+    // Hamburger menu toggle + body scroll lock on mobile
     document.addEventListener("DOMContentLoaded", function() {
       const toggle = document.getElementById("menu-toggle");
       const nav = document.getElementById("navbar");
+      const body = document.body;
+
       toggle.addEventListener("click", function() {
         const open = nav.classList.toggle("open");
         this.classList.toggle("open");
         this.setAttribute("aria-expanded", open ? "true" : "false");
+        // lock body scroll when drawer open
+        if (window.innerWidth <= 800) body.classList.toggle("no-scroll", open);
       });
-      // Optional: close menu when a link is clicked (for single-page feel)
+
+      // Close menu when a link is clicked (mobile)
       nav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
           if (window.innerWidth <= 800) {
             nav.classList.remove("open");
             toggle.classList.remove("open");
             toggle.setAttribute("aria-expanded", "false");
+            body.classList.remove("no-scroll");
           }
         });
       });
 
       // Fade-in on scroll
       const faders = document.querySelectorAll('.fade-section');
-      const appearOptions = { threshold: 0.17 };
-      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-          if(entry.isIntersecting){
+          if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
-      }, appearOptions);
+      }, { threshold: 0.17 });
       faders.forEach(fader => appearOnScroll.observe(fader));
 
       // Header show/hide on scroll
@@ -519,7 +359,7 @@
           ticking = true;
         }
       }
-      window.addEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
     });
   </script>
 </body>

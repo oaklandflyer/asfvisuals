@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About & Gear – ASF Visuals LLC</title>
+
+  <meta name="description" content="Meet Andrew Coutinho, founder of ASF Visuals LLC. Learn the story behind the studio and the exact photography gear used on every shoot.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About & Gear – ASF Visuals LLC">
+  <meta property="og:description" content="Meet Andrew Coutinho and explore the gear behind ASF Visuals LLC.">
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <meta property="og:url" content="https://www.asfvisualsllc.com/about.html">
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="https://www.asfvisualsllc.com/about.html">
+  <link rel="icon" href="images/ASF Logo.png" type="image/png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VBF13JPLGF');
+  </script>
+
+  <style>
+    :root {
+      --primary: #10437a;
+      --accent: #e8bc56;
+      --bg: #fafbfc;
+      --card-bg: rgba(255,255,255,0.96);
+      --shadow: 0 8px 32px rgba(0,0,0,0.08);
+      --radius: 18px;
+      --cta: #10437a;
+      --cta-hover: #e8bc56;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: #172135;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 5vw;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 2px 8px rgba(16,67,122,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo-link img {
+      height: 62px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      display: block;
+    }
+    .site-nav ul {
+      display: flex;
+      gap: 2vw;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .site-nav a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      letter-spacing: 0.01em;
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      transition: background 0.2s, color 0.2s;
+    }
+    .site-nav a.active,
+    .site-nav a:hover {
+      background: var(--accent);
+      color: #111;
+    }
+
+    /* Buttons */
+    .btn {
+      background: var(--cta);
+      color: #fff;
+      font-weight: 700;
+      padding: 11px 28px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      outline: none;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: var(--cta-hover);
+      color: #111;
+    }
+
+    /* Mobile nav */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 150;
+    }
+    .menu-toggle .bar {
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 4px 0;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    @media (max-width: 800px) {
+      .menu-toggle { display: flex; }
+      .site-nav {
+        position: fixed;
+        top: 70px; right: 0;
+        background: #fff;
+        box-shadow: -2px 0 16px #0002;
+        width: 65vw; max-width: 340px;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.25s cubic-bezier(.4,2.2,.3,1);
+        z-index: 101;
+        display: block;
+        padding: 38px 0 0 0;
+      }
+      .site-nav.open { transform: translateX(0); }
+      .site-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 32px;
+      }
+      .site-header { flex-wrap: wrap; }
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px; height: 1px;
+      overflow: hidden;
+      z-index: 101;
+      background: #fff;
+      color: #103047;
+      border-radius: 0 0 10px 10px;
+      padding: 8px 22px;
+    }
+    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
+
+    /* About content */
+    .about-section {
+      max-width: 1180px;
+      margin: 56px auto 0 auto;
+      padding: 0 5vw;
+    }
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 34px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px 32px 28px 32px;
+      animation: fadeInUp 1.2s cubic-bezier(.23,1.04,.58,.98) both;
+    }
+    .about-content {
+      flex: 1 1 370px;
+      min-width: 270px;
+      max-width: 600px;
+    }
+    .about-content h2,
+    .products-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--primary);
+      text-align: left;
+    }
+    .about-content p {
+      font-size: 1.12rem;
+      color: #27344c;
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .about-images {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 0 1 320px;
+      min-width: 210px;
+    }
+    .about-img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      background: #ececec;
+    }
+
+    /* Products/Gear */
+    .products-section {
+      max-width: 1100px;
+      margin: 52px auto 0 auto;
+      padding: 0 5vw 32px 5vw;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      animation: fadeInUp 1.2s cubic-bezier(.23,1.04,.58,.98) both;
+    }
+    .products-section > p {
+      padding: 0 24px;
+      font-size: 1.07rem;
+      color: #27344c;
+      margin-bottom: 12px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 26px;
+      margin: 24px 24px 0 24px;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 11px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+      border: 1.5px solid #eee;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 16px rgba(16,67,122,0.09);
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      font-size: 1.14rem;
+      color: var(--cta);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .product-card p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 13px;
+    }
+    .affiliate-link {
+      display: inline-block;
+      margin-top: 7px;
+      padding: 10px 22px;
+      background: var(--accent);
+      color: #173046;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 9px;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .affiliate-link:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    .disclaimer {
+      font-size: 0.86em;
+      text-align: center;
+      margin-top: 34px;
+      color: #999;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #10233a;
+      color: #f5f5f5;
+      padding: 48px 6vw 36px 6vw;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-top: 80px;
+      text-align: center;
+    }
+    .social-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .social-links img {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 8px #0001;
+      padding: 2px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 900px) {
+      .about-flex, .products-section {
+        padding: 28px 6px 20px 6px;
+      }
+      .product-grid { gap: 15px; }
+    }
+    @media (max-width: 750px) {
+      .site-header { flex-direction: column; gap: 10px; }
+      .site-nav ul { flex-wrap: wrap; gap: 7px; }
+      .about-flex { flex-direction: column; align-items: stretch; padding: 20px 6px 14px 6px; }
+      .about-images { flex-direction: row; justify-content: center; gap: 9px; }
+      .about-img { max-width: 110px; }
+      .products-section { padding: 14px 0 14px 0; }
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(.25,.8,.25,1); }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <img src="images/ASF Logo.png" alt="ASF Visuals Logo" width="200" height="62" loading="lazy">
+    </a>
+
+    <!-- Hamburger -->
+    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Portfolio</a></li>
+        <li><a href="real-estate.html">Real Estate</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="about" class="about-section fade-up">
+      <div class="about-flex">
+        <!-- Bio -->
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p><strong>Andrew Coutinho</strong> here — founder of <strong>ASF Visuals LLC</strong>, a certified drone and landscape photography studio blending artistry, precision, and storytelling.</p>
+          <p>With clients like the <strong>University of Pittsburgh</strong>, I create immersive visuals that highlight everything from city skylines to quiet natural scenes. My work is showcased through a fully custom-coded website I built using HTML, CSS, and JavaScript.</p>
+          <p>I recently completed a dual degree in <strong>Economics and Africana Studies</strong> at Pitt. My academic path took me across the world — including <strong>Tanzania</strong> as a Fulbright-Hays Scholar — where I studied African development, language, and culture hands-on.</p>
+          <p>On campus, I founded the <strong>Bodybuilding Club</strong>, organizing events, building partnerships, and growing a community of athletes. These leadership and project management skills translate directly into how I run ASF Visuals — with clarity, intention, and hustle.</p>
+          <p>I’m now expanding into fine art prints and brand visuals, while continuing to explore creative ways to connect people to place. Whether you're looking for standout visuals or a collaborative partner, I’d love to hear from you.</p>
+          <a href="contact.html" class="btn">Let’s Work Together</a>
+        </div>
+
+        <!-- Images -->
+        <div class="about-images">
+          <img src="images/AboutMe.jpg" alt="Andrew Coutinho - Portrait" class="about-img" loading="lazy">
+          <img src="images/behind-the-scenes.jpg" alt="Behind the Scenes - Drone Shot" class="about-img" loading="lazy">
+          <img src="images/gallery-placeholder.jpg" alt="Featured Landscape Work" class="about-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Products/Gear -->
+    <section id="products" class="products-section fade-up">
+      <h2>Products & Gear I Use</h2>
+      <p>Here’s the exact gear and accessories I rely on for my shoots. All links are to Amazon — you’ll support my work if you purchase through them!</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <a href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">
+            <img src="images/sony-a7iii.jpg" alt="Sony a7III" loading="lazy">
+          </a>
+          <h3>Sony a7III</h3>
+          <p>The Sony a7III is my go-to camera for its exceptional low-light performance, fast autofocus, and incredible image quality.</p>
+          <a class="affiliate-link" href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">
+            <img src="images/portable-tripod.jpg" alt="Lightweight Portable Tripod" loading="lazy">
+          </a>
+          <h3>Lightweight Portable Tripod</h3>
+          <p>Lightweight and portable — perfect for on-the-go shooting and reliably stable shots.</p>
+          <a class="affiliate-link" href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/41bbDd8" target="_blank" rel="noopener noreferrer">
+            <img src="images/sony-camera-case.jpg" alt="Camera Case for Sony a7III" loading="lazy">
+          </a>
+          <h3>Camera Case for Sony a7III</h3>
+          <p>Durable protection and easy portability to keep my camera safe during shoots.</p>
+          <a class="affiliate-link" href="https://amzn.to/41bbDd8" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+          <a href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">
+            <img src="images/drone.jpg" alt="Professional Drone" loading="lazy">
+          </a>
+          <h3>Professional Drone</h3>
+          <p>Stable flight and high-resolution aerial footage for unique perspectives and stunning visuals.</p>
+          <a class="affiliate-link" href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        </div>
+      </div>
+
+      <p class="disclaimer">Disclosure: As an Amazon Associate, I earn from qualifying purchases.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy">
+      </a>
+      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram" loading="lazy">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav + fade-in
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("navbar");
+
+      toggle.addEventListener("click", function() {
+        const open = nav.classList.toggle("open");
+        this.classList.toggle("open");
+        this.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      nav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 800) {
+            nav.classList.remove("open");
+            toggle.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+
+      const faders = document.querySelectorAll('.fade-up');
+      const appearOptions = { threshold: 0.17 };
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, appearOptions);
+      faders.forEach(fader => appearOnScroll.observe(fader));
+    });
+  </script>
+</body>
+</html>

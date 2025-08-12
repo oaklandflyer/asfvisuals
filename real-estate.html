@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ASF Visuals LLC — Professional real estate photography for residential and commercial properties.">
+  <meta property="og:title" content="Real Estate Portfolio - ASF Visuals LLC">
+  <meta property="og:description" content="Explore high-quality real estate photography by ASF Visuals LLC.">
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <link rel="canonical" href="https://www.asfvisualsllc.com/real-estate.html">
+  <title>Real Estate Portfolio - ASF Visuals LLC</title>
+  <link rel="icon" href="images/ASF Logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VBF13JPLGF');
+  </script>
+  <style>
+    /* --- Root Variables --- */
+    :root {
+      --primary: #10437a;
+      --accent: #e8bc56;
+      --bg: #fafbfc;
+      --card-bg: rgba(255,255,255,0.96);
+      --shadow: 0 8px 32px rgba(0,0,0,0.08);
+      --radius: 18px;
+      --cta: #10437a;
+      --cta-hover: #e8bc56;
+    }
+
+    /* --- Base Styles --- */
+    html, body {
+      margin: 0; padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: #172135;
+      scroll-behavior: smooth;
+    }
+
+    /* --- Header --- */
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 5vw;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 2px 8px rgba(16,67,122,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo-link img {
+      height: 62px;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      display: block;
+    }
+    .site-nav ul {
+      display: flex;
+      gap: 2vw;
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .site-nav a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary);
+      letter-spacing: 0.01em;
+      padding: 6px 14px;
+      border-radius: var(--radius);
+      transition: background 0.2s, color 0.2s;
+    }
+    .site-nav a.active,
+    .site-nav a:hover {
+      background: var(--accent);
+      color: #111;
+    }
+
+    /* --- Buttons --- */
+    .btn {
+      background: var(--cta);
+      color: #fff;
+      font-weight: 700;
+      padding: 11px 28px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: var(--cta-hover);
+      color: #111;
+    }
+
+    /* --- Mobile Nav --- */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 150;
+    }
+    .menu-toggle .bar {
+      width: 28px;
+      height: 4px;
+      margin: 4px 0;
+      background: var(--primary);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg);}
+    .menu-toggle.open .bar:nth-child(2) { opacity: 0;}
+    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg);}
+    @media (max-width: 800px) {
+      .menu-toggle { display: flex; }
+      .site-nav {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        box-shadow: -2px 0 16px #0002;
+        width: 65vw;
+        max-width: 340px;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 0.25s cubic-bezier(.4,2.2,.3,1);
+        z-index: 101;
+        display: block;
+        padding: 38px 0 0 0;
+      }
+      .site-nav.open { transform: translateX(0); }
+      .site-nav ul {
+        flex-direction: column;
+        gap: 12px;
+        padding-left: 32px;
+      }
+    }
+
+    /* --- Hero --- */
+    .hero {
+      position: relative;
+      min-height: 46vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg,rgba(16,67,122,0.24) 0%,rgba(232,188,86,0.10) 80%), url('images/DJI_0441.JPG') center/cover no-repeat;
+      border-radius: 0 0 var(--radius) var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .hero-text {
+      background: rgba(255,255,255,0.89);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px 38px;
+      max-width: 430px;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.35rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* --- Real Estate Section --- */
+    .real-estate {
+      max-width: 1150px;
+      margin: 58px auto 0 auto;
+      padding: 0 5vw;
+    }
+    .real-estate h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 30px;
+    }
+    .filter-controls {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .filter-controls .btn {
+      margin: 0 6px 14px 0;
+      padding: 10px 22px;
+      font-size: 1.05rem;
+      background: var(--bg);
+      color: var(--cta);
+      border: 2px solid var(--cta);
+      box-shadow: none;
+    }
+    .filter-controls .btn.active,
+    .filter-controls .btn:hover {
+      background: var(--accent);
+      color: #111;
+      border-color: var(--accent);
+    }
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+      gap: 36px;
+    }
+    .property-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 26px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.25s, transform 0.19s;
+    }
+    .property-card:hover {
+      box-shadow: 0 8px 32px rgba(16,67,122,0.17);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .image-wrapper {
+      width: 100%;
+      max-width: 295px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 11px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 11px;
+    }
+    .price-badge {
+      position: absolute;
+      bottom: 13px;
+      right: 13px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 6px 17px;
+      border-radius: 12px;
+    }
+
+    /* --- Footer --- */
+    .site-footer {
+      background: #10233a;
+      color: #f5f5f5;
+      padding: 48px 6vw 36px 6vw;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-top: 80px;
+      text-align: center;
+    }
+    .social-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .social-links img {
+      width: 28px;
+      height: 28px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-link">
+      <img src="images/ASF Logo.png" alt="ASF Visuals Logo" loading="lazy">
+    </a>
+    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Portfolio</a></li>
+        <li><a href="real-estate.html" class="active">Real Estate</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero fade-section">
+      <div class="hero-text">
+        <h1>Real Estate Portfolio</h1>
+      </div>
+    </section>
+    <section class="real-estate fade-section">
+      <h2>Properties</h2>
+      <div class="filter-controls">
+        <button type="button" class="btn active" data-filter="all">All</button>
+        <button type="button" class="btn" data-filter="residential">Residential</button>
+        <button type="button" class="btn" data-filter="commercial">Commercial</button>
+      </div>
+      <div class="property-grid">
+        <article class="property-card" data-type="residential">
+          <div class="image-wrapper">
+            <img src="images/DJI_0441.JPG" alt="Sunny residence" loading="lazy">
+            <span class="price-badge">$350k</span>
+          </div>
+          <h3>123 Maple Ave</h3>
+          <p>Pittsburgh, PA</p>
+        </article>
+        <article class="property-card" data-type="commercial">
+          <div class="image-wrapper">
+            <img src="images/gallery/WatermarkedImages/Commercial/Rays Place-54.jpg" alt="Modern office" loading="lazy">
+          </div>
+          <h3>25 Ghent Rd</h3>
+          <p>Fairlawn, OH</p>
+        </article>
+        <article class="property-card" data-type="residential">
+          <div class="image-wrapper">
+            <img src="images/DJI_0455-2.jpg" alt="Suburban home" loading="lazy">
+            <span class="price-badge">$450k</span>
+          </div>
+          <h3>789 Oak St</h3>
+          <p>Pittsburgh, PA</p>
+        </article>
+        <article class="property-card" data-type="commercial">
+          <div class="image-wrapper">
+            <img src="images/DJI_0511-HDR.jpg" alt="Retail space" loading="lazy">
+            <span class="price-badge">$600k</span>
+          </div>
+          <h3>101 Center Plaza</h3>
+          <p>Pittsburgh, PA</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy">
+      </a>
+      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/instagram-icon.png" alt="Instagram" loading="lazy">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById("menu-toggle");
+      const nav = document.getElementById("navbar");
+      toggle.addEventListener("click", function() {
+        const open = nav.classList.toggle("open");
+        this.classList.toggle("open");
+        this.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+
+      // Filter
+      document.querySelectorAll('.filter-controls .btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-controls .btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+          document.querySelectorAll('.property-card').forEach(card => {
+            card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
