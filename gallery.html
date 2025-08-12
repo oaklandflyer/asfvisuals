@@ -103,12 +103,12 @@
 
   <header class="site-header" id="header">
     <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
+      <img src="images/ASF Logo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Portfolio</a></li>
+        <li><a href="gallery.html" class="active">Portfolio</a></li>
         <li><a href="real-estate.html">Real Estate</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
@@ -193,30 +193,57 @@
       })();
     })();
 
-    // --------- Data loader (tries multiple paths) ----------
-    const DATA_PATHS = [
-      'images/gallery/gallery.json',
-      'data/gallery.json',
-      'gallery.json'
-    ];
+    // --------- Load pipeline manifest and transform to albums ----------
+    const MANIFEST_PATH = '/gallery/imagePaths.json';
 
-    async function loadData(){
-      for (const p of DATA_PATHS) {
-        try {
-          const res = await fetch(p, { cache: 'no-cache' });
-          if (res.ok) return await res.json();
-        } catch(e){ /* try next */ }
+    async function loadManifest(){
+      try {
+        const res = await fetch(MANIFEST_PATH, { cache: 'no-cache' });
+        if (!res.ok) throw new Error('manifest not found');
+        return await res.json();
+      } catch (e) {
+        console.error('Failed to load imagePaths.json', e);
+        return { categories: {} };
       }
-      return { albums: [] };
     }
 
-    // --------- Simple router: #/Country/Region/City ----------
+    // Transform { categories: {Cat: [item...] } } into { albums: [ {id,title,photos:[]} ] }
+    function manifestToAlbums(manifest){
+      const albums = [];
+      const cats = manifest.categories || {};
+      Object.keys(cats).forEach(cat => {
+        const items = cats[cat] || [];
+        const photos = items.map(item => {
+          const widths = (item.widths || []).slice().sort((a,b)=>a-b);
+          const largest = Math.max(...widths);
+          // Prefer AVIF mid-size as thumb; fall back to JPG largest
+          const thumbW = widths.find(w => w >= 960) || widths[0] || largest;
+          const thumb = (item.variants?.avif?.[thumbW]) || (item.variants?.jpg?.[largest]) || '';
+          const src = (item.variants?.jpg?.[largest]) || (item.variants?.avif?.[largest]) || '';
+          return {
+            title: item.alt || 'Photo',
+            caption: '',
+            thumb,
+            src
+          };
+        });
+        // album cover = first photo thumb
+        const cover = photos[0]?.thumb || 'images/social-preview.jpg';
+        albums.push({
+          id: cat, title: cat, cover, photos
+        });
+      });
+      // sort albums by title
+      albums.sort((a,b)=> a.title.localeCompare(b.title));
+      return { albums };
+    }
+
+    // --------- Router (#/Album) ----------
     function getPath(){
       const hash = decodeURI(location.hash || '#/');
       const parts = hash.replace(/^#\//,'').split('/').filter(Boolean);
       return parts;
     }
-
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
     // --------- Renderers ----------
@@ -228,16 +255,14 @@
     const searchInput = document.getElementById('search');
 
     let DATA = { albums: [] };
-    let CURRENT_NODE = null; // album node at current path
+    let CURRENT_NODE = null;
 
     function findNodeByPath(data, parts){
-      let node = { title: 'All Albums', children: data.albums };
-      for (const slug of parts) {
-        if (!node.children) return null;
-        node = node.children.find(n => (n.id||n.title).toLowerCase() === slug.toLowerCase());
-        if (!node) return null;
-      }
-      return node;
+      if (!parts.length) return { title: 'All Albums', children: data.albums };
+      const albumId = parts[0];
+      const album = data.albums.find(a => (a.id||a.title).toLowerCase() === albumId.toLowerCase());
+      if (!album) return null;
+      return album; // albums are terminal nodes with photos
     }
 
     function buildCrumbs(parts){
@@ -249,15 +274,12 @@
         a.addEventListener('click', e => { e.preventDefault(); setPath(toParts); });
         return a;
       };
-      // Root
       frag.appendChild(link('All Albums', []));
-      let acc = [];
-      parts.forEach((p, i) => {
+      if (parts.length){
         const sep = document.createElement('span'); sep.textContent = '›'; sep.className='crumb-sep'; sep.style.margin='0 6px';
         frag.appendChild(sep);
-        acc = parts.slice(0, i+1);
-        frag.appendChild(link(p, acc));
-      });
+        frag.appendChild(link(parts[0], [parts[0]]));
+      }
       breadcrumbsEl.innerHTML = '';
       breadcrumbsEl.appendChild(frag);
     }
@@ -293,15 +315,15 @@
 
         const img = document.createElement('img');
         img.alt = n.title;
-        img.dataset.src = n.cover || (n.photos && n.photos[0] && n.photos[0].src) || 'images/social-preview.jpg';
+        img.dataset.src = n.cover || (n.photos && n.photos[0] && n.photos[0].thumb) || 'images/social-preview.jpg';
         lazyImage(img);
 
         const overlay = document.createElement('span'); overlay.className='album-overlay';
         const meta = document.createElement('div'); meta.className='album-meta';
         const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
         const count = document.createElement('div'); count.className='album-count';
-        const subCount = (n.children && n.children.length) || (n.photos && n.photos.length) || 0;
-        count.textContent = subCount + (n.children ? ' items' : ' photos');
+        const subCount = (n.photos && n.photos.length) || 0;
+        count.textContent = subCount + ' photos';
 
         meta.appendChild(title); meta.appendChild(count);
         card.appendChild(img); card.appendChild(overlay); card.appendChild(meta);
@@ -331,9 +353,9 @@
       if (!photos.length){ emptyState.hidden=false; return; }
       emptyState.hidden = true;
 
-      photos.forEach((p, idx)=>{
+      photos.forEach((p)=>{
         const wrap = document.createElement('a');
-        wrap.href = p.src;
+        wrap.href = p.src;                         // open largest JPG in lightbox (compat)
         wrap.setAttribute('data-fancybox', node.title || 'album');
         if (p.title) wrap.setAttribute('data-caption', p.title + (p.caption? ' — ' + p.caption : ''));
 
@@ -353,24 +375,29 @@
       backBtn.style.display = parts.length ? 'inline-flex' : 'none';
 
       CURRENT_NODE = findNodeByPath(DATA, parts);
-      if (!CURRENT_NODE){ // 404 path
-        setPath([]); return;
-      }
+      if (!CURRENT_NODE){ setPath([]); return; }
 
-      if (CURRENT_NODE.children && CURRENT_NODE.children.length){
-        renderAlbums(CURRENT_NODE);
-      } else {
-        renderPhotos(CURRENT_NODE);
-      }
+      if (CURRENT_NODE.children){ renderAlbums(CURRENT_NODE); }
+      else { renderPhotos(CURRENT_NODE); }
     }
 
-    // --------- Wire up ---------
+    // --------- Boot ---------
     (async function init(){
-      DATA = await loadData();
+      const manifest = await loadManifest();
+      DATA = manifestToAlbums(manifest);    // << transform to albums
+      // Root node wrapping albums for the renderer
+      DATA_ROOT = { title: 'All Albums', children: DATA.albums };
+      // Override find at root
+      const _origFind = findNodeByPath;
+      window.findNodeByPath = function(data, parts){
+        if (!parts.length) return DATA_ROOT;
+        return _origFind(data, parts);
+      }
+
       render();
       window.addEventListener('hashchange', render);
-      searchInput.addEventListener('input', () => render());
-      backBtn.addEventListener('click', () => {
+      document.getElementById('search').addEventListener('input', render);
+      document.getElementById('backBtn').addEventListener('click', () => {
         const parts = getPath(); parts.pop(); setPath(parts);
       });
     })();

@@ -1,0 +1,3357 @@
+{
+  "generatedAt": "2025-08-12T23:06:01.759Z",
+  "categories": {
+    "Spain": [
+      {
+        "base": "Spain/Nerja/Balcon de Europa",
+        "alt": "Balcon de Europa",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Balcon%20de%20Europa_480.avif",
+            "960": "/gallery/Spain/Nerja/Balcon%20de%20Europa_960.avif",
+            "1600": "/gallery/Spain/Nerja/Balcon%20de%20Europa_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Balcon%20de%20Europa_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Balcon Globe-1",
+        "alt": "Balcon Globe-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Balcon%20Globe-1_480.avif",
+            "960": "/gallery/Spain/Nerja/Balcon%20Globe-1_960.avif",
+            "1600": "/gallery/Spain/Nerja/Balcon%20Globe-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Balcon%20Globe-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Balcon Globe-2",
+        "alt": "Balcon Globe-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Balcon%20Globe-2_480.avif",
+            "960": "/gallery/Spain/Nerja/Balcon%20Globe-2_960.avif",
+            "1600": "/gallery/Spain/Nerja/Balcon%20Globe-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Balcon%20Globe-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Beach Shades",
+        "alt": "Beach Shades",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Beach%20Shades_480.avif",
+            "960": "/gallery/Spain/Nerja/Beach%20Shades_960.avif",
+            "1600": "/gallery/Spain/Nerja/Beach%20Shades_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Beach%20Shades_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Calles de Nerja-3",
+        "alt": "Calles de Nerja-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Calles%20de%20Nerja-3_480.avif",
+            "960": "/gallery/Spain/Nerja/Calles%20de%20Nerja-3_960.avif",
+            "1600": "/gallery/Spain/Nerja/Calles%20de%20Nerja-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Calles%20de%20Nerja-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/King Alfronso XII",
+        "alt": "King Alfronso XII",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/King%20Alfronso%20XII_480.avif",
+            "960": "/gallery/Spain/Nerja/King%20Alfronso%20XII_960.avif",
+            "1600": "/gallery/Spain/Nerja/King%20Alfronso%20XII_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/King%20Alfronso%20XII_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Coast-01",
+        "alt": "Nerja Coast-01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Coast-01_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Coast-01_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Coast-04",
+        "alt": "Nerja Coast-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Coast-04_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Coast-04_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Coast-05",
+        "alt": "Nerja Coast-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Coast-05_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Coast-05_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Coast-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Hotel",
+        "alt": "Nerja Hotel",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Hotel_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Hotel_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Hotel_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Hotel_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Stock",
+        "alt": "Nerja Stock",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Stock_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Stock_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Stock_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Stock_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Sunrise-1",
+        "alt": "Nerja Sunrise-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Sunrise-1_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Sunrise-1_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Sunrise-2",
+        "alt": "Nerja Sunrise-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Sunrise-2_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Sunrise-2_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Sunrise-4",
+        "alt": "Nerja Sunrise-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Sunrise-4_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Sunrise-4_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Sunrise-5",
+        "alt": "Nerja Sunrise-5",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Sunrise-5_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Sunrise-5_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-5_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-5_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Nerja Sunrise-9",
+        "alt": "Nerja Sunrise-9",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Nerja%20Sunrise-9_480.avif",
+            "960": "/gallery/Spain/Nerja/Nerja%20Sunrise-9_960.avif",
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-9_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Nerja%20Sunrise-9_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Pebbles",
+        "alt": "Pebbles",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Pebbles_480.avif",
+            "960": "/gallery/Spain/Nerja/Pebbles_960.avif",
+            "1600": "/gallery/Spain/Nerja/Pebbles_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Pebbles_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Spain/Nerja/Rooftop",
+        "alt": "Rooftop",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Spain/Nerja/Rooftop_480.avif",
+            "960": "/gallery/Spain/Nerja/Rooftop_960.avif",
+            "1600": "/gallery/Spain/Nerja/Rooftop_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Spain/Nerja/Rooftop_1600.jpg"
+          }
+        }
+      }
+    ],
+    "Switzerland": [
+      {
+        "base": "Switzerland/Geneva/Geneva",
+        "alt": "Geneva",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-01",
+        "alt": "Geneva-01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-01_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-01_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-02",
+        "alt": "Geneva-02",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-02_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-02_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-02_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-02_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-03",
+        "alt": "Geneva-03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-03_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-03_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-04",
+        "alt": "Geneva-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-04_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-04_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-05",
+        "alt": "Geneva-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-05_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-05_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-06",
+        "alt": "Geneva-06",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-06_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-06_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-06_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-06_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-07",
+        "alt": "Geneva-07",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-07_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-07_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-07_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-07_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-08",
+        "alt": "Geneva-08",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-08_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-08_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-08_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-08_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-09",
+        "alt": "Geneva-09",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-09_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-09_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-09_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-09_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-10",
+        "alt": "Geneva-10",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-10_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-10_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-10_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-10_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-11",
+        "alt": "Geneva-11",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-11_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-11_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-11_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-11_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-12",
+        "alt": "Geneva-12",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-12_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-12_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-12_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-12_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-14",
+        "alt": "Geneva-14",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-14_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-14_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-14_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-14_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Geneva/Geneva-15",
+        "alt": "Geneva-15",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Geneva/Geneva-15_480.avif",
+            "960": "/gallery/Switzerland/Geneva/Geneva-15_960.avif",
+            "1600": "/gallery/Switzerland/Geneva/Geneva-15_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Geneva/Geneva-15_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-1",
+        "alt": "Interlaken-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-1_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-1_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-1-2",
+        "alt": "Interlaken-1-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-1-2_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-1-2_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-1-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-1-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-2",
+        "alt": "Interlaken-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-2_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-2_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-2-2",
+        "alt": "Interlaken-2-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-2-2_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-2-2_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-2-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-2-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-3",
+        "alt": "Interlaken-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-3_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-3_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-3-2",
+        "alt": "Interlaken-3-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-3-2_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-3-2_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-3-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-3-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-4",
+        "alt": "Interlaken-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-4_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-4_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Interlaken/Interlaken-5",
+        "alt": "Interlaken-5",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Interlaken/Interlaken-5_480.avif",
+            "960": "/gallery/Switzerland/Interlaken/Interlaken-5_960.avif",
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-5_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Interlaken/Interlaken-5_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Lauterbrunnen/Lauterbrunnen-1",
+        "alt": "Lauterbrunnen-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-1_480.avif",
+            "960": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-1_960.avif",
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Lauterbrunnen/Lauterbrunnen-2",
+        "alt": "Lauterbrunnen-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-2_480.avif",
+            "960": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-2_960.avif",
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Lauterbrunnen/Lauterbrunnen-3",
+        "alt": "Lauterbrunnen-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-3_480.avif",
+            "960": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-3_960.avif",
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Lauterbrunnen/Lauterbrunnen-4",
+        "alt": "Lauterbrunnen-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-4_480.avif",
+            "960": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-4_960.avif",
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Lauterbrunnen/Lauterbrunnen-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Montreux/Montreux-3",
+        "alt": "Montreux-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Montreux/Montreux-3_480.avif",
+            "960": "/gallery/Switzerland/Montreux/Montreux-3_960.avif",
+            "1600": "/gallery/Switzerland/Montreux/Montreux-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Montreux/Montreux-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Montreux/Montreux-4",
+        "alt": "Montreux-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Montreux/Montreux-4_480.avif",
+            "960": "/gallery/Switzerland/Montreux/Montreux-4_960.avif",
+            "1600": "/gallery/Switzerland/Montreux/Montreux-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Montreux/Montreux-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Montreux/Montreux-5",
+        "alt": "Montreux-5",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Montreux/Montreux-5_480.avif",
+            "960": "/gallery/Switzerland/Montreux/Montreux-5_960.avif",
+            "1600": "/gallery/Switzerland/Montreux/Montreux-5_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Montreux/Montreux-5_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Montreux/Montreux-6",
+        "alt": "Montreux-6",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Montreux/Montreux-6_480.avif",
+            "960": "/gallery/Switzerland/Montreux/Montreux-6_960.avif",
+            "1600": "/gallery/Switzerland/Montreux/Montreux-6_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Montreux/Montreux-6_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "Switzerland/Montreux/Montreux-7",
+        "alt": "Montreux-7",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/Switzerland/Montreux/Montreux-7_480.avif",
+            "960": "/gallery/Switzerland/Montreux/Montreux-7_960.avif",
+            "1600": "/gallery/Switzerland/Montreux/Montreux-7_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/Switzerland/Montreux/Montreux-7_1600.jpg"
+          }
+        }
+      }
+    ],
+    "USA": [
+      {
+        "base": "USA/Chicago/Agora",
+        "alt": "Agora",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/Agora_480.avif",
+            "960": "/gallery/USA/Chicago/Agora_960.avif",
+            "1600": "/gallery/USA/Chicago/Agora_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/Agora_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/BronzeLion",
+        "alt": "BronzeLion",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/BronzeLion_480.avif",
+            "960": "/gallery/USA/Chicago/BronzeLion_960.avif",
+            "1600": "/gallery/USA/Chicago/BronzeLion_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/BronzeLion_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/CongressHotel",
+        "alt": "CongressHotel",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/CongressHotel_480.avif",
+            "960": "/gallery/USA/Chicago/CongressHotel_960.avif",
+            "1600": "/gallery/USA/Chicago/CongressHotel_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/CongressHotel_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago",
+        "alt": "DowntownChicago",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-1",
+        "alt": "DowntownChicago-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-1_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-1_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-1-2",
+        "alt": "DowntownChicago-1-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-1-2_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-1-2_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-1-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-1-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-2",
+        "alt": "DowntownChicago-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-2_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-2_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-2-2",
+        "alt": "DowntownChicago-2-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-2-2_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-2-2_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-2-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-2-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-3-2",
+        "alt": "DowntownChicago-3-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-3-2_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-3-2_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-3-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-3-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-4",
+        "alt": "DowntownChicago-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-4_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-4_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/DowntownChicago-7",
+        "alt": "DowntownChicago-7",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/DowntownChicago-7_480.avif",
+            "960": "/gallery/USA/Chicago/DowntownChicago-7_960.avif",
+            "1600": "/gallery/USA/Chicago/DowntownChicago-7_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/DowntownChicago-7_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/LoganMonument",
+        "alt": "LoganMonument",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/LoganMonument_480.avif",
+            "960": "/gallery/USA/Chicago/LoganMonument_960.avif",
+            "1600": "/gallery/USA/Chicago/LoganMonument_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/LoganMonument_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Chicago/TheSpearman",
+        "alt": "TheSpearman",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Chicago/TheSpearman_480.avif",
+            "960": "/gallery/USA/Chicago/TheSpearman_960.avif",
+            "1600": "/gallery/USA/Chicago/TheSpearman_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Chicago/TheSpearman_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-01",
+        "alt": "HHI25-01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-01_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-01_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-03",
+        "alt": "HHI25-03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-03_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-03_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-04",
+        "alt": "HHI25-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-04_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-04_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-05",
+        "alt": "HHI25-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-05_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-05_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-23",
+        "alt": "HHI25-23",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-23_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-23_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-23_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-23_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-24",
+        "alt": "HHI25-24",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-24_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-24_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-24_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-24_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-26",
+        "alt": "HHI25-26",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-26_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-26_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-26_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-26_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-28",
+        "alt": "HHI25-28",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-28_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-28_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-28_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-28_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-46",
+        "alt": "HHI25-46",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-46_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-46_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-46_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-46_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-48",
+        "alt": "HHI25-48",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-48_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-48_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-48_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-48_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/HiltonHead/HHI25-49",
+        "alt": "HHI25-49",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/HiltonHead/HHI25-49_480.avif",
+            "960": "/gallery/USA/HiltonHead/HHI25-49_960.avif",
+            "1600": "/gallery/USA/HiltonHead/HHI25-49_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/HiltonHead/HHI25-49_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/AmbrosePitchDrone",
+        "alt": "AmbrosePitchDrone",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/AmbrosePitchDrone_480.avif",
+            "960": "/gallery/USA/Pittsburgh/AmbrosePitchDrone_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/AmbrosePitchDrone_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/AmbrosePitchDrone_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/CathedralGolden",
+        "alt": "CathedralGolden",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/CathedralGolden_480.avif",
+            "960": "/gallery/USA/Pittsburgh/CathedralGolden_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/CathedralGolden_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/CathedralGolden_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/CathyCMU",
+        "alt": "CathyCMU",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/CathyCMU_480.avif",
+            "960": "/gallery/USA/Pittsburgh/CathyCMU_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/CathyCMU_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/CathyCMU_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/CherryBlossom",
+        "alt": "CherryBlossom",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/CherryBlossom_480.avif",
+            "960": "/gallery/USA/Pittsburgh/CherryBlossom_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/CherryBlossom_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/CherryBlossom_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/DJI_0018-HDR",
+        "alt": "DJI_0018-HDR",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/DJI_0018-HDR_480.avif",
+            "960": "/gallery/USA/Pittsburgh/DJI_0018-HDR_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/DJI_0018-HDR_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/DJI_0018-HDR_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/DJI_0812-HDR",
+        "alt": "DJI_0812-HDR",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/DJI_0812-HDR_480.avif",
+            "960": "/gallery/USA/Pittsburgh/DJI_0812-HDR_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/DJI_0812-HDR_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/DJI_0812-HDR_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/DowntownfromOCLot",
+        "alt": "DowntownfromOCLot",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/DowntownfromOCLot_480.avif",
+            "960": "/gallery/USA/Pittsburgh/DowntownfromOCLot_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/DowntownfromOCLot_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/DowntownfromOCLot_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/DowntownSide-2",
+        "alt": "DowntownSide-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/DowntownSide-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/DowntownSide-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/DowntownSide-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/DowntownSide-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/DowntownSidePainting",
+        "alt": "DowntownSidePainting",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/DowntownSidePainting_480.avif",
+            "960": "/gallery/USA/Pittsburgh/DowntownSidePainting_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/DowntownSidePainting_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/DowntownSidePainting_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/GEO-2",
+        "alt": "GEO-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/GEO-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/GEO-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/GEO-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/GEO-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/HeinzSpiral",
+        "alt": "HeinzSpiral",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/HeinzSpiral_480.avif",
+            "960": "/gallery/USA/Pittsburgh/HeinzSpiral_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/HeinzSpiral_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/HeinzSpiral_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/HighmarkBuilding",
+        "alt": "HighmarkBuilding",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/HighmarkBuilding_480.avif",
+            "960": "/gallery/USA/Pittsburgh/HighmarkBuilding_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/HighmarkBuilding_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/HighmarkBuilding_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/Magnolia",
+        "alt": "Magnolia",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/Magnolia_480.avif",
+            "960": "/gallery/USA/Pittsburgh/Magnolia_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/Magnolia_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/Magnolia_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/OaklandDrone-1-2",
+        "alt": "OaklandDrone-1-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/OaklandDrone-1-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/OaklandDrone-1-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/OaklandDrone-1-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/OaklandDrone-1-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/OaklandDrone-2-2",
+        "alt": "OaklandDrone-2-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/OaklandDrone-2-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/OaklandDrone-2-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/OaklandDrone-2-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/OaklandDrone-2-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/OCLotShot-1-2",
+        "alt": "OCLotShot-1-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/OCLotShot-1-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/OCLotShot-1-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/OCLotShot-1-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/OCLotShot-1-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/Pete",
+        "alt": "Pete",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/Pete_480.avif",
+            "960": "/gallery/USA/Pittsburgh/Pete_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/Pete_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/Pete_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/PinkPanther",
+        "alt": "PinkPanther",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/PinkPanther_480.avif",
+            "960": "/gallery/USA/Pittsburgh/PinkPanther_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/PinkPanther_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/PinkPanther_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/PittBadge",
+        "alt": "PittBadge",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/PittBadge_480.avif",
+            "960": "/gallery/USA/Pittsburgh/PittBadge_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/PittBadge_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/PittBadge_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/PNCPark-2",
+        "alt": "PNCPark-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/PNCPark-2_480.avif",
+            "960": "/gallery/USA/Pittsburgh/PNCPark-2_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/PNCPark-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/PNCPark-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/QuadReflection",
+        "alt": "QuadReflection",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/QuadReflection_480.avif",
+            "960": "/gallery/USA/Pittsburgh/QuadReflection_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/QuadReflection_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/QuadReflection_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/WaitOaklandAve",
+        "alt": "WaitOaklandAve",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/WaitOaklandAve_480.avif",
+            "960": "/gallery/USA/Pittsburgh/WaitOaklandAve_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/WaitOaklandAve_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/WaitOaklandAve_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "USA/Pittsburgh/WPUthroughHilly",
+        "alt": "WPUthroughHilly",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/USA/Pittsburgh/WPUthroughHilly_480.avif",
+            "960": "/gallery/USA/Pittsburgh/WPUthroughHilly_960.avif",
+            "1600": "/gallery/USA/Pittsburgh/WPUthroughHilly_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/USA/Pittsburgh/WPUthroughHilly_1600.jpg"
+          }
+        }
+      }
+    ],
+    "UK": [
+      {
+        "base": "UK/England/London/AlbertMemorial",
+        "alt": "AlbertMemorial",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/AlbertMemorial_480.avif",
+            "960": "/gallery/UK/England/London/AlbertMemorial_960.avif",
+            "1600": "/gallery/UK/England/London/AlbertMemorial_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/AlbertMemorial_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BA_A380-3",
+        "alt": "BA_A380-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BA_A380-3_480.avif",
+            "960": "/gallery/UK/England/London/BA_A380-3_960.avif",
+            "1600": "/gallery/UK/England/London/BA_A380-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BA_A380-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BigBen",
+        "alt": "BigBen",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BigBen_480.avif",
+            "960": "/gallery/UK/England/London/BigBen_960.avif",
+            "1600": "/gallery/UK/England/London/BigBen_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BigBen_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BigBen-3",
+        "alt": "BigBen-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BigBen-3_480.avif",
+            "960": "/gallery/UK/England/London/BigBen-3_960.avif",
+            "1600": "/gallery/UK/England/London/BigBen-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BigBen-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BigBen-4",
+        "alt": "BigBen-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BigBen-4_480.avif",
+            "960": "/gallery/UK/England/London/BigBen-4_960.avif",
+            "1600": "/gallery/UK/England/London/BigBen-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BigBen-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BigBen-5",
+        "alt": "BigBen-5",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BigBen-5_480.avif",
+            "960": "/gallery/UK/England/London/BigBen-5_960.avif",
+            "1600": "/gallery/UK/England/London/BigBen-5_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BigBen-5_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BigBen-6",
+        "alt": "BigBen-6",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BigBen-6_480.avif",
+            "960": "/gallery/UK/England/London/BigBen-6_960.avif",
+            "1600": "/gallery/UK/England/London/BigBen-6_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BigBen-6_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/Blackfriars-1",
+        "alt": "Blackfriars-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/Blackfriars-1_480.avif",
+            "960": "/gallery/UK/England/London/Blackfriars-1_960.avif",
+            "1600": "/gallery/UK/England/London/Blackfriars-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/Blackfriars-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BlitzMemorial",
+        "alt": "BlitzMemorial",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BlitzMemorial_480.avif",
+            "960": "/gallery/UK/England/London/BlitzMemorial_960.avif",
+            "1600": "/gallery/UK/England/London/BlitzMemorial_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BlitzMemorial_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/Boats",
+        "alt": "Boats",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/Boats_480.avif",
+            "960": "/gallery/UK/England/London/Boats_960.avif",
+            "1600": "/gallery/UK/England/London/Boats_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/Boats_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/BultersWharf",
+        "alt": "BultersWharf",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/BultersWharf_480.avif",
+            "960": "/gallery/UK/England/London/BultersWharf_960.avif",
+            "1600": "/gallery/UK/England/London/BultersWharf_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/BultersWharf_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/ButlersWharf",
+        "alt": "ButlersWharf",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/ButlersWharf_480.avif",
+            "960": "/gallery/UK/England/London/ButlersWharf_960.avif",
+            "1600": "/gallery/UK/England/London/ButlersWharf_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/ButlersWharf_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/CanaryWharf",
+        "alt": "CanaryWharf",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/CanaryWharf_480.avif",
+            "960": "/gallery/UK/England/London/CanaryWharf_960.avif",
+            "1600": "/gallery/UK/England/London/CanaryWharf_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/CanaryWharf_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/CanaryWharf-1",
+        "alt": "CanaryWharf-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/CanaryWharf-1_480.avif",
+            "960": "/gallery/UK/England/London/CanaryWharf-1_960.avif",
+            "1600": "/gallery/UK/England/London/CanaryWharf-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/CanaryWharf-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/CanaryWharf-2",
+        "alt": "CanaryWharf-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/CanaryWharf-2_480.avif",
+            "960": "/gallery/UK/England/London/CanaryWharf-2_960.avif",
+            "1600": "/gallery/UK/England/London/CanaryWharf-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/CanaryWharf-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/CanaryWharf-6",
+        "alt": "CanaryWharf-6",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/CanaryWharf-6_480.avif",
+            "960": "/gallery/UK/England/London/CanaryWharf-6_960.avif",
+            "1600": "/gallery/UK/England/London/CanaryWharf-6_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/CanaryWharf-6_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/DistrictLine",
+        "alt": "DistrictLine",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/DistrictLine_480.avif",
+            "960": "/gallery/UK/England/London/DistrictLine_960.avif",
+            "1600": "/gallery/UK/England/London/DistrictLine_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/DistrictLine_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/DLR",
+        "alt": "DLR",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/DLR_480.avif",
+            "960": "/gallery/UK/England/London/DLR_960.avif",
+            "1600": "/gallery/UK/England/London/DLR_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/DLR_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/Duck",
+        "alt": "Duck",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/Duck_480.avif",
+            "960": "/gallery/UK/England/London/Duck_960.avif",
+            "1600": "/gallery/UK/England/London/Duck_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/Duck_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/Duck-2",
+        "alt": "Duck-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/Duck-2_480.avif",
+            "960": "/gallery/UK/England/London/Duck-2_960.avif",
+            "1600": "/gallery/UK/England/London/Duck-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/Duck-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/EdwardJenner",
+        "alt": "EdwardJenner",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/EdwardJenner_480.avif",
+            "960": "/gallery/UK/England/London/EdwardJenner_960.avif",
+            "1600": "/gallery/UK/England/London/EdwardJenner_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/EdwardJenner_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/ElizabethLineSign",
+        "alt": "ElizabethLineSign",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/ElizabethLineSign_480.avif",
+            "960": "/gallery/UK/England/London/ElizabethLineSign_960.avif",
+            "1600": "/gallery/UK/England/London/ElizabethLineSign_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/ElizabethLineSign_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/LondonBridge",
+        "alt": "LondonBridge",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/LondonBridge_480.avif",
+            "960": "/gallery/UK/England/London/LondonBridge_960.avif",
+            "1600": "/gallery/UK/England/London/LondonBridge_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/LondonBridge_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/LondonEye",
+        "alt": "LondonEye",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/LondonEye_480.avif",
+            "960": "/gallery/UK/England/London/LondonEye_960.avif",
+            "1600": "/gallery/UK/England/London/LondonEye_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/LondonEye_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/LondonEye-2",
+        "alt": "LondonEye-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/LondonEye-2_480.avif",
+            "960": "/gallery/UK/England/London/LondonEye-2_960.avif",
+            "1600": "/gallery/UK/England/London/LondonEye-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/LondonEye-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/LondonEye-3",
+        "alt": "LondonEye-3",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/LondonEye-3_480.avif",
+            "960": "/gallery/UK/England/London/LondonEye-3_960.avif",
+            "1600": "/gallery/UK/England/London/LondonEye-3_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/LondonEye-3_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/MoonandCross",
+        "alt": "MoonandCross",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/MoonandCross_480.avif",
+            "960": "/gallery/UK/England/London/MoonandCross_960.avif",
+            "1600": "/gallery/UK/England/London/MoonandCross_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/MoonandCross_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/NorthGreenwich",
+        "alt": "NorthGreenwich",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/NorthGreenwich_480.avif",
+            "960": "/gallery/UK/England/London/NorthGreenwich_960.avif",
+            "1600": "/gallery/UK/England/London/NorthGreenwich_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/NorthGreenwich_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/Swan-03",
+        "alt": "Swan-03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/Swan-03_480.avif",
+            "960": "/gallery/UK/England/London/Swan-03_960.avif",
+            "1600": "/gallery/UK/England/London/Swan-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/Swan-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TheAlbertMemorial-1",
+        "alt": "TheAlbertMemorial-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TheAlbertMemorial-1_480.avif",
+            "960": "/gallery/UK/England/London/TheAlbertMemorial-1_960.avif",
+            "1600": "/gallery/UK/England/London/TheAlbertMemorial-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TheAlbertMemorial-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TheAlbertMemorial-2",
+        "alt": "TheAlbertMemorial-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TheAlbertMemorial-2_480.avif",
+            "960": "/gallery/UK/England/London/TheAlbertMemorial-2_960.avif",
+            "1600": "/gallery/UK/England/London/TheAlbertMemorial-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TheAlbertMemorial-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TheRoyalHouseguards",
+        "alt": "TheRoyalHouseguards",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TheRoyalHouseguards_480.avif",
+            "960": "/gallery/UK/England/London/TheRoyalHouseguards_960.avif",
+            "1600": "/gallery/UK/England/London/TheRoyalHouseguards_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TheRoyalHouseguards_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TheShard-1",
+        "alt": "TheShard-1",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TheShard-1_480.avif",
+            "960": "/gallery/UK/England/London/TheShard-1_960.avif",
+            "1600": "/gallery/UK/England/London/TheShard-1_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TheShard-1_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TheShard-4",
+        "alt": "TheShard-4",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TheShard-4_480.avif",
+            "960": "/gallery/UK/England/London/TheShard-4_960.avif",
+            "1600": "/gallery/UK/England/London/TheShard-4_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TheShard-4_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/TowerBridgeBlitz",
+        "alt": "TowerBridgeBlitz",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/TowerBridgeBlitz_480.avif",
+            "960": "/gallery/UK/England/London/TowerBridgeBlitz_960.avif",
+            "1600": "/gallery/UK/England/London/TowerBridgeBlitz_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/TowerBridgeBlitz_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/London/WestminsterBridge-2",
+        "alt": "WestminsterBridge-2",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/London/WestminsterBridge-2_480.avif",
+            "960": "/gallery/UK/England/London/WestminsterBridge-2_960.avif",
+            "1600": "/gallery/UK/England/London/WestminsterBridge-2_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/London/WestminsterBridge-2_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/GeorgeStreet",
+        "alt": "GeorgeStreet",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/GeorgeStreet_480.avif",
+            "960": "/gallery/UK/England/Oxford/GeorgeStreet_960.avif",
+            "1600": "/gallery/UK/England/Oxford/GeorgeStreet_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/GeorgeStreet_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-03",
+        "alt": "Oxford-03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-03_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-03_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-04",
+        "alt": "Oxford-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-04_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-04_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-05",
+        "alt": "Oxford-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-05_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-05_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-06",
+        "alt": "Oxford-06",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-06_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-06_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-06_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-06_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-07",
+        "alt": "Oxford-07",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-07_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-07_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-07_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-07_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-08",
+        "alt": "Oxford-08",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-08_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-08_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-08_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-08_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-09",
+        "alt": "Oxford-09",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-09_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-09_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-09_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-09_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-10",
+        "alt": "Oxford-10",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-10_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-10_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-10_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-10_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-11",
+        "alt": "Oxford-11",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-11_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-11_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-11_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-11_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-12",
+        "alt": "Oxford-12",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-12_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-12_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-12_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-12_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-13",
+        "alt": "Oxford-13",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-13_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-13_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-13_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-13_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-14",
+        "alt": "Oxford-14",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-14_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-14_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-14_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-14_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-15",
+        "alt": "Oxford-15",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-15_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-15_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-15_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-15_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-16",
+        "alt": "Oxford-16",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-16_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-16_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-16_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-16_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/England/Oxford/Oxford-17",
+        "alt": "Oxford-17",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/England/Oxford/Oxford-17_480.avif",
+            "960": "/gallery/UK/England/Oxford/Oxford-17_960.avif",
+            "1600": "/gallery/UK/England/Oxford/Oxford-17_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/England/Oxford/Oxford-17_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-01",
+        "alt": "Crail-01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-01_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-01_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-02",
+        "alt": "Crail-02",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-02_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-02_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-02_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-02_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-04",
+        "alt": "Crail-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-04_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-04_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-05",
+        "alt": "Crail-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-05_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-05_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-07",
+        "alt": "Crail-07",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-07_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-07_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-07_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-07_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-09",
+        "alt": "Crail-09",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-09_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-09_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-09_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-09_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Crail/Crail-13",
+        "alt": "Crail-13",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Crail/Crail-13_480.avif",
+            "960": "/gallery/UK/Scotland/Crail/Crail-13_960.avif",
+            "1600": "/gallery/UK/Scotland/Crail/Crail-13_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Crail/Crail-13_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-01",
+        "alt": "Edinburgh-01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-01_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-01_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-02",
+        "alt": "Edinburgh-02",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-02_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-02_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-02_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-02_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-03",
+        "alt": "Edinburgh-03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-03_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-03_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-04",
+        "alt": "Edinburgh-04",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-04_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-04_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-04_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-04_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-05",
+        "alt": "Edinburgh-05",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-05_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-05_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-05_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-05_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-06",
+        "alt": "Edinburgh-06",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-06_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-06_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-06_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-06_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-07",
+        "alt": "Edinburgh-07",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-07_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-07_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-07_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-07_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-08",
+        "alt": "Edinburgh-08",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-08_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-08_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-08_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-08_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-09",
+        "alt": "Edinburgh-09",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-09_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-09_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-09_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-09_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-10",
+        "alt": "Edinburgh-10",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-10_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-10_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-10_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-10_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/Edinburgh/Edinburgh-11",
+        "alt": "Edinburgh-11",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/Edinburgh/Edinburgh-11_480.avif",
+            "960": "/gallery/UK/Scotland/Edinburgh/Edinburgh-11_960.avif",
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-11_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/Edinburgh/Edinburgh-11_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -01",
+        "alt": "St Andrew's -01",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-01_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-01_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-01_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-01_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -02",
+        "alt": "St Andrew's -02",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-02_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-02_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-02_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-02_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -03",
+        "alt": "St Andrew's -03",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-03_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-03_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-03_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-03_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -06",
+        "alt": "St Andrew's -06",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-06_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-06_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-06_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-06_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -08",
+        "alt": "St Andrew's -08",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-08_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-08_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-08_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-08_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -10",
+        "alt": "St Andrew's -10",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-10_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-10_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-10_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-10_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -11",
+        "alt": "St Andrew's -11",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-11_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-11_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-11_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-11_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -13",
+        "alt": "St Andrew's -13",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-13_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-13_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-13_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-13_1600.jpg"
+          }
+        }
+      },
+      {
+        "base": "UK/Scotland/St Andrews/St Andrew's -14",
+        "alt": "St Andrew's -14",
+        "widths": [
+          480,
+          960,
+          1600
+        ],
+        "variants": {
+          "avif": {
+            "480": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-14_480.avif",
+            "960": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-14_960.avif",
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-14_1600.avif"
+          },
+          "jpg": {
+            "1600": "/gallery/UK/Scotland/St%20Andrews/St%20Andrew's%20-14_1600.jpg"
+          }
+        }
+      }
+    ]
+  }
+}
