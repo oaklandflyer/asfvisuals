@@ -216,7 +216,6 @@
     })();
 
     /* ---------- Manifest + shaping ---------- */
-    // 🔧 If you host the JSON elsewhere, change this:
     const MANIFEST_PATH = '/data/realestate-manifest.json';
 
     async function loadManifest(){
@@ -270,7 +269,12 @@
     const backBtn = document.getElementById('backBtn');
 
     const titleize = s => (s||'').toString().replace(/[-_]/g,' ').replace(/\b([a-z])/g,c=>c.toUpperCase());
-    function getPath(){ const h = decodeURI(location.hash.replace(/^#\//,'')); return h ? h.split('/').filter(Boolean) : []; }
+    const pluralize = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+
+    function getPath(){
+      const h = decodeURI(location.hash.replace(/^#\//,''));
+      return h ? h.split('/').filter(Boolean) : [];
+    }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
     function buildCrumbs(parts){
@@ -305,93 +309,90 @@
       io.observe(img);
     }
 
+    // Helpers to safely pick a cover image
+    function firstCoverFromPropsMap(props){
+      if (!props || !props.size) return undefined;
+      const firstPropKey = props.keys().next().value;
+      const photos = props.get(firstPropKey) || [];
+      return photos[0]?.thumb;
+    }
+    function firstCoverFromCityMap(cities){
+      if (!cities || !cities.size) return undefined;
+      const firstCityKey = cities.keys().next().value;
+      const props = cities.get(firstCityKey);
+      return firstCoverFromPropsMap(props);
+    }
+
     let TREE = null; // Map(state -> Map(city -> Map(property -> photos[])))
-// e.g. pluralize(1, 'CITY', 'CITIES') -> "1 CITY"
-const pluralize = (n, one, many) => `${n} ${n === 1 ? one : many}`;
-const firstCity = cities.keys().next().value;
-const firstProp = firstCity ? cities.get(firstCity).keys().next().value : null;
-const cover = (firstCity && firstProp) ? cities.get(firstCity).get(firstProp)?.[0]?.thumb : undefined;
-const firstProp = props.keys().next().value;
-const cover = firstProp ? props.get(firstProp)?.[0]?.thumb : undefined;
 
     function getNode(parts){
-  if (!TREE) return null;
+      if (!TREE) return null;
 
-  // ROOT → list states
-  if (parts.length === 0){
-    return {
-      kind:'root',
-      children: Array.from(TREE.keys()).sort().map(state=>{
-        const cities = TREE.get(state);
-        const firstCity = cities.keys().next().value;
-        const firstProp = cities.get(firstCity).keys().next().value;
-        const cover = cities.get(firstCity).get(firstProp)?.[0]?.thumb;
-
-        // 👇 pluralized cities
+      // ROOT → list states
+      if (parts.length === 0){
         return {
-          id: state,
-          title: titleize(state),
-          cover,
-          sub: pluralize(cities.size, 'CITY', 'CITIES')
+          kind:'root',
+          children: Array.from(TREE.keys()).sort().map(state=>{
+            const cities = TREE.get(state);
+            const cover = firstCoverFromCityMap(cities);
+            return {
+              id: state,
+              title: titleize(state),
+              cover,
+              sub: pluralize(cities.size, 'CITY', 'CITIES')
+            };
+          })
         };
-      })
-    };
-  }
+      }
 
-  const state = parts[0];
-  const cities = TREE.get(state);
-  if (!cities) return null;
+      const state = parts[0];
+      const cities = TREE.get(state);
+      if (!cities) return null;
 
-  // STATE → list cities
-  if (parts.length === 1){
-    return {
-      kind:'state',
-      title:titleize(state),
-      children: Array.from(cities.keys()).sort().map(city=>{
-        const props = cities.get(city);
-        const firstProp = props.keys().next().value;
-        const cover = props.get(firstProp)?.[0]?.thumb;
-
-        // 👇 pluralized properties
+      // STATE → list cities
+      if (parts.length === 1){
         return {
-          id: city,
-          title: titleize(city),
-          cover,
-          sub: pluralize(props.size, 'PROPERTY', 'PROPERTIES')
+          kind:'state',
+          title:titleize(state),
+          children: Array.from(cities.keys()).sort().map(city=>{
+            const props = cities.get(city);
+            const cover = firstCoverFromPropsMap(props);
+            return {
+              id: city,
+              title: titleize(city),
+              cover,
+              sub: pluralize(props.size, 'PROPERTY', 'PROPERTIES')
+            };
+          })
         };
-      })
-    };
-  }
+      }
 
-  const city = parts[1];
-  const props = cities.get(city);
-  if (!props) return null;
+      const city = parts[1];
+      const props = cities.get(city);
+      if (!props) return null;
 
-  // CITY → list properties
-  if (parts.length === 2){
-    return {
-      kind:'city',
-      title:titleize(city),
-      children: Array.from(props.keys()).sort().map(prop=>{
-        const photos = props.get(prop) || [];
-        const cover = photos[0]?.thumb;
-
-        // 👇 pluralized photos
+      // CITY → list properties
+      if (parts.length === 2){
         return {
-          id: prop,
-          title: titleize(prop),
-          cover,
-          sub: pluralize(photos.length, 'PHOTO', 'PHOTOS')
+          kind:'city',
+          title:titleize(city),
+          children: Array.from(props.keys()).sort().map(prop=>{
+            const photos = props.get(prop) || [];
+            const cover = photos[0]?.thumb;
+            return {
+              id: prop,
+              title: titleize(prop),
+              cover,
+              sub: pluralize(photos.length, 'PHOTO', 'PHOTOS')
+            };
+          })
         };
-      })
-    };
-  }
+      }
 
-  const prop = parts[2];
-  const photos = props.get(prop) || [];
-  return { kind:'property', title:titleize(prop), photos };
-}
-
+      const prop = parts[2];
+      const photos = props.get(prop) || [];
+      return { kind:'property', title:titleize(prop), photos };
+    }
 
     function renderAlbums(nodes){
       photosView.style.display = 'none';
