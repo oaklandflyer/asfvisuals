@@ -13,7 +13,6 @@
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#10437a">
-
   <link rel="icon" href="images/ASF Logo.png" type="image/png">
 
   <!-- Fonts -->
@@ -35,136 +34,86 @@
 
   <style>
     :root {
-      --primary: #10437a;
-      --accent: #e8bc56;
-      --bg: #fafbfc;
-      --card-bg: rgba(255,255,255,0.96);
-      --shadow: 0 8px 32px rgba(0,0,0,0.08);
-      --radius: 18px;
-      --cta: #10437a;
-      --cta-hover: #e8bc56;
+      --primary:#10437a; --accent:#e8bc56; --bg:#fafbfc;
+      --card-bg:rgba(255,255,255,0.96); --shadow:0 8px 32px rgba(0,0,0,0.08);
+      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
     }
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin:0; padding:0; font-family:'Montserrat', Arial, sans-serif; background:var(--bg); color:#172135; scroll-behavior:smooth; }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:#172135;scroll-behavior:smooth}
 
     /* HEADER */
-    .site-header {
-      display:flex; align-items:center; justify-content:space-between;
-      padding:12px 5vw; background:rgba(255,255,255,0.94);
-      box-shadow:0 2px 8px rgba(16,67,122,0.06);
-      position:fixed; top:0; left:0; right:0; z-index:1000;
-      transition: top .32s cubic-bezier(.37,1.15,.43,.96);
-    }
-    .logo-link img { height:62px; width:auto; max-width:180px; object-fit:contain; display:block; }
-    .site-nav ul { display:flex; gap:2vw; list-style:none; margin:0; padding:0; }
-    .site-nav a {
-      font-weight:600; text-decoration:none; color:var(--primary);
-      letter-spacing:.01em; padding:6px 14px; border-radius:var(--radius);
-      transition:background .2s, color .2s;
-    }
-    .site-nav a.active, .site-nav a[aria-current="page"], .site-nav a:hover { background:var(--accent); color:#111; }
-
-    .btn {
-      background:var(--cta); color:#fff; font-weight:700;
-      padding:11px 28px; border-radius:var(--radius);
-      border:none; cursor:pointer; box-shadow:var(--shadow);
-      font-size:1rem; transition:background .2s, color .2s;
-      text-decoration:none; letter-spacing:.02em; outline:none;
-    }
-    .btn:hover, .btn:focus { background:var(--cta-hover); color:#111; }
-
-    .menu-toggle {
-      display:none; flex-direction:column; justify-content:center; align-items:center;
-      width:44px; height:44px; background:none; border:none; cursor:pointer; z-index:150;
-    }
-    .menu-toggle .bar { display:block; width:28px; height:4px; margin:4px 0; background:var(--primary); border-radius:2px; transition:.3s; }
-    .menu-toggle.open .bar:nth-child(1){ transform:translateY(8px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2){ opacity:0; }
-    .menu-toggle.open .bar:nth-child(3){ transform:translateY(-8px) rotate(-45deg); }
-
-    @media (max-width: 800px){
-      .menu-toggle{ display:flex; }
-      .site-nav{
-        position:fixed; top:70px; right:0; background:#fff;
-        box-shadow:-2px 0 16px #0002; width:65vw; max-width:340px; height:100dvh;
-        transform:translateX(100%); transition:transform .25s cubic-bezier(.4,2.2,.3,1);
-        z-index:101; display:block; padding:38px 0 0;
-      }
-      .site-nav.open{ transform:translateX(0); }
-      .site-nav ul{ flex-direction:column; gap:12px; padding-left:32px; }
-      .site-header{ flex-wrap:wrap; }
-      body.no-scroll{ overflow:hidden; }
+    .site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 5vw;background:rgba(255,255,255,0.94);box-shadow:0 2px 8px rgba(16,67,122,0.06);position:fixed;top:0;left:0;right:0;z-index:1000;transition:top .32s cubic-bezier(.37,1.15,.43,.96)}
+    .logo-link img{height:62px;width:auto;max-width:180px;object-fit:contain;display:block}
+    .site-nav ul{display:flex;gap:2vw;list-style:none;margin:0;padding:0}
+    .site-nav a{font-weight:600;text-decoration:none;color:var(--primary);letter-spacing:.01em;padding:6px 14px;border-radius:var(--radius);transition:background .2s,color .2s}
+    .site-nav a.active,.site-nav a[aria-current="page"],.site-nav a:hover{background:var(--accent);color:#111}
+    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 28px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;text-decoration:none;letter-spacing:.02em;outline:none}
+    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111}
+    .menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;background:none;border:none;cursor:pointer;z-index:150}
+    .menu-toggle .bar{display:block;width:28px;height:4px;margin:4px 0;background:var(--primary);border-radius:2px;transition:.3s}
+    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
+    .menu-toggle.open .bar:nth-child(2){opacity:0}
+    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    @media (max-width:800px){
+      .menu-toggle{display:flex}
+      .site-nav{position:fixed;top:70px;right:0;background:#fff;box-shadow:-2px 0 16px #0002;width:65vw;max-width:340px;height:100dvh;transform:translateX(100%);transition:transform .25s cubic-bezier(.4,2.2,.3,1);z-index:101;display:block;padding:38px 0 0}
+      .site-nav.open{transform:translateX(0)}
+      .site-nav ul{flex-direction:column;gap:12px;padding-left:32px}
+      .site-header{flex-wrap:wrap}
+      body.no-scroll{overflow:hidden}
     }
 
     /* HERO */
-    .hero{
-      position:relative; min-height:55vh; display:flex; align-items:center; justify-content:center;
-      background:linear-gradient(180deg,rgba(16,67,122,.25) 0%,rgba(232,188,86,.13) 80%), url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
-      border-radius:0 0 var(--radius) var(--radius); box-shadow:var(--shadow); overflow:hidden; margin-top:82px;
-    }
-    .hero-text{
-      position:relative; z-index:1; background:rgba(255,255,255,.88);
-      border-radius:var(--radius); box-shadow:var(--shadow); padding:28px 28px 24px; max-width:520px; text-align:center; margin:6vh 2vw;
-      animation:fadeInUp 1s cubic-bezier(.23,1.04,.58,.98) both;
-    }
-    .hero h1{ font-family:'Playfair Display',serif; font-size:clamp(2rem,4.6vw,2.6rem); font-weight:700; margin:0 0 12px; color:var(--primary); letter-spacing:.02em; text-shadow:0 2px 12px #fff6; }
-    .hero p{ font-size:1.125rem; margin:0 0 18px; color:#253451; }
-
-    .hero-btns{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
-    @media (max-width:500px){ .hero-btns{ flex-direction:column; gap:12px; align-items:center; } }
+    .hero{position:relative;min-height:55vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(16,67,122,.25) 0%,rgba(232,188,86,.13) 80%),url('images/DowntownCloudsReduced.webp') center/cover no-repeat;border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-top:82px}
+    .hero-text{position:relative;z-index:1;background:rgba(255,255,255,.88);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 28px 24px;max-width:520px;text-align:center;margin:6vh 2vw;animation:fadeInUp 1s cubic-bezier(.23,1.04,.58,.98) both}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.6vw,2.6rem);font-weight:700;margin:0 0 12px;color:var(--primary);letter-spacing:.02em;text-shadow:0 2px 12px #fff6}
+    .hero p{font-size:1.125rem;margin:0 0 18px;color:#253451}
+    .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+    @media (max-width:500px){.hero-btns{flex-direction:column;gap:12px;align-items:center}}
 
     /* SERVICES */
-    .services{ max-width:1120px; margin:60px auto 0; padding:0 5vw; }
-    .services h2{ text-align:center; font-family:'Playfair Display',serif; font-weight:700; font-size:2.1rem; margin-bottom:30px; color:var(--primary); }
-    .service-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); gap:32px; }
-    .service-card{
-      background:var(--card-bg); border-radius:var(--radius); box-shadow:var(--shadow);
-      padding:28px 24px 18px; text-align:center; transition: box-shadow .25s, transform .19s;
-      position:relative; min-height:400px; display:flex; flex-direction:column; align-items:center;
-    }
-    .service-card:hover{ box-shadow:0 8px 28px rgba(16,67,122,.18); transform:translateY(-5px) scale(1.03); }
-    .service-card img.hero-thumb{ width:100%; max-width:275px; height:180px; object-fit:cover; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 12px #0001; }
-    .service-card h3{ font-size:1.25rem; font-weight:700; color:var(--cta); margin:10px 0 7px; }
-    .service-card p{ font-size:1rem; color:#222; margin-bottom:13px; }
-    .work-link{ margin-top:auto; font-size:.98em; color:var(--cta); text-decoration:underline; font-weight:600; }
+    .services{max-width:1120px;margin:60px auto 0;padding:0 5vw}
+    .services h2{text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:2.1rem;margin-bottom:30px;color:var(--primary)}
+    .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:32px}
+    .service-card{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 24px 18px;text-align:center;transition:box-shadow .25s,transform .19s;position:relative;min-height:400px;display:flex;flex-direction:column;align-items:center}
+    .service-card:hover{box-shadow:0 8px 28px rgba(16,67,122,.18);transform:translateY(-5px) scale(1.03)}
+    .service-card img.hero-thumb{width:100%;max-width:275px;height:180px;object-fit:cover;border-radius:8px;margin-bottom:20px;box-shadow:0 2px 12px #0001}
+    .service-card h3{font-size:1.25rem;font-weight:700;color:var(--cta);margin:10px 0 7px}
+    .service-card p{font-size:1rem;color:#222;margin-bottom:13px}
+    .work-link{margin-top:auto;font-size:.98em;color:var(--cta);text-decoration:underline;font-weight:600}
 
-    /* NEW: service galleries under each card */
-    .service-photos{ width:100%; margin-top:14px; }
-    .service-photos-grid{
-      display:grid; grid-template-columns:repeat(3,1fr); gap:8px;
-    }
-    @media (max-width:700px){
-      .service-photos-grid{ grid-template-columns:repeat(2,1fr); }
-    }
-    .service-photos a{ display:block; border-radius:10px; overflow:hidden; background:#e9eef5; aspect-ratio:4/3; }
-    .service-photos img{ width:100%; height:100%; object-fit:cover; display:block; opacity:0; transition: opacity .35s ease, transform .25s ease; }
-    .service-photos img.loaded{ opacity:1; }
-    .service-photos a:hover img{ transform:scale(1.03); }
+    /* Service galleries */
+    .service-photos{width:100%;margin-top:14px}
+    .service-photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    @media (max-width:700px){.service-photos-grid{grid-template-columns:repeat(2,1fr)}}
+    .service-photos a{display:block;border-radius:10px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3}
+    .service-photos img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .35s ease,transform .25s ease}
+    .service-photos img.loaded{opacity:1}
+    .service-photos a:hover img{transform:scale(1.03)}
 
     /* FOOTER */
-    .site-footer{ background:#10233a; color:#f5f5f5; padding:48px 6vw 36px; border-radius:var(--radius) var(--radius) 0 0; margin-top:80px; }
-    .footer-cta{ display:flex; gap:16px; justify-content:center; margin-bottom:18px; }
-    .social-links{ display:flex; gap:16px; justify-content:center; margin-top:16px; }
-    .social-links img{ width:28px; height:28px; border-radius:50%; background:#fff; box-shadow:0 1px 8px #0001; padding:2px; }
+    .site-footer{background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px}
+    .footer-cta{display:flex;gap:16px;justify-content:center;margin-bottom:18px}
+    .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
+    .social-links img{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 1px 8px #0001;padding:2px}
 
     @media (max-width:750px){
-      .site-header{ flex-direction:column; gap:10px; }
-      .site-nav ul{ flex-wrap:wrap; gap:7px; }
-      .hero{ min-height:44vh; }
-      .hero-text{ max-width:99vw; }
-      .services{ padding:0 2vw; }
-      .footer-cta{ flex-direction:column; gap:7px; }
-      .site-footer{ padding:36px 2vw 24px; }
+      .site-header{flex-direction:column;gap:10px}
+      .site-nav ul{flex-wrap:wrap;gap:7px}
+      .hero{min-height:44vh}
+      .hero-text{max-width:99vw}
+      .services{padding:0 2vw}
+      .footer-cta{flex-direction:column;gap:7px}
+      .site-footer{padding:36px 2vw 24px}
     }
 
-    /* Animations & a11y */
-    @keyframes fadeInUp{ from{ opacity:0; transform:translateY(28px);} to{ opacity:1; transform:translateY(0);} }
-    @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
-    .fade-section{ opacity:0; transform:translateY(40px); transition: all .7s cubic-bezier(.25,.8,.25,1); }
-    .fade-section.visible{ opacity:1; transform:translateY(0); }
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    .fade-section{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.25,.8,.25,1)}
+    .fade-section.visible{opacity:1;transform:translateY(0)}
 
-    .skip-link{ position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:#fff; color:#103047; border-radius:0 0 10px 10px; padding:8px 22px; }
-    .skip-link:focus{ left:12px; top:6px; width:auto; height:auto; }
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px}
+    .skip-link:focus{left:12px;top:6px;width:auto;height:auto}
   </style>
 </head>
 <body>
@@ -211,9 +160,7 @@
           <img class="hero-thumb" src="images/AndrewGrad-01.jpg" alt="Portrait session" decoding="async" loading="lazy">
           <h3>Portraits</h3>
           <p>Personalized sessions capturing you at your best — with a focus on natural light and creative angles.</p>
-          <div class="service-photos">
-            <div class="service-photos-grid" id="grid-portraits"></div>
-          </div>
+          <div class="service-photos"><div class="service-photos-grid" id="grid-portraits"></div></div>
           <a href="gallery.html" class="work-link">View our work</a>
         </article>
 
@@ -222,9 +169,7 @@
           <img class="hero-thumb" src="images/DowntownSunset.jpg" alt="Drone aerial" decoding="async" loading="lazy">
           <h3>Drone Aerials</h3>
           <p>Stunning aerial imagery for real estate, inspections, and creative campaigns. Part 107 certified and insured.</p>
-          <div class="service-photos">
-            <div class="service-photos-grid" id="grid-drone"></div>
-          </div>
+          <div class="service-photos"><div class="service-photos-grid" id="grid-drone"></div></div>
           <a href="gallery.html#/%20USA/Pittsburgh" class="work-link">View our work</a>
         </article>
 
@@ -233,9 +178,7 @@
           <img class="hero-thumb" src="images/Chamonix-10.jpg" alt="Landscape photography" decoding="async" loading="lazy">
           <h3>Landscape Photography</h3>
           <p>Authentic scenes and cityscapes that tell a story — available as prints or for commercial license.</p>
-          <div class="service-photos">
-            <div class="service-photos-grid" id="grid-landscape"></div>
-          </div>
+          <div class="service-photos"><div class="service-photos-grid" id="grid-landscape"></div></div>
           <a href="gallery.html" class="work-link">View our work</a>
         </article>
       </div>
@@ -311,160 +254,169 @@
       window.addEventListener('scroll', onScroll, { passive: true });
     });
 
-    // ---- Feature-best-photos under services (uses pipeline manifest) ----
-    // Where to load the manifest from (relative-safe)
-    const MANIFEST = new URL('gallery/imagePaths.json', document.baseURI).toString();
+    // ---------- SHOW REAL PHOTOS UNDER SERVICES ----------
+    // Reads the SAME manifest format your gallery uses:
+    // { categories: { AnyName: [ { widths:[], variants:{ jpg:{w:url}, avif:{w:url} }, alt? } ] } }
+    const MANIFEST_URL = new URL('gallery/imagePaths.json', document.baseURI).toString();
 
-    // Curated include patterns per service (match substrings in final optimized paths)
+    // Curated includes per service (checks against any variant path)
     const CURATION = {
       drone: [
-        'USA/Pittsburgh/DJI_0812-HDR', 'USA/Pittsburgh/DJI_0018-HDR',
-        'USA/Pittsburgh/AmbrosePitchDrone', 'USA/Pittsburgh/OaklandDrone-1-2',
-        'USA/Pittsburgh/OaklandDrone-2-2', 'USA/Pittsburgh/DowntownfromOCLot'
+        'USA/Pittsburgh/DJI_', 'USA/Pittsburgh/OaklandDrone', 'USA/Pittsburgh/Downtown'
       ],
       landscape: [
-        'Switzerland/Interlaken/Interlaken-1', 'Switzerland/Interlaken/Interlaken-3',
-        'Switzerland/Lauterbrunnen/Lauterbrunnen-2',
-        'Switzerland/Montreux/Montreux-6', 'UK/England/London/TheShard-4',
-        'Spain/Nerja/Nerja Coast-04', 'France/Chamonix/Chamonix-10'
+        'Switzerland/', 'France/Chamonix', 'UK/England/London', 'Spain/Nerja'
       ],
       portraits: [
-        // If/when you add portrait sets to the gallery structure, list their stems here.
-        // For now, pull a few people-friendly city shots:
-        'UK/England/London/EdwardJenner', 'UK/England/London/CanaryWharf-1',
-        'USA/Pittsburgh/CherryBlossom', 'USA/Pittsburgh/Magnolia',
-        'UK/Scotland/St%20Andrews/St%20Andrew\'s%20-01' // encoded path example will still match
+        'Portrait', 'People', 'London/Edward', 'CherryBlossom', 'Magnolia'
       ]
     };
 
-    // Helper: build encoded URL safely per path segment
-    function safeUrl(path) {
-      return path.replaceAll("\\", "/")
-        .split("/")
-        .map(encodeURIComponent)
-        .join("/");
+    // Flatten manifest into a simple array of "file" objects with handy getters
+    function flattenManifest(manifest){
+      const out = [];
+      const cats = manifest.categories || {};
+      for (const catName of Object.keys(cats)){
+        for (const item of (cats[catName] || [])){
+          const jpgMap  = item.variants?.jpg  || {};
+          const avifMap = item.variants?.avif || {};
+          const widths = (item.widths || []).slice().sort((a,b)=>a-b);
+          if (!widths.length) continue;
+
+          const largest = widths[widths.length-1];
+          const mid = widths.find(w => w >= 960) || widths[0];
+
+          const jpgLargest  = jpgMap[largest];
+          const avifLargest = avifMap[largest];
+          const avifSrcSet = widths
+            .filter(w => avifMap[w])
+            .map(w => `${avifMap[w]} ${w}w`)
+            .join(', ');
+
+          // Pick a display thumb (prefer avif mid, else jpg largest)
+          const thumb = avifMap[mid] || jpgLargest || avifLargest;
+
+          // Keep every available path string to make “includes” matching easy
+          const allPaths = [
+            ...Object.values(jpgMap),
+            ...Object.values(avifMap)
+          ].filter(Boolean);
+
+          out.push({
+            alt: item.alt || '',
+            widths, thumb,
+            jpgLargest: jpgLargest || avifLargest || thumb,
+            avifSrcSet,
+            anyPath: allPaths.join('|')
+          });
+        }
+      }
+      return out;
     }
 
-    // Given a full-size stem like ".../Interlaken-3", return {avifSrcSet, jpgSrc}
-    function buildSources(base) {
-      const encodedBase = safeUrl(base);
-      return {
-        avif: `${encodedBase}_480.avif 480w, ${encodedBase}_960.avif 960w, ${encodedBase}_1600.avif 1600w`,
-        jpg: `${encodedBase}_1600.jpg`
-      };
-    }
-
-    // Lazy-load helper
-    function lazyLoad(img) {
-      const io = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
+    // Helpers
+    function lazyLoad(img){
+      const io = new IntersectionObserver((entries, obs)=>{
+        entries.forEach(entry=>{
           if (!entry.isIntersecting) return;
           const el = entry.target;
           const src = el.getAttribute('data-src');
-          if (src) {
-            el.src = src;
-            el.onload = () => el.classList.add('loaded');
-          }
+          if (src){ el.src = src; el.onload = ()=> el.classList.add('loaded'); }
           obs.unobserve(el);
         });
-      }, { threshold: .15 });
+      }, { threshold:.15 });
       io.observe(img);
     }
 
-    // Render small grids under each service
-    async function renderServiceGalleries(){
-      let data;
-      try {
-        const res = await fetch(MANIFEST, { cache: 'no-cache' });
-        data = res.ok ? await res.json() : null;
-      } catch (e) { data = null; }
+    function pickFor(serviceKey, files, max=6){
+      const needles = CURATION[serviceKey] || [];
+      const picks = [];
 
-      // Fallback: if manifest missing, do nothing silently
-      if (!data || !data.files) return;
+      // First pass: curated matches
+      for (const inc of needles){
+        const match = files.find(f => f.anyPath.includes(inc));
+        if (match && !picks.includes(match)) picks.push(match);
+        if (picks.length >= max) break;
+      }
 
-      // data.files assumed format (from our pipeline): array of objects with { stem, avif480, avif960, avif1600, jpg1600, path }
-      // But we also support when only stems/paths are present.
-      const files = data.files || [];
-
-      function pickByIncludes(includes, max=6){
-        // Try to find stems that contain any of the include substrings
-        const picks = [];
-        for (const inc of includes) {
-          const match = files.find(f => (f.stem || f.path || '').includes(inc));
-          if (match && !picks.includes(match)) picks.push(match);
+      // Fill with nice scenery if short
+      if (picks.length < max){
+        const scenic = files.filter(f => /Interlaken|Lauterbrunnen|Chamonix|London|Nerja|Pittsburgh|Sunset|Aerial/i.test(f.anyPath));
+        for (const s of scenic){
           if (picks.length >= max) break;
+          if (!picks.includes(s)) picks.push(s);
         }
-        // If not enough, fill with other scenic shots
-        if (picks.length < max) {
-          const scenic = files.filter(f =>
-            /Interlaken|Lauterbrunnen|Chamonix|London|Nerja|Geneva|Pittsburgh/i.test(f.path || f.stem || '')
-          );
-          for (const s of scenic) {
-            if (picks.length >= max) break;
-            if (!picks.includes(s)) picks.push(s);
-          }
-        }
-        return picks.slice(0, max);
       }
 
-      // Extract a path stem for optimized base (without suffix)
-      function getStem(f){
-        // Prefer explicit stem if present; else derive from jpg1600/avif path
-        if (f.stem) return f.stem;
-        const p = f.jpg1600 || f.avif1600 || f.path || '';
-        return p.replace(/_(480|960|1600)\.(avif|jpg)$/i,'').replace(/\.(jpg|jpeg|png|webp|avif)$/i,'');
+      // Absolute final fallback: anything
+      if (picks.length < max){
+        for (const f of files){
+          if (picks.length >= max) break;
+          if (!picks.includes(f)) picks.push(f);
+        }
+      }
+      return picks.slice(0, max);
+    }
+
+    async function renderServiceGalleries(){
+      let manifest;
+      try{
+        const res = await fetch(MANIFEST_URL, { cache:'no-cache' });
+        if (!res.ok) throw new Error('manifest not found');
+        manifest = await res.json();
+      }catch(e){
+        console.warn('imagePaths.json missing — service grids skipped.');
+        return;
       }
 
+      const files = flattenManifest(manifest);
       const sets = {
-        portraits: pickByIncludes(CURATION.portraits),
-        drone: pickByIncludes(CURATION.drone),
-        landscape: pickByIncludes(CURATION.landscape)
+        portraits: pickFor('portraits', files),
+        drone:     pickFor('drone', files),
+        landscape: pickFor('landscape', files)
       };
 
-      for (const [key, arr] of Object.entries(sets)) {
+      for (const [key, items] of Object.entries(sets)){
         const grid = document.getElementById(`grid-${key}`);
         if (!grid) continue;
 
-        arr.forEach(item => {
-          const stem = getStem(item);
-          const { avif, jpg } = buildSources(stem);
-
+        items.forEach(f=>{
           const a = document.createElement('a');
-          a.href = 'gallery.html'; // send users to full gallery on click
+          a.href = 'gallery.html'; // click takes users to full gallery
 
           const pic = document.createElement('picture');
+          if (f.avifSrcSet){
+            const s = document.createElement('source');
+            s.type = 'image/avif';
+            s.setAttribute('data-srcset', f.avifSrcSet);
+            pic.appendChild(s);
 
-          const srcAvif = document.createElement('source');
-          srcAvif.type = 'image/avif';
-          srcAvif.setAttribute('data-srcset', avif); // lazy via data-*
-          pic.appendChild(srcAvif);
+            // lazily apply srcset when near viewport
+            const srcObs = new IntersectionObserver((entries,o)=>{
+              entries.forEach(entry=>{
+                if (!entry.isIntersecting) return;
+                s.srcset = s.getAttribute('data-srcset');
+                o.unobserve(entry.target);
+              });
+            },{threshold:.15});
+            srcObs.observe(pic);
+          }
 
           const img = document.createElement('img');
-          img.alt = 'Featured photo';
+          img.alt = f.alt || 'Featured photo';
           img.decoding = 'async';
           img.loading = 'lazy';
-          img.setAttribute('data-src', jpg);
+          img.setAttribute('data-src', f.jpgLargest || f.thumb);
           pic.appendChild(img);
 
           a.appendChild(pic);
           grid.appendChild(a);
 
-          // lazy-load both <img> and <source srcset>
           lazyLoad(img);
-          // When img is about to load, also set the source's srcset
-          const obs = new IntersectionObserver((entries, o) => {
-            entries.forEach(entry => {
-              if (!entry.isIntersecting) return;
-              srcAvif.srcset = srcAvif.getAttribute('data-srcset');
-              o.unobserve(entry.target);
-            });
-          }, { threshold:.15 });
-          obs.observe(pic);
         });
       }
     }
 
-    // Kick off after DOM ready
     document.addEventListener('DOMContentLoaded', renderServiceGalleries);
   </script>
 </body>

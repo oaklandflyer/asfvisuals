@@ -18,12 +18,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Fancybox (lightbox) -->
+  <!-- Fancybox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
   <style>
     :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#fafbfc;
+      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#ffffff;
       --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
       --radius:18px;
     }
@@ -32,8 +32,8 @@
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
 
-    /* Header (site match) */
-    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.85);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease}
+    /* Header (match site) */
+    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease}
     .logo-link img{height:60px;width:auto;object-fit:contain}
     .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
     .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
@@ -52,44 +52,46 @@
     }
 
     /* Page header */
-    .page-hero{margin-top:80px;padding:28px clamp(16px,4vw,48px) 8px}
-    .page-hero h1{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.6rem);margin:0}
-    .page-hero p{margin:6px 0 0;color:#2a3a55}
+    .page-hero{margin-top:92px;padding:28px clamp(24px,6vw,64px) 0}
+    .page-hero h1{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(2rem,4vw,2.6rem);margin:0 0 6px}
+    .page-hero p{margin:0 0 24px;color:#2a3a55}
 
     /* Breadcrumbs + back */
-    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:12px clamp(16px,4vw,48px)}
+    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 14px}
     .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:600;color:#2a3a55}
     .breadcrumbs a{color:var(--primary)}
     .crumb-sep{opacity:.5}
-    .back-btn{display:none;margin-left:clamp(16px,4vw,48px);margin-bottom:10px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
+    .back-btn{display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
     .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
-    /* Cards grid */
-    .album-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0 clamp(16px,4vw,48px)}
-    @media (max-width:1200px){.album-grid{grid-template-columns:repeat(4,1fr)}}
-    @media (max-width:700px){.album-grid{grid-template-columns:repeat(2,1fr)}}
-    .album-card{position:relative;border-radius:14px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3;box-shadow:0 3px 14px rgba(0,0,0,.06);cursor:pointer;isolation:isolate;transition:transform .25s ease, box-shadow .25s ease}
-    .album-card:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 8px 28px rgba(16,67,122,.18)}
-    .album-card img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
-    .album-card img.loaded{opacity:1}
-    .album-card:hover img{transform:scale(1.03)}
-    .album-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.55))}
-    .album-meta{position:absolute;left:10px;right:10px;bottom:10px;display:flex;justify-content:space-between;align-items:flex-end;color:#fff;z-index:1}
-    .album-title{font-weight:800;letter-spacing:.02em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
-    .album-count{background:rgba(0,0,0,.55);color:#fff;border-radius:999px;padding:6px 10px;font-size:.9rem;font-weight:700}
+    /* ==== GALLERY LOOK (like your mock) ==== */
+    /* Large tiles, generous gutters, captions below image */
+    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 38px;margin:0 clamp(24px,6vw,64px) 60px}
+    @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.album-grid{grid-template-columns:1fr;gap:28px}}
+    .album-card{display:flex;flex-direction:column;gap:14px}
+    .album-cover{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,.10);aspect-ratio:3/2;background:#e9eef5;transition:transform .28s ease, box-shadow .28s ease}
+    .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
+    .album-cover img.loaded{opacity:1}
+    .album-card:hover .album-cover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(16,67,122,.15)}
+    .album-card:hover .album-cover img{transform:scale(1.02)}
 
-    /* Photo grid */
-    .photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:6px clamp(16px,4vw,48px) 28px}
-    @media (max-width:1200px){.photo-grid{grid-template-columns:repeat(4,1fr)}}
-    @media (max-width:700px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
-    .photo{position:relative;border-radius:12px;overflow:hidden;background:#e9eef5;aspect-ratio:4/3}
+    .album-caption{display:flex;flex-direction:column;align-items:center;text-align:center}
+    .album-title{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .album-sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
+
+    /* Photo grid (keeps your current look) */
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px clamp(24px,6vw,64px) 60px}
+    @media (max-width:1100px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.photo-grid{grid-template-columns:1fr;gap:12px}}
+    .photo{position:relative;border-radius:8px;overflow:hidden;background:#e9eef5;aspect-ratio:3/2;box-shadow:0 3px 14px rgba(0,0,0,.06)}
     .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
     .photo img.loaded{opacity:1}
     .photo:hover img{transform:scale(1.02)}
-    .empty{margin:24px clamp(16px,4vw,48px);opacity:.75}
+    .empty{margin:24px clamp(24px,6vw,64px);opacity:.75;text-align:center}
 
     /* Footer */
-    .site-footer{background:#10233a;color:#f5f5f5;padding:36px clamp(16px,4vw,48px) 28px;border-radius:var(--radius) var(--radius) 0 0;margin-top:42px;text-align:center}
+    .site-footer{background:#10233a;color:#f5f5f5;padding:36px clamp(24px,6vw,64px) 28px;border-radius:var(--radius) var(--radius) 0 0;margin-top:42px;text-align:center}
     .social{display:flex;gap:14px;justify-content:center;margin-top:10px}
     .social img{width:28px;height:28px;border-radius:50%;background:#fff;padding:2px;box-shadow:0 1px 8px rgba(0,0,0,.08)}
 
@@ -104,7 +106,6 @@
 
   <header class="site-header" id="header">
     <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <!-- Use same logo file as other pages for consistency -->
       <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
@@ -151,33 +152,36 @@
     <p style="opacity:.85">© 2025 ASF Visuals LLC. All rights reserved.</p>
   </footer>
 
-  <!-- Fancybox JS -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
   <script>
-    // ---------- Mobile nav ----------
+    /* ---------------- Mobile nav + header hide ---------------- */
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if (!btn || !nav) return;
-      btn.addEventListener('click', ()=>{
-        const open = nav.classList.toggle('open');
-        btn.classList.toggle('open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
-      });
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
-        if (window.innerWidth <= 860) { nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
-      }));
-
-      // Hide header on scroll down
+      if (btn && nav){
+        btn.addEventListener('click', ()=>{
+          const open = nav.classList.toggle('open');
+          btn.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+          if (window.innerWidth <= 860){
+            nav.classList.remove('open'); btn.classList.remove('open');
+            document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false');
+          }
+        }));
+      }
       let lastY = window.scrollY; const header = document.getElementById('header');
       window.addEventListener('scroll', ()=>{
-        const y = window.scrollY; header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)'; lastY = y;
+        const y = window.scrollY;
+        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
+        lastY = y;
       }, { passive:true });
     })();
 
-    // ---------- Load manifest ----------
+    /* ---------------- Data loading ---------------- */
     const MANIFEST_PATH = '/gallery/imagePaths.json';
 
     async function loadManifest(){
@@ -191,31 +195,39 @@
       }
     }
 
-    // ---------- Helpers ----------
+    /* ---------------- Helpers ---------------- */
+    // Optional: put “subtitle” dates here, like your mock.
+    // Keys may be Country names (root tiles) and/or "Country|City" for city tiles.
+    // Example entries provided – adjust/remove as you want.
+    const ALBUM_DATES = {
+      "France":"July 19th, 2025",
+      "Switzerland":"July 19th, 2025",
+      "UK|London":"March 14th, 2025",
+      "USA|Pittsburgh":"February 4th, 2025",
+      "USA|Oakland":"February 1st, 2025",
+      "Dogs":"January 1st, 2025"     // if you ever have a root-level “Dogs” country
+    };
+
     function firstTruthy(...vals){ return vals.find(Boolean); }
 
     function pickThumbAndSrc(item){
       const widths = (item.widths || []).slice().sort((a,b)=>a-b);
       const largest = widths.length ? widths[widths.length-1] : null;
       const mid = widths.find(w => w >= 960) || widths[0] || largest;
-
       const avifMid = item.variants?.avif?.[mid];
       const jpgLargest = item.variants?.jpg?.[largest];
       const avifLargest = item.variants?.avif?.[largest];
-
       const thumb = firstTruthy(avifMid, jpgLargest, avifLargest);
       const src   = firstTruthy(jpgLargest, avifLargest, avifMid);
       return { thumb, src };
     }
 
     function pathPartsFromAnyVariant(item){
-      // Prefer a JPG largest path for parsing; fall back to any available
       const all = [
         ...Object.values(item.variants?.jpg || {}),
         ...Object.values(item.variants?.avif || {})
       ];
       const p = all[0] || '';
-      // Expect like: "gallery/Country/.../City/Filename.jpg"
       const parts = p.split('/').filter(Boolean);
       const iGallery = parts.indexOf('gallery');
       if (iGallery === -1 || parts.length < iGallery+3) {
@@ -226,18 +238,15 @@
       return { country, city, parts };
     }
 
-    // Build nested data: Country -> City -> photos[]
+    // Build Country -> City -> photos
     function buildCountryCity(manifest){
       const byCountry = new Map();
       const cats = manifest.categories || {};
-
-      Object.keys(cats).forEach(cat => {
-        const items = cats[cat] || [];
-        items.forEach(item=>{
+      Object.keys(cats).forEach(cat=>{
+        (cats[cat] || []).forEach(item=>{
           const { country, city } = pathPartsFromAnyVariant(item);
           const { thumb, src } = pickThumbAndSrc(item);
-          const photo = { title: item.alt || city, caption:'', thumb, src };
-
+          const photo = { title:item.alt || city, caption:'', thumb, src };
           if (!byCountry.has(country)) byCountry.set(country, new Map());
           const byCity = byCountry.get(country);
           if (!byCity.has(city)) byCity.set(city, []);
@@ -245,11 +254,10 @@
         });
       });
 
-      // Convert Maps to arrays, sort alphabetically, and attach covers
       const countries = Array.from(byCountry.entries()).map(([country, cityMap])=>{
         const cities = Array.from(cityMap.entries()).map(([city, photos])=>{
           const cover = photos[0]?.thumb || 'images/social-preview.jpg';
-          return { id: city, title: city, cover, photos };
+          return { id: city, title: city, cover, photos, country };
         }).sort((a,b)=>a.title.localeCompare(b.title));
 
         const cover = cities[0]?.cover || 'images/social-preview.jpg';
@@ -259,14 +267,13 @@
       return { title:'All Albums', children: countries };
     }
 
-    // ---------- Router ----------
+    /* ---------------- Router / render ---------------- */
     function getPath(){
       const hash = decodeURI(location.hash || '#/');
       return hash.replace(/^#\//,'').split('/').filter(Boolean);
     }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
-    // ---------- UI Refs ----------
     const breadcrumbsEl = document.getElementById('breadcrumbs');
     const albumsView = document.getElementById('albumsView');
     const photosView = document.getElementById('photosView');
@@ -277,13 +284,11 @@
 
     function findNode(parts){
       if (!parts.length) return ROOT;
-      // parts[0] = country
       const country = ROOT.children.find(c => (c.id||c.title).toLowerCase() === parts[0].toLowerCase());
       if (!country) return null;
-      if (parts.length === 1) return country; // show cities
-      // parts[1] = city
+      if (parts.length === 1) return country;
       const city = country.children.find(ci => (ci.id||ci.title).toLowerCase() === parts[1].toLowerCase());
-      return city || null; // show photos
+      return city || null;
     }
 
     function buildCrumbs(parts){
@@ -298,16 +303,13 @@
       frag.appendChild(mkLink('All Albums', []));
       if (parts[0]){
         const sep = document.createElement('span'); sep.textContent='›'; sep.className='crumb-sep'; sep.style.margin='0 6px';
-        frag.appendChild(sep);
-        frag.appendChild(mkLink(parts[0], [parts[0]]));
+        frag.appendChild(sep); frag.appendChild(mkLink(parts[0], [parts[0]]));
       }
       if (parts[1]){
         const sep2 = document.createElement('span'); sep2.textContent='›'; sep2.className='crumb-sep'; sep2.style.margin='0 6px';
-        frag.appendChild(sep2);
-        frag.appendChild(mkLink(parts[1], [parts[0], parts[1]]));
+        frag.appendChild(sep2); frag.appendChild(mkLink(parts[1], [parts[0], parts[1]]));
       }
-      breadcrumbsEl.innerHTML = '';
-      breadcrumbsEl.appendChild(frag);
+      breadcrumbsEl.innerHTML = ''; breadcrumbsEl.appendChild(frag);
     }
 
     function lazyImage(img){
@@ -323,6 +325,17 @@
       io.observe(img);
     }
 
+    function subtitleFor(node){
+      // Prefer custom date mapping; fallback to count line
+      if (node.country){
+        const k = `${node.country}|${node.title}`;
+        if (ALBUM_DATES[k]) return ALBUM_DATES[k].toUpperCase();
+      }
+      if (ALBUM_DATES[node.title]) return ALBUM_DATES[node.title].toUpperCase();
+      const n = node.children ? node.children.length + ' CITIES' : (node.photos?.length || 0) + ' PHOTOS';
+      return n.toUpperCase();
+    }
+
     function renderAlbums(nodes){
       albumsView.innerHTML = '';
       photosView.style.display = 'none';
@@ -336,20 +349,21 @@
         card.className='album-card';
         card.href='#';
 
+        const cover = document.createElement('div');
+        cover.className='album-cover';
         const img = document.createElement('img');
         img.alt = n.title;
         img.dataset.src = n.cover || 'images/social-preview.jpg';
         lazyImage(img);
+        cover.appendChild(img);
 
-        const overlay = document.createElement('span'); overlay.className='album-overlay';
-        const meta = document.createElement('div'); meta.className='album-meta';
+        const cap = document.createElement('div'); cap.className='album-caption';
         const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
-        const count = document.createElement('div'); count.className='album-count';
-        const subCount = (n.children && n.children.length) || (n.photos && n.photos.length) || 0;
-        count.textContent = subCount + (n.children ? ' cities' : ' photos');
+        const sub = document.createElement('div'); sub.className='album-sub'; sub.textContent = subtitleFor(n);
 
-        meta.appendChild(title); meta.appendChild(count);
-        card.appendChild(img); card.appendChild(overlay); card.appendChild(meta);
+        cap.appendChild(title); cap.appendChild(sub);
+
+        card.appendChild(cover); card.appendChild(cap);
 
         card.addEventListener('click', e=>{
           e.preventDefault();
@@ -373,7 +387,7 @@
 
       photos.forEach((p)=>{
         const a = document.createElement('a');
-        a.href = p.src; // largest JPG (good compatibility)
+        a.href = p.src;
         a.setAttribute('data-fancybox', node.title || 'album');
         if (p.title) a.setAttribute('data-caption', p.title);
 
@@ -399,7 +413,6 @@
       else renderPhotos(node);
     }
 
-    // ---------- Boot ----------
     (async function init(){
       const manifest = await loadManifest();
       ROOT = buildCountryCity(manifest);
