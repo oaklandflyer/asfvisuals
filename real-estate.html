@@ -42,6 +42,7 @@
       color: #172135;
       scroll-behavior: smooth;
     }
+    .hidden { display: none !important; }
 
     /* --- Header --- */
     .site-header {
@@ -55,6 +56,11 @@
       top: 0;
       z-index: 100;
     }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     .logo-link img {
       height: 62px;
       width: auto;
@@ -62,6 +68,22 @@
       object-fit: contain;
       display: block;
     }
+    /* Animated logo container */
+    #logo-anim { height: 62px; display: block; }
+    #logo-anim svg { height: 62px; width: auto; display: block; }
+    /* Stroke-draw phase: show strokes, hide fills */
+    #logo-anim svg.stroke-phase * {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .draw-in { animation: draw 1.6s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    /* Smoothly reveal original fills when stroke phase ends */
+    #logo-anim svg.final-fill * { transition: fill .6s ease, stroke .6s ease; }
+
     .site-nav ul {
       display: flex;
       gap: 2vw;
@@ -285,8 +307,11 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html" class="logo-link">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
+    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
+      <!-- Animated SVG goes here if available -->
+      <div id="logo-anim" aria-hidden="true"></div>
+      <!-- Fallback static image -->
+      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
     </a>
     <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
       <span class="bar"></span>
@@ -294,13 +319,13 @@
       <span class="bar"></span>
     </button>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
-          <ul>
-            <li><a href="index.html#top">Home</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li><a href="real-estate.html" class="active" aria-current="page">Real Estate</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <ul>
+        <li><a href="index.html#top">Home</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="real-estate.html" class="active" aria-current="page">Real Estate</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -367,6 +392,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      // Mobile menu
       const toggle = document.getElementById("menu-toggle");
       const nav = document.getElementById("navbar");
       toggle.addEventListener("click", function() {
@@ -387,6 +413,50 @@
         });
       });
     });
+
+    // Animated logo (fetches images/ASFLogo.svg and draws it)
+    (async function animateLogo(){
+      const container = document.getElementById('logo-anim');
+      const fallback = document.getElementById('logo-fallback');
+      if (!container) return;
+
+      try {
+        const res = await fetch('images/ASFLogo.svg', { cache: 'no-cache' });
+        if (!res.ok) throw new Error('SVG not found');
+        const svgText = await res.text();
+        container.innerHTML = svgText;
+
+        const svg = container.querySelector('svg');
+        if (!svg) throw new Error('SVG malformed');
+
+        // Prepare for stroke-draw phase
+        svg.classList.add('stroke-phase', 'final-fill');
+
+        const targets = svg.querySelectorAll('path, line, polyline, polygon, circle, rect');
+        targets.forEach((el, i) => {
+          let len = 300;
+          try { if (typeof el.getTotalLength === 'function') len = el.getTotalLength(); } catch(e){}
+          el.style.strokeDasharray = len;
+          el.style.strokeDashoffset = len;
+          el.style.animationDelay = (i * 70) + 'ms';
+          el.classList.add('draw-in');
+        });
+
+        // Hide fallback static image when SVG is ready
+        if (fallback) fallback.classList.add('hidden');
+
+        // After draw completes, reveal original fills (remove stroke-phase)
+        const totalTime = (targets.length * 70) + 1600; // ms
+        setTimeout(() => {
+          svg.classList.remove('stroke-phase');
+          // Optional: also remove strokes entirely for a clean filled look
+          targets.forEach(el => { el.style.stroke = 'none'; el.style.strokeDasharray = ''; el.style.strokeDashoffset = ''; });
+        }, totalTime);
+      } catch (e) {
+        // If SVG not available, just keep the PNG
+        console.warn('Logo animation fallback:', e);
+      }
+    })();
   </script>
 </body>
 </html>
