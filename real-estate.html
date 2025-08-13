@@ -1,480 +1,320 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Real Estate Portfolio - ASF Visuals LLC</title>
-  <meta name="description" content="ASF Visuals LLC — Professional real estate photography for residential and commercial properties.">
-  <meta property="og:title" content="Real Estate Portfolio - ASF Visuals LLC">
-  <meta property="og:description" content="Explore high-quality real estate photography by ASF Visuals LLC.">
-  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
-  <link rel="canonical" href="https://www.asfvisualsllc.com/real-estate.html">
-  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-  <!-- Fancybox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-VBF13JPLGF');
-  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
   <style>
-    :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#fafbfc;
-      --panel:rgba(255,255,255,.96); --shadow:0 8px 32px rgba(0,0,0,.08);
-      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
-    }
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink);scroll-behavior:smooth}
-    img{max-width:100%;display:block}
+    :root{--primary:#10437a;--accent:#e8bc56;--ink:#172135;--bg:#fafbfc;--radius:18px}
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Montserrat,system-ui,Arial,sans-serif}
     a{text-decoration:none;color:inherit}
+    header{position:sticky;top:0;z-index:5;background:#fffdddf0;backdrop-filter:saturate(160%) blur(6px);box-shadow:0 2px 8px rgba(16,67,122,.06)}
+    header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px clamp(16px,5vw,48px)}
+    header nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    header nav a{padding:6px 12px;border-radius:999px;color:var(--primary);font-weight:700}
+    header nav a[aria-current="page"], header nav a:hover{background:var(--accent);color:#111}
+
+    .hero{display:grid;place-items:center;min-height:38vh;background:linear-gradient(180deg,rgba(16,67,122,.18),rgba(232,188,86,.08)),url('/images/DJI_0441.JPG') center/cover no-repeat}
+    .hero .box{background:#ffffffdd;padding:28px 34px;border-radius:var(--radius);text-align:center}
+    .hero h1{margin:0;font-family:'Playfair Display',serif;color:var(--primary);font-size:clamp(1.9rem,3.8vw,2.6rem)}
+
+    .page{padding:32px clamp(16px,6vw,64px) 70px}
+    .page h2{font-family:'Playfair Display',serif;color:var(--primary);margin:0 0 8px}
+    .page p{margin:0 0 22px;color:#2a3a55}
+
+    .crumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:700;color:#2a3a55;margin:0 0 18px}
+    .crumbs a{color:var(--primary)}
+    .crumbs .sep{opacity:.5}
+
+    .grid-albums{display:grid;grid-template-columns:repeat(3,1fr);gap:42px 32px}
+    @media (max-width:1100px){.grid-albums{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid-albums{grid-template-columns:1fr}}
+    .album{display:flex;flex-direction:column;gap:12px}
+    .cover{position:relative;aspect-ratio:3/2;border-radius:12px;overflow:hidden;background:#e9eef5;box-shadow:0 4px 22px rgba(0,0,0,.10);transition:transform .25s, box-shadow .25s}
+    .cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s, transform .35s}
+    .album:hover .cover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(16,67,122,.15)}
+    .album:hover .cover img{transform:scale(1.02)}
+    .caption{text-align:center}
+    .title{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
+
+    .grid-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:1100px){.grid-photos{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.grid-photos{grid-template-columns:1fr}}
+    .tile{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/2;background:#e9eef5;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+    .tile img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s, transform .25s}
+    .tile:hover img{transform:scale(1.02)}
+
     .hidden{display:none!important}
-
-    /* Header */
-    .site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 5vw;background:rgba(255,255,255,.94);box-shadow:0 2px 8px rgba(16,67,122,.06);position:sticky;top:0;z-index:100}
-    .logo-link{display:flex;align-items:center;gap:10px}
-    #logo-anim{height:62px;display:block}
-    #logo-anim svg{height:62px;width:auto;display:block}
-    #logo-anim svg.stroke-phase *{fill:none;stroke:var(--primary);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-    .draw-in{animation:draw 1.6s ease-out forwards}
-    @keyframes draw{to{stroke-dashoffset:0}}
-    #logo-anim svg.final-fill *{transition:fill .6s ease, stroke .6s ease}
-    .logo-link img{height:62px;width:auto;max-width:180px;object-fit:contain}
-    .site-nav ul{display:flex;gap:2vw;list-style:none;margin:0;padding:0}
-    .site-nav a{font-weight:600;color:var(--primary);letter-spacing:.01em;padding:6px 14px;border-radius:999px;transition:background .2s,color .2s}
-    .site-nav a.active,.site-nav a:hover{background:var(--accent);color:#111}
-
-    /* Mobile nav */
-    .menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;background:none;border:none;cursor:pointer;z-index:150}
-    .menu-toggle .bar{width:28px;height:4px;margin:4px 0;background:var(--primary);border-radius:2px;transition:.3s}
-    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
-    .menu-toggle.open .bar:nth-child(2){opacity:0}
-    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-    @media (max-width:800px){
-      .menu-toggle{display:flex}
-      .site-nav{position:fixed;top:70px;right:0;background:#fff;box-shadow:-2px 0 16px #0002;width:65vw;max-width:340px;height:100vh;transform:translateX(100%);transition:transform .25s cubic-bezier(.4,2.2,.3,1);z-index:101;display:block;padding:38px 0 0}
-      .site-nav.open{transform:translateX(0)}
-      .site-nav ul{flex-direction:column;gap:12px;padding-left:32px}
-      body.no-scroll{overflow:hidden}
-    }
-
-    /* Hero */
-    .hero{position:relative;min-height:46vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(16,67,122,.24) 0%,rgba(232,188,86,.10) 80%),url('images/DJI_0441.JPG') center/cover no-repeat;border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow)}
-    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:430px;text-align:center}
-    .hero-text h1{font-family:'Playfair Display',serif;font-size:2.35rem;font-weight:700;color:var(--primary);margin:0}
-
-    /* Albums & photos */
-    .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
-    .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
-    .page-hero p{margin:0 0 24px;color:#2a3a55}
-
-    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 14px}
-    .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:600;color:#2a3a55}
-    .breadcrumbs a{color:var(--primary)}
-    .crumb-sep{opacity:.5}
-    .back-btn{display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
-    .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
-
-    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 38px;margin:0 clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.album-grid{grid-template-columns:1fr;gap:28px}}
-    .album-card{display:flex;flex-direction:column;gap:14px}
-    .album-cover{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,.10);aspect-ratio:3/2;background:#e9eef5;transition:transform .28s ease, box-shadow .28s ease}
-    .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
-    .album-cover img.loaded{opacity:1}
-    .album-card:hover .album-cover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(16,67,122,.15)}
-    .album-card:hover .album-cover img{transform:scale(1.02)}
-
-    .album-caption{display:flex;flex-direction:column;align-items:center;text-align:center}
-    .album-title{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .album-sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
-
-    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.photo-grid{grid-template-columns:1fr;gap:12px}}
-    .photo{position:relative;border-radius:8px;overflow:hidden;background:#e9eef5;aspect-ratio:3/2;box-shadow:0 3px 14px rgba(0,0,0,.06)}
-    .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
-    .photo img.loaded{opacity:1}
-    .photo:hover img{transform:scale(1.02)}
-    .empty{margin:24px clamp(24px,6vw,64px);opacity:.75;text-align:center}
-
-    /* Buttons */
-    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 28px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;letter-spacing:.02em}
-    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111}
-
-    /* Footer */
-    .site-footer{background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px;text-align:center}
-    .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
-    .social-links img{width:28px;height:28px;background:#fff;border-radius:50%;padding:2px}
-
-    /* Motion helpers */
-    .fade-section{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.25,.8,.25,1)}
-    .fade-section.visible{opacity:1;transform:translateY(0)}
-    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    .empty{opacity:.75;text-align:center;margin:18px 0}
+    footer{background:#10233a;color:#f5f5f5;text-align:center;padding:42px 6vw;margin-top:60px;border-radius:18px 18px 0 0}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <div id="logo-anim" aria-hidden="true"></div>
-      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
-    </a>
-    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
-      <ul>
-        <li><a href="index.html#top">Home</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="real-estate.html" class="active" aria-current="page">Real Estate</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="wrap">
+      <a href="index.html" aria-label="ASF Visuals home"><strong>ASF Visuals</strong></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html#top">Home</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="real-estate.html" aria-current="page">Real Estate</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero fade-section">
-      <div class="hero-text">
-        <h1>Real Estate Portfolio</h1>
-      </div>
-    </section>
+  <section class="hero">
+    <div class="box"><h1>Real Estate Portfolio</h1></div>
+  </section>
 
-    <!-- Page intro -->
-    <section class="page-hero fade-section" id="top">
-      <h2>Properties</h2>
-      <p>Browse by <strong>state</strong>, then <strong>city</strong>, then <strong>property</strong>. Click an image to open the gallery.</p>
-    </section>
+  <main class="page" id="top">
+    <h2>Properties</h2>
+    <p>Browse by <strong>state</strong> → <strong>city</strong> → <strong>property</strong>. Click any image to open the lightbox.</p>
 
-    <!-- Controls -->
-    <div class="controls">
-      <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
-    </div>
-    <button class="back-btn" id="backBtn">◀ Back</button>
+    <nav class="crumbs" id="crumbs"></nav>
+    <button id="backBtn" class="hidden" onclick="goUp()">◀ Back</button>
 
     <!-- Views -->
-    <section id="albumsView" class="album-grid" aria-label="Albums"></section>
-    <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
-    <p id="emptyState" class="empty" hidden>No results found.</p>
+    <section id="albums" class="grid-albums" aria-label="Albums"></section>
+    <section id="photos" class="grid-photos hidden" aria-label="Photos"></section>
+    <p id="empty" class="empty hidden">No results.</p>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy">
-      </a>
-      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" loading="lazy">
-      </a>
-    </div>
   </footer>
 
-  <!-- Fancybox -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
   <script>
-    /* ---------------- Mobile nav + fade-in ---------------- */
-    (function navInit(){
-      const btn = document.getElementById('menu-toggle');
-      const nav = document.getElementById('navbar');
-      if(btn && nav){
-        btn.addEventListener('click',()=>{
-          const open = nav.classList.toggle('open');
-          btn.classList.toggle('open');
-          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 800) document.body.classList.toggle('no-scroll', open);
-        });
-        nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-          if (window.innerWidth <= 800){
-            nav.classList.remove('open'); btn.classList.remove('open');
-            document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false');
-          }
-        }));
-      }
-      const faders = document.querySelectorAll('.fade-section');
-      const io = new IntersectionObserver((entries,o)=>{
-        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); }});
-      },{threshold:0.17});
-      faders.forEach(f=>io.observe(f));
-    })();
-
-    /* ---------------- Manifest + data shaping ---------------- */
-    // If your manifest lives elsewhere, change this:
+    /* ====== CONFIG ====== */
+    // 🔧 Change this to where you deploy the JSON file:
     const MANIFEST_PATH = '/data/realestate-manifest.json';
 
-    async function loadManifest(){
-      try{
-        const res = await fetch(MANIFEST_PATH, { cache: 'no-cache' });
-        if(!res.ok) throw new Error('manifest not found');
-        return await res.json();
-      }catch(e){
-        console.error('Failed to load realestate manifest', e);
-        return { categories:{} };
-      }
-    }
+    /* ====== HELPERS ====== */
+    const slug = s => (s||'').toString().trim().toLowerCase().replace(/\s+/g,'-');
+    const titleize = s => (s||'')
+      .toString()
+      .replace(/[-_]/g,' ')
+      .replace(/\b([a-z])/g, c => c.toUpperCase());
 
-    // Pick mid-size AVIF for thumbs and largest JPG/AVIF for lightbox
     function pickThumbAndSrc(item){
-      const widths = (item.widths || []).slice().sort((a,b)=>a-b);
-      const largest = widths.length ? widths[widths.length-1] : null;
-      const mid = widths.find(w => w >= 960) || widths[0] || largest;
-      const avifMid = item.variants?.avif?.[mid];
-      const jpgLargest = item.variants?.jpg?.[largest];
-      const avifLargest = item.variants?.avif?.[largest];
-      const thumb = avifMid || jpgLargest || avifLargest;
-      const src   = jpgLargest || avifLargest || avifMid;
-      return { thumb, src };
+      const jpg = item?.variants?.jpg || {};
+      const avif = item?.variants?.avif || {};
+      const widths = (item?.widths || []).slice().sort((a,b)=>a-b);
+      const largest = widths[widths.length-1];
+      const mid = widths.find(w=>w>=960) || widths[0] || largest;
+
+      const thumb = avif[String(mid)] || jpg[String(mid)] || Object.values(avif)[0] || Object.values(jpg)[0];
+      const src   = jpg[String(largest)] || avif[String(largest)] || thumb;
+      return { thumb, src, caption: item.alt || '' };
     }
 
-    // Parse /gallery/RealEstate/State/City/Property/filename
-    function pathPartsFromAnyVariant(item){
-      const all = [
-        ...Object.values(item.variants?.jpg || {}),
-        ...Object.values(item.variants?.avif || {})
-      ];
-      const p = all[0] || '';
-      const parts = p.split('/').filter(Boolean); // remove empties
-      const iGallery = parts.indexOf('gallery');
-      if (iGallery === -1) return { state:'Unknown', city:'Unknown', property:'Property' };
+    // Transform manifest (city→state→property) into state→city→property for browsing.
+    function buildTree(manifest){
+      const tree = new Map(); // state -> Map(city -> Map(property -> photos[]))
 
-      // Expect .../gallery/RealEstate/<state>/<city>/<property>/<file>
-      const maybeCollection = parts[iGallery+1] || '';
-      const offset = (maybeCollection.toLowerCase() === 'realestate') ? 2 : 1; // support without "RealEstate" segment if needed
-      const state = parts[iGallery + offset] || 'Unknown';
-      const city = parts[iGallery + offset + 1] || 'Unknown City';
-      const property = parts[parts.length - 2] || 'Property';
-      return { state, city, property };
+      const byCity = manifest.cities || {};
+      for (const citySlug in byCity){
+        const statesObj = byCity[citySlug] || {};
+        for (const stateSlug in statesObj){
+          const propsObj = statesObj[stateSlug] || {};
+          if (!tree.has(stateSlug)) tree.set(stateSlug, new Map());
+          const cityMap = tree.get(stateSlug);
+          if (!cityMap.has(citySlug)) cityMap.set(citySlug, new Map());
+          const propMap = cityMap.get(citySlug);
+          for (const propSlug in propsObj){
+            const photosRaw = propsObj[propSlug] || [];
+            const photos = photosRaw.map(p => pickThumbAndSrc(p));
+            propMap.set(propSlug, photos);
+          }
+        }
+      }
+      return tree;
     }
 
-    // Build hierarchy: States → Cities → Properties → Photos
-    function buildHierarchy(manifest){
-      const byState = new Map();
-      const cats = manifest.categories || {};
-      Object.keys(cats).forEach(cat=>{
-        (cats[cat] || []).forEach(item=>{
-          const { state, city, property } = pathPartsFromAnyVariant(item);
-          const { thumb, src } = pickThumbAndSrc(item);
-          const photo = { title: item.alt || property, thumb, src };
+    function parsePath(){
+      const h = decodeURIComponent(location.hash.replace(/^#\//,''));
+      return h ? h.split('/').filter(Boolean) : [];
+    }
+    function setPath(parts){ location.hash = '#/' + parts.join('/'); }
+    function goUp(){ const parts=parsePath(); parts.pop(); setPath(parts); }
 
-          if(!byState.has(state)) byState.set(state, new Map());
-          const byCity = byState.get(state);
-          if(!byCity.has(city)) byCity.set(city, new Map());
-          const byProp = byCity.get(city);
-          if(!byProp.has(property)) byProp.set(property, []);
-          byProp.get(property).push(photo);
+    /* ====== RENDERING ====== */
+    const $crumbs = document.getElementById('crumbs');
+    const $albums = document.getElementById('albums');
+    const $photos = document.getElementById('photos');
+    const $empty  = document.getElementById('empty');
+    const $back   = document.getElementById('backBtn');
+
+    function lazy(img){
+      const obs = new IntersectionObserver((entries,o)=>{
+        entries.forEach(e=>{
+          if (!e.isIntersecting) return;
+          const el = e.target;
+          el.src = el.dataset.src;
+          el.onload = ()=> el.style.opacity = 1;
+          o.unobserve(el);
         });
-      });
-
-      const states = Array.from(byState.entries()).map(([state, cityMap])=>{
-        const cities = Array.from(cityMap.entries()).map(([city, propMap])=>{
-          const properties = Array.from(propMap.entries()).map(([prop, photos])=>{
-            const cover = photos[0]?.thumb;
-            return { id: prop, title: prop, cover, photos, city, state };
-          }).sort((a,b)=>a.title.localeCompare(b.title));
-          const cover = properties[0]?.cover;
-          return { id: city, title: city, cover, children: properties, state };
-        }).sort((a,b)=>a.title.localeCompare(b.title));
-        const cover = cities[0]?.cover;
-        return { id: state, title: state, cover, children: cities };
-      }).sort((a,b)=>a.title.localeCompare(b.title));
-
-      return { title:'All Properties', children: states };
+      },{threshold:.15});
+      obs.observe(img);
     }
 
-    /* ---------------- Router / UI ---------------- */
-    function getPath(){
-      const hash = decodeURI(location.hash || '#/');
-      const cleaned = hash.replace(/^#\//,'');
-      if (!cleaned || cleaned.startsWith('top')) return [];
-      return cleaned.split('/').filter(Boolean);
-    }
-    function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
-
-    const breadcrumbsEl = document.getElementById('breadcrumbs');
-    const albumsView = document.getElementById('albumsView');
-    const photosView = document.getElementById('photosView');
-    const emptyState = document.getElementById('emptyState');
-    const backBtn = document.getElementById('backBtn');
-
-    let ROOT = { title:'All Properties', children:[] };
-
-    function findNode(parts){
-      if (!parts.length) return ROOT;
-      const state = ROOT.children.find(s => (s.id||s.title).toLowerCase() === parts[0].toLowerCase());
-      if (!state) return null;
-      if (parts.length === 1) return state;
-      const city = state.children.find(c => (c.id||c.title).toLowerCase() === parts[1].toLowerCase());
-      if (!city) return null;
-      if (parts.length === 2) return city;
-      const prop = city.children.find(p => (p.id||p.title).toLowerCase() === parts[2].toLowerCase());
-      return prop || null;
-    }
-
-    function buildCrumbs(parts){
+    function renderCrumbs(parts){
       const frag = document.createDocumentFragment();
-      const mkLink = (label, toParts)=>{
+      const link = (label, toParts) => {
         const a = document.createElement('a');
-        a.href = '#/' + toParts.map(encodeURI).join('/');
+        a.href = '#/' + toParts.join('/');
         a.textContent = label;
         a.addEventListener('click', e=>{ e.preventDefault(); setPath(toParts); });
         return a;
       };
-      const addSep = ()=>{ const s=document.createElement('span'); s.textContent='›'; s.className='crumb-sep'; s.style.margin='0 6px'; frag.appendChild(s); };
-
-      frag.appendChild(mkLink('All Properties', []));
-      if (parts[0]){ addSep(); frag.appendChild(mkLink(parts[0], [parts[0]])); }
-      if (parts[1]){ addSep(); frag.appendChild(mkLink(parts[1], [parts[0], parts[1]])); }
-      if (parts[2]){ addSep(); frag.appendChild(mkLink(parts[2], [parts[0], parts[1], parts[2]])); }
-      breadcrumbsEl.innerHTML = ''; breadcrumbsEl.appendChild(frag);
-    }
-
-    function lazyImage(img){
-      const io = new IntersectionObserver((entries, obs)=>{
-        entries.forEach(entry=>{
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          el.src = el.dataset.src;
-          el.onload = ()=> el.classList.add('loaded');
-          obs.unobserve(el);
-        });
-      }, { threshold:.15 });
-      io.observe(img);
-    }
-
-    function subtitleFor(node){
-      if (node.children) {
-        // state → count cities, city → count properties
-        const n = node.children.length + (node.state ? ' PROPERTIES' : ' CITIES');
-        return n;
-      }
-      const n = (node.photos?.length || 0) + ' PHOTOS';
-      return n;
+      frag.appendChild(link('All Properties', []));
+      if (parts[0]){ frag.appendChild(Object.assign(document.createElement('span'),{className:'sep',textContent:'›'})); frag.appendChild(link(titleize(parts[0]), [parts[0]])); }
+      if (parts[1]){ frag.appendChild(Object.assign(document.createElement('span'),{className:'sep',textContent:'›'})); frag.appendChild(link(titleize(parts[1]), [parts[0], parts[1]])); }
+      if (parts[2]){ frag.appendChild(Object.assign(document.createElement('span'),{className:'sep',textContent:'›'})); frag.appendChild(link(titleize(parts[2]), [parts[0], parts[1], parts[2]])); }
+      $crumbs.innerHTML = ''; $crumbs.appendChild(frag);
+      $back.classList.toggle('hidden', parts.length === 0);
     }
 
     function renderAlbums(nodes){
-      albumsView.innerHTML = '';
-      photosView.style.display = 'none';
-      albumsView.style.display = 'grid';
-
-      if (!nodes.length){ emptyState.hidden = false; return; }
-      emptyState.hidden = true;
+      $photos.classList.add('hidden');
+      $albums.classList.remove('hidden');
+      $albums.innerHTML = '';
+      $empty.classList.toggle('hidden', nodes.length !== 0);
 
       nodes.forEach(n=>{
         const card = document.createElement('a');
-        card.className='album-card';
-        card.href='#';
-
-        const cover = document.createElement('div');
-        cover.className='album-cover';
-        const img = document.createElement('img');
-        img.alt = n.title;
-        img.dataset.src = n.cover || 'images/social-preview.jpg';
-        lazyImage(img);
-        cover.appendChild(img);
-
-        const cap = document.createElement('div'); cap.className='album-caption';
-        const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
-        const sub = document.createElement('div'); sub.className='album-sub'; sub.textContent = subtitleFor(n);
-
-        cap.appendChild(title); cap.appendChild(sub);
-
-        card.appendChild(cover); card.appendChild(cap);
-
+        card.href = '#';
+        card.className = 'album';
         card.addEventListener('click', e=>{
           e.preventDefault();
-          const parts = getPath();
-          parts.push(n.id || n.title);
+          const parts = parsePath();
+          parts.push(n.id);
           setPath(parts);
         });
 
-        albumsView.appendChild(card);
+        const cover = document.createElement('div'); cover.className='cover';
+        const img = document.createElement('img'); img.alt = n.label; img.dataset.src = n.cover || '/images/social-preview.jpg';
+        cover.appendChild(img);
+
+        const cap = document.createElement('div'); cap.className='caption';
+        const title = Object.assign(document.createElement('div'), {className:'title', textContent:n.label});
+        const sub   = Object.assign(document.createElement('div'), {className:'sub', textContent:n.sub});
+        cap.appendChild(title); cap.appendChild(sub);
+
+        card.appendChild(cover); card.appendChild(cap);
+        $albums.appendChild(card);
+        lazy(img);
       });
     }
 
-    function renderPhotos(node){
-      photosView.innerHTML = '';
-      albumsView.style.display='none';
-      photosView.style.display='grid';
+    function renderPhotos(propNode){
+      $albums.classList.add('hidden');
+      $photos.classList.remove('hidden');
+      $photos.innerHTML = '';
+      const photos = propNode.photos || [];
+      $empty.classList.toggle('hidden', photos.length !== 0);
 
-      const photos = node.photos || [];
-      if (!photos.length){ emptyState.hidden=false; return; }
-      emptyState.hidden = true;
-
-      photos.forEach((p)=>{
+      photos.forEach(p=>{
         const a = document.createElement('a');
         a.href = p.src;
-        a.setAttribute('data-fancybox', node.title || 'property');
-        if (p.title) a.setAttribute('data-caption', p.title);
+        a.setAttribute('data-fancybox', propNode.label);
+        if (p.caption) a.setAttribute('data-caption', p.caption);
 
-        const tile = document.createElement('div'); tile.className='photo';
-        const img = document.createElement('img'); img.alt = p.title || 'Photo'; img.dataset.src = p.thumb || p.src;
-        lazyImage(img);
-
-        tile.appendChild(img);
-        a.appendChild(tile);
-        photosView.appendChild(a);
+        const t = document.createElement('div'); t.className='tile';
+        const img = document.createElement('img'); img.alt = p.caption || propNode.label; img.dataset.src = p.thumb || p.src;
+        t.appendChild(img); a.appendChild(t); $photos.appendChild(a);
+        lazy(img);
       });
+    }
+
+    /* ====== APP ====== */
+    let TREE = null; // Map(state -> Map(city -> Map(property -> photos[])))
+
+    function getNode(parts){
+      if (!TREE) return null;
+      if (parts.length === 0){
+        // root: list states
+        return {
+          kind:'root',
+          children: Array.from(TREE.keys()).sort().map(state=>{
+            const cities = TREE.get(state);
+            // cover: first property's first photo
+            const firstCity = cities.keys().next().value;
+            const firstProp = cities.get(firstCity).keys().next().value;
+            const cover = cities.get(firstCity).get(firstProp)?.[0]?.thumb;
+            return { id: state, label: titleize(state), cover, sub: `${cities.size} CITIES` };
+          })
+        };
+      }
+      const state = parts[0];
+      const cities = TREE.get(state);
+      if (!cities) return null;
+
+      if (parts.length === 1){
+        return {
+          kind:'state',
+          label:titleize(state),
+          children: Array.from(cities.keys()).sort().map(city=>{
+            const props = cities.get(city);
+            const firstProp = props.keys().next().value;
+            const cover = props.get(firstProp)?.[0]?.thumb;
+            return { id: city, label: titleize(city), cover, sub: `${props.size} PROPERTIES` };
+          })
+        };
+      }
+      const city = parts[1];
+      const props = cities.get(city);
+      if (!props) return null;
+
+      if (parts.length === 2){
+        return {
+          kind:'city',
+          label:titleize(city),
+          children: Array.from(props.keys()).sort().map(prop=>{
+            const photos = props.get(prop) || [];
+            const cover = photos[0]?.thumb;
+            return { id: prop, label: titleize(prop), cover, sub: `${photos.length} PHOTOS` };
+          })
+        };
+      }
+      const prop = parts[2];
+      const photos = (props.get(prop) || []);
+      return { kind:'property', label:titleize(prop), photos };
     }
 
     function render(){
-      const parts = getPath();
-      buildCrumbs(parts);
-      backBtn.style.display = parts.length ? 'inline-flex' : 'none';
-
-      const node = findNode(parts);
+      const parts = parsePath();
+      renderCrumbs(parts);
+      const node = getNode(parts);
       if (!node){ setPath([]); return; }
 
-      if (node.children) renderAlbums(node.children);
-      else renderPhotos(node);
+      if (node.kind === 'property') renderPhotos(node);
+      else renderAlbums(node.children);
     }
 
     (async function init(){
-      const manifest = await loadManifest();
-      window.ROOT = buildHierarchy(manifest);
-      render();
-      window.addEventListener('hashchange', render);
-      backBtn.addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
-    })();
-
-    /* ---------------- Animated logo ---------------- */
-    (async function animateLogo(){
-      const container = document.getElementById('logo-anim');
-      const fallback = document.getElementById('logo-fallback');
-      if (!container) return;
       try{
-        const res = await fetch('images/ASFLogo.svg', { cache:'no-cache' });
-        if (!res.ok) throw new Error('SVG not found');
-        const svgText = await res.text();
-        container.innerHTML = svgText;
-        const svg = container.querySelector('svg');
-        if (!svg) throw new Error('SVG malformed');
+        const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
+        if (!res.ok) throw new Error('Manifest not found at ' + MANIFEST_PATH);
+        const manifest = await res.json();
+        TREE = buildTree(manifest);
 
-        svg.classList.add('stroke-phase','final-fill');
-        const targets = svg.querySelectorAll('path,line,polyline,polygon,circle,rect');
-        targets.forEach((el,i)=>{
-          let len = 300; try{ if(typeof el.getTotalLength==='function') len = el.getTotalLength(); }catch(e){}
-          el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
-          el.style.animationDelay = (i*70)+'ms'; el.classList.add('draw-in');
-        });
-        if (fallback) fallback.classList.add('hidden');
-        const totalTime = (targets.length*70)+1600;
-        setTimeout(()=>{
-          svg.classList.remove('stroke-phase');
-          targets.forEach(el=>{ el.style.stroke='none'; el.style.strokeDasharray=''; el.style.strokeDashoffset=''; });
-        }, totalTime);
-      }catch(e){
-        console.warn('Logo animation fallback:', e);
+        // route
+        addEventListener('hashchange', render);
+        render();
+      }catch(err){
+        console.error(err);
+        document.getElementById('empty').classList.remove('hidden');
+        document.getElementById('empty').textContent = 'Could not load image manifest.';
       }
     })();
   </script>
