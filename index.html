@@ -75,7 +75,7 @@
 
     /* ======= PORTFOLIO (embedded gallery) ======= */
     .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
-    .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
+    .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:#10437a;font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
     .page-hero p{margin:0 0 24px;color:#2a3a55}
 
     .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 14px}
@@ -129,6 +129,43 @@
 
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px}
     .skip-link:focus{left:12px;top:6px;width:auto;height:auto}
+
+    /* ======= ANTI-COPY DETERRENTS ======= */
+    /* Disable selection, drag, and long-press save UI where possible */
+    .album-cover, .photo, .album-cover img, .photo img {
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      user-select: none;
+    }
+
+    /* Visible watermark on tiles & covers (survives screenshots) */
+    .album-cover::before,
+    .photo::before{
+      content: "ASF VISUALS LLC";
+      position: absolute;
+      right: 10px; bottom: 8px;
+      padding: 4px 8px;
+      font: 600 12px/1.2 Montserrat, Arial, sans-serif;
+      color: rgba(255,255,255,.92);
+      background: rgba(0,0,0,.35);
+      border-radius: 6px;
+      letter-spacing: .06em;
+      pointer-events: none;
+    }
+
+    /* Faint diagonal overlay to discourage clean crops */
+    .album-cover::after,
+    .photo::after{
+      content: "";
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,.03) 0, rgba(255,255,255,.03) 24px,
+        rgba(0,0,0,.05) 24px, rgba(0,0,0,.05) 48px
+      );
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
@@ -165,7 +202,7 @@
       </div>
     </section>
 
-    <!-- ===== PORTFOLIO (streamlined in the spot where Services used to be) ===== -->
+    <!-- ===== PORTFOLIO ===== -->
     <section id="portfolio" class="page-hero fade-section">
       <h2>Portfolio</h2>
     </section>
@@ -321,7 +358,6 @@
     function getPath(){
       const hash = decodeURI(location.hash || '#/');
       const cleaned = hash.replace(/^#\//,'');
-      // If user clicked nav link like #portfolio or #top, do not treat as gallery route
       if (!cleaned || cleaned.startsWith('portfolio') || cleaned.startsWith('top')) return [];
       return cleaned.split('/').filter(Boolean);
     }
@@ -378,18 +414,12 @@
       io.observe(img);
     }
 
-function subtitleFor(node) {
-  const pluralize = (count, singular, plural) => `${count} ${count === 1 ? singular : plural}`.toUpperCase();
-
-  if (node.children) {
-    // Countries (albums) → show number of cities
-    return pluralize(node.children.length, 'CITY', 'CITIES');
-  }
-  // City level → show number of photos (also fixes 1 PHOTO)
-  const photoCount = node.photos?.length || 0;
-  return pluralize(photoCount, 'PHOTO', 'PHOTOS');
-}
-
+    function subtitleFor(node) {
+      const pluralize = (count, singular, plural) => `${count} ${count === 1 ? singular : plural}`.toUpperCase();
+      if (node.children) return pluralize(node.children.length, 'CITY', 'CITIES');
+      const photoCount = node.photos?.length || 0;
+      return pluralize(photoCount, 'PHOTO', 'PHOTOS');
+    }
 
     function renderAlbums(nodes){
       albumsView.innerHTML = '';
@@ -409,6 +439,7 @@ function subtitleFor(node) {
         const img = document.createElement('img');
         img.alt = n.title;
         img.dataset.src = n.cover || 'images/social-preview.jpg';
+        img.setAttribute('draggable','false');
         lazyImage(img);
         cover.appendChild(img);
 
@@ -429,6 +460,8 @@ function subtitleFor(node) {
 
         albumsView.appendChild(card);
       });
+
+      attachDeterrents();
     }
 
     function renderPhotos(node){
@@ -448,12 +481,16 @@ function subtitleFor(node) {
 
         const tile = document.createElement('div'); tile.className='photo';
         const img = document.createElement('img'); img.alt = p.title || 'Photo'; img.dataset.src = p.thumb || p.src;
+        img.setAttribute('draggable','false');
         lazyImage(img);
 
         tile.appendChild(img);
         a.appendChild(tile);
         photosView.appendChild(a);
       });
+
+      attachDeterrents();
+      bindFancybox();
     }
 
     function render(){
@@ -468,12 +505,74 @@ function subtitleFor(node) {
       else renderPhotos(node);
     }
 
+    /* ---------------- Anti-copy JS (deterrents) ---------------- */
+    function attachDeterrents(){
+      // Block right-click on gallery areas
+      const blocker = (e) => {
+        if (e.target.closest('.photo, .album-cover, img')) e.preventDefault();
+      };
+      // Add once at document level (idempotent)
+      if (!window.__ctxBlocked){
+        document.addEventListener('contextmenu', blocker, { capture:true });
+        window.__ctxBlocked = true;
+      }
+
+      // Disable drag & long-press hints on all images
+      document.querySelectorAll('img').forEach(img=>{
+        img.setAttribute('draggable','false');
+        img.addEventListener('dragstart', ev => ev.preventDefault(), { passive:false });
+      });
+
+      // Block a few common save/print shortcuts (deterrent only)
+      if (!window.__keysBlocked){
+        document.addEventListener('keydown', (e)=>{
+          const k = e.key?.toLowerCase?.() || '';
+          if ((e.ctrlKey || e.metaKey) && ['s','p','u'].includes(k)) { // save, print, view source
+            e.preventDefault(); e.stopPropagation();
+          }
+          // F12 and Ctrl+Shift+I (cannot fully block devtools, but we deter)
+          if (k === 'f12' || (e.ctrlKey && e.shiftKey && k === 'i')) {
+            e.preventDefault(); e.stopPropagation();
+          }
+        }, { capture:true });
+        window.__keysBlocked = true;
+      }
+
+      // Passive touch handler to reduce iOS image callout
+      if (!window.__touchBlocked){
+        document.addEventListener('touchstart', (e)=>{
+          if (e.target.closest('.photo, .album-cover, img')) {
+            // nothing; presence helps suppress some callouts with -webkit-touch-callout:none
+          }
+        }, { passive:true });
+        window.__touchBlocked = true;
+      }
+    }
+
+    /* ---------------- Fancybox: no download UI & block context menu ---------------- */
+    function bindFancybox(){
+      Fancybox.bind('[data-fancybox]', {
+        Toolbar: { display: ['close'] }, // hide download/share/fullscreen
+        Images:  { zoom: false, click: false, wheel: false },
+        Thumbs:  { autoStart: false },
+        on: {
+          init: (fb) => {
+            fb.container?.addEventListener('contextmenu', e => e.preventDefault(), { capture: true });
+          }
+        }
+      });
+    }
+
     (async function init(){
       const manifest = await loadManifest();
       ROOT = buildCountryCity(manifest);
       render();
       window.addEventListener('hashchange', render);
       backBtn.addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
+
+      // Initial deterrents + fancybox for first render (if any)
+      attachDeterrents();
+      bindFancybox();
     })();
   </script>
 </body>

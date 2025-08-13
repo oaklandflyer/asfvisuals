@@ -146,12 +146,12 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="site-header" id="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals Home">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="62" decoding="async" />
+  <header class="site-header">
+    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
+      <div id="logo-anim" aria-hidden="true"></div>
+      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
     </a>
-
-    <button id="menu-toggle" class="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
 
