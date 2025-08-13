@@ -1,0 +1,26 @@
+{
+  "name": "asfvisuals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaklandflyer/asfvisuals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oaklandflyer/asfvisuals/issues"
+  },
+  "homepage": "https://github.com/oaklandflyer/asfvisuals#readme",
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "globby": "^14.1.0",
+    "sharp": "^0.34.3",
+    "slugify": "^1.6.6"
+  }
+}
