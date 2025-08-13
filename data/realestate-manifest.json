@@ -4,6 +4,25 @@
     "akron": {
       "ohio": {
         "25-ghent-rd": [
+            {
+            "base": "akron/ohio/25-ghent-rd/rays-place-55",
+            "alt": "akron/ohio/25-ghent-rd/rays-place-55",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_480.avif",
+                "960": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_960.avif",
+                "1600": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_1600.avif"
+              },
+              "jpg": {
+                "1600": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_1600.jpg"
+              }
+            }
+          },
           {
             "base": "akron/ohio/25-ghent-rd/rays-place-01",
             "alt": "akron/ohio/25-ghent-rd/rays-place-01",
@@ -1031,25 +1050,6 @@
             }
           },
           {
-            "base": "akron/ohio/25-ghent-rd/rays-place-55",
-            "alt": "akron/ohio/25-ghent-rd/rays-place-55",
-            "widths": [
-              480,
-              960,
-              1600
-            ],
-            "variants": {
-              "avif": {
-                "480": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_480.avif",
-                "960": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_960.avif",
-                "1600": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_1600.avif"
-              },
-              "jpg": {
-                "1600": "/real-estate/processed/akron/ohio/25-ghent-rd/rays-place-55_1600.jpg"
-              }
-            }
-          },
-          {
             "base": "akron/ohio/25-ghent-rd/rays-place-56",
             "alt": "akron/ohio/25-ghent-rd/rays-place-56",
             "widths": [
@@ -1165,6 +1165,25 @@
           }
         ],
         "3550-w-market-st": [
+        {
+            "base": "akron/ohio/3550-w-market-st/s-g-property-167",
+            "alt": "akron/ohio/3550-w-market-st/s-g-property-167",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_480.avif",
+                "960": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_960.avif",
+                "1600": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_1600.avif"
+              },
+              "jpg": {
+                "1600": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_1600.jpg"
+              }
+            }
+          },
           {
             "base": "akron/ohio/3550-w-market-st/s-g-property-001",
             "alt": "akron/ohio/3550-w-market-st/s-g-property-001",
@@ -4316,25 +4335,6 @@
               },
               "jpg": {
                 "1600": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-166_1600.jpg"
-              }
-            }
-          },
-          {
-            "base": "akron/ohio/3550-w-market-st/s-g-property-167",
-            "alt": "akron/ohio/3550-w-market-st/s-g-property-167",
-            "widths": [
-              480,
-              960,
-              1600
-            ],
-            "variants": {
-              "avif": {
-                "480": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_480.avif",
-                "960": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_960.avif",
-                "1600": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_1600.avif"
-              },
-              "jpg": {
-                "1600": "/real-estate/processed/akron/ohio/3550-w-market-st/s-g-property-167_1600.jpg"
               }
             }
           },

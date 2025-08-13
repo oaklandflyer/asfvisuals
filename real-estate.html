@@ -160,7 +160,6 @@
   <!-- Intro -->
   <section class="page-hero fade-section" id="top">
     <h2>Properties</h2>
-    <p>Browse by <strong>state</strong> → <strong>city</strong> → <strong>property</strong>. Click any image to open the gallery.</p>
   </section>
 
   <!-- Controls -->
@@ -307,61 +306,92 @@
     }
 
     let TREE = null; // Map(state -> Map(city -> Map(property -> photos[])))
+// e.g. pluralize(1, 'CITY', 'CITIES') -> "1 CITY"
+const pluralize = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+const firstCity = cities.keys().next().value;
+const firstProp = firstCity ? cities.get(firstCity).keys().next().value : null;
+const cover = (firstCity && firstProp) ? cities.get(firstCity).get(firstProp)?.[0]?.thumb : undefined;
+const firstProp = props.keys().next().value;
+const cover = firstProp ? props.get(firstProp)?.[0]?.thumb : undefined;
 
     function getNode(parts){
-      if (!TREE) return null;
+  if (!TREE) return null;
 
-      // root → list states
-      if (parts.length === 0){
+  // ROOT → list states
+  if (parts.length === 0){
+    return {
+      kind:'root',
+      children: Array.from(TREE.keys()).sort().map(state=>{
+        const cities = TREE.get(state);
+        const firstCity = cities.keys().next().value;
+        const firstProp = cities.get(firstCity).keys().next().value;
+        const cover = cities.get(firstCity).get(firstProp)?.[0]?.thumb;
+
+        // 👇 pluralized cities
         return {
-          kind:'root',
-          children: Array.from(TREE.keys()).sort().map(state=>{
-            const cities = TREE.get(state);
-            const firstCity = cities.keys().next().value;
-            const firstProp = cities.get(firstCity).keys().next().value;
-            const cover = cities.get(firstCity).get(firstProp)?.[0]?.thumb;
-            return { id: state, title: titleize(state), cover, sub: `${cities.size} CITIES` };
-          })
+          id: state,
+          title: titleize(state),
+          cover,
+          sub: pluralize(cities.size, 'CITY', 'CITIES')
         };
-      }
+      })
+    };
+  }
 
-      const state = parts[0];
-      const cities = TREE.get(state);
-      if (!cities) return null;
+  const state = parts[0];
+  const cities = TREE.get(state);
+  if (!cities) return null;
 
-      if (parts.length === 1){
+  // STATE → list cities
+  if (parts.length === 1){
+    return {
+      kind:'state',
+      title:titleize(state),
+      children: Array.from(cities.keys()).sort().map(city=>{
+        const props = cities.get(city);
+        const firstProp = props.keys().next().value;
+        const cover = props.get(firstProp)?.[0]?.thumb;
+
+        // 👇 pluralized properties
         return {
-          kind:'state',
-          title:titleize(state),
-          children: Array.from(cities.keys()).sort().map(city=>{
-            const props = cities.get(city);
-            const firstProp = props.keys().next().value;
-            const cover = props.get(firstProp)?.[0]?.thumb;
-            return { id: city, title: titleize(city), cover, sub: `${props.size} PROPERTIES` };
-          })
+          id: city,
+          title: titleize(city),
+          cover,
+          sub: pluralize(props.size, 'PROPERTY', 'PROPERTIES')
         };
-      }
+      })
+    };
+  }
 
-      const city = parts[1];
-      const props = cities.get(city);
-      if (!props) return null;
+  const city = parts[1];
+  const props = cities.get(city);
+  if (!props) return null;
 
-      if (parts.length === 2){
+  // CITY → list properties
+  if (parts.length === 2){
+    return {
+      kind:'city',
+      title:titleize(city),
+      children: Array.from(props.keys()).sort().map(prop=>{
+        const photos = props.get(prop) || [];
+        const cover = photos[0]?.thumb;
+
+        // 👇 pluralized photos
         return {
-          kind:'city',
-          title:titleize(city),
-          children: Array.from(props.keys()).sort().map(prop=>{
-            const photos = props.get(prop) || [];
-            const cover = photos[0]?.thumb;
-            return { id: prop, title: titleize(prop), cover, sub: `${photos.length} PHOTOS` };
-          })
+          id: prop,
+          title: titleize(prop),
+          cover,
+          sub: pluralize(photos.length, 'PHOTO', 'PHOTOS')
         };
-      }
+      })
+    };
+  }
 
-      const prop = parts[2];
-      const photos = props.get(prop) || [];
-      return { kind:'property', title:titleize(prop), photos };
-    }
+  const prop = parts[2];
+  const photos = props.get(prop) || [];
+  return { kind:'property', title:titleize(prop), photos };
+}
+
 
     function renderAlbums(nodes){
       photosView.style.display = 'none';
