@@ -168,7 +168,6 @@
     <!-- ===== PORTFOLIO (streamlined in the spot where Services used to be) ===== -->
     <section id="portfolio" class="page-hero fade-section">
       <h2>Portfolio</h2>
-      <p>Explore albums by <strong>country</strong>, then <strong>city</strong>. Click any image to open the gallery.</p>
     </section>
 
     <div class="controls">
@@ -379,15 +378,18 @@
       io.observe(img);
     }
 
-    function subtitleFor(node){
-      if (node.country){
-        const k = `${node.country}|${node.title}`;
-        if (ALBUM_DATES[k]) return ALBUM_DATES[k].toUpperCase();
-      }
-      if (ALBUM_DATES[node.title]) return ALBUM_DATES[node.title].toUpperCase();
-      const n = node.children ? node.children.length + ' CITIES' : (node.photos?.length || 0) + ' PHOTOS';
-      return n.toUpperCase();
-    }
+function subtitleFor(node) {
+  const pluralize = (count, singular, plural) => `${count} ${count === 1 ? singular : plural}`.toUpperCase();
+
+  if (node.children) {
+    // Countries (albums) → show number of cities
+    return pluralize(node.children.length, 'CITY', 'CITIES');
+  }
+  // City level → show number of photos (also fixes 1 PHOTO)
+  const photoCount = node.photos?.length || 0;
+  return pluralize(photoCount, 'PHOTO', 'PHOTOS');
+}
+
 
     function renderAlbums(nodes){
       albumsView.innerHTML = '';
