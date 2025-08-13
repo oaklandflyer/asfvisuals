@@ -468,7 +468,7 @@
 
     (async function init(){
       const manifest = await loadManifest();
-      window.ROOT = buildCountryCity(manifest);
+      ROOT = buildCountryCity(manifest);
       render();
       window.addEventListener('hashchange', render);
       backBtn.addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
