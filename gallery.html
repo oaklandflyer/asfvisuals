@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Portfolio – ASF Visuals LLC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Browse albums by country, then city from ASF Visuals LLC." />
-  <link rel="canonical" href="https://www.asfvisualsllc.com/gallery.html" />
-  <meta property="og:title" content="Portfolio – ASF Visuals LLC" />
-  <meta property="og:description" content="Country and city albums in a clean, modern grid." />
-  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#10437a" />
+
+  <title>ASF Visuals LLC – Drone & Landscape Photography</title>
+  <meta name="description" content="ASF Visuals — stunning drone & landscape photography in Pittsburgh and beyond.">
+  <meta name="keywords" content="drone photography, portraits, landscapes, Pittsburgh photographer">
+  <link rel="canonical" href="https://www.asfvisualsllc.com/">
+  <meta property="og:title" content="ASF Visuals LLC – Drone & Landscape Photography">
+  <meta property="og:description" content="Explore breathtaking aerial & landscape images by ASF Visuals LLC.">
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#10437a">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
   <!-- Fonts -->
@@ -18,23 +20,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-  <!-- Fancybox -->
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="images/DowntownCloudsReduced.webp" imagesrcset="images/DowntownCloudsReduced.webp" imagesizes="100vw">
+
+  <!-- Fancybox (for lightbox) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-VBF13JPLGF');
+  </script>
 
   <style>
     :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#ffffff;
+      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#fafbfc;
       --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
-      --radius:18px;
+      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
     }
     *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink);scroll-behavior:smooth}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
 
-    /* Header (match site) */
-    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease}
-    .logo-link img{height:60px;width:auto;object-fit:contain}
+    /* ======= HEADER ======= */
+    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,64px);background:rgba(255,255,255,.94);backdrop-filter:saturate(140%) blur(10px);box-shadow:0 1px 12px rgba(16,67,122,.06);transition:transform .32s ease, top .32s ease}
+    .logo-link img{height:62px;width:auto;object-fit:contain}
     .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
     .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
     .site-nav a:hover,.site-nav a.active,.site-nav a[aria-current="page"]{background:var(--accent);color:#111}
@@ -51,12 +64,20 @@
       body.no-scroll{overflow:hidden}
     }
 
-    /* Page header */
-    .page-hero{margin-top:92px;padding:28px clamp(24px,6vw,64px) 0}
-    .page-hero h1{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(2rem,4vw,2.6rem);margin:0 0 6px}
+    /* ======= HERO ======= */
+    .hero{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,rgba(16,67,122,.25) 0%,rgba(232,188,86,.13) 80%),url('images/DowntownCloudsReduced.webp') center/cover no-repeat;border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-top:92px}
+    .hero-text{position:relative;z-index:1;background:rgba(255,255,255,.9);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 28px 24px;max-width:560px;text-align:center;margin:6vh 2vw;animation:fadeInUp 1s cubic-bezier(.23,1.04,.58,.98) both}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.6vw,2.6rem);font-weight:700;margin:0 0 12px;color:var(--primary);letter-spacing:.02em;text-shadow:0 2px 12px #fff6}
+    .hero p{font-size:1.125rem;margin:0 0 18px;color:#253451}
+    .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 28px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;letter-spacing:.02em}
+    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111}
+
+    /* ======= PORTFOLIO (embedded gallery) ======= */
+    .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
+    .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:#10437a;font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
     .page-hero p{margin:0 0 24px;color:#2a3a55}
 
-    /* Breadcrumbs + back */
     .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 14px}
     .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:600;color:#2a3a55}
     .breadcrumbs a{color:var(--primary)}
@@ -64,8 +85,6 @@
     .back-btn{display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
     .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
-    /* ==== GALLERY LOOK (like your mock) ==== */
-    /* Large tiles, generous gutters, captions below image */
     .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 38px;margin:0 clamp(24px,6vw,64px) 60px}
     @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.album-grid{grid-template-columns:1fr;gap:28px}}
@@ -80,7 +99,6 @@
     .album-title{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
     .album-sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
 
-    /* Photo grid (keeps your current look) */
     .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px clamp(24px,6vw,64px) 60px}
     @media (max-width:1100px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.photo-grid{grid-template-columns:1fr;gap:12px}}
@@ -90,30 +108,78 @@
     .photo:hover img{transform:scale(1.02)}
     .empty{margin:24px clamp(24px,6vw,64px);opacity:.75;text-align:center}
 
-    /* Footer */
-    .site-footer{background:#10233a;color:#f5f5f5;padding:36px clamp(24px,6vw,64px) 28px;border-radius:var(--radius) var(--radius) 0 0;margin-top:42px;text-align:center}
-    .social{display:flex;gap:14px;justify-content:center;margin-top:10px}
-    .social img{width:28px;height:28px;border-radius:50%;background:#fff;padding:2px;box-shadow:0 1px 8px rgba(0,0,0,.08)}
+    /* ======= FOOTER ======= */
+    .site-footer{background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px;text-align:center}
+    .footer-cta{display:flex;gap:16px;justify-content:center;margin-bottom:18px}
+    .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
+    .social-links img{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 1px 8px #0001;padding:2px}
 
-    /* a11y / motion */
-    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{left:12px;top:6px;width:auto;height:auto;background:#fff;color:#103047;border-radius:10px;padding:8px 22px;z-index:101}
+    @media (max-width:750px){
+      .site-header{flex-direction:row}
+      .hero{min-height:48vh}
+      .hero-text{max-width:99vw}
+      .footer-cta{flex-direction:column;gap:7px}
+      .site-footer{padding:36px 2vw 24px}
+    }
+
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
     @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    .fade-section{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.25,.8,.25,1)}
+    .fade-section.visible{opacity:1;transform:translateY(0)}
+
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px}
+    .skip-link:focus{left:12px;top:6px;width:auto;height:auto}
+
+    /* ======= ANTI-COPY DETERRENTS ======= */
+    /* Disable selection, drag, and long-press save UI where possible */
+    .album-cover, .photo, .album-cover img, .photo img {
+      -webkit-user-drag: none;
+      -webkit-touch-callout: none;
+      user-select: none;
+    }
+
+    /* Visible watermark on tiles & covers (survives screenshots) */
+    .album-cover::before,
+    .photo::before{
+      content: "ASF VISUALS LLC";
+      position: absolute;
+      right: 10px; bottom: 8px;
+      padding: 4px 8px;
+      font: 600 12px/1.2 Montserrat, Arial, sans-serif;
+      color: rgba(255,255,255,.92);
+      background: rgba(0,0,0,.35);
+      border-radius: 6px;
+      letter-spacing: .06em;
+      pointer-events: none;
+    }
+
+    /* Faint diagonal overlay to discourage clean crops */
+    .album-cover::after,
+    .photo::after{
+      content: "";
+      position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,.03) 0, rgba(255,255,255,.03) 24px,
+        rgba(0,0,0,.05) 24px, rgba(0,0,0,.05) 48px
+      );
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" id="header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
+    <a href="#top" class="logo-link" aria-label="ASF Visuals home">
       <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html" class="active" aria-current="page">Portfolio</a></li>
+        <li><a href="#top" class="active" aria-current="page">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="real-estate.html">Real Estate</a></li>
-        <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -124,24 +190,41 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
-      <h1>Portfolio</h1>
-      <p>Explore albums by <strong>country</strong>, then <strong>city</strong>. Click any image to open the gallery.</p>
+    <!-- ===== HERO ===== -->
+    <section class="hero fade-section" id="top">
+      <div class="hero-text">
+        <h1>Capturing Moments, Telling Stories</h1>
+        <p>Drone, aerial &amp; landscape photography serving Pittsburgh and beyond — where creativity meets precision.</p>
+        <div class="hero-btns">
+          <a href="#portfolio" class="btn">View Portfolio</a>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="page-hero fade-section">
+      <h2>Portfolio</h2>
     </section>
 
     <div class="controls">
       <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
     </div>
-
     <button class="back-btn" id="backBtn">◀ Back</button>
 
     <section id="albumsView" class="album-grid" aria-label="Albums"></section>
     <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
     <p id="emptyState" class="empty" hidden>No results found.</p>
+
+    <!-- Floating Buy Prints Button -->
+    <div class="footer-cta">
+      <a href="https://asfvisualsllc.pixieset.com/" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Open shop to buy prints">Buy Prints</a>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="social">
+    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
+    <div class="social-links">
       <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <img src="images/linkedin-icon.png" alt="LinkedIn" width="28" height="28" loading="lazy" />
       </a>
@@ -149,13 +232,12 @@
         <img src="images/instagram-icon.png" alt="Instagram" width="28" height="28" loading="lazy" />
       </a>
     </div>
-    <p style="opacity:.85">© 2025 ASF Visuals LLC. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
   <script>
-    /* ---------------- Mobile nav + header hide ---------------- */
+    /* ---------------- Mobile nav + header hide + fade-in ---------------- */
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
@@ -179,6 +261,15 @@
         header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
         lastY = y;
       }, { passive:true });
+
+      // Fade-in sections
+      const faders = document.querySelectorAll('.fade-section');
+      const io = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.17 });
+      faders.forEach(f => io.observe(f));
     })();
 
     /* ---------------- Data loading ---------------- */
@@ -196,16 +287,13 @@
     }
 
     /* ---------------- Helpers ---------------- */
-    // Optional: put “subtitle” dates here, like your mock.
-    // Keys may be Country names (root tiles) and/or "Country|City" for city tiles.
-    // Example entries provided – adjust/remove as you want.
     const ALBUM_DATES = {
       "France":"July 19th, 2025",
       "Switzerland":"July 19th, 2025",
       "UK|London":"March 14th, 2025",
       "USA|Pittsburgh":"February 4th, 2025",
       "USA|Oakland":"February 1st, 2025",
-      "Dogs":"January 1st, 2025"     // if you ever have a root-level “Dogs” country
+      "Dogs":"January 1st, 2025"
     };
 
     function firstTruthy(...vals){ return vals.find(Boolean); }
@@ -238,7 +326,6 @@
       return { country, city, parts };
     }
 
-    // Build Country -> City -> photos
     function buildCountryCity(manifest){
       const byCountry = new Map();
       const cats = manifest.categories || {};
@@ -270,7 +357,9 @@
     /* ---------------- Router / render ---------------- */
     function getPath(){
       const hash = decodeURI(location.hash || '#/');
-      return hash.replace(/^#\//,'').split('/').filter(Boolean);
+      const cleaned = hash.replace(/^#\//,'');
+      if (!cleaned || cleaned.startsWith('portfolio') || cleaned.startsWith('top')) return [];
+      return cleaned.split('/').filter(Boolean);
     }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
@@ -325,15 +414,11 @@
       io.observe(img);
     }
 
-    function subtitleFor(node){
-      // Prefer custom date mapping; fallback to count line
-      if (node.country){
-        const k = `${node.country}|${node.title}`;
-        if (ALBUM_DATES[k]) return ALBUM_DATES[k].toUpperCase();
-      }
-      if (ALBUM_DATES[node.title]) return ALBUM_DATES[node.title].toUpperCase();
-      const n = node.children ? node.children.length + ' CITIES' : (node.photos?.length || 0) + ' PHOTOS';
-      return n.toUpperCase();
+    function subtitleFor(node) {
+      const pluralize = (count, singular, plural) => `${count} ${count === 1 ? singular : plural}`.toUpperCase();
+      if (node.children) return pluralize(node.children.length, 'CITY', 'CITIES');
+      const photoCount = node.photos?.length || 0;
+      return pluralize(photoCount, 'PHOTO', 'PHOTOS');
     }
 
     function renderAlbums(nodes){
@@ -354,6 +439,7 @@
         const img = document.createElement('img');
         img.alt = n.title;
         img.dataset.src = n.cover || 'images/social-preview.jpg';
+        img.setAttribute('draggable','false');
         lazyImage(img);
         cover.appendChild(img);
 
@@ -374,6 +460,8 @@
 
         albumsView.appendChild(card);
       });
+
+      attachDeterrents();
     }
 
     function renderPhotos(node){
@@ -393,12 +481,16 @@
 
         const tile = document.createElement('div'); tile.className='photo';
         const img = document.createElement('img'); img.alt = p.title || 'Photo'; img.dataset.src = p.thumb || p.src;
+        img.setAttribute('draggable','false');
         lazyImage(img);
 
         tile.appendChild(img);
         a.appendChild(tile);
         photosView.appendChild(a);
       });
+
+      attachDeterrents();
+      bindFancybox();
     }
 
     function render(){
@@ -413,14 +505,74 @@
       else renderPhotos(node);
     }
 
+    /* ---------------- Anti-copy JS (deterrents) ---------------- */
+    function attachDeterrents(){
+      // Block right-click on gallery areas
+      const blocker = (e) => {
+        if (e.target.closest('.photo, .album-cover, img')) e.preventDefault();
+      };
+      // Add once at document level (idempotent)
+      if (!window.__ctxBlocked){
+        document.addEventListener('contextmenu', blocker, { capture:true });
+        window.__ctxBlocked = true;
+      }
+
+      // Disable drag & long-press hints on all images
+      document.querySelectorAll('img').forEach(img=>{
+        img.setAttribute('draggable','false');
+        img.addEventListener('dragstart', ev => ev.preventDefault(), { passive:false });
+      });
+
+      // Block a few common save/print shortcuts (deterrent only)
+      if (!window.__keysBlocked){
+        document.addEventListener('keydown', (e)=>{
+          const k = e.key?.toLowerCase?.() || '';
+          if ((e.ctrlKey || e.metaKey) && ['s','p','u'].includes(k)) { // save, print, view source
+            e.preventDefault(); e.stopPropagation();
+          }
+          // F12 and Ctrl+Shift+I (cannot fully block devtools, but we deter)
+          if (k === 'f12' || (e.ctrlKey && e.shiftKey && k === 'i')) {
+            e.preventDefault(); e.stopPropagation();
+          }
+        }, { capture:true });
+        window.__keysBlocked = true;
+      }
+
+      // Passive touch handler to reduce iOS image callout
+      if (!window.__touchBlocked){
+        document.addEventListener('touchstart', (e)=>{
+          if (e.target.closest('.photo, .album-cover, img')) {
+            // nothing; presence helps suppress some callouts with -webkit-touch-callout:none
+          }
+        }, { passive:true });
+        window.__touchBlocked = true;
+      }
+    }
+
+    /* ---------------- Fancybox: no download UI & block context menu ---------------- */
+    function bindFancybox(){
+      Fancybox.bind('[data-fancybox]', {
+        Toolbar: { display: ['close'] }, // hide download/share/fullscreen
+        Images:  { zoom: false, click: false, wheel: false },
+        Thumbs:  { autoStart: false },
+        on: {
+          init: (fb) => {
+            fb.container?.addEventListener('contextmenu', e => e.preventDefault(), { capture: true });
+          }
+        }
+      });
+    }
+
     (async function init(){
       const manifest = await loadManifest();
       ROOT = buildCountryCity(manifest);
       render();
       window.addEventListener('hashchange', render);
-      backBtn.addEventListener('click', ()=>{
-        const parts = getPath(); parts.pop(); setPath(parts);
-      });
+      backBtn.addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
+
+      // Initial deterrents + fancybox for first render (if any)
+      attachDeterrents();
+      bindFancybox();
     })();
   </script>
 </body>
