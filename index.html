@@ -36,12 +36,25 @@
 
   <style>
     :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:hsl(0, 0%, 100%); /* darker for contrast over hero */
-      --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
-      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
+      --primary:#10437a; 
+      --accent:#e8bc56; 
+      --ink:#172135; 
+      --bg:#f4f6f9;   /* 🔹 NEW: soft gray background */
+      --panel:rgba(255,255,255,.92); 
+      --shadow:0 10px 40px rgba(0,0,0,.08);
+      --radius:18px; 
+      --cta:#10437a; 
+      --cta-hover:#e8bc56;
     }
     *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:#eef2f6;scroll-behavior:smooth}
+    html,body{
+      margin:0;
+      padding:0;
+      font-family:'Montserrat',Arial,sans-serif;
+      background:var(--bg); 
+      color:var(--ink);   /* 🔹 NEW: dark text instead of #eef2f6 */
+      scroll-behavior:smooth;
+    }
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
 
@@ -66,10 +79,21 @@
 
     /* ======= HERO ======= */
     .hero{
-      position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;
-      border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-top:92px;
-      /* default image as fallback; JS will replace with a random BG from manifest */
-      background:linear-gradient(180deg,rgba(6,10,18,.35) 0%,rgba(6,10,18,.65) 100%), url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+      position:relative;
+      min-height:72vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:0 0 var(--radius) var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      margin-top:92px;
+      background:linear-gradient(
+        180deg,
+        rgba(6,10,18,.15) 0%,   /* 🔹 Lightened overlay */
+        rgba(6,10,18,.35) 100%
+      ),
+      url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
       isolation:isolate;
     }
     /* subtle grain over hero for better text contrast */
