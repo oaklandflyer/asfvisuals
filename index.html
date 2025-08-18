@@ -36,7 +36,7 @@
 
   <style>
     :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:hsl(219, 76%, 66%); /* darker for contrast over hero */
+      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:hsl(0, 0%, 100%); /* darker for contrast over hero */
       --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
       --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
     }
@@ -58,7 +58,7 @@
     .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
     @media (max-width:860px){
       .menu-toggle{display:block}
-      .site-nav{position:fixed;right:0;top:74px;width:min(68vw,360px);height:calc(100dvh - 74px);background:#0b1220;transform:translateX(100%);transition:transform .24s cubic-bezier(.4,2.2,.3,1);box-shadow:-2px 0 18px rgba(0,0,0,.18)}
+      .site-nav{position:fixed;right:0;top:74px;width:min(68vw,360px);height:calc(100dvh - 74px);background:#ffffff;transform:translateX(100%);transition:transform .24s cubic-bezier(.4,2.2,.3,1);box-shadow:-2px 0 18px rgba(0,0,0,.18)}
       .site-nav.open{transform:translateX(0)}
       .site-nav ul{flex-direction:column;padding:26px;gap:12px}
       body.no-scroll{overflow:hidden}
