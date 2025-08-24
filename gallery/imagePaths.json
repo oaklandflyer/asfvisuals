@@ -2862,10 +2862,7 @@
       }
     ]
 },
-"Zoo": {
-  "generatedAt": "2025-08-24T19:30:55.919Z",
-  "categories": {
-    "Zoo": [
+  "USA": [
         {
     "base": "USA/Pittsburgh/Pittsburgh Zoo-01",
     "alt": "Pittsburgh Zoo-01",
@@ -3875,5 +3872,3 @@
   }
     ]
   }
-}
-}
