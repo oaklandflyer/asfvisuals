@@ -2866,1013 +2866,1013 @@
   "generatedAt": "2025-08-24T19:30:55.919Z",
   "categories": {
     "Zoo": [
-      {
-        "base": "Zoo/Pittsburgh Zoo-01",
-        "alt": "Pittsburgh Zoo-01",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-01_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-01_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-01_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-01_1600.jpg"
-          }
-        }
+        {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-01",
+    "alt": "Pittsburgh Zoo-01",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-01_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-01_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-01_1600.avif"
       },
-      {
-        "base": "Zoo/Pittsburgh Zoo-02",
-        "alt": "Pittsburgh Zoo-02",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-02_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-02_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-02_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-02_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-03",
-        "alt": "Pittsburgh Zoo-03",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-03_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-03_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-03_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-03_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-04",
-        "alt": "Pittsburgh Zoo-04",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-04_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-04_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-04_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-04_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-05",
-        "alt": "Pittsburgh Zoo-05",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-05_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-05_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-05_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-05_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-06",
-        "alt": "Pittsburgh Zoo-06",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-06_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-06_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-06_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-06_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-07",
-        "alt": "Pittsburgh Zoo-07",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-07_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-07_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-07_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-07_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-08",
-        "alt": "Pittsburgh Zoo-08",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-08_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-08_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-08_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-08_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-09",
-        "alt": "Pittsburgh Zoo-09",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-09_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-09_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-09_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-09_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-10",
-        "alt": "Pittsburgh Zoo-10",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-10_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-10_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-10_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-10_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-11",
-        "alt": "Pittsburgh Zoo-11",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-11_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-11_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-11_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-11_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-12",
-        "alt": "Pittsburgh Zoo-12",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-12_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-12_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-12_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-12_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-13",
-        "alt": "Pittsburgh Zoo-13",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-13_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-13_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-13_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-13_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-14",
-        "alt": "Pittsburgh Zoo-14",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-14_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-14_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-14_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-14_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-15",
-        "alt": "Pittsburgh Zoo-15",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-15_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-15_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-15_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-15_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-16",
-        "alt": "Pittsburgh Zoo-16",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-16_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-16_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-16_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-16_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-17",
-        "alt": "Pittsburgh Zoo-17",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-17_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-17_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-17_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-17_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-18",
-        "alt": "Pittsburgh Zoo-18",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-18_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-18_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-18_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-18_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-19",
-        "alt": "Pittsburgh Zoo-19",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-19_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-19_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-19_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-19_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-20",
-        "alt": "Pittsburgh Zoo-20",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-20_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-20_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-20_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-20_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-21",
-        "alt": "Pittsburgh Zoo-21",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-21_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-21_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-21_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-21_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-22",
-        "alt": "Pittsburgh Zoo-22",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-22_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-22_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-22_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-22_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-23",
-        "alt": "Pittsburgh Zoo-23",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-23_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-23_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-23_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-23_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-24",
-        "alt": "Pittsburgh Zoo-24",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-24_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-24_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-24_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-24_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-25",
-        "alt": "Pittsburgh Zoo-25",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-25_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-25_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-25_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-25_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-26",
-        "alt": "Pittsburgh Zoo-26",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-26_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-26_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-26_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-26_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-27",
-        "alt": "Pittsburgh Zoo-27",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-27_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-27_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-27_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-27_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-28",
-        "alt": "Pittsburgh Zoo-28",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-28_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-28_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-28_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-28_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-29",
-        "alt": "Pittsburgh Zoo-29",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-29_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-29_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-29_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-29_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-30",
-        "alt": "Pittsburgh Zoo-30",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-30_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-30_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-30_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-30_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-31",
-        "alt": "Pittsburgh Zoo-31",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-31_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-31_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-31_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-31_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-32",
-        "alt": "Pittsburgh Zoo-32",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-32_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-32_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-32_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-32_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-33",
-        "alt": "Pittsburgh Zoo-33",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-33_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-33_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-33_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-33_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-34",
-        "alt": "Pittsburgh Zoo-34",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-34_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-34_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-34_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-34_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-35",
-        "alt": "Pittsburgh Zoo-35",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-35_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-35_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-35_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-35_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-36",
-        "alt": "Pittsburgh Zoo-36",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-36_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-36_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-36_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-36_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-37",
-        "alt": "Pittsburgh Zoo-37",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-37_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-37_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-37_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-37_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-38",
-        "alt": "Pittsburgh Zoo-38",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-38_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-38_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-38_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-38_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-39",
-        "alt": "Pittsburgh Zoo-39",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-39_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-39_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-39_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-39_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-40",
-        "alt": "Pittsburgh Zoo-40",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-40_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-40_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-40_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-40_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-41",
-        "alt": "Pittsburgh Zoo-41",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-41_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-41_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-41_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-41_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-42",
-        "alt": "Pittsburgh Zoo-42",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-42_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-42_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-42_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-42_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-43",
-        "alt": "Pittsburgh Zoo-43",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-43_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-43_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-43_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-43_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-44",
-        "alt": "Pittsburgh Zoo-44",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-44_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-44_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-44_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-44_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-45",
-        "alt": "Pittsburgh Zoo-45",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-45_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-45_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-45_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-45_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-46",
-        "alt": "Pittsburgh Zoo-46",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-46_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-46_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-46_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-46_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-47",
-        "alt": "Pittsburgh Zoo-47",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-47_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-47_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-47_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-47_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-48",
-        "alt": "Pittsburgh Zoo-48",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-48_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-48_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-48_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-48_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-49",
-        "alt": "Pittsburgh Zoo-49",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-49_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-49_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-49_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-49_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-50",
-        "alt": "Pittsburgh Zoo-50",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-50_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-50_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-50_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-50_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-51",
-        "alt": "Pittsburgh Zoo-51",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-51_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-51_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-51_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-51_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-52",
-        "alt": "Pittsburgh Zoo-52",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-52_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-52_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-52_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-52_1600.jpg"
-          }
-        }
-      },
-      {
-        "base": "Zoo/Pittsburgh Zoo-53",
-        "alt": "Pittsburgh Zoo-53",
-        "widths": [
-          480,
-          960,
-          1600
-        ],
-        "variants": {
-          "avif": {
-            "480": "/gallery/Zoo/Pittsburgh%20Zoo-53_480.avif",
-            "960": "/gallery/Zoo/Pittsburgh%20Zoo-53_960.avif",
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-53_1600.avif"
-          },
-          "jpg": {
-            "1600": "/gallery/Zoo/Pittsburgh%20Zoo-53_1600.jpg"
-          }
-        }
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-01_1600.jpg"
       }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-02",
+    "alt": "Pittsburgh Zoo-02",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-02_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-02_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-02_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-02_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-03",
+    "alt": "Pittsburgh Zoo-03",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-03_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-03_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-03_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-03_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-04",
+    "alt": "Pittsburgh Zoo-04",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-04_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-04_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-04_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-04_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-05",
+    "alt": "Pittsburgh Zoo-05",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-05_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-05_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-05_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-05_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-06",
+    "alt": "Pittsburgh Zoo-06",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-06_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-06_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-06_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-06_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-07",
+    "alt": "Pittsburgh Zoo-07",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-07_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-07_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-07_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-07_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-08",
+    "alt": "Pittsburgh Zoo-08",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-08_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-08_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-08_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-08_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-09",
+    "alt": "Pittsburgh Zoo-09",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-09_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-09_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-09_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-09_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-10",
+    "alt": "Pittsburgh Zoo-10",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-10_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-10_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-10_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-10_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-11",
+    "alt": "Pittsburgh Zoo-11",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-11_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-11_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-11_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-11_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-12",
+    "alt": "Pittsburgh Zoo-12",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-12_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-12_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-12_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-12_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-13",
+    "alt": "Pittsburgh Zoo-13",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-13_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-13_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-13_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-13_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-14",
+    "alt": "Pittsburgh Zoo-14",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-14_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-14_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-14_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-14_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-15",
+    "alt": "Pittsburgh Zoo-15",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-15_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-15_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-15_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-15_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-16",
+    "alt": "Pittsburgh Zoo-16",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-16_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-16_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-16_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-16_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-17",
+    "alt": "Pittsburgh Zoo-17",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-17_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-17_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-17_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-17_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-18",
+    "alt": "Pittsburgh Zoo-18",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-18_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-18_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-18_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-18_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-19",
+    "alt": "Pittsburgh Zoo-19",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-19_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-19_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-19_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-19_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-20",
+    "alt": "Pittsburgh Zoo-20",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-20_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-20_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-20_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-20_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-21",
+    "alt": "Pittsburgh Zoo-21",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-21_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-21_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-21_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-21_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-22",
+    "alt": "Pittsburgh Zoo-22",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-22_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-22_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-22_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-22_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-23",
+    "alt": "Pittsburgh Zoo-23",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-23_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-23_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-23_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-23_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-24",
+    "alt": "Pittsburgh Zoo-24",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-24_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-24_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-24_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-24_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-25",
+    "alt": "Pittsburgh Zoo-25",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-25_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-25_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-25_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-25_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-26",
+    "alt": "Pittsburgh Zoo-26",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-26_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-26_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-26_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-26_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-27",
+    "alt": "Pittsburgh Zoo-27",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-27_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-27_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-27_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-27_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-28",
+    "alt": "Pittsburgh Zoo-28",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-28_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-28_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-28_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-28_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-29",
+    "alt": "Pittsburgh Zoo-29",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-29_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-29_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-29_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-29_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-30",
+    "alt": "Pittsburgh Zoo-30",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-30_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-30_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-30_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-30_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-31",
+    "alt": "Pittsburgh Zoo-31",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-31_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-31_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-31_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-31_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-32",
+    "alt": "Pittsburgh Zoo-32",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-32_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-32_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-32_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-32_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-33",
+    "alt": "Pittsburgh Zoo-33",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-33_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-33_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-33_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-33_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-34",
+    "alt": "Pittsburgh Zoo-34",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-34_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-34_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-34_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-34_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-35",
+    "alt": "Pittsburgh Zoo-35",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-35_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-35_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-35_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-35_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-36",
+    "alt": "Pittsburgh Zoo-36",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-36_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-36_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-36_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-36_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-37",
+    "alt": "Pittsburgh Zoo-37",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-37_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-37_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-37_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-37_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-38",
+    "alt": "Pittsburgh Zoo-38",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-38_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-38_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-38_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-38_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-39",
+    "alt": "Pittsburgh Zoo-39",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-39_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-39_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-39_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-39_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-40",
+    "alt": "Pittsburgh Zoo-40",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-40_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-40_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-40_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-40_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-41",
+    "alt": "Pittsburgh Zoo-41",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-41_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-41_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-41_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-41_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-42",
+    "alt": "Pittsburgh Zoo-42",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-42_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-42_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-42_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-42_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-43",
+    "alt": "Pittsburgh Zoo-43",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-43_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-43_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-43_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-43_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-44",
+    "alt": "Pittsburgh Zoo-44",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-44_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-44_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-44_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-44_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-45",
+    "alt": "Pittsburgh Zoo-45",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-45_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-45_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-45_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-45_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-46",
+    "alt": "Pittsburgh Zoo-46",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-46_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-46_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-46_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-46_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-47",
+    "alt": "Pittsburgh Zoo-47",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-47_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-47_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-47_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-47_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-48",
+    "alt": "Pittsburgh Zoo-48",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-48_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-48_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-48_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-48_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-49",
+    "alt": "Pittsburgh Zoo-49",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-49_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-49_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-49_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-49_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-50",
+    "alt": "Pittsburgh Zoo-50",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-50_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-50_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-50_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-50_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-51",
+    "alt": "Pittsburgh Zoo-51",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-51_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-51_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-51_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-51_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-52",
+    "alt": "Pittsburgh Zoo-52",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-52_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-52_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-52_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-52_1600.jpg"
+      }
+    }
+  },
+  {
+    "base": "USA/Pittsburgh/Pittsburgh Zoo-53",
+    "alt": "Pittsburgh Zoo-53",
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "variants": {
+      "avif": {
+        "480": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-53_480.avif",
+        "960": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-53_960.avif",
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-53_1600.avif"
+      },
+      "jpg": {
+        "1600": "/gallery/USA/Pittsburgh/Pittsburgh%20Zoo-53_1600.jpg"
+      }
+    }
+  }
     ]
   }
 }
