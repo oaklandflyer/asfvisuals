@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Real Estate Portfolio - ASF Visuals LLC</title>
-  <meta name="description" content="ASF Visuals LLC — Professional real estate photography for residential and commercial properties.">
-  <meta property="og:title" content="Real Estate Portfolio - ASF Visuals LLC">
-  <meta property="og:description" content="Explore high-quality real estate photography by ASF Visuals LLC.">
+  <title>Clients & Case Studies - ASF Visuals LLC</title>
+  <meta name="description" content="ASF Visuals LLC — Selected clients, case studies, and results across real estate, education, and brands.">
+  <meta property="og:title" content="Clients & Case Studies - ASF Visuals LLC">
+  <meta property="og:description" content="Explore featured clients and project visuals by ASF Visuals LLC.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <link rel="canonical" href="https://www.asfvisualsllc.com/real-estate.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
@@ -38,7 +38,7 @@
     a{text-decoration:none;color:inherit}
     .hidden{display:none!important}
 
-    /* --- Header (matches site) --- */
+    /* --- Header --- */
     .site-header{
       display:flex;align-items:center;justify-content:space-between;
       padding:12px 5vw;background:rgba(255,255,255,0.94);
@@ -71,15 +71,16 @@
       body.no-scroll{overflow:hidden}
     }
 
-    /* --- Hero (matches site) --- */
+    /* --- Hero --- */
     .hero{
       position:relative;min-height:46vh;display:flex;align-items:center;justify-content:center;
       background:linear-gradient(180deg,rgba(16,67,122,.24) 0%,rgba(232,188,86,.10) 80%),
                   url('images/DJI_0441.JPG') center/cover no-repeat;
       border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow)
     }
-    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:430px;text-align:center}
+    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:540px;text-align:center}
     .hero-text h1{font-family:'Playfair Display',serif;font-size:2.35rem;font-weight:700;color:var(--primary);margin:0}
+    .hero-text p{margin:.5rem 0 0;color:#2a3a55}
 
     /* --- Page intro & breadcrumbs --- */
     .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
@@ -93,7 +94,7 @@
     .back-btn{display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
     .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
-    /* --- Albums & Photos --- */
+    /* --- Cards & Grids --- */
     .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 38px;margin:0 clamp(24px,6vw,64px) 60px}
     @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.album-grid{grid-template-columns:1fr;gap:28px}}
@@ -116,11 +117,13 @@
     .photo:hover img{transform:scale(1.02)}
     .empty{margin:24px clamp(24px,6vw,64px);opacity:.75;text-align:center}
 
-    /* --- Buttons --- */
-    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 28px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;letter-spacing:.02em}
+    /* --- CTA band --- */
+    .cta-band{background:#fff;margin:0 clamp(24px,6vw,64px) 64px;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+    .cta-band h3{margin:0;color:var(--primary);font-size:1.2rem}
+    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 20px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;letter-spacing:.02em}
     .btn:hover,.btn:focus{background:var(--cta-hover);color:#111}
 
-    /* --- Footer (matches site) --- */
+    /* --- Footer --- */
     .site-footer{background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px;text-align:center}
     .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
     .social-links img{width:28px;height:28px;background:#fff;border-radius:50%;padding:2px}
@@ -145,7 +148,8 @@
       <ul>
         <li><a href="index.html#top">Home</a></li>
         <li><a href="index.html#portfolio">Portfolio</a></li>
-        <li><a href="real-estate.html" class="active" aria-current="page">Real Estate</a></li>
+        <!-- Keep URL but label it Clients -->
+        <li><a href="real-estate.html" class="active" aria-current="page">Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -154,24 +158,34 @@
 
   <!-- Hero -->
   <section class="hero fade-section">
-    <div class="hero-text"><h1>Real Estate Portfolio</h1></div>
+    <div class="hero-text">
+      <h1>Clients & Case Studies</h1>
+      <p>Browse by industry, then client, then dive into project visuals.</p>
+    </div>
   </section>
 
   <!-- Intro -->
   <section class="page-hero fade-section" id="top">
-    <h2>Properties</h2>
+    <h2>Featured Work</h2>
+    <p>From universities to real estate and local brands — curated highlights of partnerships and outcomes.</p>
   </section>
 
   <!-- Controls -->
   <div class="controls">
     <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
   </div>
-  <button class="back-btn" id="backBtn">◀ Back</button>
+  <button class="back-btn" id="backBtn" type="button">◀ Back</button>
 
   <!-- Views -->
   <section id="albumsView" class="album-grid" aria-label="Albums"></section>
   <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
   <p id="emptyState" class="empty" hidden>No results found.</p>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <h3>Want results like these? Let’s plan your shoot.</h3>
+    <a class="btn" href="contact.html">Get in touch</a>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -216,7 +230,8 @@
     })();
 
     /* ---------- Manifest + shaping ---------- */
-    const MANIFEST_PATH = '/data/realestate-manifest.json';
+    // New data source for clients/case studies
+    const MANIFEST_PATH = '/data/clients-manifest.json';
 
     async function loadManifest(){
       try{
@@ -224,8 +239,8 @@
         if(!res.ok) throw new Error('manifest not found');
         return await res.json();
       }catch(e){
-        console.error('Failed to load realestate manifest', e);
-        return { cities:{} };
+        console.error('Failed to load clients manifest', e);
+        return { industries:{} };
       }
     }
 
@@ -235,30 +250,49 @@
       const widths = (item?.widths || []).slice().sort((a,b)=>a-b);
       const largest = widths[widths.length-1];
       const mid = widths.find(w => w >= 960) || widths[0] || largest;
-      const thumb = avif[String(mid)] || jpg[String(mid)] || Object.values(avif)[0] || Object.values(jpg)[0];
-      const src   = jpg[String(largest)] || avif[String(largest)] || thumb;
+      const thumb = avif?.[String(mid)] || jpg?.[String(mid)] || Object.values(avif)[0] || Object.values(jpg)[0];
+      const src   = jpg?.[String(largest)] || avif?.[String(largest)] || thumb;
       return { thumb, src, title: item.alt || '' };
     }
 
-    // Transform manifest (city→state→property) → state→city→property
-    function buildTree(manifest){
-      const tree = new Map(); // state -> Map(city -> Map(property -> photos[]))
-      const byCity = manifest.cities || {};
-      for (const citySlug in byCity){
-        const byState = byCity[citySlug] || {};
-        for (const stateSlug in byState){
-          const propsObj = byState[stateSlug] || {};
-          if (!tree.has(stateSlug)) tree.set(stateSlug, new Map());
-          const cityMap = tree.get(stateSlug);
-          if (!cityMap.has(citySlug)) cityMap.set(citySlug, new Map());
-          const propMap = cityMap.get(citySlug);
-          for (const propSlug in propsObj){
-            const photos = (propsObj[propSlug] || []).map(p => pickThumbAndSrc(p));
-            propMap.set(propSlug, photos);
+    /*
+      Expecting /data/clients-manifest.json shaped like:
+
+      {
+        "industries": {
+          "education": {
+            "university-of-pittsburgh": {
+              "campus-brand-shoot": [ { widths:[480,960,1600], alt:"Cathedral", "variants":{ "avif":{...}, "jpg":{...} } }, ... ]
+            }
+          },
+          "real-estate": {
+            "acme-realty": {
+              "downtown-condo": [ ... ]
+            }
           }
         }
       }
-      return tree;
+
+      We map to: industry → client → project → photos[]
+    */
+    function buildTree(manifest){
+      const root = new Map(); // industry -> Map(client -> Map(project -> photos[]))
+      const ind = manifest.industries || {};
+      for (const industrySlug in ind){
+        const clients = ind[industrySlug] || {};
+        if(!root.has(industrySlug)) root.set(industrySlug, new Map());
+        const clientMap = root.get(industrySlug);
+        for (const clientSlug in clients){
+          const projects = clients[clientSlug] || {};
+          if(!clientMap.has(clientSlug)) clientMap.set(clientSlug, new Map());
+          const projMap = clientMap.get(clientSlug);
+          for (const projectSlug in projects){
+            const photos = (projects[projectSlug] || []).map(p => pickThumbAndSrc(p));
+            projMap.set(projectSlug, photos);
+          }
+        }
+      }
+      return root;
     }
 
     /* ---------- Router / UI ---------- */
@@ -288,7 +322,7 @@
       };
       const sep = ()=>{ const s=document.createElement('span'); s.textContent='›'; s.className='crumb-sep'; s.style.margin='0 6px'; return s; };
 
-      frag.appendChild(mkLink('All Properties', []));
+      frag.appendChild(mkLink('All Clients', []));
       if (parts[0]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[0]), [parts[0]])); }
       if (parts[1]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[1]), [parts[0], parts[1]])); }
       if (parts[2]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[2]), [parts[0], parts[1], parts[2]])); }
@@ -310,88 +344,89 @@
     }
 
     // Helpers to safely pick a cover image
-    function firstCoverFromPropsMap(props){
-      if (!props || !props.size) return undefined;
-      const firstPropKey = props.keys().next().value;
-      const photos = props.get(firstPropKey) || [];
+    function firstCoverFromProjectsMap(projects){
+      if (!projects || !projects.size) return undefined;
+      const firstKey = projects.keys().next().value;
+      const photos = projects.get(firstKey) || [];
       return photos[0]?.thumb;
     }
-    function firstCoverFromCityMap(cities){
-      if (!cities || !cities.size) return undefined;
-      const firstCityKey = cities.keys().next().value;
-      const props = cities.get(firstCityKey);
-      return firstCoverFromPropsMap(props);
+    function firstCoverFromClientMap(clients){
+      if (!clients || !clients.size) return undefined;
+      const firstClient = clients.keys().next().value;
+      const projects = clients.get(firstClient);
+      return firstCoverFromProjectsMap(projects);
     }
 
-    let TREE = null; // Map(state -> Map(city -> Map(property -> photos[])))
+    let TREE = null; // Map(industry -> Map(client -> Map(project -> photos[])))
 
     function getNode(parts){
       if (!TREE) return null;
 
-      // ROOT → list states
+      // ROOT → list industries
       if (parts.length === 0){
         return {
           kind:'root',
-          children: Array.from(TREE.keys()).sort().map(state=>{
-            const cities = TREE.get(state);
-            const cover = firstCoverFromCityMap(cities);
+          children: Array.from(TREE.keys()).sort().map(industry=>{
+            const clients = TREE.get(industry);
+            const cover = firstCoverFromClientMap(clients);
             return {
-              id: state,
-              title: titleize(state),
+              id: industry,
+              title: titleize(industry),
               cover,
-              sub: pluralize(cities.size, 'CITY', 'CITIES')
+              sub: pluralize(clients.size, 'CLIENT', 'CLIENTS')
             };
           })
         };
       }
 
-      const state = parts[0];
-      const cities = TREE.get(state);
-      if (!cities) return null;
+      const industry = parts[0];
+      const clients = TREE.get(industry);
+      if (!clients) return null;
 
-      // STATE → list cities
+      // INDUSTRY → list clients
       if (parts.length === 1){
         return {
-          kind:'state',
-          title:titleize(state),
-          children: Array.from(cities.keys()).sort().map(city=>{
-            const props = cities.get(city);
-            const cover = firstCoverFromPropsMap(props);
+          kind:'industry',
+          title:titleize(industry),
+          children: Array.from(clients.keys()).sort().map(client=>{
+            const projects = clients.get(client);
+            const cover = firstCoverFromProjectsMap(projects);
             return {
-              id: city,
-              title: titleize(city),
+              id: client,
+              title: titleize(client),
               cover,
-              sub: pluralize(props.size, 'PROPERTY', 'PROPERTIES')
+              sub: pluralize(projects.size, 'PROJECT', 'PROJECTS')
             };
           })
         };
       }
 
-      const city = parts[1];
-      const props = cities.get(city);
-      if (!props) return null;
+      const client = parts[1];
+      const projects = clients.get(client);
+      if (!projects) return null;
 
-      // CITY → list properties
+      // CLIENT → list projects
       if (parts.length === 2){
         return {
-          kind:'city',
-          title:titleize(city),
-          children: Array.from(props.keys()).sort().map(prop=>{
-            const photos = props.get(prop) || [];
+          kind:'client',
+          title:titleize(client),
+          children: Array.from(projects.keys()).sort().map(project=>{
+            const photos = projects.get(project) || [];
             const cover = photos[0]?.thumb;
             return {
-              id: prop,
-              title: titleize(prop),
+              id: project,
+              title: titleize(project),
               cover,
-              sub: pluralize(photos.length, 'PHOTO', 'PHOTOS')
+              sub: pluralize(photos.length, 'ASSET', 'ASSETS')
             };
           })
         };
       }
 
-      const prop = parts[2];
-      const photos = props.get(prop) || [];
-      return { kind:'property', title:titleize(prop), photos };
+      // PROJECT → photos
+      const project = parts[2];
+      const photos = projects.get(project) || [];
+      return { kind:'project', title:titleize(project), photos };
     }
 
     function renderAlbums(nodes){
@@ -436,7 +471,7 @@
       photos.forEach(p=>{
         const a = document.createElement('a');
         a.href = p.src;
-        a.setAttribute('data-fancybox', node.title || 'property');
+        a.setAttribute('data-fancybox', node.title || 'project');
         if (p.title) a.setAttribute('data-caption', p.title);
 
         const tile = document.createElement('div'); tile.className='photo';
@@ -453,7 +488,7 @@
       buildCrumbs(parts);
       const node = getNode(parts);
       if (!node){ setPath([]); return; }
-      if (node.kind === 'property') renderPhotos(node); else renderAlbums(node.children);
+      if (node.kind === 'project') renderPhotos(node); else renderAlbums(node.children || []);
     }
 
     (async function init(){
