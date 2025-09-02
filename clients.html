@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Clients & Case Studies - ASF Visuals LLC</title>
-  <meta name="description" content="ASF Visuals LLC — Selected clients, case studies, and results across real estate, education, and brands.">
+  <meta name="description" content="ASF Visuals LLC — Selected clients, case studies, and results across sports, real estate, education, brands, and websites.">
   <meta property="og:title" content="Clients & Case Studies - ASF Visuals LLC">
-  <meta property="og:description" content="Explore featured clients and project visuals by ASF Visuals LLC.">
+  <meta property="og:description" content="Explore featured clients, web builds, and project visuals by ASF Visuals LLC.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
-  <link rel="canonical" href="https://www.asfvisualsllc.com/real-estate.html">
+  <link rel="canonical" href="https://www.asfvisualsllc.com/clients.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
   <!-- Fonts & Fancybox -->
@@ -78,11 +78,11 @@
                   url('images/DJI_0441.JPG') center/cover no-repeat;
       border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow)
     }
-    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:540px;text-align:center}
+    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:620px;text-align:center}
     .hero-text h1{font-family:'Playfair Display',serif;font-size:2.35rem;font-weight:700;color:var(--primary);margin:0}
     .hero-text p{margin:.5rem 0 0;color:#2a3a55}
 
-    /* --- Page intro & breadcrumbs --- */
+    /* --- Page intro --- */
     .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
     .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
     .page-hero p{margin:0 0 24px;color:#2a3a55}
@@ -148,8 +148,7 @@
       <ul>
         <li><a href="index.html#top">Home</a></li>
         <li><a href="index.html#portfolio">Portfolio</a></li>
-        <!-- Keep URL but label it Clients -->
-        <li><a href="real-estate.html" class="active" aria-current="page">Clients</a></li>
+        <li><a href="clients.html" class="active" aria-current="page">Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -160,21 +159,21 @@
   <section class="hero fade-section">
     <div class="hero-text">
       <h1>Clients & Case Studies</h1>
-      <p>Browse by industry, then client, then dive into project visuals.</p>
+      <p>Sports • Real Estate • Education • Brands • <strong>Websites</strong></p>
     </div>
   </section>
 
   <!-- Intro -->
   <section class="page-hero fade-section" id="top">
     <h2>Featured Work</h2>
-    <p>From universities to real estate and local brands — curated highlights of partnerships and outcomes.</p>
+    <p>From universities to real estate and local brands — curated highlights of partnerships and outcomes. Filter by industry → client → project.</p>
   </section>
 
   <!-- Controls -->
   <div class="controls">
     <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
   </div>
-  <button class="back-btn" id="backBtn" type="button">◀ Back</button>
+  <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
 
   <!-- Views -->
   <section id="albumsView" class="album-grid" aria-label="Albums"></section>
@@ -183,7 +182,7 @@
 
   <!-- CTA -->
   <div class="cta-band">
-    <h3>Want results like these? Let’s plan your shoot.</h3>
+    <h3>Want results like these? Let’s plan your shoot or website.</h3>
     <a class="btn" href="contact.html">Get in touch</a>
   </div>
 
@@ -230,7 +229,6 @@
     })();
 
     /* ---------- Manifest + shaping ---------- */
-    // New data source for clients/case studies
     const MANIFEST_PATH = '/data/clients-manifest.json';
 
     async function loadManifest(){
@@ -260,20 +258,25 @@
 
       {
         "industries": {
-          "education": {
-            "university-of-pittsburgh": {
-              "campus-brand-shoot": [ { widths:[480,960,1600], alt:"Cathedral", "variants":{ "avif":{...}, "jpg":{...} } }, ... ]
+          "sports": {
+            "university-of-pittsburgh-mens-soccer": {
+              "training-and-match-coverage": [ { widths:[480,960,1600], alt:"", "variants":{ "avif":{...}, "jpg":{...} } }, ... ]
             }
           },
           "real-estate": {
-            "acme-realty": {
-              "downtown-condo": [ ... ]
+            "pittsburgh-prestige-remodeling": {
+              "website-build-and-cabinetry-portfolio": [ ... ]
+            }
+          },
+          "web": {
+            "pittsburgh-prestige-remodeling": {
+              "prestigepgh.com-build": [ ... ]
             }
           }
         }
       }
 
-      We map to: industry → client → project → photos[]
+      We map to: industry → client → project → photos[] (each photo has thumb/src via variants)
     */
     function buildTree(manifest){
       const root = new Map(); // industry -> Map(client -> Map(project -> photos[]))
@@ -343,7 +346,6 @@
       io.observe(img);
     }
 
-    // Helpers to safely pick a cover image
     function firstCoverFromProjectsMap(projects){
       if (!projects || !projects.size) return undefined;
       const firstKey = projects.keys().next().value;
@@ -362,19 +364,14 @@
     function getNode(parts){
       if (!TREE) return null;
 
-      // ROOT → list industries
+      // ROOT → industries
       if (parts.length === 0){
         return {
           kind:'root',
           children: Array.from(TREE.keys()).sort().map(industry=>{
             const clients = TREE.get(industry);
             const cover = firstCoverFromClientMap(clients);
-            return {
-              id: industry,
-              title: titleize(industry),
-              cover,
-              sub: pluralize(clients.size, 'CLIENT', 'CLIENTS')
-            };
+            return { id: industry, title: titleize(industry), cover, sub: pluralize(clients.size, 'CLIENT', 'CLIENTS') };
           })
         };
       }
@@ -383,7 +380,7 @@
       const clients = TREE.get(industry);
       if (!clients) return null;
 
-      // INDUSTRY → list clients
+      // INDUSTRY → clients
       if (parts.length === 1){
         return {
           kind:'industry',
@@ -391,12 +388,7 @@
           children: Array.from(clients.keys()).sort().map(client=>{
             const projects = clients.get(client);
             const cover = firstCoverFromProjectsMap(projects);
-            return {
-              id: client,
-              title: titleize(client),
-              cover,
-              sub: pluralize(projects.size, 'PROJECT', 'PROJECTS')
-            };
+            return { id: client, title: titleize(client), cover, sub: pluralize(projects.size, 'PROJECT', 'PROJECTS') };
           })
         };
       }
@@ -405,7 +397,7 @@
       const projects = clients.get(client);
       if (!projects) return null;
 
-      // CLIENT → list projects
+      // CLIENT → projects
       if (parts.length === 2){
         return {
           kind:'client',
@@ -413,12 +405,7 @@
           children: Array.from(projects.keys()).sort().map(project=>{
             const photos = projects.get(project) || [];
             const cover = photos[0]?.thumb;
-            return {
-              id: project,
-              title: titleize(project),
-              cover,
-              sub: pluralize(photos.length, 'ASSET', 'ASSETS')
-            };
+            return { id: project, title: titleize(project), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
           })
         };
       }
@@ -430,6 +417,10 @@
     }
 
     function renderAlbums(nodes){
+      const albumsView = document.getElementById('albumsView');
+      const photosView = document.getElementById('photosView');
+      const emptyState = document.getElementById('emptyState');
+
       photosView.style.display = 'none';
       albumsView.style.display = 'grid';
       albumsView.innerHTML = '';
@@ -461,6 +452,10 @@
     }
 
     function renderPhotos(node){
+      const albumsView = document.getElementById('albumsView');
+      const photosView = document.getElementById('photosView');
+      const emptyState = document.getElementById('emptyState');
+
       albumsView.style.display='none';
       photosView.style.display='grid';
       photosView.innerHTML = '';
@@ -492,11 +487,12 @@
     }
 
     (async function init(){
+      // Load + render
       const manifest = await loadManifest();
       TREE = buildTree(manifest);
       render();
       window.addEventListener('hashchange', render);
-      backBtn.addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
+      document.getElementById('backBtn').addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
     })();
 
     /* ---------- Animated logo ---------- */
