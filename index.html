@@ -84,21 +84,33 @@
       body.no-scroll{overflow:hidden}
     }
 
-    /* ======= HERO ======= */
+    /* ======= HERO (Cycling Background) ======= */
     .hero{
       position:relative; min-height:74vh; display:flex; align-items:center; justify-content:center;
       border-radius:0 0 var(--radius) var(--radius); box-shadow:var(--shadow); overflow:hidden; margin-top:92px;
+      isolation:isolate;
+      /* backup if JS/manifest fails */
       background:
         linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%),
         url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
-      isolation:isolate;
     }
+    /* two layered backgrounds for crossfade */
+    .hero-bg{
+      position:absolute; inset:0; z-index:0; opacity:0;
+      background-position:center; background-size:cover; background-repeat:no-repeat;
+      transition:opacity 1.1s ease;
+    }
+    .hero-bg.is-active{opacity:1}
+    /* overlay grain */
     .hero::after{
       content:""; position:absolute; inset:0; pointer-events:none;
-      background-image:radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+      background:
+        radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
       background-size:3px 3px; mix-blend-mode:soft-light; opacity:.45;
     }
-    .glass-wrap{position:relative; z-index:1; width:min(820px,94vw); padding:0; filter:drop-shadow(0 20px 70px rgba(0,0,0,.35))}
+
+    /* Glass card */
+    .glass-wrap{position:relative; z-index:2; width:min(820px,94vw); padding:0; filter:drop-shadow(0 20px 70px rgba(0,0,0,.35))}
     .liquid-glass{
       position:relative; padding:30px 28px 26px; border-radius:28px; overflow:hidden;
       background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
@@ -168,7 +180,10 @@
     /* Motion helpers */
     .fade-section{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.25,.8,.25,1)}
     .fade-section.visible{opacity:1; transform:translateY(0)}
-    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media (prefers-reduced-motion:reduce){
+      *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+      .hero-bg{transition:none!important}
+    }
 
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px}
     .skip-link:focus{left:12px;top:6px;width:auto;height:auto}
@@ -197,8 +212,12 @@
   </header>
 
   <main id="main">
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="top">
+    <!-- ===== HERO (with cycling background) ===== -->
+    <section class="hero" id="top" aria-label="Hero: cycling gallery background">
+      <!-- cycling layers -->
+      <div class="hero-bg is-active" id="bgA" aria-hidden="true"></div>
+      <div class="hero-bg" id="bgB" aria-hidden="true"></div>
+
       <div class="glass-wrap">
         <div class="liquid-glass">
           <h1>We turn visuals into growth.</h1>
@@ -256,7 +275,7 @@
             <div>
               <h4>University of Pittsburgh — Men’s Soccer</h4>
               <p>On-field photography for D1 athletics; consistent delivery for media day and social.</p>
-              <span class="metric">Hype reels & game-day assets</span>
+              <span class="metric">Game-day assets & coverage</span>
             </div>
           </article>
           <article class="client">
@@ -316,7 +335,7 @@
   </footer>
 
   <script>
-    /* ---------------- Mobile nav + header hide + fade-in ---------------- */
+    /* ---------------- Mobile nav + header hide ---------------- */
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
@@ -340,15 +359,107 @@
         header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
         lastY = y;
       }, { passive:true });
+    })();
 
-      // Fade-in sections
-      const faders = document.querySelectorAll('.fade-section');
-      const io = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+    /* ---------------- Hero background cycler ---------------- */
+    (function cycleHero(){
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const A = document.getElementById('bgA');
+      const B = document.getElementById('bgB');
+      if (!A || !B) return;
+
+      const MANIFEST_PATH = '/gallery/imagePaths.json';
+      const FALLBACK = ['images/DowntownCloudsReduced.webp'];
+
+      function withOverlay(url){
+        return `linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%), url('${url}')`;
+      }
+
+      async function loadManifest(){
+        try{
+          const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
+          if (!res.ok) throw new Error('manifest not found');
+          return await res.json();
+        }catch(e){
+          console.warn('Using fallback hero images.', e);
+          return { categories:{} };
+        }
+      }
+
+      function collectUrls(man){
+        const urls = [];
+        const cats = man.categories || {};
+        Object.values(cats).forEach(items=>{
+          (items||[]).forEach(item=>{
+            const widths = (item.widths||[]).slice().sort((a,b)=>a-b);
+            const target = widths.find(w=>w>=1600) || widths[widths.length-1];
+            const pick =
+              (item.variants?.jpg?.[target]) ||
+              (item.variants?.avif?.[target]) ||
+              Object.values(item.variants?.jpg||{})[0] ||
+              Object.values(item.variants?.avif||{})[0];
+            if (pick) urls.push(pick);
+          });
         });
-      }, { threshold: 0.17 });
-      faders.forEach(f => io.observe(f));
+        // Deduplicate, randomize
+        const uniq = [...new Set(urls)];
+        for (let i = uniq.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [uniq[i], uniq[j]] = [uniq[j], uniq[i]];
+        }
+        return uniq.length ? uniq : FALLBACK;
+      }
+
+      function preload(url){
+        return new Promise((resolve)=>{
+          const img = new Image();
+          img.onload = ()=> resolve(true);
+          img.onerror = ()=> resolve(false);
+          img.src = url;
+        });
+      }
+
+      let idx = 0, timer = null, list = FALLBACK.slice();
+      let active = A, next = B;
+
+      function swapTo(url){
+        next.style.backgroundImage = withOverlay(url);
+        next.classList.add('is-active');
+        active.classList.remove('is-active');
+        // swap refs
+        const tmp = active; active = next; next = tmp;
+      }
+
+      async function advance(){
+        if (!list.length) return;
+        idx = (idx + 1) % list.length;
+        const url = list[idx];
+        const ok = await preload(url);
+        swapTo(ok ? url : FALLBACK[0]);
+      }
+
+      function start(){
+        if (timer || prefersReduced) return;
+        timer = setInterval(advance, 7000); // every 7s
+      }
+      function stop(){ if (timer){ clearInterval(timer); timer = null; } }
+
+      // Init
+      (async ()=>{
+        const man = await loadManifest();
+        list = collectUrls(man);
+        // set initial image
+        active.style.backgroundImage = withOverlay(list[0] || FALLBACK[0]);
+        active.classList.add('is-active');
+        // kick off cycling
+        if (!prefersReduced) start();
+      })();
+
+      // pause when hidden for performance
+      document.addEventListener('visibilitychange', ()=>{
+        if (document.hidden) stop(); else start();
+      });
+      // resize not needed; backgrounds cover
     })();
   </script>
 </body>
