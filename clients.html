@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Clients & Case Studies - ASF Visuals LLC</title>
-  <meta name="description" content="ASF Visuals LLC — Selected clients, case studies, and results across sports, real estate, education, brands, and websites.">
-  <meta property="og:title" content="Clients & Case Studies - ASF Visuals LLC">
-  <meta property="og:description" content="Explore featured clients, web builds, and project visuals by ASF Visuals LLC.">
-  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <title>Clients & Case Studies – ASF Visuals LLC</title>
+  <meta name="description" content="Selected clients and case studies from ASF Visuals LLC — sports, commercial real estate, education, brands, and websites." />
   <link rel="canonical" href="https://www.asfvisualsllc.com/clients.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
-  <!-- Fonts & Fancybox -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Fancybox (for lightbox) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
@@ -26,504 +26,469 @@
   </script>
 
   <style>
-    /* --- Theme --- */
     :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#fafbfc;
-      --panel:rgba(255,255,255,.96); --shadow:0 8px 32px rgba(0,0,0,.08);
-      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
+      /* Match homepage theme */
+      --primary:#10437a;
+      --accent:#e8bc56;
+      --ink:#172135;
+      --bg:#f5f7fb;
+      --shadow:0 12px 36px rgba(16,67,122,.12);
+      --radius:22px;
+      --cta:#10437a;
+      --cta-hover:#e8bc56;
+      --muted:#2a3a55;
+      --ring:0 0 0 3px rgba(16,67,122,.18);
+
+      /* Layout spacing */
+      --container:max(780px, min(1200px, 92vw));
+      --section-pad: 56px;
+      --grid-gap: 28px;
+      --card-pad: 24px;
+      --thumb-gap: 14px;
+      --line: 1.65;
     }
+    @media (max-width: 900px){
+      :root{
+        --section-pad: 44px;
+        --grid-gap: 22px;
+        --card-pad: 20px;
+        --thumb-gap: 12px;
+      }
+    }
+    @media (max-width: 600px){
+      :root{
+        --section-pad: 36px;
+        --grid-gap: 18px;
+        --card-pad: 18px;
+        --thumb-gap: 10px;
+      }
+    }
+
     *,*::before,*::after{box-sizing:border-box}
     html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink);scroll-behavior:smooth}
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
-    .hidden{display:none!important}
+    .container{width:var(--container);margin-inline:auto}
+    p{line-height:var(--line)}
 
-    /* --- Header --- */
+    /* ===== Header (matches homepage) ===== */
     .site-header{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:12px 5vw;background:rgba(255,255,255,0.94);
-      box-shadow:0 2px 8px rgba(16,67,122,0.06);position:sticky;top:0;z-index:100
+      position:sticky; top:0; z-index:1000;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px clamp(16px,4vw,64px);
+      background:rgba(255,255,255,.88);
+      backdrop-filter:saturate(140%) blur(10px);
+      box-shadow:0 1px 12px rgba(16,67,122,.06);
     }
-    .logo-link{display:flex;align-items:center;gap:10px}
-    .logo-link img{height:62px;width:auto;max-width:180px;object-fit:contain;display:block}
-    #logo-anim{height:62px;display:block}
-    #logo-anim svg{height:62px;width:auto;display:block}
-    #logo-anim svg.stroke-phase *{fill:none;stroke:var(--primary);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-    .draw-in{animation:draw 1.6s ease-out forwards}
-    @keyframes draw{to{stroke-dashoffset:0}}
-    #logo-anim svg.final-fill *{transition:fill .6s ease, stroke .6s ease}
-
-    .site-nav ul{display:flex;gap:2vw;list-style:none;margin:0;padding:0}
-    .site-nav a{font-weight:600;color:var(--primary);letter-spacing:.01em;padding:6px 14px;border-radius:999px;transition:background .2s,color .2s}
-    .site-nav a.active,.site-nav a:hover{background:var(--accent);color:#111}
-
-    /* --- Mobile Nav --- */
-    .menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;width:44px;height:44px;background:none;border:none;cursor:pointer;z-index:150}
-    .menu-toggle .bar{width:28px;height:4px;margin:4px 0;background:var(--primary);border-radius:2px;transition:.3s}
+    .logo-link img{height:62px;width:auto;object-fit:contain}
+    .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
+    .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
+    .site-nav a:hover,.site-nav a.active,[aria-current="page"]{background:var(--accent);color:#111}
+    .menu-toggle{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer}
+    .menu-toggle .bar{display:block;width:26px;height:3px;margin:5px auto;background:var(--primary);border-radius:2px;transition:.3s}
     .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
     .menu-toggle.open .bar:nth-child(2){opacity:0}
     .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-    @media (max-width:800px){
-      .menu-toggle{display:flex}
-      .site-nav{position:fixed;top:70px;right:0;background:#fff;box-shadow:-2px 0 16px #0002;width:65vw;max-width:340px;height:100vh;transform:translateX(100%);transition:transform .25s cubic-bezier(.4,2.2,.3,1);z-index:101;display:block;padding:38px 0 0}
+    @media (max-width:860px){
+      .menu-toggle{display:block}
+      .site-nav{
+        position:fixed; right:0; top:74px; width:min(68vw,360px);
+        height:calc(100dvh - 74px); background:#fff;
+        transform:translateX(100%); transition:transform .24s cubic-bezier(.4,2.2,.3,1);
+        box-shadow:-2px 0 18px rgba(0,0,0,.18)
+      }
       .site-nav.open{transform:translateX(0)}
-      .site-nav ul{flex-direction:column;gap:12px;padding-left:32px}
+      .site-nav ul{flex-direction:column;padding:26px;gap:12px}
       body.no-scroll{overflow:hidden}
     }
 
-    /* --- Hero --- */
+    /* ===== Hero ===== */
     .hero{
-      position:relative;min-height:46vh;display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(180deg,rgba(16,67,122,.24) 0%,rgba(232,188,86,.10) 80%),
-                  url('images/DJI_0441.JPG') center/cover no-repeat;
-      border-radius:0 0 var(--radius) var(--radius);box-shadow:var(--shadow)
+      position:relative; display:grid; place-items:center;
+      min-height:50vh; margin:14px clamp(16px,4vw,64px) 0;
+      border-radius:0 0 var(--radius) var(--radius);
+      overflow:hidden; box-shadow:var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%),
+        url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
     }
-    .hero-text{background:rgba(255,255,255,.89);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 38px;max-width:620px;text-align:center}
-    .hero-text h1{font-family:'Playfair Display',serif;font-size:2.35rem;font-weight:700;color:var(--primary);margin:0}
-    .hero-text p{margin:.5rem 0 0;color:#2a3a55}
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:28px; padding:34px 30px 26px; text-align:center; color:#fff;
+      backdrop-filter: blur(22px) saturate(140%); -webkit-backdrop-filter: blur(22px) saturate(140%);
+      width:min(860px,94vw); filter:drop-shadow(0 20px 70px rgba(0,0,0,.35));
+    }
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.6vw,2.6rem);margin:0 0 10px}
+    .hero p{margin:0;color:#f5f8ff}
 
-    /* --- Page intro --- */
-    .page-hero{padding:42px clamp(24px,6vw,64px) 10px}
-    .page-hero h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.8rem,4vw,2.4rem);margin:0 0 6px}
-    .page-hero p{margin:0 0 24px;color:#2a3a55}
+    /* ===== Sections ===== */
+    .section{padding:var(--section-pad) 0}
+    .section h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.3rem);margin:0 0 10px}
+    .muted{color:var(--muted); margin:0 0 8px}
 
-    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 14px}
-    .breadcrumbs{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-weight:700;color:#2a3a55}
-    .breadcrumbs a{color:var(--primary)}
-    .crumb-sep{opacity:.5}
-    .back-btn{display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)}
-    .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
+    /* ===== Client grid ===== */
+    .clients{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:var(--grid-gap);
+      margin-top:18px
+    }
+    @media (max-width:1100px){.clients{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:720px){.clients{grid-template-columns:1fr}}
 
-    /* --- Cards & Grids --- */
-    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 38px;margin:0 clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.album-grid{grid-template-columns:1fr;gap:28px}}
-    .album-card{display:flex;flex-direction:column;gap:14px}
-    .album-cover{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,.10);aspect-ratio:3/2;background:#e9eef5;transition:transform .28s ease, box-shadow .28s ease}
-    .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
-    .album-cover img.loaded{opacity:1}
-    .album-card:hover .album-cover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(16,67,122,.15)}
-    .album-card:hover .album-cover img{transform:scale(1.02)}
-    .album-caption{display:flex;flex-direction:column;align-items:center;text-align:center}
-    .album-title{font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .album-sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
+    .client-card{
+      background:#fff;border-radius:22px;box-shadow:var(--shadow);
+      padding:var(--card-pad);
+      display:grid;
+      grid-template-columns:110px 1fr;
+      gap:18px;
+      align-items:start;
+    }
+    .client-card img.logo{
+      width:110px;height:110px;object-fit:contain;background:#f1f5fb;border-radius:16px;padding:12px
+    }
+    .client-card h3{margin:0 0 6px;color:#0f2746;font-size:1.08rem;line-height:1.35}
+    .client-card p{margin:0 0 12px;color:#3a4b66;font-size:1rem}
+    .badge{display:inline-block;background:var(--accent);color:#111;padding:6px 12px;border-radius:999px;font-weight:700;font-size:.88rem}
 
-    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:10px clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.photo-grid{grid-template-columns:1fr;gap:12px}}
-    .photo{position:relative;border-radius:8px;overflow:hidden;background:#e9eef5;aspect-ratio:3/2;box-shadow:0 3px 14px rgba(0,0,0,.06)}
-    .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
-    .photo img.loaded{opacity:1}
-    .photo:hover img{transform:scale(1.02)}
-    .empty{margin:24px clamp(24px,6vw,64px);opacity:.75;text-align:center}
+    /* Stack logo on mobile for air */
+    @media (max-width:560px){
+      .client-card{grid-template-columns:1fr}
+      .client-card img.logo{width:96px;height:96px;justify-self:start}
+    }
 
-    /* --- CTA band --- */
-    .cta-band{background:#fff;margin:0 clamp(24px,6vw,64px) 64px;border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
-    .cta-band h3{margin:0;color:var(--primary);font-size:1.2rem}
-    .btn{background:var(--cta);color:#fff;font-weight:700;padding:11px 20px;border-radius:var(--radius);border:none;cursor:pointer;box-shadow:var(--shadow);font-size:1rem;transition:background .2s,color .2s;letter-spacing:.02em}
-    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111}
+    /* Portfolio thumbs */
+    .thumbs{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:var(--thumb-gap);
+      margin-top:14px
+    }
+    @media (max-width:520px){.thumbs{grid-template-columns:repeat(2,1fr)}}
+    .thumb{
+      position:relative; border-radius:12px; overflow:hidden; aspect-ratio:3/2;
+      background:#e9eef5; box-shadow:0 3px 12px rgba(0,0,0,.06)
+    }
+    .thumb img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease, transform .25s ease}
+    .thumb img.loaded{opacity:1}
+    .thumb:hover img{transform:scale(1.02)}
+    .empty{margin-top:12px;color:#6a7a93;font-size:.96rem}
 
-    /* --- Footer --- */
-    .site-footer{background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px;text-align:center}
+    /* Buttons */
+    .btn{
+      background:var(--cta);color:#fff;font-weight:700;padding:12px 26px;border-radius:999px;border:1px solid transparent;
+      cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.20);font-size:1rem;transition:transform .12s ease, background .2s,color .2s;letter-spacing:.02em;white-space:nowrap
+    }
+    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111;transform:translateY(-1px)}
+    .btn:focus-visible{outline:none; box-shadow: var(--ring)}
+    .btn.outline{
+      background:#fff;color:var(--cta);border-color:#d7e3f7
+    }
+    .btn.outline:hover,.btn.outline:focus{
+      background:var(--accent);color:#111;border-color:transparent
+    }
+
+    /* CTA band (mobile-safe, roomy) */
+    .cta-band{
+      background:#fff;border-radius:22px;box-shadow:var(--shadow);
+      padding:26px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;margin-top:32px
+    }
+    .cta-band h3{margin:0;color:var(--primary);font-size:1.22rem;line-height:1.35}
+    .cta-band > div{display:flex;gap:12px;flex-wrap:wrap}
+    @media (max-width:600px){
+      .cta-band{flex-direction:column;align-items:stretch;text-align:center;gap:12px;padding:20px}
+      .cta-band > div{flex-direction:column;width:100%}
+      .cta-band .btn{width:100%;padding:14px 18px}
+    }
+
+    /* Footer */
+    .site-footer{background:#0b1220;color:#cfe0ff;padding:52px 6vw 38px;border-radius:var(--radius) var(--radius) 0 0;margin-top:86px;text-align:center}
     .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
-    .social-links img{width:28px;height:28px;background:#fff;border-radius:50%;padding:2px}
+    .social-links img{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 1px 8px #0001;padding:2px}
 
-    /* --- Motion helpers --- */
-    .fade-section{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.25,.8,.25,1)}
-    .fade-section.visible{opacity:1;transform:translateY(0)}
+    /* Motion helpers */
+    .fade{opacity:0; transform:translateY(32px); transition:all .7s cubic-bezier(.25,.8,.25,1)}
+    .fade.visible{opacity:1; transform:translateY(0)}
     @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <div id="logo-anim" aria-hidden="true"></div>
-      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
+    <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
-    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html#top">Home</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="clients.html" class="active" aria-current="page">Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </header>
 
   <!-- Hero -->
-  <section class="hero fade-section">
-    <div class="hero-text">
+  <section class="hero">
+    <div class="hero-card">
       <h1>Clients & Case Studies</h1>
-      <p>Sports • Real Estate • Education • Brands • <strong>Websites</strong></p>
+      <p>Sports • Commercial Real Estate • Education • Brands • <strong>Web</strong></p>
     </div>
   </section>
 
-  <!-- Intro -->
-  <section class="page-hero fade-section" id="top">
-    <h2>Featured Work</h2>
-    <p>From universities to real estate and local brands — curated highlights of partnerships and outcomes. Filter by industry → client → project.</p>
-  </section>
+  <main>
+    <!-- Featured Clients -->
+    <section class="section container fade" id="clients">
+      <h2>Featured Clients</h2>
+      <p class="muted">Click any image to open the gallery.</p>
 
-  <!-- Controls -->
-  <div class="controls">
-    <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
-  </div>
-  <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
+      <div class="clients" id="clientGrid">
+        <!-- Client cards injected by JS -->
+      </div>
 
-  <!-- Views -->
-  <section id="albumsView" class="album-grid" aria-label="Albums"></section>
-  <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
-  <p id="emptyState" class="empty" hidden>No results found.</p>
+      <div class="cta-band">
+        <h3>Want results like these? Let’s plan your shoot or website.</h3>
+        <div>
+          <a class="btn" href="contact.html">Get in touch</a>
+          <a class="btn" href="portfolio.html">See Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <!-- CTA -->
-  <div class="cta-band">
-    <h3>Want results like these? Let’s plan your shoot or website.</h3>
-    <a class="btn" href="contact.html">Get in touch</a>
-  </div>
-
-  <!-- Footer -->
   <footer class="site-footer">
     <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
     <div class="social-links">
       <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy">
+        <img src="images/linkedin-icon.png" alt="LinkedIn" width="28" height="28" loading="lazy" />
       </a>
       <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" loading="lazy">
+        <img src="images/instagram-icon.png" alt="Instagram" width="28" height="28" loading="lazy" />
       </a>
     </div>
   </footer>
 
   <!-- Fancybox -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
   <script>
-    /* ---------- Mobile nav + fade-in ---------- */
-    (function navInit(){
-      const btn = document.getElementById('menu-toggle');
+    /* ---------- Mobile nav ---------- */
+    (function(){
+      const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if(btn && nav){
-        btn.addEventListener('click',()=>{
+      if (btn && nav){
+        btn.addEventListener('click', ()=>{
           const open = nav.classList.toggle('open');
           btn.classList.toggle('open');
           btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 800) document.body.classList.toggle('no-scroll', open);
+          if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
         });
-        nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-          if (window.innerWidth <= 800){
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+          if (window.innerWidth <= 860){
             nav.classList.remove('open'); btn.classList.remove('open');
             document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false');
           }
         }));
       }
-      const faders = document.querySelectorAll('.fade-section');
-      const io = new IntersectionObserver((entries,o)=>{
-        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); }});
-      },{threshold:0.17});
-      faders.forEach(f=>io.observe(f));
     })();
 
-    /* ---------- Manifest + shaping ---------- */
-    const MANIFEST_PATH = '/data/clients-manifest.json';
-
-    async function loadManifest(){
-      try{
-        const res = await fetch(MANIFEST_PATH, { cache: 'no-cache' });
-        if(!res.ok) throw new Error('manifest not found');
-        return await res.json();
-      }catch(e){
-        console.error('Failed to load clients manifest', e);
-        return { industries:{} };
-      }
-    }
-
-    function pickThumbAndSrc(item){
-      const jpg  = item?.variants?.jpg  || {};
-      const avif = item?.variants?.avif || {};
-      const widths = (item?.widths || []).slice().sort((a,b)=>a-b);
-      const largest = widths[widths.length-1];
-      const mid = widths.find(w => w >= 960) || widths[0] || largest;
-      const thumb = avif?.[String(mid)] || jpg?.[String(mid)] || Object.values(avif)[0] || Object.values(jpg)[0];
-      const src   = jpg?.[String(largest)] || avif?.[String(largest)] || thumb;
-      return { thumb, src, title: item.alt || '' };
-    }
-
-    /*
-      Expecting /data/clients-manifest.json shaped like:
-
-      {
-        "industries": {
-          "sports": {
-            "university-of-pittsburgh-mens-soccer": {
-              "training-and-match-coverage": [ { widths:[480,960,1600], alt:"", "variants":{ "avif":{...}, "jpg":{...} } }, ... ]
-            }
-          },
-          "real-estate": {
-            "pittsburgh-prestige-remodeling": {
-              "website-build-and-cabinetry-portfolio": [ ... ]
-            }
-          },
-          "web": {
-            "pittsburgh-prestige-remodeling": {
-              "prestigepgh.com-build": [ ... ]
-            }
-          }
-        }
-      }
-
-      We map to: industry → client → project → photos[] (each photo has thumb/src via variants)
-    */
-    function buildTree(manifest){
-      const root = new Map(); // industry -> Map(client -> Map(project -> photos[]))
-      const ind = manifest.industries || {};
-      for (const industrySlug in ind){
-        const clients = ind[industrySlug] || {};
-        if(!root.has(industrySlug)) root.set(industrySlug, new Map());
-        const clientMap = root.get(industrySlug);
-        for (const clientSlug in clients){
-          const projects = clients[clientSlug] || {};
-          if(!clientMap.has(clientSlug)) clientMap.set(clientSlug, new Map());
-          const projMap = clientMap.get(clientSlug);
-          for (const projectSlug in projects){
-            const photos = (projects[projectSlug] || []).map(p => pickThumbAndSrc(p));
-            projMap.set(projectSlug, photos);
-          }
-        }
-      }
-      return root;
-    }
-
-    /* ---------- Router / UI ---------- */
-    const breadcrumbsEl = document.getElementById('breadcrumbs');
-    const albumsView = document.getElementById('albumsView');
-    const photosView = document.getElementById('photosView');
-    const emptyState = document.getElementById('emptyState');
-    const backBtn = document.getElementById('backBtn');
-
-    const titleize = s => (s||'').toString().replace(/[-_]/g,' ').replace(/\b([a-z])/g,c=>c.toUpperCase());
-    const pluralize = (n, one, many) => `${n} ${n === 1 ? one : many}`;
-
-    function getPath(){
-      const h = decodeURI(location.hash.replace(/^#\//,''));
-      return h ? h.split('/').filter(Boolean) : [];
-    }
-    function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
-
-    function buildCrumbs(parts){
-      const frag = document.createDocumentFragment();
-      const mkLink = (label, toParts)=>{
-        const a = document.createElement('a');
-        a.href = '#/' + toParts.map(encodeURI).join('/');
-        a.textContent = label;
-        a.addEventListener('click', e=>{ e.preventDefault(); setPath(toParts); });
-        return a;
-      };
-      const sep = ()=>{ const s=document.createElement('span'); s.textContent='›'; s.className='crumb-sep'; s.style.margin='0 6px'; return s; };
-
-      frag.appendChild(mkLink('All Clients', []));
-      if (parts[0]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[0]), [parts[0]])); }
-      if (parts[1]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[1]), [parts[0], parts[1]])); }
-      if (parts[2]){ frag.appendChild(sep()); frag.appendChild(mkLink(titleize(parts[2]), [parts[0], parts[1], parts[2]])); }
-      breadcrumbsEl.innerHTML = ''; breadcrumbsEl.appendChild(frag);
-      backBtn.style.display = parts.length ? 'inline-flex' : 'none';
-    }
-
-    function lazyImage(img){
-      const io = new IntersectionObserver((entries, obs)=>{
-        entries.forEach(entry=>{
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          el.src = el.dataset.src;
-          el.onload = ()=> el.classList.add('loaded');
-          obs.unobserve(el);
-        });
-      }, { threshold:.15 });
-      io.observe(img);
-    }
-
-    function firstCoverFromProjectsMap(projects){
-      if (!projects || !projects.size) return undefined;
-      const firstKey = projects.keys().next().value;
-      const photos = projects.get(firstKey) || [];
-      return photos[0]?.thumb;
-    }
-    function firstCoverFromClientMap(clients){
-      if (!clients || !clients.size) return undefined;
-      const firstClient = clients.keys().next().value;
-      const projects = clients.get(firstClient);
-      return firstCoverFromProjectsMap(projects);
-    }
-
-    let TREE = null; // Map(industry -> Map(client -> Map(project -> photos[])))
-
-    function getNode(parts){
-      if (!TREE) return null;
-
-      // ROOT → industries
-      if (parts.length === 0){
-        return {
-          kind:'root',
-          children: Array.from(TREE.keys()).sort().map(industry=>{
-            const clients = TREE.get(industry);
-            const cover = firstCoverFromClientMap(clients);
-            return { id: industry, title: titleize(industry), cover, sub: pluralize(clients.size, 'CLIENT', 'CLIENTS') };
-          })
-        };
-      }
-
-      const industry = parts[0];
-      const clients = TREE.get(industry);
-      if (!clients) return null;
-
-      // INDUSTRY → clients
-      if (parts.length === 1){
-        return {
-          kind:'industry',
-          title:titleize(industry),
-          children: Array.from(clients.keys()).sort().map(client=>{
-            const projects = clients.get(client);
-            const cover = firstCoverFromProjectsMap(projects);
-            return { id: client, title: titleize(client), cover, sub: pluralize(projects.size, 'PROJECT', 'PROJECTS') };
-          })
-        };
-      }
-
-      const client = parts[1];
-      const projects = clients.get(client);
-      if (!projects) return null;
-
-      // CLIENT → projects
-      if (parts.length === 2){
-        return {
-          kind:'client',
-          title:titleize(client),
-          children: Array.from(projects.keys()).sort().map(project=>{
-            const photos = projects.get(project) || [];
-            const cover = photos[0]?.thumb;
-            return { id: project, title: titleize(project), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
-          })
-        };
-      }
-
-      // PROJECT → photos
-      const project = parts[2];
-      const photos = projects.get(project) || [];
-      return { kind:'project', title:titleize(project), photos };
-    }
-
-    function renderAlbums(nodes){
-      const albumsView = document.getElementById('albumsView');
-      const photosView = document.getElementById('photosView');
-      const emptyState = document.getElementById('emptyState');
-
-      photosView.style.display = 'none';
-      albumsView.style.display = 'grid';
-      albumsView.innerHTML = '';
-      emptyState.hidden = nodes.length !== 0;
-
-      nodes.forEach(n=>{
-        const card = document.createElement('a');
-        card.className='album-card';
-        card.href='#';
-
-        const cover = document.createElement('div'); cover.className='album-cover';
-        const img = document.createElement('img'); img.alt = n.title; img.dataset.src = n.cover || 'images/social-preview.jpg';
-        lazyImage(img); cover.appendChild(img);
-
-        const cap = document.createElement('div'); cap.className='album-caption';
-        const title = Object.assign(document.createElement('div'), {className:'album-title', textContent:n.title});
-        const sub   = Object.assign(document.createElement('div'), {className:'album-sub',   textContent:n.sub});
-        cap.appendChild(title); cap.appendChild(sub);
-
-        card.appendChild(cover); card.appendChild(cap);
-
-        card.addEventListener('click', e=>{
-          e.preventDefault();
-          const parts = getPath(); parts.push(n.id); setPath(parts);
-        });
-
-        albumsView.appendChild(card);
-      });
-    }
-
-    function renderPhotos(node){
-      const albumsView = document.getElementById('albumsView');
-      const photosView = document.getElementById('photosView');
-      const emptyState = document.getElementById('emptyState');
-
-      albumsView.style.display='none';
-      photosView.style.display='grid';
-      photosView.innerHTML = '';
-
-      const photos = node.photos || [];
-      emptyState.hidden = photos.length !== 0;
-
-      photos.forEach(p=>{
-        const a = document.createElement('a');
-        a.href = p.src;
-        a.setAttribute('data-fancybox', node.title || 'project');
-        if (p.title) a.setAttribute('data-caption', p.title);
-
-        const tile = document.createElement('div'); tile.className='photo';
-        const img = document.createElement('img'); img.alt = p.title || node.title; img.dataset.src = p.thumb || p.src;
-        lazyImage(img);
-        tile.appendChild(img);
-        a.appendChild(tile);
-        photosView.appendChild(a);
-      });
-    }
-
-    function render(){
-      const parts = getPath();
-      buildCrumbs(parts);
-      const node = getNode(parts);
-      if (!node){ setPath([]); return; }
-      if (node.kind === 'project') renderPhotos(node); else renderAlbums(node.children || []);
-    }
-
-    (async function init(){
-      // Load + render
-      const manifest = await loadManifest();
-      TREE = buildTree(manifest);
-      render();
-      window.addEventListener('hashchange', render);
-      document.getElementById('backBtn').addEventListener('click', ()=>{ const parts = getPath(); parts.pop(); setPath(parts); });
+    /* ---------- Fade-in ---------- */
+    (function(){
+      const els = document.querySelectorAll('.fade');
+      const io = new IntersectionObserver((entries, o)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); } });
+      }, { threshold: 0.17 });
+      els.forEach(el=>io.observe(el));
     })();
 
-    /* ---------- Animated logo ---------- */
-    (async function animateLogo(){
-      const container = document.getElementById('logo-anim');
-      const fallback = document.getElementById('logo-fallback');
-      if (!container) return;
-      try{
-        const res = await fetch('images/ASFLogo.svg', { cache:'no-cache' });
-        if (!res.ok) throw new Error('SVG not found');
-        const svgText = await res.text();
-        container.innerHTML = svgText;
-        const svg = container.querySelector('svg');
-        if (!svg) throw new Error('SVG malformed');
+    /* ---------- Client Portfolio Loader ---------- */
+    (function(){
+      const MANIFEST_PATH = '/gallery/imagePaths.json';
 
-        svg.classList.add('stroke-phase','final-fill');
-        const targets = svg.querySelectorAll('path,line,polyline,polygon,circle,rect');
-        targets.forEach((el,i)=>{
-          let len = 300; try{ if(typeof el.getTotalLength==='function') len = el.getTotalLength(); }catch(e){}
-          el.style.strokeDasharray = len; el.style.strokeDashoffset = len;
-          el.style.animationDelay = (i*70)+'ms'; el.classList.add('draw-in');
-        });
-        if (fallback) fallback.classList.add('hidden');
-        const totalTime = (targets.length*70)+1600;
-        setTimeout(()=>{
-          svg.classList.remove('stroke-phase');
-          targets.forEach(el=>{ el.style.stroke='none'; el.style.strokeDasharray=''; el.style.strokeDashoffset=''; });
-        }, totalTime);
-      }catch(e){
-        console.warn('Logo animation fallback:', e);
+      // Configure clients here
+      const CLIENTS = [
+        {
+          id: 'pitt',
+          label: "University of Pittsburgh — Men’s Soccer",
+          logo: 'images/pitt.JPG',
+          description: 'On-field photography for D1 athletics; consistent delivery for media day and social.',
+          badge: 'Game-day assets & coverage',
+          pathIncludes: ['clients/pitt', 'pitt-mens-soccer', 'pitt/athletics']
+        },
+        {
+          id: 'ppr',
+          label: 'Pittsburgh Prestige Remodeling',
+          logo: 'images/ppr.png',
+          description: 'Website build, copy, and portfolio photography to showcase cabinetry & installs.',
+          badge: 'New site + lead-ready gallery',
+          websiteUrl: 'https://prestigepgh.com/',   // Visit Website button
+          pathIncludes: ['clients/ppr', 'prestige-remodel', 'pittsburgh-prestige']
+        },
+        {
+          id: 'sg',
+          label: 'S&G Asset Group LLC',
+          logo: 'images/clients/sg-asset.png',
+          description: 'Commercial real estate photography for listings and investor materials (exteriors & interiors).',
+          badge: 'CRE photography & showcase',
+          pathIncludes: ['clients/sg', 's-and-g-asset', 'sg-asset-group', 'clients/cre/sg']
+        }
+      ];
+
+      /* --- Helpers for manifest --- */
+      function firstTruthy(...v){ return v.find(Boolean); }
+      function pickThumbAndSrc(item){
+        const widths = (item.widths || []).slice().sort((a,b)=>a-b);
+        const largest = widths.length ? widths[widths.length-1] : null;
+        const mid = widths.find(w => w >= 1280) || widths[0] || largest;
+        const avifMid = item.variants?.avif?.[mid];
+        const jpgLargest = item.variants?.jpg?.[largest];
+        const avifLargest = item.variants?.avif?.[largest];
+        const thumb = firstTruthy(avifMid, jpgLargest, avifLargest);
+        const src   = firstTruthy(jpgLargest, avifLargest, avifMid);
+        return { thumb, src };
       }
+      function anyPathIncludes(item, needles){
+        const pools = [
+          ...Object.values(item.variants?.jpg || {}),
+          ...Object.values(item.variants?.avif || {})
+        ].join(' ').toLowerCase();
+        return needles.some(n => pools.includes(String(n).toLowerCase()));
+      }
+      function lazyImage(img){
+        const io = new IntersectionObserver((entries, obs)=>{
+          entries.forEach(entry=>{
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            el.src = el.dataset.src;
+            el.onload = ()=> el.classList.add('loaded');
+            obs.unobserve(el);
+          });
+        }, { threshold:.15 });
+        io.observe(img);
+      }
+      async function loadManifest(){
+        try{
+          const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
+          if (!res.ok) throw new Error('manifest not found');
+          return await res.json();
+        }catch(e){
+          console.error('Failed to load imagePaths.json', e);
+          return { categories:{} };
+        }
+      }
+      function collectByClient(manifest){
+        const cats = manifest.categories || {};
+        const all = [];
+        Object.keys(cats).forEach(cat=>{
+          (cats[cat] || []).forEach(item => all.push(item));
+        });
+
+        const out = new Map();
+        CLIENTS.forEach(c => out.set(c.id, []));
+
+        all.forEach(item=>{
+          CLIENTS.forEach(c=>{
+            if (anyPathIncludes(item, c.pathIncludes)){
+              const { thumb, src } = pickThumbAndSrc(item);
+              const title = item.alt || '';
+              if (src || thumb) out.get(c.id).push({thumb: thumb || src, src: src || thumb, title});
+            }
+          });
+        });
+
+        CLIENTS.forEach(c=>{
+          const arr = out.get(c.id);
+          // Show up to 6 per client; if fewer exist, it's still spacious
+          out.set(c.id, arr.slice(0, 6));
+        });
+        return out;
+      }
+      function renderClients(map){
+        const grid = document.getElementById('clientGrid');
+        grid.innerHTML = '';
+
+        CLIENTS.forEach(c=>{
+          const photos = map.get(c.id) || [];
+          const card = document.createElement('article');
+          card.className = 'client-card';
+
+          const logo = document.createElement('img');
+          logo.className = 'logo';
+          logo.alt = c.label;
+          logo.loading = 'lazy';
+          logo.src = c.logo;
+
+          const body = document.createElement('div');
+          const h3 = document.createElement('h3'); h3.textContent = c.label;
+          const p = document.createElement('p'); p.textContent = c.description;
+          const badge = document.createElement('span'); badge.className = 'badge'; badge.textContent = c.badge;
+
+          body.appendChild(h3);
+          body.appendChild(p);
+          body.appendChild(badge);
+
+          // Optional website button (e.g., prestigepgh.com)
+          if (c.websiteUrl){
+            const wrap = document.createElement('div');
+            wrap.style.marginTop = '12px';
+            const link = document.createElement('a');
+            link.className = 'btn outline';
+            link.href = c.websiteUrl;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = 'Visit Website';
+            wrap.appendChild(link);
+            body.appendChild(wrap);
+          }
+
+          if (photos.length){
+            const thumbs = document.createElement('div');
+            thumbs.className = 'thumbs';
+            photos.forEach((ph, idx)=>{
+              const a = document.createElement('a');
+              a.href = ph.src;
+              a.setAttribute('data-fancybox', `client-${c.id}`);
+              if (ph.title) a.setAttribute('data-caption', ph.title);
+
+              const t = document.createElement('div'); t.className = 'thumb';
+              const img = document.createElement('img');
+              img.alt = ph.title || `${c.label} ${idx+1}`;
+              img.dataset.src = ph.thumb || ph.src;
+              img.loading = 'lazy';
+              lazyImage(img);
+
+              t.appendChild(img);
+              a.appendChild(t);
+              thumbs.appendChild(a);
+            });
+            body.appendChild(thumbs);
+          }else{
+            const empty = document.createElement('div');
+            empty.className = 'empty';
+            empty.textContent = 'No images yet — portfolio coming online.';
+            body.appendChild(empty);
+          }
+
+          card.appendChild(logo);
+          card.appendChild(body);
+          grid.appendChild(card);
+        });
+
+        Fancybox.bind('[data-fancybox]', {
+          Toolbar: { display: ['close'] },
+          Thumbs: { autoStart: false }
+        });
+      }
+
+      (async function init(){
+        const manifest = await loadManifest();
+        const byClient = collectByClient(manifest);
+        renderClients(byClient);
+      })();
     })();
   </script>
 </body>
