@@ -183,6 +183,36 @@
 
     .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px}
     .skip-link:focus{left:12px;top:6px;width:auto;height:auto}
+    /* CTA actions layout */
+.cta-band > div {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Prevent button text from wrapping badly */
+.btn { white-space: nowrap; }
+
+/* Mobile: stack and stretch */
+@media (max-width: 600px){
+  .cta-band{
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 12px;
+    padding: 18px;
+  }
+  .cta-band h3{ line-height: 1.25; }
+  .cta-band > div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-band .btn{
+    width: 100%;
+    padding: 14px 18px; /* a bit taller for thumb taps */
+  }
+}
+
   </style>
 </head>
 <body>
@@ -286,7 +316,7 @@
           <!-- New client -->
           <article class="client">
             <!-- Replace the src below with your actual logo/image if you have one -->
-            <img src="images/clients/sg-asset.png" alt="S&G Asset Group LLC">
+            <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group LLC">
             <div>
               <h4>S&amp;G Asset Group LLC</h4>
               <p>Commercial real estate photography for listings and investor materials (exteriors & interiors).</p>
