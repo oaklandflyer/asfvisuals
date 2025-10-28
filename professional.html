@@ -17,25 +17,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
+  <!-- Preload hero fallback for faster first paint -->
+  <link rel="preload" as="image" href="images/DowntownCloudsReduced.webp" imagesrcset="images/DowntownCloudsReduced.webp" imagesizes="100vw">
+
   <style>
-    :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#f5f7fb;
-      --panel:rgba(255,255,255,.92); --shadow:0 10px 40px rgba(0,0,0,.08);
-      --radius:18px; --cta:#10437a; --cta-hover:#e8bc56;
-      --muted:#5b6a81;
+    :root {
+      --primary: #10437a;
+      --accent: #e8bc56;
+      --bg: #fafbfc;
+      --card-bg: rgba(255,255,255,0.96);
+      --shadow: 0 8px 32px rgba(0,0,0,0.08);
+      --radius: 18px;
+      --cta: #10437a;
+      --cta-hover: #e8bc56;
+      --muted:#2a3a55;
+      --ink:#172135;
     }
 
-    /* Dark mode polish */
-    @media (prefers-color-scheme: dark){
-      :root{
-        --bg:#0e1726; --ink:#e9eef6; --panel:rgba(18,24,37,.9);
-        --shadow:0 12px 40px rgba(0,0,0,.45);
-      }
-      .site-header{ background:rgba(20,28,44,.9)!important; box-shadow:0 2px 8px rgba(0,0,0,.4)!important; }
-      .card{ background:#0f1a2c!important; border-color:#1e2a44!important; }
-      .pill{ background:#0f1a2c!important; border-color:#273959!important; color:#dbe7ff!important; }
-      .muted{ color:#b5c3d8!important; }
-      .btn-outline{ color:var(--cta)!important; border-color:var(--cta)!important; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: #172135;
+      scroll-behavior: smooth;
     }
 
     html,body{ background:var(--bg); color:var(--ink); font-family:'Montserrat',Arial,sans-serif; scroll-behavior:smooth; }
@@ -68,19 +73,28 @@
       }
     }
 
-    /* Hero */
+    /* ===== HERO (now supports cycling backgrounds like index.html) ===== */
     .hero{
       margin-top:92px; min-height:62vh; display:flex; align-items:center; justify-content:center;
       border-radius:0 0 var(--radius) var(--radius); box-shadow:var(--shadow); overflow:hidden;
+      /* Fallback background if JS is disabled or manifest not found */
       background:
         radial-gradient(80% 80% at 80% 0%, rgba(232,188,86,.18), transparent 60%),
         radial-gradient(60% 60% at 20% 20%, rgba(16,67,122,.20), transparent 70%),
         linear-gradient(180deg, rgba(6,10,18,.25) 0%, rgba(6,10,18,.55) 100%),
         url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
       position:relative;
+      isolation:isolate;
     }
+    /* Background layers that fade in/out */
+    .hero-bg{
+      position:absolute; inset:0; z-index:0; opacity:0;
+      background-position:center; background-size:cover; background-repeat:no-repeat;
+      transition:opacity 1.1s ease;
+    }
+    .hero-bg.is-active{ opacity:1 }
     .hero::after{
-      /* slow animated sheen */
+      /* subtle sheen */
       content:""; position:absolute; inset:0;
       background: radial-gradient(1200px 300px at -20% -10%, rgba(255,255,255,.22), transparent 46%),
                   radial-gradient(1200px 300px at 120% 110%, rgba(255,255,255,.12), transparent 48%);
@@ -99,11 +113,12 @@
       box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 20px 50px rgba(0,0,0,.35);
       color:#fff; text-align:center; backdrop-filter: blur(22px) saturate(140%);
     }
+
     .page-wrap{ padding:0 6vw 80px }
 
     /* Sticky in-page nav */
     .toc{
-      position:sticky; top:86px; z-index:5; background:var(--panel);
+      position:sticky; top:86px; z-index:5; background:var(--card-bg);
       border:1px solid #e4ebf6; border-radius:999px; padding:8px; box-shadow:var(--shadow);
       display:flex; gap:6px; flex-wrap:wrap; align-items:center; justify-content:center; margin:22px 0;
     }
@@ -174,8 +189,12 @@
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (now with cycling background layers) -->
   <section class="hero" role="img" aria-label="Pittsburgh skyline backdrop">
+    <!-- cycling layers -->
+    <div class="hero-bg is-active" id="bgA" aria-hidden="true"></div>
+    <div class="hero-bg" id="bgB" aria-hidden="true"></div>
+
     <div class="glass-wrap">
       <div class="liquid-glass">
         <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.1rem,4.8vw,3rem);margin:0 0 12px">Professional Profile</h1>
@@ -226,13 +245,13 @@
       <!-- FEATURED IMAGES -->
       <section class="media-strip" aria-label="Featured work previews">
         <figure class="tile">
-          <img src="images/DowntownCloudsReduced.webp" alt="Pittsburgh skyline at blue hour" loading="lazy">
+          <img src="images/DJI_0006-Enhanced.jpg" alt="Pittsburgh in the Clouds" loading="lazy">
         </figure>
         <figure class="tile">
-          <img src="gallery/USA/Pittsburgh/DJI_0018-HDR_1600.jpg" alt="Aerial city perspective at golden hour" loading="lazy">
+          <img src="images/pitt.JPG" alt="Men’s Soccer at Pitt" loading="lazy">
         </figure>
         <figure class="tile">
-          <img src="gallery/USA/Pittsburgh/Pittsburgh%20Skyline-01_1600.jpg" alt="Long lens skyline composition" loading="lazy">
+          <img src="images/CathyCMU_1600.avif" alt="Cathedral and CMU" loading="lazy">
         </figure>
       </section>
     </section>
@@ -403,7 +422,6 @@
       <div class="btn-row" style="justify-content:center">
         <a class="btn" href="contact.html">Get a Quote</a>
         <a class="btn-outline" href="portfolio.html">See Portfolio</a>
-        <a class="btn-outline" href="docs/Andrew_Coutinho_Resume.pdf">Download Résumé</a>
       </div>
       <p class="muted" style="margin-top:10px">Prefer a quick overview? <a href="about.html" class="btn-outline" style="display:inline-block;margin-top:8px">← Back to About</a></p>
     </section>
@@ -469,6 +487,104 @@
         sections.forEach(sec => spy.observe(sec));
       }
     });
+  </script>
+
+  <!-- Hero background cycler (same logic as index.html) -->
+  <script>
+    (function cycleHero(){
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const A = document.getElementById('bgA');
+      const B = document.getElementById('bgB');
+      if (!A || !B) return;
+
+      const MANIFEST_PATH = '/gallery/imagePaths.json';
+      const INTERVAL_MS = 7000;
+      const FALLBACK = ['images/DowntownCloudsReduced.webp'];
+
+      const withOverlay = (url) =>
+        `linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%), url('${url}')`;
+
+      async function loadManifest(){
+        try{
+          const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
+          if (!res.ok) throw new Error('manifest not found');
+          return await res.json();
+        }catch(e){
+          console.warn('[Hero Cycler] Using fallback images.', e);
+          return { categories:{} };
+        }
+      }
+
+      function collectUrls(man){
+        const urls = [];
+        const cats = man.categories || {};
+        Object.values(cats).forEach(items=>{
+          (items||[]).forEach(item=>{
+            const widths = (item.widths||[]).slice().sort((a,b)=>a-b);
+            const target = widths.find(w=>w>=1600) || widths[widths.length-1];
+            const pick =
+              (item.variants?.jpg?.[target]) ||
+              (item.variants?.avif?.[target]) ||
+              Object.values(item.variants?.jpg||{})[0] ||
+              Object.values(item.variants?.avif||{})[0];
+            if (pick) urls.push(pick);
+          });
+        });
+        const uniq = [...new Set(urls)];
+        // shuffle for variety
+        for (let i = uniq.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [uniq[i], uniq[j]] = [uniq[j], uniq[i]];
+        }
+        return uniq.length ? uniq : FALLBACK;
+      }
+
+      function preload(url){
+        return new Promise((resolve)=>{
+          const img = new Image();
+          img.onload = ()=> resolve(true);
+          img.onerror = ()=> resolve(false);
+          img.src = url;
+        });
+      }
+
+      let list = FALLBACK.slice();
+      let idx = 0, timer = null;
+      let active = A, next = B;
+
+      function swapTo(url){
+        next.style.backgroundImage = withOverlay(url);
+        next.classList.add('is-active');
+        active.classList.remove('is-active');
+        const tmp = active; active = next; next = tmp;
+      }
+
+      async function advance(){
+        if (!list.length) return;
+        idx = (idx + 1) % list.length;
+        const url = list[idx];
+        const ok = await preload(url);
+        swapTo(ok ? url : FALLBACK[0]);
+      }
+
+      function start(){
+        if (timer || prefersReduced) return;
+        timer = setInterval(advance, INTERVAL_MS);
+      }
+      function stop(){ if (timer){ clearInterval(timer); timer = null; } }
+
+      (async ()=>{
+        const man = await loadManifest();
+        list = collectUrls(man);
+        active.style.backgroundImage = withOverlay(list[0] || FALLBACK[0]);
+        active.classList.add('is-active');
+        if (!prefersReduced) start();
+      })();
+
+      document.addEventListener('visibilitychange', ()=>{
+        if (document.hidden) stop(); else start();
+      });
+    })();
   </script>
 </body>
 </html>
