@@ -86,6 +86,49 @@ async function processOne({ file, industry, client, project, baseName }) {
   addToManifest({ industry, client, project, base, avifPaths: avifUrls, jpgPaths: jpgUrls, alt: baseName });
 }
 
+/**
+ * Try to infer a project name and a cleaned baseName from the filename.
+ * Examples:
+ *   "Day 1 ASO-004.jpg"  -> project: "day-1",  baseName: "aso-004"
+ *   "Day 2 - IMG_1234"   -> project: "day-2",  baseName: "img-1234"
+ *   "Rockwell Park - 001"-> project: "rockwell-park", baseName: "001"
+ * Fallback project is "misc".
+ */
+function inferFromFilename(filename) {
+  const raw = path.parse(filename).name.trim();
+
+  // 1) Explicit patterns like "Day 1", "Set 2", "Album 3" at the start
+  const dayLike = /^(day|set|album)\s*\d+/i;
+  if (dayLike.test(raw)) {
+    const m = raw.match(dayLike);
+    const project = toSlug(m[0]);
+    const rest = raw.slice(m[0].length).replace(/^[-_\s]+/, '');
+    const baseName = toSlug(rest || raw); // if no rest, keep the whole
+    return { project: project || 'misc', baseName: baseName || 'image' };
+  }
+
+  // 2) Split on " - " to treat the left side as project (e.g., "Rockwell Park - 001")
+  if (raw.includes(' - ')) {
+    const [left, right] = raw.split(' - ', 2);
+    const project = toSlug(left);
+    const baseName = toSlug((right || '').trim() || raw);
+    return { project: project || 'misc', baseName: baseName || 'image' };
+  }
+
+  // 3) If filename starts with something like "Day1_" without space
+  const compactDay = /^(day|set|album)\d+/i;
+  if (compactDay.test(raw)) {
+    const m = raw.match(compactDay);
+    const project = toSlug(m[0].replace(/(\D)(\d+)/, '$1 $2')); // "day1" -> "day 1"
+    const rest = raw.slice(m[0].length).replace(/^[-_\s]+/, '');
+    const baseName = toSlug(rest || raw);
+    return { project: project || 'misc', baseName: baseName || 'image' };
+  }
+
+  // 4) Fallback: no obvious project; put into "misc"
+  return { project: 'misc', baseName: toSlug(raw) || 'image' };
+}
+
 function parseDirs(relPath) {
   // relPath like: <industry>/<client>/<project>/<file>
   const partsAll = relPath.split(path.sep);
@@ -112,6 +155,17 @@ function parseDirs(relPath) {
       project:  toSlug(projectRaw),
       baseName: toSlug(path.parse(filename).name)
     };
+  } else if (dirs.length === 1) {
+    // NEW: client/<file>  -> infer project from filename
+    const [clientRaw] = dirs;
+    const inferred = inferFromFilename(filename);
+    return {
+      ok: true,
+      industry: DEFAULT_INDUSTRY,
+      client:   toSlug(clientRaw),
+      project:  inferred.project,
+      baseName: inferred.baseName
+    };
   }
   return { ok: false };
 }
@@ -130,6 +184,7 @@ async function run() {
     console.error('   Examples:');
     console.error('   clients/originals/<client>/<project>/<image>.jpg');
     console.error('   clients/originals/<industry>/<client>/<project>/<image>.jpg');
+    console.error('   (Also supported) clients/originals/<client>/<image>.jpg  // project inferred from filename');
     process.exit(1);
   }
 
@@ -148,7 +203,7 @@ async function run() {
     const rel = path.relative(SRC_ROOT, file);
     const parsed = parseDirs(rel);
     if (!parsed.ok) {
-      console.warn(`  ↪ Skipping (needs <client>/<project>/... or <industry>/<client>/<project>/...): ${rel}`);
+      console.warn(`  ↪ Skipping (needs <client>/<project>/... or <industry>/<client>/<project>/... or <client>/<file>): ${rel}`);
       skipped++;
       continue;
     }

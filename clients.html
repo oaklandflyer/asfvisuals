@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Clients & Case Studies – ASF Visuals LLC</title>
-  <meta name="description" content="Selected clients and case studies from ASF Visuals LLC — sports, real estate, education, brands, and websites." />
+  <title>Clients & Projects – ASF Visuals LLC</title>
+  <meta name="description" content="Selected client work and personal projects from ASF Visuals LLC — sports, real estate, education, brands, web, and more." />
   <link rel="canonical" href="https://www.asfvisualsllc.com/clients.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
 
@@ -96,17 +96,23 @@
     .section h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.3rem);margin:0 0 10px}
     .muted{color:var(--muted); margin:0 0 8px}
 
-    /* Album/Photo views (same structure as original) */
+    /* Controls */
     .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 10px}
+    .dataset-toggle{display:flex;gap:8px;align-items:center;margin-left:0}
+    .pill{background:#fff;border:1px solid #d7e3f7;color:var(--primary);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+    .pill.active{background:var(--accent);color:#111;border-color:transparent}
+
     .breadcrumbs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-weight:600;color:#2a3a55}
     .breadcrumbs a{color:var(--primary)}
     .crumb-sep{opacity:.5}
+
     .back-btn{
       display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;
       background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)
     }
     .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
 
+    /* Album/Photo views */
     .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap);margin:0 clamp(24px,6vw,64px) 60px}
     @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.album-grid{grid-template-columns:1fr}}
@@ -130,13 +136,7 @@
     .photo:hover img{transform:scale(1.02)}
     .empty{margin:24px clamp(24px,6vw,64px);opacity:.8;text-align:center;color:#2a3a55}
 
-    /* Buttons */
-    .btn{background:var(--cta);color:#fff;font-weight:700;padding:12px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.20);font-size:1rem;transition:transform .12s ease, background .2s,color .2s;letter-spacing:.02em;white-space:nowrap}
-    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111;transform:translateY(-1px)}
-    .btn:focus-visible{outline:none; box-shadow: var(--ring)}
-    .btn.outline{background:#fff;color:var(--cta);border-color:#d7e3f7}
-    .btn.outline:hover,.btn.outline:focus{background:var(--accent);color:#111;border-color:transparent}
-
+    /* CTA */
     .cta-band{background:#fff;margin:0 clamp(24px,6vw,64px) 64px;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
     .cta-band h3{margin:0;color:var(--primary);font-size:1.22rem;line-height:1.35}
     .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
@@ -145,6 +145,13 @@
       .cta-actions{flex-direction:column;width:100%}
       .cta-band .btn{width:100%;padding:14px 18px}
     }
+
+    /* Buttons */
+    .btn{background:var(--cta);color:#fff;font-weight:700;padding:12px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.20);font-size:1rem;transition:transform .12s ease, background .2s,color .2s;letter-spacing:.02em;white-space:nowrap}
+    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111;transform:translateY(-1px)}
+    .btn:focus-visible{outline:none; box-shadow: var(--ring)}
+    .btn.outline{background:#fff;color:var(--cta);border-color:#d7e3f7}
+    .btn.outline:hover,.btn.outline:focus{background:var(--accent);color:#111;border-color:transparent}
 
     /* Footer */
     .site-footer{background:#0b1220;color:#cfe0ff;padding:52px 6vw 38px;border-radius:var(--radius) var(--radius) 0 0;margin-top:86px;text-align:center}
@@ -180,19 +187,23 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-card">
-      <h1>Clients & Case Studies</h1>
-      <p>Sports • Commercial Real Estate • Education • Brands • <strong>Web</strong></p>
+      <h1>Clients & Projects</h1>
+      <p>Sports • Commercial Real Estate • Education • Brands • <strong>Web</strong> • Personal Projects</p>
     </div>
   </section>
 
   <!-- Intro -->
   <section class="section container fade">
     <h2>Featured Work</h2>
-    <p class="muted">From universities to real estate and local brands — curated highlights. Browse by industry → client → project.</p>
+    <p class="muted">Explore both client work and personal projects. Browse by industry → client/project → set.</p>
   </section>
 
   <!-- Controls -->
   <div class="controls">
+    <div class="dataset-toggle" role="tablist" aria-label="Content type">
+      <button class="pill active" id="tabClients" role="tab" aria-selected="true">Clients</button>
+      <button class="pill" id="tabProjects" role="tab" aria-selected="false">Projects</button>
+    </div>
     <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
   </div>
   <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
@@ -255,8 +266,9 @@
       els.forEach(el=>io.observe(el));
     })();
 
-    /* ----- Clients manifest (matches original structure) ----- */
-    const MANIFEST_PATH = '/data/clients-manifest.json'; // back to the original source
+    /* ----- Manifests ----- */
+    const CLIENTS_MANIFEST_PATH  = '/data/clients-manifest.json';
+    const PROJECTS_MANIFEST_PATH = '/data/projects-manifest.json';
 
     function pickThumbAndSrc(item){
       const jpg  = item?.variants?.jpg  || {};
@@ -269,21 +281,22 @@
       return { thumb, src, title: item.alt || '' };
     }
 
-    async function loadManifest(){
+    async function loadJSON(url, fallback){
       try{
-        const res = await fetch(MANIFEST_PATH, { cache: 'no-cache' });
-        if(!res.ok) throw new Error('manifest not found');
+        const res = await fetch(url, { cache: 'no-cache' });
+        if(!res.ok) throw new Error('HTTP ' + res.status);
         return await res.json();
       }catch(e){
-        console.error('Failed to load clients manifest', e);
-        return { industries:{} };
+        console.warn('Failed to load', url, e);
+        return fallback;
       }
     }
 
-    // Build Map(industry -> Map(client -> Map(project -> photos[])))
-    function buildTree(manifest){
+    /* ----- Trees ----- */
+    // Clients: manifest.industries[industry][client][project] = [photos]
+    function buildClientsTree(man){
       const root = new Map();
-      const ind = manifest.industries || {};
+      const ind = man.industries || {};
       for (const industrySlug in ind){
         const clients = ind[industrySlug] || {};
         if(!root.has(industrySlug)) root.set(industrySlug, new Map());
@@ -301,103 +314,69 @@
       return root;
     }
 
-    /* ----- Router helpers ----- */
+    // Projects: manifest.projects[industry][project][album] = [photos]
+    function buildProjectsTree(man){
+      const root = new Map();
+      const ind = man.projects || {};
+      for (const industrySlug in ind){
+        const projects = ind[industrySlug] || {};
+        if(!root.has(industrySlug)) root.set(industrySlug, new Map());
+        const projMap = root.get(industrySlug);
+        for (const projectSlug in projects){
+          const albums = projects[projectSlug] || {};
+          if(!projMap.has(projectSlug)) projMap.set(projectSlug, new Map());
+          const albumMap = projMap.get(projectSlug);
+          for (const albumSlug in albums){
+            const photos = (albums[albumSlug] || []).map(p => pickThumbAndSrc(p));
+            albumMap.set(albumSlug, photos);
+          }
+        }
+      }
+      return root;
+    }
+
+    /* ----- DOM refs ----- */
     const breadcrumbsEl = document.getElementById('breadcrumbs');
     const albumsView = document.getElementById('albumsView');
     const photosView = document.getElementById('photosView');
     const emptyState = document.getElementById('emptyState');
     const backBtn = document.getElementById('backBtn');
 
+    const tabClients  = document.getElementById('tabClients');
+    const tabProjects = document.getElementById('tabProjects');
+
     const titleize = s => (s||'').toString()
       .replace(/[-_]/g,' ')
       .replace(/\b\w/g,m=>m.toUpperCase());
     const pluralize = (n,sing,pl)=>`${n} ${n===1?sing:pl}`.toUpperCase();
 
+    function firstCoverFromNestedMap(map3){
+      if (!map3 || !map3.size) return;
+      const firstK = map3.keys().next().value;
+      const photos = map3.get(firstK) || [];
+      return photos[0]?.thumb;
+    }
+    function firstCoverLevel2(map2){ // Map(A -> Map(B -> photos[]))
+      if (!map2 || !map2.size) return;
+      const firstA = map2.keys().next().value;
+      const mapB = map2.get(firstA);
+      return firstCoverFromNestedMap(mapB);
+    }
+
+    /* ----- Router helpers ----- */
     function getPath(){
-      const hash = decodeURI(location.hash || '#/');
+      const hash = decodeURI(location.hash || '#/clients/');
       const cleaned = hash.replace(/^#\//,'');
-      return cleaned ? cleaned.split('/').filter(Boolean) : [];
+      return cleaned ? cleaned.split('/').filter(Boolean) : ['clients'];
     }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
 
-    function firstCoverFromProjectsMap(projects){
-      if (!projects || !projects.size) return undefined;
-      const firstKey = projects.keys().next().value;
-      const photos = projects.get(firstKey) || [];
-      return photos[0]?.thumb;
-    }
-    function firstCoverFromClientMap(clients){
-      if (!clients || !clients.size) return undefined;
-      const firstClient = clients.keys().next().value;
-      const projects = clients.get(firstClient);
-      return firstCoverFromProjectsMap(projects);
-    }
-
-    let TREE = null;
-
-    function getNode(parts){
-      if (!TREE) return null;
-
-      // ROOT → industries
-      if (parts.length === 0){
-        return {
-          kind:'root',
-          children: Array.from(TREE.keys()).sort().map(industry=>{
-            const clients = TREE.get(industry);
-            const cover = firstCoverFromClientMap(clients);
-            return { id: industry, title: titleize(industry), cover, sub: pluralize(clients.size, 'CLIENT', 'CLIENTS') };
-          })
-        };
-      }
-
-      const industry = parts[0];
-      const clients = TREE.get(industry);
-      if (!clients) return null;
-
-      // INDUSTRY → clients
-      if (parts.length === 1){
-        return {
-          kind:'industry',
-          title:titleize(industry),
-          children: Array.from(clients.keys()).sort().map(client=>{
-            const projects = clients.get(client);
-            const cover = firstCoverFromProjectsMap(projects);
-            return { id: client, title: titleize(client), cover, sub: pluralize(projects.size, 'PROJECT', 'PROJECTS') };
-          })
-        };
-      }
-
-      const client = parts[1];
-      const projects = clients.get(client);
-      if (!projects) return null;
-
-      // CLIENT → projects (+ special case: add website CTA for PPR)
-      if (parts.length === 2){
-        const nodes = Array.from(projects.keys()).sort().map(project=>{
-          const photos = projects.get(project) || [];
-          const cover = photos[0]?.thumb;
-          return { id: project, title: titleize(project), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
-        });
-
-        // Inject a “Visit Website” tile for Pittsburgh Prestige Remodeling (prestigepgh.com)
-        const isPPR = /prestige|pittsburgh-prestige/.test((parts[1]||'').toLowerCase());
-        if (isPPR){
-          nodes.unshift({
-            id: 'visit-website',
-            title: 'Visit Website',
-            cover: 'images/ppr.png',
-            sub: 'prestigepgh.com',
-            website: 'https://prestigepgh.com/'
-          });
-        }
-
-        return { kind:'client', title:titleize(client), children: nodes };
-      }
-
-      // PROJECT → photos
-      const project = parts[2];
-      const photos = projects.get(project) || [];
-      return { kind:'project', title:titleize(project), photos };
+    function setActiveTab(dataset){
+      const isClients  = dataset === 'clients';
+      tabClients.classList.toggle('active',  isClients);
+      tabClients.setAttribute('aria-selected', String(isClients));
+      tabProjects.classList.toggle('active', !isClients);
+      tabProjects.setAttribute('aria-selected', String(!isClients));
     }
 
     function lazyImage(img){
@@ -413,7 +392,7 @@
       io.observe(img);
     }
 
-    function buildCrumbs(parts){
+    function buildCrumbs(dataset, parts){
       const frag = document.createDocumentFragment();
       const mkLink = (label, toParts)=>{
         const a = document.createElement('a');
@@ -422,10 +401,10 @@
         a.addEventListener('click', e=>{ e.preventDefault(); setPath(toParts); });
         return a;
       };
-      frag.appendChild(mkLink('All', []));
-      if (parts[0]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[0]), [parts[0]])); }
-      if (parts[1]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[1]), [parts[0], parts[1]])); }
-      if (parts[2]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[2]), [parts[0], parts[1], parts[2]])); }
+      frag.appendChild(mkLink(titleize(dataset), [dataset]));
+      if (parts[0]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[0]), [dataset, parts[0]])); }
+      if (parts[1]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[1]), [dataset, parts[0], parts[1]])); }
+      if (parts[2]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[2]), [dataset, parts[0], parts[1], parts[2]])); }
       breadcrumbsEl.innerHTML = ''; breadcrumbsEl.appendChild(frag);
       backBtn.style.display = parts.length ? 'inline-flex' : 'none';
     }
@@ -479,10 +458,10 @@
       const photos = node.photos || [];
       emptyState.hidden = !!photos.length;
 
-      photos.forEach((p, idx)=>{
+      photos.forEach((p)=>{
         const a = document.createElement('a');
         a.href = p.src;
-        a.setAttribute('data-fancybox', node.title || 'project');
+        a.setAttribute('data-fancybox', node.title || 'set');
         if (p.title) a.setAttribute('data-caption', p.title);
 
         const tile = document.createElement('div'); tile.className='photo';
@@ -501,18 +480,109 @@
       });
     }
 
+    /* ----- Data & selectors ----- */
+    let CLIENTS_TREE = null;
+    let PROJECTS_TREE = null;
+
+    function getNode(dataset, parts){
+      const isClients = dataset === 'clients';
+      const TREE = isClients ? CLIENTS_TREE : PROJECTS_TREE;
+      if (!TREE) return null;
+
+      // ROOT → industries
+      if (parts.length === 0){
+        return {
+          kind:'root',
+          children: Array.from(TREE.keys()).sort().map(industry=>{
+            const level2 = TREE.get(industry);
+            const cover = firstCoverLevel2(level2);
+            const subCount = level2.size;
+            return { id: industry, title: titleize(industry), cover, sub: pluralize(subCount, isClients?'CLIENT':'PROJECT', isClients?'CLIENTS':'PROJECTS') };
+          })
+        };
+      }
+
+      const a = parts[0]; // industry
+      const level2 = TREE.get(a);
+      if (!level2) return null;
+
+      // INDUSTRY → (clients | projects)
+      if (parts.length === 1){
+        return {
+          kind:'industry',
+          title:titleize(a),
+          children: Array.from(level2.keys()).sort().map(b=>{
+            const level3 = level2.get(b);
+            const cover = firstCoverFromNestedMap(level3);
+            const subCount = level3.size;
+            return { id: b, title: titleize(b), cover, sub: pluralize(subCount, isClients?'PROJECT':'ALBUM', isClients?'PROJECTS':'ALBUMS') };
+          })
+        };
+      }
+
+      const b = parts[1]; // client | project
+      const level3 = level2.get(b);
+      if (!level3) return null;
+
+      // level2 → level3 list
+      if (parts.length === 2){
+        const nodes = Array.from(level3.keys()).sort().map(c=>{
+          const photos = level3.get(c) || [];
+          const cover = photos[0]?.thumb;
+          return { id: c, title: titleize(c), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
+        });
+
+        // Optional: Inject website tile for Pittsburgh Prestige Remodeling (Clients only)
+        if (isClients && /prestige|pittsburgh-prestige/.test((b||'').toLowerCase())){
+          nodes.unshift({ id:'visit-website', title:'Visit Website', cover:'images/ppr.png', sub:'prestigepgh.com', website:'https://prestigepgh.com/' });
+        }
+
+        return { kind: isClients?'client':'project', title:titleize(b), children: nodes };
+      }
+
+      // level3 → photos
+      const c = parts[2]; // project | album
+      const photos = level3.get(c) || [];
+      return { kind:'photos', title:titleize(c), photos };
+    }
+
     function render(){
-      const parts = getPath();
-      buildCrumbs(parts);
-      const node = getNode(parts);
-      if (!node){ setPath([]); return; }
-      if (node.kind === 'project') renderPhotos(node);
+      const path = getPath();
+      const dataset = (path[0] || 'clients').toLowerCase();
+      setActiveTab(dataset);
+
+      const parts = path.slice(1); // drop dataset segment
+
+      if (dataset !== 'clients' && dataset !== 'projects'){
+        setPath(['clients']);
+        return;
+      }
+
+      buildCrumbs(dataset, parts);
+      const node = getNode(dataset, parts);
+      if (!node){ setPath([dataset]); return; }
+      if (node.kind === 'photos') renderPhotos(node);
       else renderAlbums(node.children || []);
     }
 
+    function onTabSwitch(targetDataset){
+      const cur = getPath();
+      if (cur[0] === targetDataset) return;
+      setPath([targetDataset]);
+    }
+
     (async function init(){
-      const manifest = await loadManifest();            /* uses /data/clients-manifest.json like your original */ 
-      TREE = buildTree(manifest);
+      const [clientsMan, projectsMan] = await Promise.all([
+        loadJSON(CLIENTS_MANIFEST_PATH,  { industries:{} }),
+        loadJSON(PROJECTS_MANIFEST_PATH, { projects:{} })
+      ]);
+
+      CLIENTS_TREE  = buildClientsTree(clientsMan);
+      PROJECTS_TREE = buildProjectsTree(projectsMan);
+
+      tabClients?.addEventListener('click', ()=> onTabSwitch('clients'));
+      tabProjects?.addEventListener('click', ()=> onTabSwitch('projects'));
+
       render();
       window.addEventListener('hashchange', render);
       backBtn.addEventListener('click', ()=>{ const p = getPath(); p.pop(); setPath(p); });
