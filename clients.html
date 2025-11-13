@@ -8,8 +8,6 @@
   <meta name="description" content="Selected client work and personal projects from ASF Visuals LLC — sports, real estate, education, brands, web, and more." />
   <link rel="canonical" href="https://www.asfvisualsllc.com/clients.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
-
-  <!-- Fonts & Fancybox -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -17,12 +15,9 @@
 
   <style>
     :root{
-      /* Theme (matches site) */
       --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#f5f7fb;
       --shadow:0 12px 36px rgba(16,67,122,.12); --radius:22px;
       --cta:#10437a; --cta-hover:#e8bc56; --muted:#2a3a55; --ring:0 0 0 3px rgba(16,67,122,.18);
-
-      /* Spacious layout */
       --container:max(780px, min(1200px, 92vw));
       --section-pad:56px; --grid-gap:28px; --card-pad:24px; --thumb-gap:14px; --line:1.65;
     }
@@ -45,7 +40,7 @@
       position:sticky; top:0; z-index:1000;
       display:flex; align-items:center; justify-content:space-between;
       padding:14px clamp(16px,4vw,64px);
-      background:rgba(255,255,255,.88);
+      background:rgba(255,255,255,.92);
       backdrop-filter:saturate(140%) blur(10px);
       box-shadow:0 1px 12px rgba(16,67,122,.06);
     }
@@ -53,6 +48,8 @@
     .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
     .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
     .site-nav a:hover,.site-nav a.active,[aria-current="page"]{background:var(--accent);color:#111}
+
+    /* Mobile nav */
     .menu-toggle{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer}
     .menu-toggle .bar{display:block;width:26px;height:3px;margin:5px auto;background:var(--primary);border-radius:2px;transition:.3s}
     .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
@@ -64,24 +61,32 @@
         position:fixed; right:0; top:74px; width:min(68vw,360px);
         height:calc(100dvh - 74px); background:#fff;
         transform:translateX(100%); transition:transform .24s cubic-bezier(.4,2.2,.3,1);
-        box-shadow:-2px 0 18px rgba(0,0,0,.18)
+        box-shadow:-2px 0 18px rgba(0,0,0,.18); z-index:1001;
       }
       .site-nav.open{transform:translateX(0)}
       .site-nav ul{flex-direction:column;padding:26px;gap:12px}
       body.no-scroll{overflow:hidden}
+      /* click-away overlay so menu doesn't feel "stuck" */
+      .scrim{content:"";position:fixed;inset:74px 0 0 0;background:rgba(0,0,0,.25);backdrop-filter:blur(2px);z-index:1000;display:none}
+      .scrim.show{display:block}
     }
 
-    /* Hero */
+    /* Hero with slideshow */
     .hero{
       position:relative; display:grid; place-items:center;
       min-height:50vh; margin:14px clamp(16px,4vw,64px) 0;
       border-radius:0 0 var(--radius) var(--radius);
       overflow:hidden; box-shadow:var(--shadow);
-      background:
-        linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%),
-        url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+      background:linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%);
     }
+    .hero-bg{
+      position:absolute; inset:0; background-size:cover; background-position:center;
+      filter:contrast(1.05) saturate(1.05);
+      opacity:0; transition:opacity 1s ease;
+    }
+    .hero-bg.show{opacity:1}
     .hero-card{
+      position:relative; z-index:2;
       background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
       border:1px solid rgba(255,255,255,.22);
       border-radius:28px; padding:34px 30px 26px; text-align:center; color:#fff;
@@ -117,9 +122,7 @@
     @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:640px){.album-grid{grid-template-columns:1fr}}
     .album-card{display:flex;flex-direction:column;gap:14px;background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:12px}
-    .album-cover{
-      position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/2;background:#e9eef5;box-shadow:0 4px 22px rgba(0,0,0,.10)
-    }
+    .album-cover{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/2;background:#e9eef5;box-shadow:0 4px 22px rgba(0,0,0,.10)}
     .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
     .album-cover img.loaded{opacity:1}
     .album-card:hover .album-cover img{transform:scale(1.02)}
@@ -136,7 +139,7 @@
     .photo:hover img{transform:scale(1.02)}
     .empty{margin:24px clamp(24px,6vw,64px);opacity:.8;text-align:center;color:#2a3a55}
 
-    /* CTA */
+    /* CTA & Footer */
     .cta-band{background:#fff;margin:0 clamp(24px,6vw,64px) 64px;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
     .cta-band h3{margin:0;color:var(--primary);font-size:1.22rem;line-height:1.35}
     .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
@@ -145,15 +148,12 @@
       .cta-actions{flex-direction:column;width:100%}
       .cta-band .btn{width:100%;padding:14px 18px}
     }
-
-    /* Buttons */
     .btn{background:var(--cta);color:#fff;font-weight:700;padding:12px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.20);font-size:1rem;transition:transform .12s ease, background .2s,color .2s;letter-spacing:.02em;white-space:nowrap}
     .btn:hover,.btn:focus{background:var(--cta-hover);color:#111;transform:translateY(-1px)}
     .btn:focus-visible{outline:none; box-shadow: var(--ring)}
     .btn.outline{background:#fff;color:var(--cta);border-color:#d7e3f7}
     .btn.outline:hover,.btn.outline:focus{background:var(--accent);color:#111;border-color:transparent}
 
-    /* Footer */
     .site-footer{background:#0b1220;color:#cfe0ff;padding:52px 6vw 38px;border-radius:var(--radius) var(--radius) 0 0;margin-top:86px;text-align:center}
     .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
     .social-links img{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 1px 8px #0001;padding:2px}
@@ -165,6 +165,8 @@
   </style>
 </head>
 <body>
+  <div class="scrim" id="scrim"></div>
+
   <!-- Header -->
   <header class="site-header">
     <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
@@ -184,11 +186,13 @@
     </button>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
+  <!-- Hero (slideshow background) -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="bgA" aria-hidden="true"></div>
+    <div class="hero-bg" id="bgB" aria-hidden="true"></div>
     <div class="hero-card">
       <h1>Clients & Projects</h1>
-      <p>Sports • Commercial Real Estate • Education • Brands • <strong>Web</strong> • Personal Projects</p>
+      <p>Sports • Commercial Real Estate • Education • <strong>Web</strong> • Personal Projects</p>
     </div>
   </section>
 
@@ -237,27 +241,33 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script>
-    /* ----- Mobile nav ----- */
+    /* ---------------- Mobile nav (with scrim/click-away) ---------------- */
     (function(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if (btn && nav){
-        btn.addEventListener('click', ()=>{
-          const open = nav.classList.toggle('open');
-          btn.classList.toggle('open');
-          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
-        });
-        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
-          if (window.innerWidth <= 860){
-            nav.classList.remove('open'); btn.classList.remove('open');
-            document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false');
-          }
-        }));
+      const scrim = document.getElementById('scrim');
+      if (!btn || !nav) return;
+
+      function closeNav(){
+        nav.classList.remove('open'); btn.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        document.body.classList.remove('no-scroll');
+        scrim?.classList.remove('show');
       }
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 860){
+          document.body.classList.toggle('no-scroll', open);
+          scrim?.classList.toggle('show', open);
+        }
+      });
+      scrim?.addEventListener('click', closeNav);
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
     })();
 
-    /* ----- Fade-in ----- */
+    /* ---------------- Fade-in ---------------- */
     (function(){
       const els = document.querySelectorAll('.fade');
       const io = new IntersectionObserver((entries, o)=>{
@@ -266,7 +276,7 @@
       els.forEach(el=>io.observe(el));
     })();
 
-    /* ----- Manifests ----- */
+    /* ---------------- Manifest helpers ---------------- */
     const CLIENTS_MANIFEST_PATH  = '/data/clients-manifest.json';
     const PROJECTS_MANIFEST_PATH = '/data/projects-manifest.json';
 
@@ -292,8 +302,7 @@
       }
     }
 
-    /* ----- Trees ----- */
-    // Clients: manifest.industries[industry][client][project] = [photos]
+    /* ---------------- Build trees (same structure you had) ---------------- */
     function buildClientsTree(man){
       const root = new Map();
       const ind = man.industries || {};
@@ -314,7 +323,7 @@
       return root;
     }
 
-    // Projects: manifest.projects[industry][project][album] = [photos]
+    // projects.manifest: { projects: { [industry]: { [project]: { [album]: Photo[] } } } }
     function buildProjectsTree(man){
       const root = new Map();
       const ind = man.projects || {};
@@ -335,19 +344,16 @@
       return root;
     }
 
-    /* ----- DOM refs ----- */
+    /* ---------------- DOM refs ---------------- */
     const breadcrumbsEl = document.getElementById('breadcrumbs');
     const albumsView = document.getElementById('albumsView');
     const photosView = document.getElementById('photosView');
     const emptyState = document.getElementById('emptyState');
     const backBtn = document.getElementById('backBtn');
-
     const tabClients  = document.getElementById('tabClients');
     const tabProjects = document.getElementById('tabProjects');
 
-    const titleize = s => (s||'').toString()
-      .replace(/[-_]/g,' ')
-      .replace(/\b\w/g,m=>m.toUpperCase());
+    const titleize = s => (s||'').toString().replace(/[-_]/g,' ').replace(/\b\w/g,m=>m.toUpperCase());
     const pluralize = (n,sing,pl)=>`${n} ${n===1?sing:pl}`.toUpperCase();
 
     function firstCoverFromNestedMap(map3){
@@ -356,24 +362,23 @@
       const photos = map3.get(firstK) || [];
       return photos[0]?.thumb;
     }
-    function firstCoverLevel2(map2){ // Map(A -> Map(B -> photos[]))
+    function firstCoverLevel2(map2){
       if (!map2 || !map2.size) return;
       const firstA = map2.keys().next().value;
       const mapB = map2.get(firstA);
       return firstCoverFromNestedMap(mapB);
     }
 
-    /* ----- Router helpers ----- */
+    /* ---------------- Router ---------------- */
     function getPath(){
       const hash = decodeURI(location.hash || '#/clients/');
       const cleaned = hash.replace(/^#\//,'');
       return cleaned ? cleaned.split('/').filter(Boolean) : ['clients'];
     }
     function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
-
     function setActiveTab(dataset){
-      const isClients  = dataset === 'clients';
-      tabClients.classList.toggle('active',  isClients);
+      const isClients = dataset === 'clients';
+      tabClients.classList.toggle('active', isClients);
       tabClients.setAttribute('aria-selected', String(isClients));
       tabProjects.classList.toggle('active', !isClients);
       tabProjects.setAttribute('aria-selected', String(!isClients));
@@ -480,7 +485,7 @@
       });
     }
 
-    /* ----- Data & selectors ----- */
+    /* ---------------- Data & selectors ---------------- */
     let CLIENTS_TREE = null;
     let PROJECTS_TREE = null;
 
@@ -489,7 +494,6 @@
       const TREE = isClients ? CLIENTS_TREE : PROJECTS_TREE;
       if (!TREE) return null;
 
-      // ROOT → industries
       if (parts.length === 0){
         return {
           kind:'root',
@@ -506,7 +510,6 @@
       const level2 = TREE.get(a);
       if (!level2) return null;
 
-      // INDUSTRY → (clients | projects)
       if (parts.length === 1){
         return {
           kind:'industry',
@@ -524,7 +527,6 @@
       const level3 = level2.get(b);
       if (!level3) return null;
 
-      // level2 → level3 list
       if (parts.length === 2){
         const nodes = Array.from(level3.keys()).sort().map(c=>{
           const photos = level3.get(c) || [];
@@ -532,15 +534,14 @@
           return { id: c, title: titleize(c), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
         });
 
-        // Optional: Inject website tile for Pittsburgh Prestige Remodeling (Clients only)
-        if (isClients && /prestige|pittsburgh-prestige/.test((b||'').toLowerCase())){
+        // Optional: special tile for PPR website
+        if ((dataset === 'clients') && /prestige|pittsburgh-prestige/.test((b||'').toLowerCase())){
           nodes.unshift({ id:'visit-website', title:'Visit Website', cover:'images/ppr.png', sub:'prestigepgh.com', website:'https://prestigepgh.com/' });
         }
 
-        return { kind: isClients?'client':'project', title:titleize(b), children: nodes };
+        return { kind: dataset==='clients' ? 'client' : 'project', title:titleize(b), children: nodes };
       }
 
-      // level3 → photos
       const c = parts[2]; // project | album
       const photos = level3.get(c) || [];
       return { kind:'photos', title:titleize(c), photos };
@@ -550,14 +551,8 @@
       const path = getPath();
       const dataset = (path[0] || 'clients').toLowerCase();
       setActiveTab(dataset);
-
-      const parts = path.slice(1); // drop dataset segment
-
-      if (dataset !== 'clients' && dataset !== 'projects'){
-        setPath(['clients']);
-        return;
-      }
-
+      const parts = path.slice(1);
+      if (dataset !== 'clients' && dataset !== 'projects'){ setPath(['clients']); return; }
       buildCrumbs(dataset, parts);
       const node = getNode(dataset, parts);
       if (!node){ setPath([dataset]); return; }
@@ -571,6 +566,79 @@
       setPath([targetDataset]);
     }
 
+    /* ---------------- Hero slideshow from manifests ---------------- */
+    function collectHeroImages(clientsMan, projectsMan, max=20){
+      const out = [];
+
+      // clients
+      const ind = clientsMan?.industries || {};
+      for (const i in ind){
+        const clients = ind[i] || {};
+        for (const c in clients){
+          const projects = clients[c] || {};
+          for (const p in projects){
+            const arr = projects[p] || [];
+            arr.forEach(item=>{
+              const pic = pickThumbAndSrc(item);
+              if (pic?.src) out.push(pic.src);
+            });
+          }
+        }
+      }
+
+      // projects
+      const proj = projectsMan?.projects || {};
+      for (const i in proj){
+        const projects = proj[i] || {};
+        for (const pr in projects){
+          const albums = projects[pr] || {};
+          for (const al in albums){
+            const arr = albums[al] || [];
+            arr.forEach(item=>{
+              const pic = pickThumbAndSrc(item);
+              if (pic?.src) out.push(pic.src);
+            });
+          }
+        }
+      }
+
+      // de-dupe & shuffle & limit
+      const dedup = Array.from(new Set(out));
+      for (let i = dedup.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [dedup[i], dedup[j]] = [dedup[j], dedup[i]];
+      }
+      return dedup.slice(0, max);
+    }
+
+    function startHeroSlideshow(urls, intervalMs=6000){
+      const a = document.getElementById('bgA');
+      const b = document.getElementById('bgB');
+      if (!a || !b || !urls.length) return;
+
+      let idx = 0, showA = true;
+
+      function setBg(el, url){
+        el.style.backgroundImage = `url("${url}")`;
+      }
+
+      // preload first two
+      setBg(a, urls[0]); a.classList.add('show');
+      if (urls[1]) setBg(b, urls[1]);
+
+      setInterval(()=>{
+        const next = urls[idx = (idx + 1) % urls.length];
+        const front = showA ? b : a;
+        const back  = showA ? a : b;
+        setBg(front, next);
+        // swap fades
+        front.classList.add('show');
+        back.classList.remove('show');
+        showA = !showA;
+      }, intervalMs);
+    }
+
+    /* ---------------- Init ---------------- */
     (async function init(){
       const [clientsMan, projectsMan] = await Promise.all([
         loadJSON(CLIENTS_MANIFEST_PATH,  { industries:{} }),
@@ -579,6 +647,16 @@
 
       CLIENTS_TREE  = buildClientsTree(clientsMan);
       PROJECTS_TREE = buildProjectsTree(projectsMan);
+
+      // Start slideshow once data is known
+      const heroUrls = collectHeroImages(clientsMan, projectsMan, 24);
+      if (heroUrls.length){
+        startHeroSlideshow(heroUrls, 5500);
+      } else {
+        // fallback static bg if no images available
+        document.getElementById('bgA').style.backgroundImage = "url('images/DowntownCloudsReduced.webp')";
+        document.getElementById('bgA').classList.add('show');
+      }
 
       tabClients?.addEventListener('click', ()=> onTabSwitch('clients'));
       tabProjects?.addEventListener('click', ()=> onTabSwitch('projects'));
