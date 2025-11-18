@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2025-11-12T21:12:10.456Z",
   "projects": {
     "projects": {
@@ -6,6 +7,15 @@
         "misc": [
           {
             "base": "projects/lexus/misc/lexus-gs350-01",
+=======
+  "generatedAt": "2025-11-13T03:44:38.915Z",
+  "projects": {
+    "projects": {
+      "cars": {
+        "misc": [
+          {
+            "base": "projects/cars/misc/lexus-gs350-01",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-01",
             "widths": [
               480,
@@ -14,17 +24,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-01_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-01_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-01_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-01_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-01_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-01_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-01_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-01_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-02",
+=======
+            "base": "projects/cars/misc/lexus-gs350-02",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-02",
             "widths": [
               480,
@@ -33,17 +56,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-02_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-02_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-02_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-02_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-02_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-02_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-02_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-02_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-03",
+=======
+            "base": "projects/cars/misc/lexus-gs350-03",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-03",
             "widths": [
               480,
@@ -52,17 +88,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-03_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-03_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-03_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-03_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-03_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-03_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-03_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-03_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-04",
+=======
+            "base": "projects/cars/misc/lexus-gs350-04",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-04",
             "widths": [
               480,
@@ -71,17 +120,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-04_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-04_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-04_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-04_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-04_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-04_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-04_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-04_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-05",
+=======
+            "base": "projects/cars/misc/lexus-gs350-05",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-05",
             "widths": [
               480,
@@ -90,17 +152,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-05_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-05_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-05_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-05_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-05_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-05_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-05_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-05_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-06",
+=======
+            "base": "projects/cars/misc/lexus-gs350-06",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-06",
             "widths": [
               480,
@@ -109,17 +184,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-06_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-06_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-06_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-06_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-06_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-06_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-06_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-06_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-07",
+=======
+            "base": "projects/cars/misc/lexus-gs350-07",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-07",
             "widths": [
               480,
@@ -128,17 +216,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-07_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-07_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-07_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-07_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-07_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-07_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-07_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-07_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-08",
+=======
+            "base": "projects/cars/misc/lexus-gs350-08",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-08",
             "widths": [
               480,
@@ -147,17 +248,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-08_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-08_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-08_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-08_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-08_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-08_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-08_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-08_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-09",
+=======
+            "base": "projects/cars/misc/lexus-gs350-09",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-09",
             "widths": [
               480,
@@ -166,17 +280,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-09_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-09_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-09_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-09_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-09_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-09_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-09_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-09_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-10",
+=======
+            "base": "projects/cars/misc/lexus-gs350-10",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-10",
             "widths": [
               480,
@@ -185,17 +312,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-10_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-10_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-10_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-10_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-10_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-10_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-10_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-10_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-11",
+=======
+            "base": "projects/cars/misc/lexus-gs350-11",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-11",
             "widths": [
               480,
@@ -204,17 +344,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-11_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-11_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-11_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-11_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-11_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-11_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-11_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-11_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-12",
+=======
+            "base": "projects/cars/misc/lexus-gs350-12",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-12",
             "widths": [
               480,
@@ -223,17 +376,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-12_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-12_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-12_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-12_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-12_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-12_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-12_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-12_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-13",
+=======
+            "base": "projects/cars/misc/lexus-gs350-13",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-13",
             "widths": [
               480,
@@ -242,17 +408,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-13_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-13_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-13_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-13_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-13_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-13_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-13_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-13_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-16",
+=======
+            "base": "projects/cars/misc/lexus-gs350-16",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-16",
             "widths": [
               480,
@@ -261,17 +440,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-16_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-16_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-16_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-16_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-16_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-16_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-16_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-16_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-17",
+=======
+            "base": "projects/cars/misc/lexus-gs350-17",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-17",
             "widths": [
               480,
@@ -280,17 +472,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-17_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-17_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-17_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-17_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-17_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-17_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-17_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-17_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-18",
+=======
+            "base": "projects/cars/misc/lexus-gs350-18",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-18",
             "widths": [
               480,
@@ -299,17 +504,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-18_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-18_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-18_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-18_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-18_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-18_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-18_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-18_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-19",
+=======
+            "base": "projects/cars/misc/lexus-gs350-19",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-19",
             "widths": [
               480,
@@ -318,17 +536,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-19_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-19_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-19_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-19_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-19_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-19_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-19_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-19_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-20",
+=======
+            "base": "projects/cars/misc/lexus-gs350-20",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-20",
             "widths": [
               480,
@@ -337,17 +568,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-20_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-20_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-20_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-20_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-20_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-20_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-20_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-20_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-21",
+=======
+            "base": "projects/cars/misc/lexus-gs350-21",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-21",
             "widths": [
               480,
@@ -356,17 +600,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-21_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-21_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-21_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-21_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-21_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-21_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-21_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-21_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-22",
+=======
+            "base": "projects/cars/misc/lexus-gs350-22",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-22",
             "widths": [
               480,
@@ -375,17 +632,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-22_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-22_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-22_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-22_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-22_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-22_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-22_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-22_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-23",
+=======
+            "base": "projects/cars/misc/lexus-gs350-23",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-23",
             "widths": [
               480,
@@ -394,17 +664,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-23_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-23_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-23_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-23_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-23_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-23_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-23_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-23_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-24",
+=======
+            "base": "projects/cars/misc/lexus-gs350-24",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-24",
             "widths": [
               480,
@@ -413,17 +696,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-24_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-24_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-24_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-24_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-24_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-24_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-24_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-24_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/lexus/misc/lexus-gs350-25",
+=======
+            "base": "projects/cars/misc/lexus-gs350-25",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "lexus-gs350-25",
             "widths": [
               480,
@@ -432,21 +728,36 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/lexus/misc/lexus-gs350-25_480.avif",
                 "960": "/projects/processed/projects/lexus/misc/lexus-gs350-25_960.avif",
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-25_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/lexus/misc/lexus-gs350-25_1600.jpg"
+=======
+                "480": "/projects/processed/projects/cars/misc/lexus-gs350-25_480.avif",
+                "960": "/projects/processed/projects/cars/misc/lexus-gs350-25_960.avif",
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-25_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/cars/misc/lexus-gs350-25_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           }
         ]
       },
       "animals": {
+<<<<<<< HEAD
         "misc": [
           {
             "base": "projects/animals/misc/hudson-1",
+=======
+        "dogs": [
+          {
+            "base": "projects/animals/dogs/hudson-1",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "hudson-1",
             "widths": [
               480,
@@ -455,17 +766,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/hudson-1_480.avif",
                 "960": "/projects/processed/projects/animals/misc/hudson-1_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/hudson-1_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/hudson-1_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/hudson-1_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/hudson-1_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/hudson-1_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/hudson-1_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/hudson-2",
+=======
+            "base": "projects/animals/dogs/hudson-2",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "hudson-2",
             "widths": [
               480,
@@ -474,17 +798,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/hudson-2_480.avif",
                 "960": "/projects/processed/projects/animals/misc/hudson-2_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/hudson-2_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/hudson-2_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/hudson-2_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/hudson-2_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/hudson-2_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/hudson-2_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/hudson-3",
+=======
+            "base": "projects/animals/dogs/hudson-3",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "hudson-3",
             "widths": [
               480,
@@ -493,17 +830,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/hudson-3_480.avif",
                 "960": "/projects/processed/projects/animals/misc/hudson-3_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/hudson-3_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/hudson-3_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/hudson-3_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/hudson-3_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/hudson-3_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/hudson-3_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/korra-1",
+=======
+            "base": "projects/animals/dogs/korra-1",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "korra-1",
             "widths": [
               480,
@@ -512,17 +862,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/korra-1_480.avif",
                 "960": "/projects/processed/projects/animals/misc/korra-1_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/korra-1_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/korra-1_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/korra-1_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/korra-1_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/korra-1_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/korra-1_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/korra-2",
+=======
+            "base": "projects/animals/dogs/korra-2",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "korra-2",
             "widths": [
               480,
@@ -531,17 +894,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/korra-2_480.avif",
                 "960": "/projects/processed/projects/animals/misc/korra-2_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/korra-2_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/korra-2_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/korra-2_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/korra-2_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/korra-2_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/korra-2_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/korra-3",
+=======
+            "base": "projects/animals/dogs/korra-3",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "korra-3",
             "widths": [
               480,
@@ -550,17 +926,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/korra-3_480.avif",
                 "960": "/projects/processed/projects/animals/misc/korra-3_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/korra-3_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/korra-3_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/korra-3_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/korra-3_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/korra-3_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/korra-3_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/nala-1",
+=======
+            "base": "projects/animals/dogs/nala-1",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "nala-1",
             "widths": [
               480,
@@ -569,17 +958,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/nala-1_480.avif",
                 "960": "/projects/processed/projects/animals/misc/nala-1_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/nala-1_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/nala-1_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/nala-1_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/nala-1_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/nala-1_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/nala-1_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/nala-2",
+=======
+            "base": "projects/animals/dogs/nala-2",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "nala-2",
             "widths": [
               480,
@@ -588,17 +990,30 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/nala-2_480.avif",
                 "960": "/projects/processed/projects/animals/misc/nala-2_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/nala-2_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/nala-2_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/nala-2_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/nala-2_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/nala-2_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/nala-2_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           },
           {
+<<<<<<< HEAD
             "base": "projects/animals/misc/nala-3",
+=======
+            "base": "projects/animals/dogs/nala-3",
+>>>>>>> 66acdd0 (Initial commit (clean repo))
             "alt": "nala-3",
             "widths": [
               480,
@@ -607,12 +1022,1011 @@
             ],
             "variants": {
               "avif": {
+<<<<<<< HEAD
                 "480": "/projects/processed/projects/animals/misc/nala-3_480.avif",
                 "960": "/projects/processed/projects/animals/misc/nala-3_960.avif",
                 "1600": "/projects/processed/projects/animals/misc/nala-3_1600.avif"
               },
               "jpg": {
                 "1600": "/projects/processed/projects/animals/misc/nala-3_1600.jpg"
+=======
+                "480": "/projects/processed/projects/animals/dogs/nala-3_480.avif",
+                "960": "/projects/processed/projects/animals/dogs/nala-3_960.avif",
+                "1600": "/projects/processed/projects/animals/dogs/nala-3_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/dogs/nala-3_1600.jpg"
+              }
+            }
+          }
+        ],
+        "pittsburgh-zoo": [
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-01",
+            "alt": "zoo-01",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-01_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-01_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-01_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-01_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-02",
+            "alt": "zoo-02",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-02_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-02_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-02_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-02_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-03",
+            "alt": "zoo-03",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-03_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-03_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-03_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-03_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-04",
+            "alt": "zoo-04",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-04_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-04_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-04_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-04_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-05",
+            "alt": "zoo-05",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-05_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-05_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-05_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-05_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-06",
+            "alt": "zoo-06",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-06_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-06_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-06_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-06_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-07",
+            "alt": "zoo-07",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-07_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-07_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-07_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-07_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-08",
+            "alt": "zoo-08",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-08_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-08_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-08_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-08_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-09",
+            "alt": "zoo-09",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-09_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-09_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-09_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-09_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-10",
+            "alt": "zoo-10",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-10_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-10_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-10_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-10_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-11",
+            "alt": "zoo-11",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-11_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-11_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-11_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-11_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-12",
+            "alt": "zoo-12",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-12_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-12_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-12_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-12_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-13",
+            "alt": "zoo-13",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-13_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-13_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-13_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-13_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-14",
+            "alt": "zoo-14",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-14_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-14_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-14_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-14_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-15",
+            "alt": "zoo-15",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-15_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-15_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-15_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-15_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-16",
+            "alt": "zoo-16",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-16_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-16_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-16_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-16_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-17",
+            "alt": "zoo-17",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-17_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-17_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-17_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-17_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-18",
+            "alt": "zoo-18",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-18_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-18_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-18_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-18_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-19",
+            "alt": "zoo-19",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-19_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-19_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-19_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-19_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-20",
+            "alt": "zoo-20",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-20_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-20_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-20_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-20_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-21",
+            "alt": "zoo-21",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-21_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-21_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-21_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-21_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-22",
+            "alt": "zoo-22",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-22_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-22_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-22_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-22_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-23",
+            "alt": "zoo-23",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-23_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-23_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-23_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-23_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-24",
+            "alt": "zoo-24",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-24_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-24_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-24_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-24_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-25",
+            "alt": "zoo-25",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-25_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-25_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-25_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-25_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-26",
+            "alt": "zoo-26",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-26_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-26_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-26_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-26_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-27",
+            "alt": "zoo-27",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-27_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-27_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-27_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-27_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-28",
+            "alt": "zoo-28",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-28_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-28_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-28_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-28_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-29",
+            "alt": "zoo-29",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-29_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-29_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-29_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-29_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-30",
+            "alt": "zoo-30",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-30_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-30_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-30_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-30_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-31",
+            "alt": "zoo-31",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-31_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-31_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-31_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-31_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-32",
+            "alt": "zoo-32",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-32_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-32_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-32_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-32_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-33",
+            "alt": "zoo-33",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-33_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-33_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-33_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-33_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-34",
+            "alt": "zoo-34",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-34_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-34_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-34_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-34_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-35",
+            "alt": "zoo-35",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-35_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-35_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-35_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-35_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-36",
+            "alt": "zoo-36",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-36_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-36_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-36_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-36_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-37",
+            "alt": "zoo-37",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-37_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-37_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-37_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-37_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-38",
+            "alt": "zoo-38",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-38_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-38_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-38_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-38_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-39",
+            "alt": "zoo-39",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-39_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-39_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-39_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-39_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-40",
+            "alt": "zoo-40",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-40_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-40_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-40_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-40_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-41",
+            "alt": "zoo-41",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-41_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-41_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-41_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-41_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-42",
+            "alt": "zoo-42",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-42_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-42_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-42_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-42_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-43",
+            "alt": "zoo-43",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-43_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-43_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-43_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-43_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-44",
+            "alt": "zoo-44",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-44_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-44_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-44_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-44_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-45",
+            "alt": "zoo-45",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-45_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-45_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-45_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-45_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-46",
+            "alt": "zoo-46",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-46_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-46_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-46_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-46_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-47",
+            "alt": "zoo-47",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-47_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-47_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-47_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-47_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-48",
+            "alt": "zoo-48",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-48_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-48_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-48_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-48_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-49",
+            "alt": "zoo-49",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-49_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-49_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-49_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-49_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-50",
+            "alt": "zoo-50",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-50_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-50_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-50_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-50_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-51",
+            "alt": "zoo-51",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-51_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-51_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-51_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-51_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "projects/animals/pittsburgh-zoo/zoo-52",
+            "alt": "zoo-52",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-52_480.avif",
+                "960": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-52_960.avif",
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-52_1600.avif"
+              },
+              "jpg": {
+                "1600": "/projects/processed/projects/animals/pittsburgh-zoo/zoo-52_1600.jpg"
+>>>>>>> 66acdd0 (Initial commit (clean repo))
               }
             }
           }
