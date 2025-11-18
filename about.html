@@ -41,6 +41,8 @@
       --cta-hover: #e8bc56;
     }
 
+    *, *::before, *::after { box-sizing: border-box; }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -48,119 +50,97 @@
       background: var(--bg);
       color: #172135;
       scroll-behavior: smooth;
+      overflow-x: hidden;          /* ✅ no sideways scroll */
     }
 
-    /* Header */
-    .site-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 5vw;
-      background: rgba(255,255,255,0.94);
-      box-shadow: 0 2px 8px rgba(16,67,122,0.06);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== HEADER (MATCH PORTFOLIO PAGE) ===== */
+    .site-header{
+      position:fixed;
+      inset-inline:0;
+      top:0;
+      z-index:1000;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px clamp(16px,4vw,64px);
+      background:rgba(255,255,255,.90);
+      backdrop-filter:saturate(140%) blur(10px);
+      box-shadow:0 1px 12px rgba(16,67,122,.06);
+      transition:transform .32s ease, top .32s ease;
     }
-    .logo-link img {
-      height: 62px;
-      width: auto;
-      max-width: 180px;
-      object-fit: contain;
-      display: block;
+    .logo-link img{
+      height:62px;
+      width:auto;
+      max-width:180px;
+      object-fit:contain;
+      display:block;
     }
-    .site-nav ul {
-      display: flex;
-      gap: 2vw;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    .site-nav ul{
+      display:flex;
+      gap:clamp(10px,2vw,28px);
+      list-style:none;
+      margin:0;
+      padding:0;
     }
-    .site-nav a {
-      font-weight: 600;
-      text-decoration: none;
-      color: var(--primary);
-      letter-spacing: 0.01em;
-      padding: 6px 14px;
-      border-radius: var(--radius);
-      transition: background 0.2s, color 0.2s;
+    .site-nav a{
+      font-weight:600;
+      color:var(--primary);
+      letter-spacing:.01em;
+      padding:8px 14px;
+      border-radius:999px;
+      transition:background .2s,color .2s;
     }
+    .site-nav a:hover,
     .site-nav a.active,
-    .site-nav a:hover {
-      background: var(--accent);
-      color: #111;
+    .site-nav a[aria-current="page"]{
+      background:var(--accent);
+      color:#111;
     }
 
-    /* Buttons */
-    .btn {
-      background: var(--cta);
-      color: #fff;
-      font-weight: 700;
-      padding: 11px 28px;
-      border-radius: var(--radius);
-      border: none;
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      font-size: 1rem;
-      transition: background 0.2s, color 0.2s;
-      text-decoration: none;
-      letter-spacing: 0.02em;
-      outline: none;
+    .menu-toggle{
+      display:none;
+      width:44px;
+      height:44px;
+      border:none;
+      background:none;
+      cursor:pointer;
     }
-    .btn:hover,
-    .btn:focus {
-      background: var(--cta-hover);
-      color: #111;
+    .menu-toggle .bar{
+      display:block;
+      width:26px;
+      height:3px;
+      margin:5px auto;
+      background:var(--primary);
+      border-radius:2px;
+      transition:.3s;
     }
+    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
+    .menu-toggle.open .bar:nth-child(2){opacity:0;}
+    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
 
-    /* Mobile nav */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 44px;
-      height: 44px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 150;
-    }
-    .menu-toggle .bar {
-      display: block;
-      width: 28px;
-      height: 4px;
-      margin: 4px 0;
-      background: var(--primary);
-      border-radius: 2px;
-      transition: 0.3s;
-    }
-    .menu-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
-    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
-    @media (max-width: 800px) {
-      .menu-toggle { display: flex; }
-      .site-nav {
-        position: fixed;
-        top: 70px; right: 0;
-        background: #fff;
-        box-shadow: -2px 0 16px #0002;
-        width: 65vw; max-width: 340px;
-        height: 100vh;
-        transform: translateX(100%);
-        transition: transform 0.25s cubic-bezier(.4,2.2,.3,1);
-        z-index: 101;
-        display: block;
-        padding: 38px 0 0 0;
+    @media (max-width:860px){
+      .menu-toggle{display:block;}
+      .site-nav{
+        position:fixed;
+        right:0;
+        top:74px;
+        width:min(68vw,360px);
+        height:calc(100dvh - 74px);
+        background:#fff;
+        transform:translateX(100%);
+        transition:transform .24s cubic-bezier(.4,2.2,.3,1);
+        box-shadow:-2px 0 18px rgba(0,0,0,.18);
+        z-index:1001;
       }
-      .site-nav.open { transform: translateX(0); }
-      .site-nav ul {
-        flex-direction: column;
-        gap: 12px;
-        padding-left: 32px;
+      .site-nav.open{transform:translateX(0);}
+      .site-nav ul{
+        flex-direction:column;
+        padding:26px;
+        gap:12px;
       }
-      .site-header { flex-wrap: wrap; }
+      body.no-scroll{overflow:hidden;}   /* ✅ lock scroll when menu open */
     }
 
     /* Skip link */
@@ -178,10 +158,10 @@
     }
     .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
 
-    /* About content */
+    /* ===== ABOUT CONTENT ===== */
     .about-section {
       max-width: 1180px;
-      margin: 56px auto 0 auto;
+      margin: 96px auto 0;       /* extra top to clear fixed header */
       padding: 0 5vw;
     }
     .about-flex {
@@ -232,7 +212,7 @@
       background: #ececec;
     }
 
-    /* Products/Gear */
+    /* ===== PRODUCTS / GEAR ===== */
     .products-section {
       max-width: 1100px;
       margin: 52px auto 0 auto;
@@ -267,9 +247,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .product-card:hover {
-      box-shadow: 0 4px 16px rgba(16,67,122,0.09);
-    }
+    .product-card:hover { box-shadow: 0 4px 16px rgba(16,67,122,0.09); }
     .product-card img {
       max-width: 100%;
       border-radius: 8px;
@@ -294,7 +272,6 @@
       background: var(--accent);
       color: #173046;
       font-weight: 700;
-      text-decoration: none;
       border-radius: 9px;
       font-size: 1rem;
       transition: background 0.2s;
@@ -308,6 +285,28 @@
       text-align: center;
       margin-top: 34px;
       color: #999;
+    }
+
+    /* Buttons */
+    .btn {
+      background: var(--cta);
+      color: #fff;
+      font-weight: 700;
+      padding: 11px 28px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      font-size: 1rem;
+      transition: background 0.2s, color 0.2s;
+      letter-spacing: 0.02em;
+      outline: none;
+      display:inline-block;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: var(--cta-hover);
+      color: #111;
     }
 
     /* Footer */
@@ -341,10 +340,16 @@
       .product-grid { gap: 15px; }
     }
     @media (max-width: 750px) {
-      .site-header { flex-direction: column; gap: 10px; }
-      .site-nav ul { flex-wrap: wrap; gap: 7px; }
-      .about-flex { flex-direction: column; align-items: stretch; padding: 20px 6px 14px 6px; }
-      .about-images { flex-direction: row; justify-content: center; gap: 9px; }
+      .about-flex {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 6px 14px 6px;
+      }
+      .about-images {
+        flex-direction: row;
+        justify-content: center;
+        gap: 9px;
+      }
       .about-img { max-width: 110px; }
       .products-section { padding: 14px 0 14px 0; }
     }
@@ -361,24 +366,22 @@
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <div id="logo-anim" aria-hidden="true"></div>
-      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
+  <header class="site-header" id="header">
+    <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="eager">
     </a>
-    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html#top">Home</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
-
-    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html#top">Home</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="clients.html">Clients</a></li>
-          <li><a href="about.html" class="active" aria-current="page">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
   </header>
 
   <main id="main">
@@ -408,9 +411,12 @@
         </div>
       </div>
     </section>
-<a href="professional.html" class="btn" style="background:transparent; border:2px solid var(--cta); color:var(--cta); margin-left:10px;">
-  View Professional Profile
-</a>
+
+    <a href="professional.html"
+       class="btn"
+       style="background:transparent;border:2px solid var(--cta);color:var(--cta);margin-left:10px;">
+      View Professional Profile
+    </a>
 
     <!-- Products/Gear -->
     <section id="products" class="products-section fade-up">
@@ -463,39 +469,53 @@
   </footer>
 
   <script>
-    // Mobile nav + fade-in
-    document.addEventListener("DOMContentLoaded", function() {
-      const toggle = document.getElementById("menu-toggle");
-      const nav = document.getElementById("navbar");
-
-      toggle.addEventListener("click", function() {
-        const open = nav.classList.toggle("open");
-        this.classList.toggle("open");
-        this.setAttribute("aria-expanded", open ? "true" : "false");
-      });
-
-      nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-          if (window.innerWidth <= 800) {
-            nav.classList.remove("open");
-            toggle.classList.remove("open");
-            toggle.setAttribute("aria-expanded", "false");
+    // Nav (same behavior as portfolio page)
+    (function navInit(){
+      const btn = document.getElementById('menuToggle');
+      const nav = document.getElementById('navbar');
+      if (btn && nav){
+        btn.addEventListener('click', ()=>{
+          const open = nav.classList.toggle('open');
+          btn.classList.toggle('open', open);
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (window.innerWidth <= 860){
+            document.body.classList.toggle('no-scroll', open);
           }
         });
-      });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+          if (window.innerWidth <= 860){
+            nav.classList.remove('open');
+            btn.classList.remove('open');
+            document.body.classList.remove('no-scroll');
+            btn.setAttribute('aria-expanded','false');
+          }
+        }));
+      }
 
+      // Hide header on scroll down, show on scroll up
+      let lastY = window.scrollY;
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY;
+        if (!header) return;
+        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
+        lastY = y;
+      }, { passive:true });
+    })();
+
+    // Fade-up animation
+    (function(){
       const faders = document.querySelectorAll('.fade-up');
-      const appearOptions = { threshold: 0.17 };
-      const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
+      const io = new IntersectionObserver((entries, observer)=>{
+        entries.forEach(entry=>{
+          if (entry.isIntersecting){
             entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
-      }, appearOptions);
-      faders.forEach(fader => appearOnScroll.observe(fader));
-    });
+      }, { threshold:0.17 });
+      faders.forEach(el=>io.observe(el));
+    })();
   </script>
 </body>
 </html>

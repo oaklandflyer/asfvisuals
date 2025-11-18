@@ -18,7 +18,7 @@
       --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#f5f7fb;
       --shadow:0 12px 36px rgba(16,67,122,.12); --radius:22px;
       --cta:#10437a; --cta-hover:#e8bc56; --muted:#2a3a55; --ring:0 0 0 3px rgba(16,67,122,.18);
-      --container:max(780px, min(1200px, 92vw));
+      /* ✅ FIXED: removed max(780px, …) so it can shrink on mobile */
       --section-pad:56px; --grid-gap:28px; --card-pad:24px; --thumb-gap:14px; --line:1.65;
     }
     @media (max-width:900px){
@@ -29,11 +29,23 @@
     }
 
     *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:var(--bg);color:var(--ink);scroll-behavior:smooth}
+    html,body{
+      margin:0;padding:0;
+      font-family:'Montserrat',Arial,sans-serif;
+      background:var(--bg);color:var(--ink);
+      scroll-behavior:smooth;
+      /* optional belt-and-suspenders */
+      overflow-x:hidden;
+    }
     img{max-width:100%;display:block}
     a{text-decoration:none;color:inherit}
     p{line-height:var(--line)}
-    .container{width:var(--container);margin-inline:auto}
+
+    /* ✅ FIXED CONTAINER */
+    .container{
+      width:min(1200px, 92vw);
+      margin-inline:auto;
+    }
 
     /* Header */
     .site-header{
@@ -631,7 +643,6 @@
         const front = showA ? b : a;
         const back  = showA ? a : b;
         setBg(front, next);
-        // swap fades
         front.classList.add('show');
         back.classList.remove('show');
         showA = !showA;

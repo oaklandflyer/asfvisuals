@@ -39,59 +39,127 @@
       --ink: #172135;
       --cta: #10437a;
       --cta-hover: #e8bc56;
-      --container: 780px;
     }
     *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; font-family: 'Montserrat', Arial, sans-serif; background: var(--bg); color: var(--ink); }
+
+    html, body {
+      margin: 0; padding: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg); color: var(--ink);
+      overflow-x:hidden;              /* ✅ no sideways scroll */
+    }
+
     a { color: inherit; text-decoration: none; }
 
-    /* Header (match site) */
-    .site-header {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 12px 5vw; background: rgba(255,255,255,0.94);
-      box-shadow: 0 2px 8px rgba(16,67,122,0.06);
-      transition: top 0.32s cubic-bezier(.37,1.15,.43,0.96);
+    /* ===== HEADER (MATCH PORTFOLIO PAGE) ===== */
+    .site-header{
+      position:fixed;
+      inset-inline:0;
+      top:0;
+      z-index:1000;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px clamp(16px,4vw,64px);
+      background:rgba(255,255,255,.90);
+      backdrop-filter:saturate(140%) blur(10px);
+      box-shadow:0 1px 12px rgba(16,67,122,.06);
+      transition:transform .32s ease, top .32s ease;
     }
-    .logo-link img { height: 62px; width: auto; max-width: 180px; object-fit: contain; display: block; }
-    .site-nav ul { list-style: none; display: flex; gap: 2vw; margin: 0; padding: 0; }
-    .site-nav a {
-      color: var(--primary); font-weight: 600; letter-spacing: .01em;
-      padding: 6px 14px; border-radius: var(--radius); transition: background .2s, color .2s;
+    .logo-link img{
+      height:62px;
+      width:auto;
+      max-width:180px;
+      object-fit:contain;
+      display:block;
     }
-    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { background: var(--accent); color: #111; }
+    .site-nav ul{
+      list-style:none;
+      display:flex;
+      gap:clamp(10px,2vw,28px);
+      margin:0;
+      padding:0;
+    }
+    .site-nav a{
+      color:var(--primary);
+      font-weight:600;
+      letter-spacing:.01em;
+      padding:8px 14px;
+      border-radius:999px;
+      transition:background .2s,color .2s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active,
+    .site-nav a[aria-current="page"]{
+      background:var(--accent);
+      color:#111;
+    }
 
-    .menu-toggle { display: none; width: 44px; height: 44px; border: none; background: none; cursor: pointer; z-index: 150; }
-    .menu-toggle .bar { width: 28px; height: 4px; margin: 4px auto; background: var(--primary); border-radius: 2px; transition: .3s; display: block; }
-    .menu-toggle.open .bar:nth-child(1){ transform: translateY(8px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2){ opacity: 0; }
-    .menu-toggle.open .bar:nth-child(3){ transform: translateY(-8px) rotate(-45deg); }
+    .menu-toggle{
+      display:none;
+      width:44px;
+      height:44px;
+      border:none;
+      background:none;
+      cursor:pointer;
+      z-index:150;
+    }
+    .menu-toggle .bar{
+      width:26px;
+      height:3px;
+      margin:5px auto;
+      background:var(--primary);
+      border-radius:2px;
+      transition:.3s;
+      display:block;
+    }
+    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
+    .menu-toggle.open .bar:nth-child(2){opacity:0;}
+    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
 
-    @media (max-width: 800px) {
-      .menu-toggle { display: flex; }
-      .site-nav {
-        position: fixed; top: 70px; right: 0; width: min(68vw, 360px); height: 100dvh;
-        background: #fff; box-shadow: -2px 0 16px #0002; transform: translateX(100%);
-        transition: transform .25s cubic-bezier(.4,2.2,.3,1); z-index: 101; padding: 38px 0 0;
+    @media (max-width:860px){
+      .menu-toggle{display:flex;align-items:center;justify-content:center;}
+      .site-nav{
+        position:fixed;
+        right:0;
+        top:74px;
+        width:min(68vw,360px);
+        height:calc(100dvh - 74px);
+        background:#fff;
+        transform:translateX(100%);
+        transition:transform .24s cubic-bezier(.4,2.2,.3,1);
+        box-shadow:-2px 0 18px rgba(0,0,0,.18);
+        z-index:101;
+        padding-top:0;
       }
-      .site-nav.open { transform: translateX(0); }
-      .site-nav ul { flex-direction: column; gap: 12px; padding-left: 32px; }
-      body.no-scroll { overflow: hidden; }
+      .site-nav.open{transform:translateX(0);}
+      .site-nav ul{
+        flex-direction:column;
+        gap:12px;
+        padding:26px;
+      }
+      body.no-scroll{overflow:hidden;}      /* ✅ lock scroll when menu open */
     }
 
-    /* Page intro */
+    /* Skip link */
+    .skip-link {
+      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 101;
+      background: #fff; color: #103047; border-radius: 0 0 10px 10px; padding: 8px 22px;
+    }
+    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
+
+    /* Page intro spacing */
     .page-hero {
-      margin-top: 82px; padding: 36px 5vw 10px;
+      margin-top: 96px;
+      padding: 0 5vw 10px;
     }
-    .page-hero h1 {
-      font-family: 'Playfair Display', serif; font-weight: 700; color: var(--primary);
-      font-size: clamp(1.9rem, 4vw, 2.4rem); margin: 0 0 8px;
-    }
-    .page-hero p { margin: 0; color: #2a3a55; max-width: 900px; }
 
     /* Contact card */
     .contact-main {
-      max-width: var(--container); margin: 18px auto 40px; padding: 0 5vw;
+      max-width: 780px;
+      width:min(780px,92vw);
+      margin: 112px auto 40px; /* clear header */
+      padding: 0;
     }
     .contact-card {
       background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
@@ -107,6 +175,7 @@
     input, textarea {
       padding: 0.9rem 1rem; border-radius: 10px; border: 1.5px solid #d5e4f3;
       font: inherit; background: #f8fafc; color: var(--ink); outline: none; transition: border-color .2s;
+      width:100%;
     }
     input:focus, textarea:focus { border-color: var(--primary); }
     textarea { min-height: 120px; max-height: 340px; resize: vertical; }
@@ -126,44 +195,41 @@
     .status.err { color: #a11212; }
 
     /* Footer */
-    .site-footer { background: #10233a; color: #f5f5f5; text-align: center; padding: 40px 6vw 28px; border-radius: var(--radius) var(--radius) 0 0; }
+    .site-footer {
+      background: #10233a;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 40px 6vw 28px;
+      border-radius: var(--radius) var(--radius) 0 0;
+      margin-top: 40px;
+    }
     .social-links { display: flex; gap: 16px; justify-content: center; margin-top: 16px; }
     .social-links img { width: 28px; height: 28px; border-radius: 50%; background: #fff; box-shadow: 0 1px 8px #0001; padding: 2px; }
 
-    /* Motion reduce */
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     }
-
-    /* Skip link */
-    .skip-link {
-      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 101;
-      background: #fff; color: #103047; border-radius: 0 0 10px 10px; padding: 8px 22px;
-    }
-    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
   </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <header class="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <div id="logo-anim" aria-hidden="true"></div>
-      <img id="logo-fallback" src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="lazy">
+  <header class="site-header" id="header">
+    <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="eager">
     </a>
-    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html#top">Home</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
-
-    <nav id="navbar" class="site-nav" aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html#top">Home</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="clients.html">Clients</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
-        </ul>
-    </nav>
   </header>
 
   <main id="main" class="contact-main">
@@ -187,9 +253,7 @@
           <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
         </div>
 
-        <!-- Optional: subject line in Formspree emails -->
         <input type="hidden" name="_subject" value="New message from ASF Visuals contact form" />
-        <!-- Honeypot (spam trap) -->
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-5000px;opacity:0;" aria-hidden="true" />
 
         <button class="btn" type="submit">Send Message</button>
@@ -216,57 +280,47 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Mobile nav + body scroll lock
-      const toggle = document.getElementById('menu-toggle');
+    // Nav (same pattern as portfolio / about)
+    (function navInit(){
+      const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      const body = document.body;
-
-      if (toggle && nav) {
-        toggle.addEventListener('click', function () {
+      if (btn && nav){
+        btn.addEventListener('click', ()=>{
           const open = nav.classList.toggle('open');
-          this.classList.toggle('open');
-          this.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 800) body.classList.toggle('no-scroll', open);
+          btn.classList.toggle('open', open);
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          if (window.innerWidth <= 860){
+            document.body.classList.toggle('no-scroll', open);
+          }
         });
-        nav.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-            if (window.innerWidth <= 800) {
-              nav.classList.remove('open');
-              toggle.classList.remove('open');
-              toggle.setAttribute('aria-expanded','false');
-              body.classList.remove('no-scroll');
-            }
-          });
-        });
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+          if (window.innerWidth <= 860){
+            nav.classList.remove('open');
+            btn.classList.remove('open');
+            document.body.classList.remove('no-scroll');
+            btn.setAttribute('aria-expanded','false');
+          }
+        }));
       }
 
-      // Header hide on scroll
       let lastY = window.scrollY;
-      const header = document.getElementById('site-header');
-      let ticking = false;
-      function onScroll() {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            header.style.top = (window.scrollY > lastY && window.scrollY > 120) ? '-90px' : '0';
-            lastY = window.scrollY;
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }
-      window.addEventListener('scroll', onScroll, { passive: true });
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY;
+        if (!header) return;
+        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
+        lastY = y;
+      }, { passive:true });
+    })();
 
-      // AJAX form submit (Formspree)
+    // AJAX form submit (Formspree)
+    (function(){
       const form = document.getElementById('contact-form');
       const statusEl = document.getElementById('form-status');
+      if (!form || !statusEl) return;
 
-      form.addEventListener('submit', async (e) => {
-        // basic client validation
-        if (!form.checkValidity()) {
-          // Let browser show native validation tooltips
-          return;
-        }
+      form.addEventListener('submit', async (e)=>{
+        if (!form.checkValidity()) return;
         e.preventDefault();
 
         statusEl.hidden = false;
@@ -286,18 +340,15 @@
             statusEl.textContent = 'Thanks! Your message has been sent.';
             form.reset();
           } else {
-            // If Formspree returns an error JSON
             const data = await res.json().catch(() => ({}));
             throw new Error(data.error || 'Submission failed. Please try again.');
           }
         } catch (err) {
           statusEl.classList.add('err');
           statusEl.textContent = err.message || 'Something went wrong. Please try again or email us directly.';
-          // Fallback to regular POST if desired:
-          // form.submit();
         }
       });
-    });
+    })();
   </script>
 </body>
 </html>
