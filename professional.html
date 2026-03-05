@@ -1,492 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Professional Profile – ASF Visuals LLC</title>
-
-  <!-- Keep this hidden from search engines -->
-  <meta name="robots" content="noindex, follow" />
-
-  <!-- Brand -->
-  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
-
-  <!-- Fonts & base styles (match site) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional Profile – Andrew Coutinho | ASF Visuals LLC</title>
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Professional background, experience, and credentials for Andrew Coutinho — founder of ASF Visuals LLC, WEF Global Shaper, FAA Part 107 pilot.">
+  <link rel="icon" href="images/ASF Logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Preload hero fallback for faster first paint -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="images/DowntownCloudsReduced.webp" imagesrcset="images/DowntownCloudsReduced.webp" imagesizes="100vw">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
 
   <style>
     :root {
-      --primary: #10437a;
-      --accent: #e8bc56;
-      --bg: #fafbfc;
-      --card-bg: rgba(255,255,255,0.96);
-      --shadow: 0 8px 32px rgba(0,0,0,0.08);
-      --radius: 18px;
-      --cta: #10437a;
-      --cta-hover: #e8bc56;
-      --muted:#2a3a55;
-      --ink:#172135;
+      --black: #0e1217; --off-white: #eef3f7;
+      --accent: #4e8fa8; --accent-light: #72aec6;
+      --amber: #d4895a; --amber-light: #e8a878;
+      --warm-gray: #7a94a8; --dark-gray: #151d24;
+      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
+      --container: min(1100px, 92vw);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
+    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
+
+    /* ── NAV ── */
+    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
+    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
+    .logo-link img { height:52px; width:auto; object-fit:contain; }
+    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
+    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
+    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
+    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
+    .nav-cta:hover { background:var(--amber-light); }
+    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
+    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
+    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
+    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media (max-width:860px) {
+      .menu-toggle { display:block; }
+      .nav-cta-wrap { display:none; }
+      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
+      .site-nav.open { transform:translateX(0); }
+      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
+      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
+      body.no-scroll { overflow:hidden; }
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: var(--bg);
-      color: #172135;
-      scroll-behavior: smooth;
+    /* ── HERO ── */
+    .hero {
+      position:relative; min-height:65vh; display:flex; align-items:center; justify-content:center;
+      overflow:hidden; margin-top:74px;
+      background: linear-gradient(175deg, rgba(14,18,23,.82) 0%, rgba(20,35,50,.55) 55%, rgba(14,18,23,.78) 100%),
+                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
     }
+    .hero-bg { position:absolute; inset:0; z-index:0; opacity:0; background-position:center; background-size:cover; background-repeat:no-repeat; transition:opacity 1.1s ease; }
+    .hero-bg.is-active { opacity:1; }
+    .hero-overlay { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(175deg, rgba(14,18,23,.78) 0%, rgba(20,35,50,.45) 55%, rgba(14,18,23,.72) 100%); }
+    .hero-content { position:relative; z-index:2; text-align:center; padding:2rem; width:var(--container); }
+    .hero-tag { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:1rem; display:flex; align-items:center; justify-content:center; gap:.7rem; }
+    .hero-tag::before, .hero-tag::after { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+    .hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,6rem); line-height:.95; letter-spacing:.02em; color:#fff; margin-bottom:.6rem; }
+    .hero h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
+    .hero p { font-size:.95rem; font-weight:300; color:rgba(255,255,255,.68); line-height:1.7; max-width:56ch; margin:0 auto 2rem; }
+    .hero-btns { display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
+    .btn-primary { display:inline-block; background:var(--amber); color:var(--black); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:.8rem 1.8rem; border:none; cursor:pointer; transition:background .2s, transform .15s; }
+    .btn-primary:hover { background:var(--amber-light); transform:translateY(-1px); }
+    .btn-outline { display:inline-block; background:transparent; color:var(--accent-light); font-size:.78rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.75rem 1.6rem; border:1px solid rgba(78,143,168,0.35); transition:background .2s, border-color .2s; }
+    .btn-outline:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
 
-    html,body{ background:var(--bg); color:var(--ink); font-family:'Montserrat',Arial,sans-serif; scroll-behavior:smooth; }
-    .muted{ color:var(--muted); }
-    .btn{ background:var(--cta); color:#fff; font-weight:700; padding:11px 28px; border-radius:var(--radius); border:none; cursor:pointer; box-shadow:var(--shadow); font-size:1rem; transition:.2s; text-decoration:none; letter-spacing:.02em }
-    .btn:hover,.btn:focus{ background:var(--cta-hover); color:#111 }
-    .btn-outline{ background:transparent; border:2px solid var(--cta); color:var(--cta); border-radius:999px; padding:10px 18px; font-weight:700; text-decoration:none; transition:.2s }
-    .btn-row{ display:flex; gap:10px; flex-wrap:wrap }
+    /* ── PAGE WRAP ── */
+    .page-wrap { width:var(--container); margin-inline:auto; padding:0 0 6rem; }
 
-    /* Header (match your site) */
-    .site-header{ display:flex; align-items:center; justify-content:space-between; padding:12px 5vw; background:rgba(255,255,255,0.94); box-shadow:0 2px 8px rgba(16,67,122,0.06); position:sticky; top:0; z-index:100 }
-    .site-nav ul{ display:flex; gap:2vw; list-style:none; margin:0; padding:0 }
-    .site-nav a{ font-weight:600; text-decoration:none; color:var(--primary); letter-spacing:.01em; padding:6px 14px; border-radius:var(--radius); transition:.2s }
-    .site-nav a.active,.site-nav a:hover{ background:var(--accent); color:#111 }
-
-    .menu-toggle{ display:none; flex-direction:column; justify-content:center; align-items:center; width:44px; height:44px; background:none; border:none; cursor:pointer; z-index:150 }
-    .menu-toggle .bar{ display:block; width:28px; height:4px; margin:4px 0; background:var(--primary); border-radius:2px; transition:.3s }
-    .menu-toggle.open .bar:nth-child(1){ transform:translateY(8px) rotate(45deg) }
-    .menu-toggle.open .bar:nth-child(2){ opacity:0 }
-    .menu-toggle.open .bar:nth-child(3){ transform:translateY(-8px) rotate(-45deg) }
-
-    @media (max-width:800px){
-      .menu-toggle{ display:flex }
-      .site-nav{ position:fixed; top:70px; right:0; background:#fff; box-shadow:-2px 0 16px #0002; width:65vw; max-width:340px; height:100vh; transform:translateX(100%); transition:transform .25s cubic-bezier(.4,2.2,.3,1); z-index:101; display:block; padding:38px 0 0 }
-      .site-nav.open{ transform:translateX(0) }
-      .site-nav ul{ flex-direction:column; gap:12px; padding-left:32px }
-      .site-header{ flex-wrap:wrap }
-      @media (prefers-color-scheme: dark){
-        .site-nav{ background:#0f1a2c; }
-      }
+    /* ── STICKY TOC ── */
+    .toc {
+      position:sticky; top:82px; z-index:5;
+      background:rgba(21,29,36,0.96); backdrop-filter:blur(10px);
+      border:1px solid rgba(94,143,168,0.15);
+      padding:.5rem; display:flex; gap:.3rem; flex-wrap:wrap;
+      align-items:center; justify-content:center; margin:2rem 0;
     }
+    .toc a { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--warm-gray); padding:.5rem .9rem; transition:color .2s, background .2s; }
+    .toc a:hover, .toc a[aria-current="true"] { color:var(--amber); background:rgba(212,137,90,0.1); }
 
-    /* ===== HERO (now supports cycling backgrounds like index.html) ===== */
-    .hero{
-      margin-top:92px; min-height:62vh; display:flex; align-items:center; justify-content:center;
-      border-radius:0 0 var(--radius) var(--radius); box-shadow:var(--shadow); overflow:hidden;
-      /* Fallback background if JS is disabled or manifest not found */
-      background:
-        radial-gradient(80% 80% at 80% 0%, rgba(232,188,86,.18), transparent 60%),
-        radial-gradient(60% 60% at 20% 20%, rgba(16,67,122,.20), transparent 70%),
-        linear-gradient(180deg, rgba(6,10,18,.25) 0%, rgba(6,10,18,.55) 100%),
-        url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
-      position:relative;
-      isolation:isolate;
-    }
-    /* Background layers that fade in/out */
-    .hero-bg{
-      position:absolute; inset:0; z-index:0; opacity:0;
-      background-position:center; background-size:cover; background-repeat:no-repeat;
-      transition:opacity 1.1s ease;
-    }
-    .hero-bg.is-active{ opacity:1 }
-    .hero::after{
-      /* subtle sheen */
-      content:""; position:absolute; inset:0;
-      background: radial-gradient(1200px 300px at -20% -10%, rgba(255,255,255,.22), transparent 46%),
-                  radial-gradient(1200px 300px at 120% 110%, rgba(255,255,255,.12), transparent 48%);
-      mix-blend-mode:screen; animation:floatSheen 16s ease-in-out infinite alternate;
-      pointer-events:none;
-    }
-    @keyframes floatSheen{
-      0%{ transform:translateY(-8px) }
-      100%{ transform:translateY(8px) }
-    }
-    .glass-wrap{ width:min(880px,94vw); filter:drop-shadow(0 20px 70px rgba(0,0,0,.35)) }
-    .liquid-glass{
-      position:relative; padding:30px 28px; border-radius:28px; overflow:hidden;
-      background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.22);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 20px 50px rgba(0,0,0,.35);
-      color:#fff; text-align:center; backdrop-filter: blur(22px) saturate(140%);
-    }
+    /* ── SECTION LABEL ── */
+    .section-label { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; display:flex; align-items:center; gap:.7rem; }
+    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
 
-    .page-wrap{ padding:0 6vw 80px }
+    /* ── STAT CARDS ── */
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; margin:2rem 0; }
+    @media (max-width:700px) { .stats { grid-template-columns:1fr 1fr; } }
+    @media (max-width:480px) { .stats { grid-template-columns:1fr; } }
+    .stat { background:var(--mid-gray); padding:1.6rem 1.4rem; text-align:center; }
+    .stat h3 { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; letter-spacing:.04em; line-height:1; color:var(--accent-light); margin-bottom:.4rem; }
+    .stat p { font-size:.8rem; font-weight:300; color:var(--warm-gray); line-height:1.5; }
 
-    /* Sticky in-page nav */
-    .toc{
-      position:sticky; top:86px; z-index:5; background:var(--card-bg);
-      border:1px solid #e4ebf6; border-radius:999px; padding:8px; box-shadow:var(--shadow);
-      display:flex; gap:6px; flex-wrap:wrap; align-items:center; justify-content:center; margin:22px 0;
-    }
-    .toc a{
-      text-decoration:none; color:var(--primary); font-weight:700; padding:8px 14px; border-radius:999px;
-      border:1px solid transparent;
-    }
-    .toc a:hover, .toc a[aria-current="true"]{ border-color:var(--accent); background:rgba(232,188,86,.2); color:#111 }
+    /* ── MEDIA STRIP ── */
+    .media-strip { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3px; margin:2rem 0; }
+    @media (max-width:600px) { .media-strip { grid-template-columns:1fr; } }
+    .tile { position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--mid-gray); }
+    .tile img { width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.2,.75,.2,1); }
+    .tile:hover img { transform:scale(1.05); }
 
-    /* Stats */
-    .stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:18px 0 24px }
-    .stat{ background:#fff; border:1px solid #e4ebf6; border-radius:14px; padding:18px 18px 16px; box-shadow:0 8px 24px rgba(0,0,0,.06); text-align:center }
-    .stat h3{ margin:0; font-size:clamp(1.6rem,2.8vw,2.1rem); font-family:'Playfair Display',serif; color:var(--primary) }
-    .stat p{ margin:6px 0 0; color:var(--muted) }
-    @media (max-width:900px){ .stats{ grid-template-columns:1fr 1fr } }
-    @media (max-width:600px){ .stats{ grid-template-columns:1fr } }
+    /* ── SECTION HEADS ── */
+    .section-head { display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; margin:3.5rem 0 1.2rem; padding-bottom:.8rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .section-head h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.6rem); letter-spacing:.04em; }
+    .badge { display:inline-block; background:var(--accent); color:#fff; padding:.3rem .8rem; font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
 
-    /* Media strip */
-    .media-strip{ display:grid; grid-template-columns:2fr 1fr 1fr; gap:14px; margin:16px 0 28px }
-    .media-strip .tile{ position:relative; border-radius:14px; overflow:hidden; aspect-ratio:16/9; background:#e9eef5; box-shadow:0 8px 24px rgba(0,0,0,.08) }
-    .media-strip img{ width:100%; height:100%; object-fit:cover; display:block; transform:scale(1.02); transition: transform .45s cubic-bezier(.2,.75,.2,1) }
-    .media-strip .tile:hover img{ transform:scale(1.06) }
+    /* ── CARDS ── */
+    .card { background:var(--dark-gray); border:1px solid rgba(94,143,168,0.08); padding:2rem; }
+    .grid { display:grid; gap:3px; }
+    .grid.cols-2 { grid-template-columns:1fr 1fr; }
+    @media (max-width:860px) { .grid.cols-2 { grid-template-columns:1fr; } }
 
-    .section-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:12px; margin:36px 0 12px }
-    .badge{ display:inline-block; background:var(--accent); color:#111; border-radius:999px; padding:4px 10px; font-weight:700; font-size:.8rem }
-    .card{ background:#fff; border:1px solid #e4ebf6; border-radius:14px; padding:22px; box-shadow:0 6px 22px rgba(0,0,0,.06) }
-    .grid{ display:grid; gap:18px }
-    .grid.cols-2{ grid-template-columns:1fr 1fr }
-    .grid.cols-3{ grid-template-columns:repeat(3,1fr) }
-    @media (max-width:900px){ .grid.cols-2,.grid.cols-3{ grid-template-columns:1fr } }
+    /* ── TIMELINE ── */
+    .timeline { margin:0; padding:0; list-style:none; }
+    .t-item { position:relative; padding-left:1.4rem; margin:1.8rem 0; }
+    .t-item::before { content:""; position:absolute; left:0; top:.55rem; width:6px; height:6px; border-radius:50%; background:var(--accent); }
+    .t-item + .t-item { padding-top:1.8rem; border-top:1px solid rgba(255,255,255,.05); }
+    .t-role { font-weight:600; font-size:.95rem; color:var(--off-white); letter-spacing:.01em; }
+    .t-meta { color:var(--warm-gray); font-size:.82rem; margin:.2rem 0 .6rem; }
+    .list { margin:.5rem 0 0 1rem; padding:0; list-style:disc; }
+    .list li { font-size:.88rem; font-weight:300; line-height:1.7; color:var(--ink); margin:.3rem 0; }
+    .list li strong { color:var(--off-white); font-weight:500; }
 
-    /* Timeline */
-    .timeline{ margin:0; padding:0; list-style:none }
-    .t-item{ position:relative; padding-left:24px; margin:22px 0 }
-    .t-item::before{ content:""; position:absolute; left:8px; top:10px; width:8px; height:8px; border-radius:50%; background:var(--primary) }
-    .t-role{ font-weight:800 }
-    .t-meta{ color:var(--muted); font-size:.92rem; margin:.15rem 0 .5rem }
-    .list{ margin:0; padding-left:18px }
-    .list li{ margin:.35rem 0 }
-    .pill{ display:inline-block; border:1px solid #dce6f3; border-radius:999px; padding:6px 10px; margin:4px 6px 0 0; font-size:.9rem; color:#2a3a55; background:#fff }
+    /* ── PILLS ── */
+    .pills { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.8rem; }
+    .pill { display:inline-block; background:rgba(78,143,168,0.1); border:1px solid rgba(78,143,168,0.2); color:var(--accent-light); padding:.25rem .75rem; font-size:.72rem; font-weight:500; letter-spacing:.08em; }
 
-    /* Fade-up */
-    .fade-up{ opacity:0; transform:translateY(28px); transition:all .7s cubic-bezier(.25,.8,.25,1) }
-    .fade-up.visible{ opacity:1; transform:translateY(0) }
+    /* ── SKILLS GRID ── */
+    .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
+    @media (max-width:700px) { .skills-grid { grid-template-columns:1fr 1fr; } }
+    @media (max-width:480px) { .skills-grid { grid-template-columns:1fr; } }
+    .skill-group { background:var(--mid-gray); padding:1.4rem 1.6rem; }
+    .skill-group-label { font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; }
+    .skill-group .pills { margin-top:0; }
+
+    /* ── CTA BAND ── */
+    .cta-band { background:var(--mid-gray); padding:3rem; margin-top:4rem; display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between; }
+    @media (max-width:600px) { .cta-band { flex-direction:column; align-items:stretch; padding:2rem; } }
+    .cta-band h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.8rem); letter-spacing:.04em; }
+    .cta-band p { font-size:.88rem; font-weight:300; color:var(--warm-gray); margin-top:.4rem; }
+    .cta-btns { display:flex; gap:.8rem; flex-wrap:wrap; }
+
+    /* ── FOOTER ── */
+    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); margin-top:0; }
+    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
+    .footer-logo span { color:var(--accent-light); }
+    .footer-contact { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
+    .footer-contact a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
+    .footer-contact a:hover { color:var(--accent-light); }
+    .footer-contact span { font-size:.75rem; color:#4a5a6a; }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-copy { font-size:.75rem; color:#4a5a6a; }
+    .footer-social { display:flex; gap:1.5rem; }
+    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
+    .footer-social a:hover { color:var(--accent-light); }
+
+    /* ── REVEAL ── */
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:.1s; } .reveal-d2 { transition-delay:.2s; }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:#fff;color:#103047;border-radius:0 0 10px 10px;padding:8px 22px">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <a href="index.html" class="logo-link" aria-label="ASF Visuals home">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" style="height:62px;width:auto;object-fit:contain;display:block" loading="eager">
+  <header class="site-header" id="header">
+    <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="eager">
     </a>
-
-    <button id="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html#top">Home</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="clients.html">Clients</a></li>
         <li><a href="about.html" class="active" aria-current="page">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </header>
 
-  <!-- HERO (now with cycling background layers) -->
-  <section class="hero" role="img" aria-label="Pittsburgh skyline backdrop">
-    <!-- cycling layers -->
+  <!-- HERO -->
+  <section class="hero" id="top" role="banner">
     <div class="hero-bg is-active" id="bgA" aria-hidden="true"></div>
     <div class="hero-bg" id="bgB" aria-hidden="true"></div>
-
-    <div class="glass-wrap">
-      <div class="liquid-glass">
-        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.1rem,4.8vw,3rem);margin:0 0 12px">Professional Profile</h1>
-        <p style="margin:0 0 14px;max-width:64ch;margin-inline:auto">Founder, photographer, and creative director building ASF Visuals into a location-driven archive of aerial & landscape stories.</p>
-        <div class="btn-row" style="justify-content:center;margin-top:12px">
-          <a class="btn" href="portfolio.html">See Portfolio</a>
-          <a class="btn-outline" href="contact.html">Work With Me</a>
-          <a class="btn-outline" href="https://www.linkedin.com/in/andrew-coutinho" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Andrew Coutinho</div>
+      <h1>Professional <em>Profile</em></h1>
+      <p>Founder, photographer, drone pilot, and web developer building purposeful visual work out of Pittsburgh, PA.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="portfolio.html">See Portfolio</a>
+        <a class="btn-outline" href="contact.html">Work With Me</a>
+        <a class="btn-outline" href="https://www.linkedin.com/in/andrew-coutinho" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
   </section>
 
-  <main id="main" class="page-wrap">
-    <!-- STICKY IN-PAGE NAV -->
-    <nav class="toc fade-up" aria-label="Section navigation">
-      <a href="#snapshot" aria-current="true">Snapshot</a>
-      <a href="#work">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#leadership">Leadership</a>
-      <a href="#skills">Skills</a>
-      <a href="#cta">Contact</a>
-    </nav>
+  <main id="main">
+    <div class="page-wrap">
 
-    <!-- SNAPSHOT -->
-    <section id="snapshot" class="fade-up" style="padding:8px 0 0">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin:0 0 6px">Snapshot</h2>
-      <p class="muted" style="margin:0;max-width:82ch">
-        Pittsburgh-based creator with a dual B.A. in <strong>Economics & Africana Studies</strong> (Pitt, 2025), <strong>Fulbright-Hays</strong> Tanzania cohort, and leadership across <strong>Global Shapers</strong> + collegiate bodybuilding. Clients include the <strong>University of Pittsburgh</strong>, athletics (e.g., <strong>Pitt Men’s Soccer</strong>), and regional real-estate partners.
-      </p>
+      <!-- STICKY TOC -->
+      <nav class="toc reveal" aria-label="Section navigation">
+        <a href="#snapshot" aria-current="true">Snapshot</a>
+        <a href="#work">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#cta">Contact</a>
+      </nav>
 
-      <!-- STAT CARDS -->
-      <div class="stats" role="list" aria-label="Key highlights">
-        <div class="stat" role="listitem">
-          <h3>3+ Years</h3>
-          <p class="muted">Founder & Creative Director, ASF Visuals LLC (Oct 2022–Present)</p>
-        </div>
-        <div class="stat" role="listitem">
-          <h3>Part 107</h3>
-          <p class="muted">FAA sUAS certified, aerial + ground production</p>
-        </div>
-        <div class="stat" role="listitem">
-          <h3>10+ Orgs</h3>
-          <p class="muted">NCBO collegiate network & partnerships</p>
-        </div>
-      </div>
+      <!-- ── SNAPSHOT ── -->
+      <section id="snapshot" class="reveal" style="padding:1rem 0 0">
+        <div class="section-label">Overview</div>
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.04em;margin-bottom:.8rem;">Snapshot</h2>
+        <p style="font-size:.95rem;font-weight:300;line-height:1.8;color:var(--warm-gray);max-width:78ch;margin-bottom:2rem;">
+          Pittsburgh-based founder with a dual B.A. in <strong style="color:var(--off-white);font-weight:500;">Economics &amp; Africana Studies</strong> (Pitt, 2025), <strong style="color:var(--off-white);font-weight:500;">Fulbright-Hays</strong> Tanzania cohort, and leadership across <strong style="color:var(--off-white);font-weight:500;">WEF Global Shapers</strong> and the national collegiate bodybuilding network. Clients include the <strong style="color:var(--off-white);font-weight:500;">University of Pittsburgh</strong>, Pitt Men's Soccer (D1), <strong style="color:var(--off-white);font-weight:500;">Pittsburgh Prestige Remodeling</strong>, <strong style="color:var(--off-white);font-weight:500;">Aqua Design Collective</strong>, and regional real estate partners.
+        </p>
 
-      <!-- FEATURED IMAGES -->
-      <section class="media-strip" aria-label="Featured work previews">
-        <figure class="tile">
-          <img src="images/DJI_0006-Enhanced.jpg" alt="Pittsburgh in the Clouds" loading="lazy">
-        </figure>
-       <!--   <figure class="tile">
-          <img src="images/pitt.JPG" alt="Men’s Soccer at Pitt" loading="lazy">
-        </figure>
-        <figure class="tile">
-          <img src="images/CathyCMU_1600.avif" alt="Cathedral and CMU" loading="lazy">
-        </figure> -->
+        <div class="stats">
+          <div class="stat reveal">
+            <h3>25+</h3>
+            <p>Client projects delivered — 100% on-time completion</p>
+          </div>
+          <div class="stat reveal reveal-d1">
+            <h3>Part 107</h3>
+            <p>FAA sUAS certified — aerial + ground production</p>
+          </div>
+          <div class="stat reveal reveal-d2">
+            <h3>10+ Orgs</h3>
+            <p>Universities connected through NCBO collegiate network</p>
+          </div>
+        </div>
+
+        <div class="media-strip">
+          <figure class="tile">
+            <img src="images/DJI_0006-Enhanced.jpg" alt="Pittsburgh in the Clouds — ASF Visuals aerial" loading="lazy"
+              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
+          </figure>
+          <figure class="tile">
+            <img src="images/pitt.JPG" alt="Pitt Men's Soccer D1 athletics content" loading="lazy"
+              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
+          </figure>
+          <figure class="tile">
+            <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group commercial real estate" loading="lazy"
+              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
+          </figure>
+        </div>
       </section>
-    </section>
 
-    <!-- EXPERIENCE -->
-    <div class="section-head fade-up" id="work">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin:0">Experience</h2>
-      <span class="badge" aria-hidden="true">Active</span>
-    </div>
-    <section class="card fade-up" aria-label="Experience timeline">
-      <ul class="timeline">
-        <li class="t-item">
-          <div class="t-role">Founder & Creative Director — ASF Visuals LLC</div>
-          <div class="t-meta">Hybrid • Oct 2022 – Present</div>
-          <ul class="list">
-            <li>Deliver end-to-end productions: scoping, shot lists, onsite (drone + ground), editing, and delivery.</li>
-            <li>Clients include the <strong>University of Pittsburgh</strong>, regional real-estate partners, and <strong>Pitt Men’s Soccer</strong> (D1 athletics content).</li>
-            <li>Built and maintain a custom site (HTML/CSS/JS) with a dynamic gallery (<code>imagePaths.json</code>), lightbox, and Pixieset prints.</li>
-            <li>Brand systems for clients: logos, palettes, social assets, and web collateral to support campaigns.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">FAA Part 107</span>
-            <span class="pill">Lightroom / Photoshop</span>
-            <span class="pill">HTML / CSS / JS</span>
-            <span class="pill">Client Comms</span>
-            <span class="pill">Project Management</span>
-          </div>
-        </li>
+      <!-- ── EXPERIENCE ── -->
+      <div class="section-head reveal" id="work">
+        <h2>Experience</h2>
+        <span class="badge">Active</span>
+      </div>
+      <div class="card reveal">
+        <ul class="timeline">
 
-        <li class="t-item">
-          <div class="t-role">Co-Founder — National Collegiate Bodybuilding Organization (NCBO)</div>
-          <div class="t-meta">Remote • Nov 2024 – Present</div>
-          <ul class="list">
-            <li>Developed a national roadmap connecting <strong>10+ universities</strong> and student-led clubs; built partnerships (e.g., Penn State).</li>
-            <li>Iterative platform & services via member feedback; advised <strong>5+ clubs</strong> on leadership, events, and ops playbooks.</li>
-            <li>Strengthened strategic planning, stakeholder management, and community growth capabilities.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">Program Development</span>
-            <span class="pill">Organizational Development</span>
-            <span class="pill">Stakeholder Management</span>
-          </div>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Founder &amp; Creative Director — ASF Visuals LLC</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Oct 2022 – Present</div>
+            <ul class="list">
+              <li>Manage a certified drone media business overseeing end-to-end client engagement and content delivery.</li>
+              <li>Delivered <strong>25+ client projects</strong> with <strong>100% on-time completion</strong> while maintaining scope and brand standards.</li>
+              <li>Clients include the <strong>University of Pittsburgh</strong>, <strong>Pitt Men's Soccer</strong> (D1), <strong>Pittsburgh Prestige Remodeling</strong>, <strong>Aqua Design Collective</strong>, and regional real estate partners.</li>
+              <li>Designed and launched a custom portfolio website (HTML, CSS, JavaScript) with dynamic gallery, lightbox, and Pixieset print store.</li>
+              <li>Brand systems for clients: logos, palettes, social assets, and web collateral to support campaigns.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">FAA Part 107</span>
+              <span class="pill">Lightroom / Photoshop</span>
+              <span class="pill">HTML / CSS / JS</span>
+              <span class="pill">Client Management</span>
+              <span class="pill">Project Management</span>
+            </div>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Global Experience Office Advisor — University of Pittsburgh</div>
-          <div class="t-meta">On-site • Sep 2024 – May 2025</div>
-          <ul class="list">
-            <li>Helped craft and execute marketing plans aligned to GEO strategy; advised students on study abroad pathways.</li>
-            <li>Leveraged international experience to improve communication and student guidance for Pitt Global.</li>
-          </ul>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Co-Founder — National Collegiate Bodybuilding Organization (NCBO)</div>
+            <div class="t-meta">Remote &nbsp;·&nbsp; Nov 2024 – Present</div>
+            <ul class="list">
+              <li>Lead national network of <strong>10+ university</strong> bodybuilding clubs; developed roadmap to scale NCBO's collegiate presence.</li>
+              <li>Analyzed member feedback to refine programs and advised <strong>5+ clubs</strong> on leadership and event planning.</li>
+              <li>Collaborated with Penn State University Bodybuilding Club to help 5+ collegiate clubs with effective management.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Program Development</span>
+              <span class="pill">Organizational Development</span>
+              <span class="pill">Stakeholder Management</span>
+            </div>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Resident Assistant — University of Pittsburgh</div>
-          <div class="t-meta">On-site • Aug 2024 – May 2025</div>
-          <ul class="list">
-            <li>Fostered inclusive, safe residential communities; ran events and served as a mentor and resource.</li>
-          </ul>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Global Experience Office Advisor — University of Pittsburgh</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Sep 2024 – May 2025</div>
+            <ul class="list">
+              <li>Designed and executed data-informed marketing initiatives, analyzing engagement metrics to <strong>increase study abroad participation by 35%</strong>.</li>
+              <li>Advised <strong>50+ students</strong> through one-on-one consultations, leveraging international field research experience from Tanzania and the UK to guide program selection.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Data Analysis</span>
+              <span class="pill">Marketing Strategy</span>
+              <span class="pill">Student Advising</span>
+            </div>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Oakland Community Ambassador — University of Pittsburgh</div>
-          <div class="t-meta">Hybrid • Aug 2023 – Aug 2024</div>
-          <ul class="list">
-            <li>Strengthened student-resident relations via safety, civic engagement, and resource outreach.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">Leadership</span><span class="pill">Marketing</span><span class="pill">Communication</span>
-          </div>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Resident Assistant — University of Pittsburgh</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Aug 2024 – May 2025</div>
+            <ul class="list">
+              <li>Fostered inclusive, safe residential communities; facilitated programming and served as a mentor and resource for residents.</li>
+            </ul>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Cyber Security Analyst (Intern) — Robin Home Care</div>
-          <div class="t-meta">Hybrid (London) • Jun 2023 – Aug 2023</div>
-          <ul class="list">
-            <li>Supported risk reduction through reviews, audits, and hardening; recommended process and control improvements.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">Security Audits</span><span class="pill">Network Security</span><span class="pill">Problem Solving</span>
-          </div>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Oakland Community Ambassador — University of Pittsburgh</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Aug 2023 – Aug 2024</div>
+            <ul class="list">
+              <li>Strengthened student-resident relations through safety, civic engagement, and resource outreach initiatives.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Community Outreach</span>
+              <span class="pill">Leadership</span>
+              <span class="pill">Communication</span>
+            </div>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Social Media Marketing Intern — State Farm</div>
-          <div class="t-meta">Remote • Dec 2020 – Aug 2022</div>
-          <ul class="list">
-            <li>Planned and scheduled content to increase engagement; contributed to digital campaigns and brand visibility.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">Social Strategy</span><span class="pill">Marketing</span><span class="pill">Copywriting</span>
-          </div>
-        </li>
+          <li class="t-item">
+            <div class="t-role">Cyber Security Intern — Robin Home Care</div>
+            <div class="t-meta">London, United Kingdom &nbsp;·&nbsp; Jun 2023 – Aug 2023</div>
+            <ul class="list">
+              <li>Conducted systemwide IT security audits and deployed encryption and firewall protocols; <strong>improved data-protection compliance scores by 25%</strong> and prevented unauthorized access incidents.</li>
+              <li>Recommended and documented <strong>5 policy enhancements</strong> for network security governance and enterprise risk management compliance.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Security Audits</span>
+              <span class="pill">Network Security</span>
+              <span class="pill">Risk Management</span>
+            </div>
+          </li>
 
-        <li class="t-item">
-          <div class="t-role">Sales Advisor — Best Buy</div>
-          <div class="t-meta">On-site • May 2021 – Jan 2022</div>
-          <ul class="list">
-            <li>Met sales goals via solution-based conversations; sharpened customer experience and team collaboration.</li>
-          </ul>
-          <div style="margin-top:8px">
-            <span class="pill">Sales</span><span class="pill">CX</span><span class="pill">Strategic Thinking</span>
-          </div>
-        </li>
-      </ul>
-    </section>
+          <li class="t-item">
+            <div class="t-role">Social Media Marketing Intern — State Farm</div>
+            <div class="t-meta">Remote &nbsp;·&nbsp; Dec 2020 – Aug 2022</div>
+            <ul class="list">
+              <li>Planned and scheduled content to increase engagement; contributed to digital campaigns and brand visibility.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Social Strategy</span>
+              <span class="pill">Content Marketing</span>
+              <span class="pill">Copywriting</span>
+            </div>
+          </li>
 
-    <!-- EDUCATION -->
-    <div class="section-head fade-up" id="education">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin:0">Education & Honors</h2>
-    </div>
-    <section class="grid cols-2 fade-up" aria-label="Education and certifications">
-      <div class="card">
-        <div style="letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#2a3a55;font-size:.85rem;margin-bottom:8px">University of Pittsburgh</div>
-        <h3 style="margin:0 0 6px">B.A. Economics & Africana Studies</h3>
-        <p class="muted" style="margin:0 0 10px">Class of 2025 • Activities: Founder & President, Bodybuilding Club; Oakland Community Ambassador; Global Experience Advisor; Resident Assistant</p>
-        <ul class="list">
-          <li><strong>Fulbright-Hays GPA (Tanzania, 2023):</strong> intensive Swahili; lectures on African socialism, development, and regional history; fieldwork in Arusha, Dar es Salaam, Bagamoyo, and Zanzibar; brief study in Nairobi.</li>
+          <li class="t-item">
+            <div class="t-role">Sales Advisor — Best Buy</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; May 2021 – Jan 2022</div>
+            <ul class="list">
+              <li>Met sales targets through solution-based conversations; developed customer experience and cross-functional team skills.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Sales</span>
+              <span class="pill">Customer Experience</span>
+              <span class="pill">Strategic Thinking</span>
+            </div>
+          </li>
+
         </ul>
       </div>
-      <div class="card">
-        <div style="letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#2a3a55;font-size:.85rem;margin-bottom:8px">Certifications & Tools</div>
-        <ul class="list">
+
+      <!-- ── EDUCATION ── -->
+      <div class="section-head reveal" id="education">
+        <h2>Education &amp; Honors</h2>
+      </div>
+      <div class="grid cols-2 reveal">
+        <div class="card">
+          <div class="section-label">University of Pittsburgh</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;margin-bottom:.6rem;">B.A. Economics &amp; Africana Studies</h3>
+          <p style="font-size:.85rem;color:var(--warm-gray);margin-bottom:.8rem;">Class of May 2025 &nbsp;·&nbsp; Pittsburgh, PA</p>
+          <p style="font-size:.8rem;font-weight:300;color:var(--warm-gray);margin-bottom:.8rem;">Coursework: Economic Data Analysis, Applied Econometrics, Macroeconomics, Africana Studies Capstone, Theories of Leadership</p>
+          <p style="font-size:.8rem;font-weight:300;color:var(--warm-gray);">Activities: Founder &amp; President, Bodybuilding Club; Oakland Community Ambassador; Global Experience Advisor; Resident Assistant</p>
+        </div>
+        <div class="card">
+          <div class="section-label">Fulbright-Hays Award</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;margin-bottom:.6rem;">Group Projects Abroad — Tanzania</h3>
+          <p style="font-size:.85rem;color:var(--warm-gray);margin-bottom:.8rem;">MS TCDC Arusha &nbsp;·&nbsp; May 2023</p>
+          <ul class="list" style="margin-left:0;list-style:none;padding:0;">
+            <li>Intensive Swahili language training through classroom instruction and community immersion.</li>
+            <li>Interdisciplinary lectures on African socialism, development, and regional history.</li>
+            <li>Fieldwork in Arusha, Dar es Salaam, Bagamoyo, and Zanzibar; brief study in Nairobi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ── CERTIFICATIONS ── -->
+      <div class="card reveal" style="margin-top:3px;">
+        <div class="section-label">Certifications &amp; Tools</div>
+        <ul class="list" style="margin-left:0;list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.5rem .5rem;">
           <li>FAA Part 107 (sUAS) — Commercial Drone Operations</li>
           <li>Adobe Lightroom / Photoshop; Capture One (basic)</li>
-          <li>Web: HTML, CSS, JavaScript; GitHub Pages; basic SQL + Next.js experimentation</li>
-          <li>Workflow: shot planning, color management, export pipelines, client delivery (Pixieset)</li>
+          <li>HTML, CSS, JavaScript; Git / GitHub; Supabase; Next.js</li>
+          <li>Microsoft Excel, PowerPoint; Google Analytics</li>
+          <li>Visual Studio Code; Git Bash</li>
+          <li>Shot planning, color management, export pipelines, Pixieset client delivery</li>
         </ul>
       </div>
-    </section>
 
-    <!-- LEADERSHIP -->
-    <div class="section-head fade-up" id="leadership">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin:0">Leadership & Community</h2>
-    </div>
-    <section class="card fade-up" aria-label="Leadership timeline">
-      <ul class="timeline">
-        <li class="t-item">
-          <div class="t-role">Founder & President — Bodybuilding Club at Pitt</div>
-          <div class="t-meta">Hybrid • Jan 2022 – May 2025</div>
-          <ul class="list">
-            <li>Grew membership by ~50% YoY; built a multi-university network; increased social reach by ~200% through media analytics.</li>
-            <li>Organized socials, fundraisers, workshops, and in-club shows; managed a board of 6+ for reliable ops.</li>
-          </ul>
-        </li>
-        <li class="t-item">
-          <div class="t-role">Vice Curator — Global Shapers Pittsburgh Hub (WEF)</div>
-          <div class="t-meta">Apr 2024 – Present</div>
-          <ul class="list">
-            <li>Advance SDG-aligned projects; recruit members; coordinate partnerships and local impact programs focusing on economic empowerment.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <!-- SKILLS -->
-    <div class="section-head fade-up" id="skills">
-      <h2 style="font-family:'Playfair Display',serif;color:var(--primary);margin:0">Skills</h2>
-    </div>
-    <section class="card fade-up" aria-label="Skill chips">
-      <div>
-        <span class="pill">Photography</span><span class="pill">Aerial Cinematography</span><span class="pill">Lightroom</span><span class="pill">Photoshop</span><span class="pill">Color Workflow</span><span class="pill">Brand Design</span><span class="pill">HTML/CSS/JS</span><span class="pill">Project Management</span><span class="pill">Stakeholder Management</span><span class="pill">Community Building</span><span class="pill">Marketing</span><span class="pill">Social Strategy</span>
+      <!-- ── LEADERSHIP ── -->
+      <div class="section-head reveal" id="leadership">
+        <h2>Leadership &amp; Community</h2>
       </div>
-    </section>
+      <div class="card reveal">
+        <ul class="timeline">
 
-    <!-- CTA -->
-    <section id="cta" class="fade-up" style="margin-top:28px; text-align:center">
-      <div class="btn-row" style="justify-content:center">
-        <a class="btn" href="contact.html">Get a Quote</a>
-        <a class="btn-outline" href="portfolio.html">See Portfolio</a>
+          <li class="t-item">
+            <div class="t-role">Vice Curator — Global Shapers Pittsburgh Hub (WEF)</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Jul 2024 – Present &nbsp;·&nbsp; Incoming Curator: Jul 2026 – Jun 2027</div>
+            <ul class="list">
+              <li>Serving as Project Coordinator for the <strong>Northeast Hub Regional Retreat</strong> (May 15–17, 2026, Pittsburgh) — 6+ months of planning for <strong>100+ participants</strong>.</li>
+              <li>Represented Pittsburgh at the <strong>Global Shapers Annual Summit in Geneva</strong>, collaborating with international peers on SDG-aligned initiatives.</li>
+              <li>Build partnerships with local organizations to support volunteerism, outreach, and impact-driven programming focused on economic empowerment.</li>
+              <li>Lead recruitment, project evaluation, events, and hub strategy as Vice Curator; transitioning to Curator for the 2026–2027 term.</li>
+            </ul>
+            <div class="pills">
+              <span class="pill">Program Management</span>
+              <span class="pill">International Collaboration</span>
+              <span class="pill">Community Strategy</span>
+            </div>
+          </li>
+
+          <li class="t-item">
+            <div class="t-role">Founder &amp; President — Bodybuilding Club at Pitt</div>
+            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Jan 2022 – May 2025</div>
+            <ul class="list">
+              <li>Built D1-affiliated club from scratch, growing membership by <strong>50%</strong> in one year; increased social media reach by <strong>200%</strong> through media analytics.</li>
+              <li>Planned and executed socials, fundraisers, educational workshops, and in-club shows; managed a 6-member executive board.</li>
+              <li>NCBO co-founded from this network, connecting 10+ universities nationally.</li>
+            </ul>
+          </li>
+
+        </ul>
       </div>
-      <p class="muted" style="margin-top:10px">Prefer a quick overview? <a href="about.html" class="btn-outline" style="display:inline-block;margin-top:8px">← Back to About</a></p>
-    </section>
+
+      <!-- ── SKILLS ── -->
+      <div class="section-head reveal" id="skills">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <div class="skill-group-label">Technical &amp; Tools</div>
+          <div class="pills">
+            <span class="pill">HTML / CSS / JS</span>
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Supabase</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">Excel</span>
+            <span class="pill">PowerPoint</span>
+            <span class="pill">Google Analytics</span>
+            <span class="pill">VS Code / Git Bash</span>
+            <span class="pill">Adobe Lightroom</span>
+            <span class="pill">Photoshop</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Operations &amp; Strategy</div>
+          <div class="pills">
+            <span class="pill">Project Coordination</span>
+            <span class="pill">Timeline &amp; Milestones</span>
+            <span class="pill">Process Improvement</span>
+            <span class="pill">Cross-Functional Collaboration</span>
+            <span class="pill">Stakeholder Management</span>
+            <span class="pill">Community Building</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-label">Analysis &amp; Creative</div>
+          <div class="pills">
+            <span class="pill">Data Analysis</span>
+            <span class="pill">Performance Metrics</span>
+            <span class="pill">Marketing Strategy</span>
+            <span class="pill">Photography</span>
+            <span class="pill">Aerial Cinematography</span>
+            <span class="pill">Brand Design</span>
+            <span class="pill">Social Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── CTA ── -->
+      <div class="cta-band reveal" id="cta">
+        <div>
+          <h2>Let's Build Something</h2>
+          <p>Available for photography, drone, web, and creative projects across Pittsburgh and beyond.</p>
+        </div>
+        <div class="cta-btns">
+          <a class="btn-primary" href="contact.html">Get a Quote</a>
+          <a class="btn-outline" href="portfolio.html">See Portfolio</a>
+          <a class="btn-outline" href="about.html">← Back to About</a>
+        </div>
+      </div>
+
+    </div>
   </main>
 
-  <footer class="site-footer" style="background:#10233a;color:#f5f5f5;padding:48px 6vw 36px;border-radius:var(--radius) var(--radius) 0 0;margin-top:80px;text-align:center">
-    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div class="footer-contact">
+        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        <span>Pittsburgh, Pennsylvania</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="year"></span> ASF Visuals LLC. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Micro-interactions: mobile nav + fade-in + active TOC -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const toggle = document.getElementById("menu-toggle");
-      const nav = document.getElementById("navbar");
-      if (toggle && nav) {
-        const mq = window.matchMedia("(max-width: 800px)");
-        const applyMQ = () => toggle.style.display = mq.matches ? "flex" : "none";
-        applyMQ(); mq.addEventListener?.("change", applyMQ);
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-        toggle.addEventListener("click", function() {
-          const open = nav.classList.toggle("open");
-          this.classList.toggle("open");
-          this.setAttribute("aria-expanded", open ? "true" : "false");
-        });
+    /* ── Nav + scroll ── */
+    (function navInit(){
+      const btn = document.getElementById('menuToggle');
+      const nav = document.getElementById('navbar');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+        if (window.innerWidth <= 860){ nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
+      }));
+      let lastY = window.scrollY;
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY;
+        header.classList.toggle('scrolled', y > 60);
+        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
+        lastY = y;
+      }, { passive:true });
+    })();
 
-        nav.querySelectorAll("a").forEach(link => {
-          link.addEventListener("click", () => {
-            if (window.innerWidth <= 800) {
-              nav.classList.remove("open");
-              toggle.classList.remove("open");
-              toggle.setAttribute("aria-expanded", "false");
-            }
-          });
-        });
-      }
+    /* ── Reveal ── */
+    (function revealInit(){
+      const els = document.querySelectorAll('.reveal');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.08 });
+      els.forEach(el => obs.observe(el));
+    })();
 
-      // Fade-ups
-      const faders = document.querySelectorAll('.fade-up');
-      if (faders.length) {
-        const observer = new IntersectionObserver((entries, obs) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              obs.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.16 });
-        faders.forEach(el => observer.observe(el));
-      }
-
-      // Active section highlighting in the sticky TOC
+    /* ── Active TOC spy ── */
+    (function tocSpy(){
       const tocLinks = document.querySelectorAll('.toc a');
       const sections = [...tocLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-      if (sections.length) {
-        const setActive = (id) => {
-          tocLinks.forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#' + id ? 'true' : 'false'));
-        };
-        const spy = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) setActive(entry.target.id);
-          });
-        }, { rootMargin: '-40% 0px -55% 0px', threshold: 0.01 });
-        sections.forEach(sec => spy.observe(sec));
-      }
-    });
+      if (!sections.length) return;
+      const setActive = id => tocLinks.forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#'+id ? 'true' : 'false'));
+      const spy = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+      }, { rootMargin:'-35% 0px -55% 0px', threshold: 0.01 });
+      sections.forEach(s => spy.observe(s));
+    })();
   </script>
 
   <!-- Hero background cycler (same logic as index.html) -->
@@ -496,94 +594,46 @@
       const A = document.getElementById('bgA');
       const B = document.getElementById('bgB');
       if (!A || !B) return;
-
       const MANIFEST_PATH = '/gallery/imagePaths.json';
       const INTERVAL_MS = 7000;
       const FALLBACK = ['images/DowntownCloudsReduced.webp'];
-
-      const withOverlay = (url) =>
-        `linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%), url('${url}')`;
+      const withOverlay = url => `linear-gradient(175deg, rgba(14,18,23,.78) 0%, rgba(20,35,50,.45) 55%, rgba(14,18,23,.72) 100%), url('${url}') center/cover no-repeat`;
 
       async function loadManifest(){
-        try{
-          const res = await fetch(MANIFEST_PATH, { cache:'no-cache' });
-          if (!res.ok) throw new Error('manifest not found');
-          return await res.json();
-        }catch(e){
-          console.warn('[Hero Cycler] Using fallback images.', e);
-          return { categories:{} };
-        }
+        try{ const res = await fetch(MANIFEST_PATH,{cache:'no-cache'}); if(!res.ok) throw new Error(); return await res.json(); }
+        catch(e){ return {categories:{}}; }
       }
-
       function collectUrls(man){
-        const urls = [];
-        const cats = man.categories || {};
-        Object.values(cats).forEach(items=>{
+        const urls=[];
+        Object.values(man.categories||{}).forEach(items=>{
           (items||[]).forEach(item=>{
-            const widths = (item.widths||[]).slice().sort((a,b)=>a-b);
-            const target = widths.find(w=>w>=1600) || widths[widths.length-1];
-            const pick =
-              (item.variants?.jpg?.[target]) ||
-              (item.variants?.avif?.[target]) ||
-              Object.values(item.variants?.jpg||{})[0] ||
-              Object.values(item.variants?.avif||{})[0];
-            if (pick) urls.push(pick);
+            const widths=(item.widths||[]).slice().sort((a,b)=>a-b);
+            const target=widths.find(w=>w>=1600)||widths[widths.length-1];
+            const pick=(item.variants?.jpg?.[target])||(item.variants?.avif?.[target])||Object.values(item.variants?.jpg||{})[0]||Object.values(item.variants?.avif||{})[0];
+            if(pick) urls.push(pick);
           });
         });
-        const uniq = [...new Set(urls)];
-        // shuffle for variety
-        for (let i = uniq.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [uniq[i], uniq[j]] = [uniq[j], uniq[i]];
-        }
+        const uniq=[...new Set(urls)];
+        for(let i=uniq.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [uniq[i],uniq[j]]=[uniq[j],uniq[i]]; }
         return uniq.length ? uniq : FALLBACK;
       }
+      function preload(url){ return new Promise(res=>{ const img=new Image(); img.onload=()=>res(true); img.onerror=()=>res(false); img.src=url; }); }
 
-      function preload(url){
-        return new Promise((resolve)=>{
-          const img = new Image();
-          img.onload = ()=> resolve(true);
-          img.onerror = ()=> resolve(false);
-          img.src = url;
-        });
-      }
+      let list=FALLBACK.slice(), idx=0, timer=null;
+      let active=A, next=B;
+      function swapTo(url){ next.style.backgroundImage=withOverlay(url); next.classList.add('is-active'); active.classList.remove('is-active'); const tmp=active; active=next; next=tmp; }
+      async function advance(){ if(!list.length) return; idx=(idx+1)%list.length; const ok=await preload(list[idx]); swapTo(ok?list[idx]:FALLBACK[0]); }
+      function start(){ if(timer||prefersReduced) return; timer=setInterval(advance,INTERVAL_MS); }
+      function stop(){ if(timer){ clearInterval(timer); timer=null; } }
 
-      let list = FALLBACK.slice();
-      let idx = 0, timer = null;
-      let active = A, next = B;
-
-      function swapTo(url){
-        next.style.backgroundImage = withOverlay(url);
-        next.classList.add('is-active');
-        active.classList.remove('is-active');
-        const tmp = active; active = next; next = tmp;
-      }
-
-      async function advance(){
-        if (!list.length) return;
-        idx = (idx + 1) % list.length;
-        const url = list[idx];
-        const ok = await preload(url);
-        swapTo(ok ? url : FALLBACK[0]);
-      }
-
-      function start(){
-        if (timer || prefersReduced) return;
-        timer = setInterval(advance, INTERVAL_MS);
-      }
-      function stop(){ if (timer){ clearInterval(timer); timer = null; } }
-
-      (async ()=>{
-        const man = await loadManifest();
-        list = collectUrls(man);
-        active.style.backgroundImage = withOverlay(list[0] || FALLBACK[0]);
+      (async()=>{
+        const man=await loadManifest();
+        list=collectUrls(man);
+        active.style.backgroundImage=withOverlay(list[0]||FALLBACK[0]);
         active.classList.add('is-active');
-        if (!prefersReduced) start();
+        if(!prefersReduced) start();
       })();
-
-      document.addEventListener('visibilitychange', ()=>{
-        if (document.hidden) stop(); else start();
-      });
+      document.addEventListener('visibilitychange',()=>{ if(document.hidden) stop(); else start(); });
     })();
   </script>
 </body>
