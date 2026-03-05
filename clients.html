@@ -1,188 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Clients & Projects – ASF Visuals LLC</title>
-  <meta name="description" content="Selected client work and personal projects from ASF Visuals LLC — sports, real estate, education, brands, web, and more." />
+  <title>Clients & Projects – ASF Visuals LLC | Pittsburgh Commercial Photography</title>
+  <meta name="description" content="Selected client work and personal projects from ASF Visuals LLC — sports, real estate, education, brands, web, and more.">
   <link rel="canonical" href="https://www.asfvisualsllc.com/clients.html">
-  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
+  <meta property="og:title" content="Clients & Projects – ASF Visuals LLC">
+  <meta property="og:description" content="Selected client work and personal projects from ASF Visuals LLC.">
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0e1217">
+  <link rel="icon" href="images/ASF Logo.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
 
   <style>
-    :root{
-      --primary:#10437a; --accent:#e8bc56; --ink:#172135; --bg:#f5f7fb;
-      --shadow:0 12px 36px rgba(16,67,122,.12); --radius:22px;
-      --cta:#10437a; --cta-hover:#e8bc56; --muted:#2a3a55; --ring:0 0 0 3px rgba(16,67,122,.18);
-      /* ✅ FIXED: removed max(780px, …) so it can shrink on mobile */
-      --section-pad:56px; --grid-gap:28px; --card-pad:24px; --thumb-gap:14px; --line:1.65;
+    :root {
+      --black: #0e1217; --off-white: #eef3f7;
+      --accent: #4e8fa8; --accent-light: #72aec6;
+      --amber: #d4895a; --amber-light: #e8a878;
+      --warm-gray: #7a94a8; --dark-gray: #151d24;
+      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
+      --container: min(1200px, 92vw);
     }
-    @media (max-width:900px){
-      :root{ --section-pad:44px; --grid-gap:22px; --card-pad:20px; --thumb-gap:12px; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    p { line-height: 1.65; }
+
+    /* ── SKIP ── */
+    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
+    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
+
+    /* ── NAV ── */
+    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
+    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
+    .logo-link img { height:52px; width:auto; object-fit:contain; }
+    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
+    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
+    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
+    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
+    .nav-cta:hover { background:var(--amber-light); }
+    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
+    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
+    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
+    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media (max-width:860px) {
+      .menu-toggle { display:block; }
+      .nav-cta-wrap { display:none; }
+      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
+      .site-nav.open { transform:translateX(0); }
+      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
+      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
+      body.no-scroll { overflow:hidden; }
     }
-    @media (max-width:600px){
-      :root{ --section-pad:36px; --grid-gap:18px; --card-pad:18px; --thumb-gap:10px; }
+    .scrim { display:none; position:fixed; inset:74px 0 0 0; background:rgba(0,0,0,.4); backdrop-filter:blur(2px); z-index:999; }
+    .scrim.show { display:block; }
+
+    /* ── HERO (slideshow) ── */
+    .hero {
+      position:relative; min-height:55vh; display:flex; align-items:center; justify-content:center;
+      overflow:hidden; margin-top:74px;
+      background: linear-gradient(175deg, rgba(14,18,23,.8) 0%, rgba(20,35,50,.5) 60%, rgba(14,18,23,.75) 100%);
     }
-
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{
-      margin:0;padding:0;
-      font-family:'Montserrat',Arial,sans-serif;
-      background:var(--bg);color:var(--ink);
-      scroll-behavior:smooth;
-      /* optional belt-and-suspenders */
-      overflow-x:hidden;
+    .hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1s ease; }
+    .hero-bg.show { opacity:1; }
+    .hero-overlay { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(175deg, rgba(14,18,23,.72) 0%, rgba(20,35,50,.42) 55%, rgba(14,18,23,.68) 100%); }
+    .hero-card {
+      position:relative; z-index:2; text-align:center;
+      padding:2.5rem 2rem; width:min(780px,92vw);
     }
-    img{max-width:100%;display:block}
-    a{text-decoration:none;color:inherit}
-    p{line-height:var(--line)}
+    .hero-tag { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:1rem; display:flex; align-items:center; justify-content:center; gap:.7rem; }
+    .hero-tag::before, .hero-tag::after { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+    .hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,5.5rem); line-height:.95; letter-spacing:.02em; color:#fff; margin-bottom:.8rem; }
+    .hero h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
+    .hero p { font-size:.95rem; font-weight:300; color:rgba(255,255,255,.65); line-height:1.7; }
 
-    /* ✅ FIXED CONTAINER */
-    .container{
-      width:min(1200px, 92vw);
-      margin-inline:auto;
+    /* ── SECTION LABEL ── */
+    .section-label { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; display:flex; align-items:center; gap:.7rem; }
+    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+
+    /* ── INTRO ── */
+    .intro-section { padding:4rem 0 2rem; }
+    .intro-section h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2rem,3.5vw,3rem); letter-spacing:.04em; margin-bottom:.6rem; }
+    .intro-section p { font-size:.95rem; font-weight:300; color:var(--warm-gray); }
+
+    /* ── TAB CONTROLS ── */
+    .controls { display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap; padding:0 clamp(1rem,4vw,3rem) 1rem; }
+    .dataset-toggle { display:flex; gap:.5rem; }
+    .pill {
+      background:var(--mid-gray); border:1px solid rgba(94,143,168,0.2);
+      color:var(--warm-gray); padding:.5rem 1.2rem;
+      font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+      cursor:pointer; transition:background .2s, color .2s, border-color .2s;
     }
+    .pill:hover { background:#253344; color:var(--off-white); }
+    .pill.active { background:var(--accent); border-color:var(--accent); color:#fff; }
 
-    /* Header */
-    .site-header{
-      position:sticky; top:0; z-index:1000;
-      display:flex; align-items:center; justify-content:space-between;
-      padding:14px clamp(16px,4vw,64px);
-      background:rgba(255,255,255,.92);
-      backdrop-filter:saturate(140%) blur(10px);
-      box-shadow:0 1px 12px rgba(16,67,122,.06);
+    .breadcrumbs { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; font-size:.82rem; font-weight:500; color:var(--warm-gray); }
+    .breadcrumbs a { color:var(--accent-light); transition:color .2s; }
+    .breadcrumbs a:hover { color:var(--off-white); }
+    .crumb-sep { opacity:.4; }
+
+    .back-btn {
+      display:none; align-items:center; gap:.5rem;
+      margin:0 clamp(1rem,4vw,3rem) 1.5rem;
+      background:var(--mid-gray); border:1px solid rgba(94,143,168,0.2);
+      padding:.6rem 1.2rem; font-size:.78rem; font-weight:600;
+      letter-spacing:.1em; text-transform:uppercase; color:var(--accent-light); cursor:pointer;
+      transition:background .2s;
     }
-    .logo-link img{height:62px;width:auto;object-fit:contain}
-    .site-nav ul{list-style:none;display:flex;gap:clamp(10px,2vw,28px);margin:0;padding:0}
-    .site-nav a{font-weight:600;padding:8px 14px;border-radius:999px;color:var(--primary);transition:background .2s,color .2s}
-    .site-nav a:hover,.site-nav a.active,[aria-current="page"]{background:var(--accent);color:#111}
+    .back-btn:hover { background:#253344; }
 
-    /* Mobile nav */
-    .menu-toggle{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer}
-    .menu-toggle .bar{display:block;width:26px;height:3px;margin:5px auto;background:var(--primary);border-radius:2px;transition:.3s}
-    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg)}
-    .menu-toggle.open .bar:nth-child(2){opacity:0}
-    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-    @media (max-width:860px){
-      .menu-toggle{display:block}
-      .site-nav{
-        position:fixed; right:0; top:74px; width:min(68vw,360px);
-        height:calc(100dvh - 74px); background:#fff;
-        transform:translateX(100%); transition:transform .24s cubic-bezier(.4,2.2,.3,1);
-        box-shadow:-2px 0 18px rgba(0,0,0,.18); z-index:1001;
-      }
-      .site-nav.open{transform:translateX(0)}
-      .site-nav ul{flex-direction:column;padding:26px;gap:12px}
-      body.no-scroll{overflow:hidden}
-      /* click-away overlay so menu doesn't feel "stuck" */
-      .scrim{content:"";position:fixed;inset:74px 0 0 0;background:rgba(0,0,0,.25);backdrop-filter:blur(2px);z-index:1000;display:none}
-      .scrim.show{display:block}
+    /* ── ALBUM GRID ── */
+    .album-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; padding:0 clamp(1rem,4vw,3rem) 4rem; }
+    @media (max-width:1000px) { .album-grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:600px)  { .album-grid { grid-template-columns:1fr; } }
+
+    .album-card { display:flex; flex-direction:column; cursor:pointer; }
+    .album-cover { position:relative; aspect-ratio:3/2; overflow:hidden; background:var(--mid-gray); }
+    .album-cover img { width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .35s, transform .4s; }
+    .album-cover img.loaded { opacity:1; }
+    .album-card:hover .album-cover img { transform:scale(1.04); }
+    .album-cover::before { content:"ASF VISUALS LLC"; position:absolute; right:10px; bottom:8px; padding:3px 7px; font:500 11px/1.2 'DM Sans',sans-serif; color:rgba(255,255,255,.85); background:rgba(0,0,0,.35); letter-spacing:.06em; pointer-events:none; z-index:2; }
+    .album-cover::after { content:""; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 24px, rgba(0,0,0,.04) 24px, rgba(0,0,0,.04) 48px); pointer-events:none; }
+    .album-caption { background:var(--dark-gray); padding:1rem 1.2rem; border-top:1px solid rgba(255,255,255,.04); }
+    .album-title { font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:.08em; }
+    .album-sub { font-size:.7rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--warm-gray); margin-top:.2rem; }
+
+    /* ── PHOTO GRID ── */
+    .photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; padding:0 clamp(1rem,4vw,3rem) 4rem; }
+    @media (max-width:1000px) { .photo-grid { grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:600px)  { .photo-grid { grid-template-columns:1fr; } }
+
+    .photo { position:relative; aspect-ratio:3/2; overflow:hidden; background:var(--mid-gray); cursor:pointer; }
+    .photo img { width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .35s, transform .25s; }
+    .photo img.loaded { opacity:1; }
+    .photo:hover img { transform:scale(1.03); }
+    .photo::before { content:"ASF VISUALS LLC"; position:absolute; right:10px; bottom:8px; padding:3px 7px; font:500 11px/1.2 'DM Sans',sans-serif; color:rgba(255,255,255,.85); background:rgba(0,0,0,.35); letter-spacing:.06em; pointer-events:none; z-index:2; }
+    .photo::after { content:""; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 24px, rgba(0,0,0,.04) 24px, rgba(0,0,0,.04) 48px); pointer-events:none; }
+
+    .empty { padding:3rem; text-align:center; color:var(--warm-gray); font-size:.9rem; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      margin:0 clamp(1rem,4vw,3rem) 5rem;
+      background:var(--mid-gray);
+      padding:2.5rem 3rem;
+      display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between;
     }
+    @media (max-width:600px) { .cta-band { flex-direction:column; align-items:stretch; padding:2rem; } }
+    .cta-band h3 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.6rem,3vw,2.4rem); letter-spacing:.04em; }
+    .cta-band p { font-size:.88rem; font-weight:300; color:var(--warm-gray); margin-top:.3rem; }
+    .cta-actions { display:flex; gap:.8rem; flex-wrap:wrap; }
+    .btn { display:inline-block; background:var(--amber); color:var(--black); font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:.9rem 2rem; border:none; cursor:pointer; transition:background .2s, transform .15s; white-space:nowrap; }
+    .btn:hover { background:var(--amber-light); transform:translateY(-1px); }
+    .btn.outline { background:transparent; color:var(--accent-light); border:1px solid rgba(78,143,168,0.35); }
+    .btn.outline:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
 
-    /* Hero with slideshow */
-    .hero{
-      position:relative; display:grid; place-items:center;
-      min-height:50vh; margin:14px clamp(16px,4vw,64px) 0;
-      border-radius:0 0 var(--radius) var(--radius);
-      overflow:hidden; box-shadow:var(--shadow);
-      background:linear-gradient(180deg, rgba(6,10,18,.20) 0%, rgba(6,10,18,.42) 100%);
-    }
-    .hero-bg{
-      position:absolute; inset:0; background-size:cover; background-position:center;
-      filter:contrast(1.05) saturate(1.05);
-      opacity:0; transition:opacity 1s ease;
-    }
-    .hero-bg.show{opacity:1}
-    .hero-card{
-      position:relative; z-index:2;
-      background:linear-gradient(180deg, rgba(255,255,255,.16), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.22);
-      border-radius:28px; padding:34px 30px 26px; text-align:center; color:#fff;
-      backdrop-filter: blur(22px) saturate(140%); -webkit-backdrop-filter: blur(22px) saturate(140%);
-      width:min(860px,94vw); filter:drop-shadow(0 20px 70px rgba(0,0,0,.35));
-    }
-    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.6vw,2.6rem);margin:0 0 10px}
-    .hero p{margin:0;color:#f5f8ff}
+    /* ── FOOTER ── */
+    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); }
+    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
+    .footer-logo span { color:var(--accent-light); }
+    .footer-contact { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
+    .footer-contact a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
+    .footer-contact a:hover { color:var(--accent-light); }
+    .footer-contact span { font-size:.75rem; color:#4a5a6a; }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-copy { font-size:.75rem; color:#4a5a6a; }
+    .footer-social { display:flex; gap:1.5rem; }
+    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
+    .footer-social a:hover { color:var(--accent-light); }
 
-    /* Sections */
-    .section{padding:var(--section-pad) 0}
-    .section h2{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:clamp(1.9rem,4vw,2.3rem);margin:0 0 10px}
-    .muted{color:var(--muted); margin:0 0 8px}
+    /* Anti-copy */
+    .album-cover, .photo, .album-cover img, .photo img { -webkit-user-drag:none; -webkit-touch-callout:none; user-select:none; }
 
-    /* Controls */
-    .controls{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 clamp(24px,6vw,64px) 10px}
-    .dataset-toggle{display:flex;gap:8px;align-items:center;margin-left:0}
-    .pill{background:#fff;border:1px solid #d7e3f7;color:var(--primary);border-radius:999px;padding:8px 14px;font-weight:700;cursor:pointer;box-shadow:0 1px 8px rgba(0,0,0,.06)}
-    .pill.active{background:var(--accent);color:#111;border-color:transparent}
+    /* Reveal */
+    .reveal { opacity:0; transform:translateY(26px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
 
-    .breadcrumbs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-weight:600;color:#2a3a55}
-    .breadcrumbs a{color:var(--primary)}
-    .crumb-sep{opacity:.5}
-
-    .back-btn{
-      display:none;margin:0 clamp(24px,6vw,64px) 26px;align-items:center;gap:8px;
-      background:#fff;border:1px solid #dce6f3;border-radius:999px;padding:9px 14px;font-weight:700;color:var(--primary);box-shadow:0 1px 8px rgba(0,0,0,.06)
-    }
-    .back-btn:hover{background:var(--accent);color:#111;border-color:transparent}
-
-    /* Album/Photo views */
-    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap);margin:0 clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.album-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.album-grid{grid-template-columns:1fr}}
-    .album-card{display:flex;flex-direction:column;gap:14px;background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:12px}
-    .album-cover{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/2;background:#e9eef5;box-shadow:0 4px 22px rgba(0,0,0,.10)}
-    .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .35s ease}
-    .album-cover img.loaded{opacity:1}
-    .album-card:hover .album-cover img{transform:scale(1.02)}
-    .album-caption{display:flex;flex-direction:column;align-items:center;text-align:center}
-    .album-title{font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#12223a}
-    .album-sub{margin-top:6px;font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:#6b778d}
-
-    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--thumb-gap);margin:10px clamp(24px,6vw,64px) 60px}
-    @media (max-width:1100px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:640px){.photo-grid{grid-template-columns:1fr}}
-    .photo{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/2;background:#e9eef5;box-shadow:0 3px 14px rgba(0,0,0,.06)}
-    .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s ease,transform .25s ease}
-    .photo img.loaded{opacity:1}
-    .photo:hover img{transform:scale(1.02)}
-    .empty{margin:24px clamp(24px,6vw,64px);opacity:.8;text-align:center;color:#2a3a55}
-
-    /* CTA & Footer */
-    .cta-band{background:#fff;margin:0 clamp(24px,6vw,64px) 64px;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
-    .cta-band h3{margin:0;color:var(--primary);font-size:1.22rem;line-height:1.35}
-    .cta-actions{display:flex;gap:12px;flex-wrap:wrap}
-    @media (max-width:600px){
-      .cta-band{flex-direction:column;align-items:stretch;text-align:center;gap:12px;padding:20px}
-      .cta-actions{flex-direction:column;width:100%}
-      .cta-band .btn{width:100%;padding:14px 18px}
-    }
-    .btn{background:var(--cta);color:#fff;font-weight:700;padding:12px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.20);font-size:1rem;transition:transform .12s ease, background .2s,color .2s;letter-spacing:.02em;white-space:nowrap}
-    .btn:hover,.btn:focus{background:var(--cta-hover);color:#111;transform:translateY(-1px)}
-    .btn:focus-visible{outline:none; box-shadow: var(--ring)}
-    .btn.outline{background:#fff;color:var(--cta);border-color:#d7e3f7}
-    .btn.outline:hover,.btn.outline:focus{background:var(--accent);color:#111;border-color:transparent}
-
-    .site-footer{background:#0b1220;color:#cfe0ff;padding:52px 6vw 38px;border-radius:var(--radius) var(--radius) 0 0;margin-top:86px;text-align:center}
-    .social-links{display:flex;gap:16px;justify-content:center;margin-top:16px}
-    .social-links img{width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:0 1px 8px #0001;padding:2px}
-
-    /* Motion */
-    .fade{opacity:0; transform:translateY(32px); transition:all .7s cubic-bezier(.25,.8,.25,1)}
-    .fade.visible{opacity:1; transform:translateY(0)}
-    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
   </style>
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
   <div class="scrim" id="scrim"></div>
 
-  <!-- Header -->
-  <header class="site-header">
+  <header class="site-header" id="header">
     <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
+      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager">
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
@@ -193,102 +210,118 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
   </header>
 
-  <!-- Hero (slideshow background) -->
+  <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-bg" id="bgA" aria-hidden="true"></div>
     <div class="hero-bg" id="bgB" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-card">
-      <h1>Clients & Projects</h1>
-      <p>Sports • Commercial Real Estate • Education • <strong>Web</strong> • Personal Projects</p>
+      <div class="hero-tag">Featured Work</div>
+      <h1>Clients &amp; <em>Projects</em></h1>
+      <p>Sports &nbsp;·&nbsp; Commercial Real Estate &nbsp;·&nbsp; Education &nbsp;·&nbsp; Web &nbsp;·&nbsp; Personal Projects</p>
     </div>
   </section>
 
-  <!-- Intro -->
-  <section class="section container fade">
-    <h2>Featured Work</h2>
-    <p class="muted">Explore both client work and personal projects. Browse by industry → client/project → set.</p>
-  </section>
+  <main id="main">
 
-  <!-- Controls -->
-  <div class="controls">
-    <div class="dataset-toggle" role="tablist" aria-label="Content type">
-      <button class="pill active" id="tabClients" role="tab" aria-selected="true">Clients</button>
-      <button class="pill" id="tabProjects" role="tab" aria-selected="false">Projects</button>
+    <!-- Intro -->
+    <section class="intro-section reveal">
+      <div style="width:var(--container);margin-inline:auto;">
+        <div class="section-label">Portfolio</div>
+        <h2>Featured Work</h2>
+        <p>Browse client deliverables and personal projects by industry. Navigate through to individual assets.</p>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <div class="controls">
+      <div class="dataset-toggle" role="tablist" aria-label="Content type">
+        <button class="pill active" id="tabClients" role="tab" aria-selected="true">Clients</button>
+        <button class="pill" id="tabProjects" role="tab" aria-selected="false">Projects</button>
+      </div>
+      <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
     </div>
-    <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
-  </div>
-  <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
+    <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
 
-  <!-- Views -->
-  <section id="albumsView" class="album-grid" aria-label="Albums"></section>
-  <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
-  <p id="emptyState" class="empty" hidden>No results found.</p>
+    <!-- Views -->
+    <section id="albumsView" class="album-grid" aria-label="Albums"></section>
+    <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
+    <p id="emptyState" class="empty" hidden>No results found.</p>
 
-  <!-- CTA -->
-  <div class="cta-band">
-    <h3>Want results like these? Let’s plan your shoot or website.</h3>
-    <div class="cta-actions">
-      <a class="btn" href="contact.html">Get in touch</a>
-      <a class="btn" href="portfolio.html">See Portfolio</a>
+    <!-- CTA -->
+    <div class="cta-band reveal">
+      <div>
+        <h3>Want results like these?</h3>
+        <p>Let's plan your shoot, website, or visual media campaign.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn" href="contact.html">Get in Touch</a>
+        <a class="btn outline" href="portfolio.html">See Portfolio</a>
+      </div>
     </div>
-  </div>
 
-  <!-- Footer -->
+  </main>
+
   <footer class="site-footer">
-    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" width="28" height="28" loading="lazy" />
-      </a>
-      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" width="28" height="28" loading="lazy" />
-      </a>
+    <div class="footer-top">
+      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div class="footer-contact">
+        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        <span>Pittsburgh, Pennsylvania</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="year"></span> ASF Visuals LLC. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener">Instagram</a>
+      </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script>
-    /* ---------------- Mobile nav (with scrim/click-away) ---------------- */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ── Nav ── */
     (function(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
       const scrim = document.getElementById('scrim');
       if (!btn || !nav) return;
-
-      function closeNav(){
-        nav.classList.remove('open'); btn.classList.remove('open');
-        btn.setAttribute('aria-expanded','false');
-        document.body.classList.remove('no-scroll');
-        scrim?.classList.remove('show');
-      }
+      function closeNav(){ nav.classList.remove('open'); btn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); document.body.classList.remove('no-scroll'); scrim?.classList.remove('show'); }
       btn.addEventListener('click', ()=>{
         const open = nav.classList.toggle('open');
-        btn.classList.toggle('open', open);
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        if (window.innerWidth <= 860){
-          document.body.classList.toggle('no-scroll', open);
-          scrim?.classList.toggle('show', open);
-        }
+        btn.classList.toggle('open', open); btn.setAttribute('aria-expanded', open?'true':'false');
+        if (window.innerWidth <= 860){ document.body.classList.toggle('no-scroll', open); scrim?.classList.toggle('show', open); }
       });
       scrim?.addEventListener('click', closeNav);
       nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+      let lastY = window.scrollY;
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', ()=>{
+        const y = window.scrollY;
+        header.classList.toggle('scrolled', y > 60);
+        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
+        lastY = y;
+      }, { passive:true });
     })();
 
-    /* ---------------- Fade-in ---------------- */
+    /* ── Reveal ── */
     (function(){
-      const els = document.querySelectorAll('.fade');
-      const io = new IntersectionObserver((entries, o)=>{
-        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); } });
-      }, { threshold: 0.17 });
+      const els = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries,o)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); } }); }, { threshold:.1 });
       els.forEach(el=>io.observe(el));
     })();
 
-    /* ---------------- Manifest helpers ---------------- */
+    /* ── Manifest helpers (preserved exactly) ── */
     const CLIENTS_MANIFEST_PATH  = '/data/clients-manifest.json';
     const PROJECTS_MANIFEST_PATH = '/data/projects-manifest.json';
 
@@ -304,17 +337,10 @@
     }
 
     async function loadJSON(url, fallback){
-      try{
-        const res = await fetch(url, { cache: 'no-cache' });
-        if(!res.ok) throw new Error('HTTP ' + res.status);
-        return await res.json();
-      }catch(e){
-        console.warn('Failed to load', url, e);
-        return fallback;
-      }
+      try{ const res = await fetch(url, { cache:'no-cache' }); if(!res.ok) throw new Error('HTTP '+res.status); return await res.json(); }
+      catch(e){ console.warn('Failed to load', url, e); return fallback; }
     }
 
-    /* ---------------- Build trees (same structure you had) ---------------- */
     function buildClientsTree(man){
       const root = new Map();
       const ind = man.industries || {};
@@ -335,7 +361,6 @@
       return root;
     }
 
-    // projects.manifest: { projects: { [industry]: { [project]: { [album]: Photo[] } } } }
     function buildProjectsTree(man){
       const root = new Map();
       const ind = man.projects || {};
@@ -356,325 +381,152 @@
       return root;
     }
 
-    /* ---------------- DOM refs ---------------- */
+    /* ── DOM refs ── */
     const breadcrumbsEl = document.getElementById('breadcrumbs');
-    const albumsView = document.getElementById('albumsView');
-    const photosView = document.getElementById('photosView');
-    const emptyState = document.getElementById('emptyState');
-    const backBtn = document.getElementById('backBtn');
-    const tabClients  = document.getElementById('tabClients');
-    const tabProjects = document.getElementById('tabProjects');
+    const albumsView    = document.getElementById('albumsView');
+    const photosView    = document.getElementById('photosView');
+    const emptyState    = document.getElementById('emptyState');
+    const backBtn       = document.getElementById('backBtn');
+    const tabClients    = document.getElementById('tabClients');
+    const tabProjects   = document.getElementById('tabProjects');
 
     const titleize = s => (s||'').toString().replace(/[-_]/g,' ').replace(/\b\w/g,m=>m.toUpperCase());
-    const pluralize = (n,sing,pl)=>`${n} ${n===1?sing:pl}`.toUpperCase();
+    const pluralize = (n,sing,pl) => `${n} ${n===1?sing:pl}`.toUpperCase();
 
-    function firstCoverFromNestedMap(map3){
-      if (!map3 || !map3.size) return;
-      const firstK = map3.keys().next().value;
-      const photos = map3.get(firstK) || [];
-      return photos[0]?.thumb;
-    }
-    function firstCoverLevel2(map2){
-      if (!map2 || !map2.size) return;
-      const firstA = map2.keys().next().value;
-      const mapB = map2.get(firstA);
-      return firstCoverFromNestedMap(mapB);
-    }
+    function firstCoverFromNestedMap(map3){ if(!map3||!map3.size) return; const firstK=map3.keys().next().value; const photos=map3.get(firstK)||[]; return photos[0]?.thumb; }
+    function firstCoverLevel2(map2){ if(!map2||!map2.size) return; const firstA=map2.keys().next().value; const mapB=map2.get(firstA); return firstCoverFromNestedMap(mapB); }
 
-    /* ---------------- Router ---------------- */
-    function getPath(){
-      const hash = decodeURI(location.hash || '#/clients/');
-      const cleaned = hash.replace(/^#\//,'');
-      return cleaned ? cleaned.split('/').filter(Boolean) : ['clients'];
-    }
-    function setPath(parts){ location.hash = '#/' + parts.map(encodeURI).join('/'); }
-    function setActiveTab(dataset){
-      const isClients = dataset === 'clients';
-      tabClients.classList.toggle('active', isClients);
-      tabClients.setAttribute('aria-selected', String(isClients));
-      tabProjects.classList.toggle('active', !isClients);
-      tabProjects.setAttribute('aria-selected', String(!isClients));
-    }
+    /* ── Router ── */
+    function getPath(){ const hash=decodeURI(location.hash||'#/clients/'); const cleaned=hash.replace(/^#\//,''); return cleaned ? cleaned.split('/').filter(Boolean) : ['clients']; }
+    function setPath(parts){ location.hash='#/'+parts.map(encodeURI).join('/'); }
+    function setActiveTab(dataset){ const isC=dataset==='clients'; tabClients.classList.toggle('active',isC); tabClients.setAttribute('aria-selected',String(isC)); tabProjects.classList.toggle('active',!isC); tabProjects.setAttribute('aria-selected',String(!isC)); }
 
     function lazyImage(img){
-      const io = new IntersectionObserver((entries, obs)=>{
-        entries.forEach(entry=>{
-          if (!entry.isIntersecting) return;
-          const el = entry.target;
-          el.src = el.dataset.src;
-          el.onload = ()=> el.classList.add('loaded');
-          obs.unobserve(el);
-        });
-      }, { threshold:.15 });
+      const io=new IntersectionObserver((entries,obs)=>{ entries.forEach(entry=>{ if(!entry.isIntersecting) return; const el=entry.target; el.src=el.dataset.src; el.onload=()=>el.classList.add('loaded'); obs.unobserve(el); }); },{threshold:.15});
       io.observe(img);
     }
 
     function buildCrumbs(dataset, parts){
-      const frag = document.createDocumentFragment();
-      const mkLink = (label, toParts)=>{
-        const a = document.createElement('a');
-        a.href = '#/' + toParts.map(encodeURI).join('/');
-        a.textContent = label;
-        a.addEventListener('click', e=>{ e.preventDefault(); setPath(toParts); });
-        return a;
-      };
-      frag.appendChild(mkLink(titleize(dataset), [dataset]));
-      if (parts[0]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[0]), [dataset, parts[0]])); }
-      if (parts[1]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[1]), [dataset, parts[0], parts[1]])); }
-      if (parts[2]){ frag.append(' ', Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}), ' ', mkLink(titleize(parts[2]), [dataset, parts[0], parts[1], parts[2]])); }
-      breadcrumbsEl.innerHTML = ''; breadcrumbsEl.appendChild(frag);
-      backBtn.style.display = parts.length ? 'inline-flex' : 'none';
+      const frag=document.createDocumentFragment();
+      const mkLink=(label,toParts)=>{ const a=document.createElement('a'); a.href='#/'+toParts.map(encodeURI).join('/'); a.textContent=label; a.addEventListener('click',e=>{ e.preventDefault(); setPath(toParts); }); return a; };
+      frag.appendChild(mkLink(titleize(dataset),[dataset]));
+      if(parts[0]){ frag.append(' ',Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}),' ',mkLink(titleize(parts[0]),[dataset,parts[0]])); }
+      if(parts[1]){ frag.append(' ',Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}),' ',mkLink(titleize(parts[1]),[dataset,parts[0],parts[1]])); }
+      if(parts[2]){ frag.append(' ',Object.assign(document.createElement('span'),{textContent:'›',className:'crumb-sep'}),' ',mkLink(titleize(parts[2]),[dataset,parts[0],parts[1],parts[2]])); }
+      breadcrumbsEl.innerHTML=''; breadcrumbsEl.appendChild(frag);
+      backBtn.style.display=parts.length?'inline-flex':'none';
     }
 
     function renderAlbums(nodes){
-      photosView.style.display = 'none';
-      albumsView.style.display = 'grid';
-      albumsView.innerHTML = '';
-      emptyState.hidden = !!nodes.length;
+      photosView.style.display='none'; albumsView.style.display='grid'; albumsView.innerHTML='';
+      emptyState.hidden=!!nodes.length;
       nodes.forEach(n=>{
-        const card = document.createElement('a');
-        card.className='album-card';
-        card.href='#';
-
-        const cover = document.createElement('div');
-        cover.className='album-cover';
-        const img = document.createElement('img');
-        img.alt = n.title;
-        img.dataset.src = n.cover || 'images/social-preview.jpg';
-        img.setAttribute('draggable','false');
-        lazyImage(img);
-        cover.appendChild(img);
-
-        const cap = document.createElement('div'); cap.className='album-caption';
-        const title = document.createElement('div'); title.className='album-title'; title.textContent = n.title;
-        const sub = document.createElement('div'); sub.className='album-sub'; sub.textContent = n.sub || '';
-
-        cap.appendChild(title); cap.appendChild(sub);
-
-        card.appendChild(cover); card.appendChild(cap);
-
+        const card=document.createElement('a'); card.className='album-card'; card.href='#';
+        const cover=document.createElement('div'); cover.className='album-cover';
+        const img=document.createElement('img'); img.alt=n.title; img.dataset.src=n.cover||'images/social-preview.jpg'; img.setAttribute('draggable','false');
+        lazyImage(img); cover.appendChild(img);
+        const cap=document.createElement('div'); cap.className='album-caption';
+        const title=document.createElement('div'); title.className='album-title'; title.textContent=n.title;
+        const sub=document.createElement('div'); sub.className='album-sub'; sub.textContent=n.sub||'';
+        cap.appendChild(title); cap.appendChild(sub); card.appendChild(cover); card.appendChild(cap);
         card.addEventListener('click', e=>{
           e.preventDefault();
-          if (n.website){
-            window.open(n.website, '_blank', 'noopener,noreferrer');
-            return;
-          }
-          const parts = getPath();
-          parts.push(n.id || n.title);
-          setPath(parts);
+          if(n.website){ window.open(n.website,'_blank','noopener,noreferrer'); return; }
+          const parts=getPath(); parts.push(n.id||n.title); setPath(parts);
         });
-
         albumsView.appendChild(card);
       });
     }
 
     function renderPhotos(node){
-      albumsView.style.display='none';
-      photosView.style.display='grid';
-      photosView.innerHTML = '';
-      const photos = node.photos || [];
-      emptyState.hidden = !!photos.length;
-
-      photos.forEach((p)=>{
-        const a = document.createElement('a');
-        a.href = p.src;
-        a.setAttribute('data-fancybox', node.title || 'set');
-        if (p.title) a.setAttribute('data-caption', p.title);
-
-        const tile = document.createElement('div'); tile.className='photo';
-        const img = document.createElement('img'); img.alt = p.title || node.title; img.dataset.src = p.thumb || p.src;
-        img.setAttribute('draggable','false');
-        lazyImage(img);
-
-        tile.appendChild(img);
-        a.appendChild(tile);
-        photosView.appendChild(a);
+      albumsView.style.display='none'; photosView.style.display='grid'; photosView.innerHTML='';
+      const photos=node.photos||[]; emptyState.hidden=!!photos.length;
+      photos.forEach(p=>{
+        const a=document.createElement('a'); a.href=p.src; a.setAttribute('data-fancybox',node.title||'set');
+        if(p.title) a.setAttribute('data-caption',p.title);
+        const tile=document.createElement('div'); tile.className='photo';
+        const img=document.createElement('img'); img.alt=p.title||node.title; img.dataset.src=p.thumb||p.src; img.setAttribute('draggable','false');
+        lazyImage(img); tile.appendChild(img); a.appendChild(tile); photosView.appendChild(a);
       });
-
-      Fancybox.bind('[data-fancybox]', {
-        Toolbar: { display: ['close'] },
-        Thumbs: { autoStart: false }
-      });
+      Fancybox.bind('[data-fancybox]',{ Toolbar:{display:['close']}, Thumbs:{autoStart:false} });
     }
 
-    /* ---------------- Data & selectors ---------------- */
-    let CLIENTS_TREE = null;
-    let PROJECTS_TREE = null;
+    let CLIENTS_TREE=null, PROJECTS_TREE=null;
 
     function getNode(dataset, parts){
-      const isClients = dataset === 'clients';
-      const TREE = isClients ? CLIENTS_TREE : PROJECTS_TREE;
-      if (!TREE) return null;
-
-      if (parts.length === 0){
-        return {
-          kind:'root',
-          children: Array.from(TREE.keys()).sort().map(industry=>{
-            const level2 = TREE.get(industry);
-            const cover = firstCoverLevel2(level2);
-            const subCount = level2.size;
-            return { id: industry, title: titleize(industry), cover, sub: pluralize(subCount, isClients?'CLIENT':'PROJECT', isClients?'CLIENTS':'PROJECTS') };
-          })
-        };
+      const isClients=dataset==='clients';
+      const TREE=isClients?CLIENTS_TREE:PROJECTS_TREE;
+      if(!TREE) return null;
+      if(parts.length===0){ return { kind:'root', children: Array.from(TREE.keys()).sort().map(industry=>{ const level2=TREE.get(industry); const cover=firstCoverLevel2(level2); const subCount=level2.size; return { id:industry, title:titleize(industry), cover, sub:pluralize(subCount,isClients?'CLIENT':'PROJECT',isClients?'CLIENTS':'PROJECTS') }; }) }; }
+      const a=parts[0]; const level2=TREE.get(a); if(!level2) return null;
+      if(parts.length===1){ return { kind:'industry', title:titleize(a), children: Array.from(level2.keys()).sort().map(b=>{ const level3=level2.get(b); const cover=firstCoverFromNestedMap(level3); const subCount=level3.size; return { id:b, title:titleize(b), cover, sub:pluralize(subCount,isClients?'PROJECT':'ALBUM',isClients?'PROJECTS':'ALBUMS') }; }) }; }
+      const b=parts[1]; const level3=level2.get(b); if(!level3) return null;
+      if(parts.length===2){
+        const nodes=Array.from(level3.keys()).sort().map(c=>{ const photos=level3.get(c)||[]; const cover=photos[0]?.thumb; return { id:c, title:titleize(c), cover, sub:pluralize(photos.length,'ASSET','ASSETS') }; });
+        if((dataset==='clients')&&/prestige|pittsburgh-prestige/.test((b||'').toLowerCase())){ nodes.unshift({ id:'visit-website', title:'Visit Website', cover:'images/ppr.png', sub:'prestigepgh.com', website:'https://prestigepgh.com/' }); }
+        return { kind:dataset==='clients'?'client':'project', title:titleize(b), children:nodes };
       }
-
-      const a = parts[0]; // industry
-      const level2 = TREE.get(a);
-      if (!level2) return null;
-
-      if (parts.length === 1){
-        return {
-          kind:'industry',
-          title:titleize(a),
-          children: Array.from(level2.keys()).sort().map(b=>{
-            const level3 = level2.get(b);
-            const cover = firstCoverFromNestedMap(level3);
-            const subCount = level3.size;
-            return { id: b, title: titleize(b), cover, sub: pluralize(subCount, isClients?'PROJECT':'ALBUM', isClients?'PROJECTS':'ALBUMS') };
-          })
-        };
-      }
-
-      const b = parts[1]; // client | project
-      const level3 = level2.get(b);
-      if (!level3) return null;
-
-      if (parts.length === 2){
-        const nodes = Array.from(level3.keys()).sort().map(c=>{
-          const photos = level3.get(c) || [];
-          const cover = photos[0]?.thumb;
-          return { id: c, title: titleize(c), cover, sub: pluralize(photos.length, 'ASSET', 'ASSETS') };
-        });
-
-        // Optional: special tile for PPR website
-        if ((dataset === 'clients') && /prestige|pittsburgh-prestige/.test((b||'').toLowerCase())){
-          nodes.unshift({ id:'visit-website', title:'Visit Website', cover:'images/ppr.png', sub:'prestigepgh.com', website:'https://prestigepgh.com/' });
-        }
-
-        return { kind: dataset==='clients' ? 'client' : 'project', title:titleize(b), children: nodes };
-      }
-
-      const c = parts[2]; // project | album
-      const photos = level3.get(c) || [];
+      const c=parts[2]; const photos=level3.get(c)||[];
       return { kind:'photos', title:titleize(c), photos };
     }
 
     function render(){
-      const path = getPath();
-      const dataset = (path[0] || 'clients').toLowerCase();
-      setActiveTab(dataset);
-      const parts = path.slice(1);
-      if (dataset !== 'clients' && dataset !== 'projects'){ setPath(['clients']); return; }
-      buildCrumbs(dataset, parts);
-      const node = getNode(dataset, parts);
-      if (!node){ setPath([dataset]); return; }
-      if (node.kind === 'photos') renderPhotos(node);
-      else renderAlbums(node.children || []);
+      const path=getPath(); const dataset=(path[0]||'clients').toLowerCase();
+      setActiveTab(dataset); const parts=path.slice(1);
+      if(dataset!=='clients'&&dataset!=='projects'){ setPath(['clients']); return; }
+      buildCrumbs(dataset,parts);
+      const node=getNode(dataset,parts);
+      if(!node){ setPath([dataset]); return; }
+      if(node.kind==='photos') renderPhotos(node);
+      else renderAlbums(node.children||[]);
     }
 
-    function onTabSwitch(targetDataset){
-      const cur = getPath();
-      if (cur[0] === targetDataset) return;
-      setPath([targetDataset]);
-    }
+    function onTabSwitch(targetDataset){ const cur=getPath(); if(cur[0]===targetDataset) return; setPath([targetDataset]); }
 
-    /* ---------------- Hero slideshow from manifests ---------------- */
+    /* ── Hero slideshow (preserved exactly) ── */
     function collectHeroImages(clientsMan, projectsMan, max=20){
-      const out = [];
-
-      // clients
-      const ind = clientsMan?.industries || {};
-      for (const i in ind){
-        const clients = ind[i] || {};
-        for (const c in clients){
-          const projects = clients[c] || {};
-          for (const p in projects){
-            const arr = projects[p] || [];
-            arr.forEach(item=>{
-              const pic = pickThumbAndSrc(item);
-              if (pic?.src) out.push(pic.src);
-            });
-          }
-        }
-      }
-
-      // projects
-      const proj = projectsMan?.projects || {};
-      for (const i in proj){
-        const projects = proj[i] || {};
-        for (const pr in projects){
-          const albums = projects[pr] || {};
-          for (const al in albums){
-            const arr = albums[al] || [];
-            arr.forEach(item=>{
-              const pic = pickThumbAndSrc(item);
-              if (pic?.src) out.push(pic.src);
-            });
-          }
-        }
-      }
-
-      // de-dupe & shuffle & limit
-      const dedup = Array.from(new Set(out));
-      for (let i = dedup.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [dedup[i], dedup[j]] = [dedup[j], dedup[i]];
-      }
-      return dedup.slice(0, max);
+      const out=[];
+      const ind=clientsMan?.industries||{};
+      for(const i in ind){ const clients=ind[i]||{}; for(const c in clients){ const projects=clients[c]||{}; for(const p in projects){ const arr=projects[p]||[]; arr.forEach(item=>{ const pic=pickThumbAndSrc(item); if(pic?.src) out.push(pic.src); }); } } }
+      const proj=projectsMan?.projects||{};
+      for(const i in proj){ const projects=proj[i]||{}; for(const pr in projects){ const albums=projects[pr]||{}; for(const al in albums){ const arr=albums[al]||[]; arr.forEach(item=>{ const pic=pickThumbAndSrc(item); if(pic?.src) out.push(pic.src); }); } } }
+      const dedup=Array.from(new Set(out));
+      for(let i=dedup.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [dedup[i],dedup[j]]=[dedup[j],dedup[i]]; }
+      return dedup.slice(0,max);
     }
 
     function startHeroSlideshow(urls, intervalMs=6000){
-      const a = document.getElementById('bgA');
-      const b = document.getElementById('bgB');
-      if (!a || !b || !urls.length) return;
-
-      let idx = 0, showA = true;
-
-      function setBg(el, url){
-        el.style.backgroundImage = `url("${url}")`;
-      }
-
-      // preload first two
-      setBg(a, urls[0]); a.classList.add('show');
-      if (urls[1]) setBg(b, urls[1]);
-
+      const a=document.getElementById('bgA'); const b=document.getElementById('bgB');
+      if(!a||!b||!urls.length) return;
+      let idx=0, showA=true;
+      function setBg(el,url){ el.style.backgroundImage=`url("${url}")`; }
+      setBg(a,urls[0]); a.classList.add('show');
+      if(urls[1]) setBg(b,urls[1]);
       setInterval(()=>{
-        const next = urls[idx = (idx + 1) % urls.length];
-        const front = showA ? b : a;
-        const back  = showA ? a : b;
-        setBg(front, next);
-        front.classList.add('show');
-        back.classList.remove('show');
-        showA = !showA;
+        const next=urls[idx=(idx+1)%urls.length];
+        const front=showA?b:a; const back=showA?a:b;
+        setBg(front,next); front.classList.add('show'); back.classList.remove('show'); showA=!showA;
       }, intervalMs);
     }
 
-    /* ---------------- Init ---------------- */
+    /* ── Init ── */
     (async function init(){
       const [clientsMan, projectsMan] = await Promise.all([
         loadJSON(CLIENTS_MANIFEST_PATH,  { industries:{} }),
         loadJSON(PROJECTS_MANIFEST_PATH, { projects:{} })
       ]);
-
       CLIENTS_TREE  = buildClientsTree(clientsMan);
       PROJECTS_TREE = buildProjectsTree(projectsMan);
 
-      // Start slideshow once data is known
-      const heroUrls = collectHeroImages(clientsMan, projectsMan, 24);
-      if (heroUrls.length){
-        startHeroSlideshow(heroUrls, 5500);
-      } else {
-        // fallback static bg if no images available
-        document.getElementById('bgA').style.backgroundImage = "url('images/DowntownCloudsReduced.webp')";
-        document.getElementById('bgA').classList.add('show');
-      }
+      const heroUrls=collectHeroImages(clientsMan,projectsMan,24);
+      if(heroUrls.length){ startHeroSlideshow(heroUrls,5500); }
+      else { document.getElementById('bgA').style.backgroundImage="url('images/DowntownCloudsReduced.webp')"; document.getElementById('bgA').classList.add('show'); }
 
-      tabClients?.addEventListener('click', ()=> onTabSwitch('clients'));
-      tabProjects?.addEventListener('click', ()=> onTabSwitch('projects'));
-
+      tabClients?.addEventListener('click', ()=>onTabSwitch('clients'));
+      tabProjects?.addEventListener('click', ()=>onTabSwitch('projects'));
       render();
       window.addEventListener('hashchange', render);
-      backBtn.addEventListener('click', ()=>{ const p = getPath(); p.pop(); setPath(p); });
+      backBtn.addEventListener('click', ()=>{ const p=getPath(); p.pop(); setPath(p); });
     })();
   </script>
 </body>

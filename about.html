@@ -3,364 +3,194 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About & Gear – ASF Visuals LLC</title>
-
-  <meta name="description" content="Meet Andrew Coutinho, founder of ASF Visuals LLC. Learn the story behind the studio and the exact photography gear used on every shoot.">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="About & Gear – ASF Visuals LLC">
+  <title>About – ASF Visuals LLC | Pittsburgh Photographer Andrew Coutinho</title>
+  <meta name="description" content="Meet Andrew Coutinho, founder of ASF Visuals LLC — Pittsburgh photographer, FAA Part 107 drone pilot, web developer, and WEF Global Shaper.">
+  <meta property="og:title" content="About – ASF Visuals LLC">
   <meta property="og:description" content="Meet Andrew Coutinho and explore the gear behind ASF Visuals LLC.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <meta property="og:url" content="https://www.asfvisualsllc.com/about.html">
-  <meta property="og:type" content="website">
-
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0e1217">
   <link rel="canonical" href="https://www.asfvisualsllc.com/about.html">
   <link rel="icon" href="images/ASF Logo.png" type="image/png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VBF13JPLGF');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
 
   <style>
     :root {
-      --primary: #10437a;
-      --accent: #e8bc56;
-      --bg: #fafbfc;
-      --card-bg: rgba(255,255,255,0.96);
-      --shadow: 0 8px 32px rgba(0,0,0,0.08);
-      --radius: 18px;
-      --cta: #10437a;
-      --cta-hover: #e8bc56;
+      --black: #0e1217; --off-white: #eef3f7;
+      --accent: #4e8fa8; --accent-light: #72aec6;
+      --amber: #d4895a; --amber-light: #e8a878;
+      --warm-gray: #7a94a8; --dark-gray: #151d24;
+      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
+      --container: min(1200px, 92vw);
     }
-
-    *, *::before, *::after { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: var(--bg);
-      color: #172135;
-      scroll-behavior: smooth;
-      overflow-x: hidden;          /* ✅ no sideways scroll */
-    }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
+    .container { width: var(--container); margin-inline: auto; }
 
-    /* ===== HEADER (MATCH PORTFOLIO PAGE) ===== */
-    .site-header{
-      position:fixed;
-      inset-inline:0;
-      top:0;
-      z-index:1000;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px clamp(16px,4vw,64px);
-      background:rgba(255,255,255,.90);
-      backdrop-filter:saturate(140%) blur(10px);
-      box-shadow:0 1px 12px rgba(16,67,122,.06);
-      transition:transform .32s ease, top .32s ease;
-    }
-    .logo-link img{
-      height:62px;
-      width:auto;
-      max-width:180px;
-      object-fit:contain;
-      display:block;
-    }
-    .site-nav ul{
-      display:flex;
-      gap:clamp(10px,2vw,28px);
-      list-style:none;
-      margin:0;
-      padding:0;
-    }
-    .site-nav a{
-      font-weight:600;
-      color:var(--primary);
-      letter-spacing:.01em;
-      padding:8px 14px;
-      border-radius:999px;
-      transition:background .2s,color .2s;
-    }
-    .site-nav a:hover,
-    .site-nav a.active,
-    .site-nav a[aria-current="page"]{
-      background:var(--accent);
-      color:#111;
+    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
+    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
+
+    /* ── NAV ── */
+    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
+    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
+    .logo-link img { height:52px; width:auto; object-fit:contain; }
+    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
+    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
+    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
+    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
+    .nav-cta:hover { background:var(--amber-light); }
+    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
+    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
+    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
+    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media (max-width:860px) {
+      .menu-toggle { display:block; }
+      .nav-cta-wrap { display:none; }
+      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
+      .site-nav.open { transform:translateX(0); }
+      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
+      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
+      body.no-scroll { overflow:hidden; }
     }
 
-    .menu-toggle{
-      display:none;
-      width:44px;
-      height:44px;
-      border:none;
-      background:none;
-      cursor:pointer;
+    /* ── PAGE BANNER ── */
+    .page-banner {
+      min-height: 42vh; display:flex; align-items:flex-end;
+      padding: 0 0 4rem;
+      background: linear-gradient(175deg, rgba(14,18,23,0.85) 0%, rgba(20,35,50,0.55) 60%, rgba(14,18,23,0.80) 100%),
+                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+      position: relative; margin-top: 74px;
     }
-    .menu-toggle .bar{
-      display:block;
-      width:26px;
-      height:3px;
-      margin:5px auto;
-      background:var(--primary);
-      border-radius:2px;
-      transition:.3s;
+    .banner-content { width: var(--container); margin-inline: auto; }
+    .section-label {
+      font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase;
+      color:var(--accent-light); margin-bottom:.8rem;
+      display:flex; align-items:center; gap:.7rem;
     }
-    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
-    .menu-toggle.open .bar:nth-child(2){opacity:0;}
-    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+    .banner-content h1 {
+      font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,6rem);
+      line-height:.95; letter-spacing:.02em; color:#fff;
+    }
+    .banner-content h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
 
-    @media (max-width:860px){
-      .menu-toggle{display:block;}
-      .site-nav{
-        position:fixed;
-        right:0;
-        top:74px;
-        width:min(68vw,360px);
-        height:calc(100dvh - 74px);
-        background:#fff;
-        transform:translateX(100%);
-        transition:transform .24s cubic-bezier(.4,2.2,.3,1);
-        box-shadow:-2px 0 18px rgba(0,0,0,.18);
-        z-index:1001;
-      }
-      .site-nav.open{transform:translateX(0);}
-      .site-nav ul{
-        flex-direction:column;
-        padding:26px;
-        gap:12px;
-      }
-      body.no-scroll{overflow:hidden;}   /* ✅ lock scroll when menu open */
+    /* ── ABOUT LAYOUT ── */
+    .about-section { padding: 6rem 0; background: var(--black); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: start;
     }
+    @media (max-width:860px) { .about-grid { grid-template-columns:1fr; gap:3rem; } }
 
-    /* Skip link */
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: auto;
-      width: 1px; height: 1px;
-      overflow: hidden;
-      z-index: 101;
-      background: #fff;
-      color: #103047;
-      border-radius: 0 0 10px 10px;
-      padding: 8px 22px;
+    .about-images { display:flex; flex-direction:column; gap:3px; position:relative; }
+    .about-img-main { width:100%; aspect-ratio:4/5; object-fit:cover; }
+    .about-img-row { display:grid; grid-template-columns:1fr 1fr; gap:3px; }
+    .about-img-sm { width:100%; aspect-ratio:1/1; object-fit:cover; }
+    .about-img-ph {
+      width:100%; aspect-ratio:4/5;
+      background:linear-gradient(160deg, var(--mid-gray) 0%, #1a2d3d 60%, #0e1d2a 100%);
+      display:flex; align-items:flex-end; padding:1.5rem;
     }
-    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
+    .about-img-ph-sm {
+      background:linear-gradient(160deg, #1a2d3d 0%, #0e1d2a 100%);
+      aspect-ratio:1/1;
+    }
+    .img-label { font-size:.65rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.35); }
 
-    /* ===== ABOUT CONTENT ===== */
-    .about-section {
-      max-width: 1180px;
-      margin: 96px auto 0;       /* extra top to clear fixed header */
-      padding: 0 5vw;
-    }
-    .about-flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 48px;
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 40px 32px 28px 32px;
-      animation: fadeInUp 1.2s cubic-bezier(.23,1.04,.58,.98) both;
-    }
-    .about-content {
-      flex: 1 1 370px;
-      min-width: 270px;
-      max-width: 600px;
-    }
-    .about-content h2,
-    .products-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 18px;
-      color: var(--primary);
-      text-align: left;
-    }
-    .about-content p {
-      font-size: 1.12rem;
-      color: #27344c;
-      margin-bottom: 18px;
-      line-height: 1.7;
-    }
-    .about-images {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      flex: 0 1 320px;
-      min-width: 210px;
-    }
-    .about-img {
-      width: 100%;
-      border-radius: 8px;
-      object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      background: #ececec;
-    }
+    .about-corner { position:absolute; bottom:-0.8rem; right:-0.8rem; width:90px; height:90px; border:2px solid var(--accent); pointer-events:none; }
 
-    /* ===== PRODUCTS / GEAR ===== */
-    .products-section {
-      max-width: 1100px;
-      margin: 52px auto 0 auto;
-      padding: 0 5vw 32px 5vw;
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      animation: fadeInUp 1.2s cubic-bezier(.23,1.04,.58,.98) both;
+    .about-text h2 {
+      font-family:'Bebas Neue',sans-serif; font-size:clamp(2.2rem,3.5vw,3.2rem);
+      letter-spacing:.04em; line-height:1.05; margin-bottom:1.8rem;
     }
-    .products-section > p {
-      padding: 0 24px;
-      font-size: 1.07rem;
-      color: #27344c;
-      margin-bottom: 12px;
+    .about-text p { font-size:.95rem; font-weight:300; line-height:1.8; color:var(--warm-gray); margin-bottom:1rem; }
+    .about-text strong { color:var(--off-white); font-weight:500; }
+
+    .credentials { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:2rem 0; }
+    @media (max-width:500px) { .credentials { grid-template-columns:1fr; } }
+    .cred { display:flex; align-items:flex-start; gap:.65rem; }
+    .cred-dot { width:5px; height:5px; border-radius:50%; background:var(--accent); margin-top:.5rem; flex-shrink:0; }
+    .cred-text { font-size:.82rem; font-weight:400; line-height:1.5; color:var(--mist); }
+
+    .btn-primary { display:inline-block; background:var(--amber); color:var(--black); font-size:.8rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.9rem 2rem; transition:background .2s, transform .15s; }
+    .btn-primary:hover { background:var(--amber-light); transform:translateY(-1px); }
+    .btn-outline { display:inline-block; background:transparent; color:var(--accent-light); font-size:.8rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.85rem 1.8rem; border:1px solid rgba(78,143,168,0.4); transition:background .2s, border-color .2s; margin-left:1rem; }
+    .btn-outline:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
+
+    /* ── GEAR / PRODUCTS ── */
+    .gear-section {
+      padding: 6rem 0;
+      background: var(--dark-gray);
+      background-image: radial-gradient(ellipse at 80% 0%, rgba(94,143,168,0.07) 0%, transparent 60%);
     }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 26px;
-      margin: 24px 24px 0 24px;
-    }
+    .gear-section h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.2rem,3.5vw,3.2rem); letter-spacing:.04em; margin-bottom:.8rem; }
+    .gear-section > .container > p { font-size:.95rem; font-weight:300; line-height:1.7; color:var(--warm-gray); margin-bottom:3rem; }
+
+    .product-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
+    @media (max-width:900px) { .product-grid { grid-template-columns:1fr; } }
+
     .product-card {
-      background: #fff;
-      border-radius: 11px;
-      box-shadow: var(--shadow);
-      padding: 18px;
-      text-align: center;
-      transition: box-shadow 0.2s;
-      border: 1.5px solid #eee;
-      min-height: 340px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      background:var(--mid-gray); padding:2rem;
+      display:flex; flex-direction:column; gap:1rem;
+      transition:background .2s;
     }
-    .product-card:hover { box-shadow: 0 4px 16px rgba(16,67,122,0.09); }
-    .product-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 14px;
-      object-fit: cover;
-    }
-    .product-card h3 {
-      font-size: 1.14rem;
-      color: var(--cta);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .product-card p {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 13px;
-    }
+    .product-card:hover { background:#253344; }
+    .product-card img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+    .product-card h3 { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:.06em; }
+    .product-card p { font-size:.88rem; font-weight:300; line-height:1.7; color:var(--warm-gray); flex:1; }
     .affiliate-link {
-      display: inline-block;
-      margin-top: 7px;
-      padding: 10px 22px;
-      background: var(--accent);
-      color: #173046;
-      font-weight: 700;
-      border-radius: 9px;
-      font-size: 1rem;
-      transition: background 0.2s;
+      display:inline-block; background:var(--amber); color:var(--black);
+      font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+      padding:.7rem 1.4rem; align-self:flex-start;
+      transition:background .2s;
     }
-    .affiliate-link:hover {
-      background: var(--primary);
-      color: #fff;
-    }
-    .disclaimer {
-      font-size: 0.86em;
-      text-align: center;
-      margin-top: 34px;
-      color: #999;
-    }
+    .affiliate-link:hover { background:var(--amber-light); }
+    .disclaimer { font-size:.8rem; color:rgba(168,191,204,0.4); text-align:center; margin-top:3rem; }
 
-    /* Buttons */
-    .btn {
-      background: var(--cta);
-      color: #fff;
-      font-weight: 700;
-      padding: 11px 28px;
-      border-radius: var(--radius);
-      border: none;
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      font-size: 1rem;
-      transition: background 0.2s, color 0.2s;
-      letter-spacing: 0.02em;
-      outline: none;
-      display:inline-block;
+    /* ── PROFESSIONAL PROFILE CTA ── */
+    .profile-cta {
+      padding: 5rem 0; background: var(--black);
+      background-image: radial-gradient(ellipse at 50% 50%, rgba(94,143,168,0.06) 0%, transparent 60%);
     }
-    .btn:hover,
-    .btn:focus {
-      background: var(--cta-hover);
-      color: #111;
+    .profile-cta-inner {
+      background: var(--mid-gray); padding: 3rem 4rem;
+      display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between;
     }
+    @media (max-width:600px) { .profile-cta-inner { padding:2rem; flex-direction:column; align-items:stretch; } }
+    .profile-cta-inner h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.8rem); letter-spacing:.04em; }
+    .profile-cta-inner p { font-size:.9rem; font-weight:300; color:var(--warm-gray); margin-top:.5rem; }
 
-    /* Footer */
-    .site-footer {
-      background: #10233a;
-      color: #f5f5f5;
-      padding: 48px 6vw 36px 6vw;
-      border-radius: var(--radius) var(--radius) 0 0;
-      margin-top: 80px;
-      text-align: center;
-    }
-    .social-links {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      margin-top: 16px;
-    }
-    .social-links img {
-      width: 28px; height: 28px;
-      border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 1px 8px #0001;
-      padding: 2px;
-    }
+    /* ── FOOTER ── */
+    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); }
+    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,0.06); }
+    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
+    .footer-logo span { color:var(--accent-light); }
+    .footer-contact { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
+    .footer-contact a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
+    .footer-contact a:hover { color:var(--accent-light); }
+    .footer-contact span { font-size:.75rem; color:#4a5a6a; }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-copy { font-size:.75rem; color:#4a5a6a; }
+    .footer-social { display:flex; gap:1.5rem; }
+    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
+    .footer-social a:hover { color:var(--accent-light); }
 
-    /* Responsive tweaks */
-    @media (max-width: 900px) {
-      .about-flex, .products-section {
-        padding: 28px 6px 20px 6px;
-      }
-      .product-grid { gap: 15px; }
-    }
-    @media (max-width: 750px) {
-      .about-flex {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 20px 6px 14px 6px;
-      }
-      .about-images {
-        flex-direction: row;
-        justify-content: center;
-        gap: 9px;
-      }
-      .about-img { max-width: 110px; }
-      .products-section { padding: 14px 0 14px 0; }
-    }
-
-    /* Animation */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.7s cubic-bezier(.25,.8,.25,1); }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    /* ── REVEAL ── */
+    .reveal { opacity:0; transform:translateY(26px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:.1s; } .reveal-d2 { transition-delay:.2s; } .reveal-d3 { transition-delay:.3s; }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
   </style>
 </head>
 <body>
@@ -373,148 +203,175 @@
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html#top">Home</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="clients.html">Clients</a></li>
         <li><a href="about.html" class="active" aria-current="page">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
   </header>
 
+  <div class="page-banner">
+    <div class="banner-content">
+      <div class="section-label">The Studio</div>
+      <h1>About <em>ASF Visuals</em></h1>
+    </div>
+  </div>
+
   <main id="main">
-    <section id="about" class="about-section fade-up">
-      <div class="about-flex">
-        <!-- Bio -->
-        <div class="about-content">
-          <h2>About Me</h2>
-          <p><strong>Andrew Coutinho</strong> — founder of <strong>ASF Visuals LLC</strong>, a drone and landscape photography company that merges creative storytelling with technical precision. I specialize in capturing dynamic visuals that elevate brands, spaces, and experiences.</p>
 
-          <p>My work has been featured by clients like the <strong>University of Pittsburgh</strong> and regional real estate firms, and I custom-built this very website using <strong>HTML, CSS, and JavaScript</strong> to bring my portfolio to life. ASF Visuals reflects my belief that design, imagery, and authenticity should work together to tell a clear visual story.</p>
+    <!-- ── BIO ── -->
+    <section class="about-section">
+      <div class="container">
+        <div class="about-grid">
 
-          <p>I earned a dual degree in <strong>Economics and Africana Studies</strong> from the University of Pittsburgh, where I also served as a <strong>Fulbright-Hays Scholar in Tanzania</strong>. That experience deepened my perspective on community, development, and how culture shapes creativity — all of which inform the way I approach my work today.</p>
+          <div class="about-images reveal">
+            <img src="images/AboutMe.jpg" alt="Andrew Coutinho — founder of ASF Visuals LLC" class="about-img-main" loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="about-img-ph" style="display:none"><span class="img-label">Andrew Coutinho · ASF Visuals</span></div>
+            <div class="about-img-row">
+              <img src="images/behind-the-scenes.jpg" alt="Behind the scenes drone shot" class="about-img-sm" loading="lazy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <div class="about-img-ph about-img-ph-sm" style="display:none"></div>
+              <img src="gallery/USA/Pittsburgh/DJI_0018-HDR_1600.jpg" alt="Pittsburgh aerial landscape" class="about-img-sm" loading="lazy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <div class="about-img-ph about-img-ph-sm" style="display:none"></div>
+            </div>
+            <div class="about-corner" aria-hidden="true"></div>
+          </div>
 
-          <p>Beyond photography, I founded and lead the <strong>University of Pittsburgh Bodybuilding Club</strong>, building it into a connected network of athletes across multiple universities. Leading that organization strengthened my skills in <strong>project management, collaboration, and brand growth</strong> — the same principles I bring to every client project.</p>
+          <div class="about-text reveal reveal-d1">
+            <div class="section-label">Founder</div>
+            <h2>Andrew Coutinho</h2>
+            <p><strong>Andrew Coutinho</strong> is the founder of <strong>ASF Visuals LLC</strong> — a Pittsburgh-based visual media studio that merges creative storytelling with technical precision. Every project is built around one question: does this make your business grow?</p>
+            <p>His work has been featured by clients including the <strong>University of Pittsburgh</strong>, regional real estate firms, and local contractors. He hand-built this very website using HTML, CSS, and JavaScript — the same skills he brings to every web project.</p>
+            <p>Andrew holds a dual degree in <strong>Economics and Africana Studies</strong> from the University of Pittsburgh, and completed the <strong>Fulbright-Hays Group Projects Abroad Program</strong> in Tanzania — deepening his perspective on community, development, and how culture shapes creativity.</p>
+            <p>Beyond photography, he serves as <strong>Vice Curator of the WEF Global Shapers Pittsburgh Hub</strong> and founded the <strong>National Collegiate Bodybuilding Organization (NCBO)</strong>, connecting 10+ universities. The same skills — project management, community building, strategic execution — inform every client engagement.</p>
 
-          <p>I’m continuing to expand ASF Visuals through <strong>fine art prints, branding visuals, and aerial storytelling</strong> that connect people to place. If you’re looking for a creative partner who combines vision, structure, and execution — let’s connect.</p>
+            <div class="credentials">
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">FAA Part 107 Drone Licensed</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Pitt D1 Athletics Photographer</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Fulbright-Hays East Africa Program</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">University of Pittsburgh Alum</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Full-Stack Web Development</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">WEF Global Shapers, Pittsburgh</div></div>
+            </div>
 
-          <a href="contact.html" class="btn">Let’s Work Together</a>
-        </div>
+            <div style="display:flex; flex-wrap:wrap; gap:.8rem; align-items:center;">
+              <a href="contact.html" class="btn-primary">Let's Work Together</a>
+              <a href="professional.html" class="btn-outline">View Professional Profile</a>
+            </div>
+          </div>
 
-        <!-- Images -->
-        <div class="about-images">
-          <img src="images/AboutMe.jpg" alt="Andrew Coutinho - Portrait" class="about-img" loading="lazy">
-          <img src="images/behind-the-scenes.jpg" alt="Behind the Scenes - Drone Shot" class="about-img" loading="lazy">
-          <img src="gallery/USA/Pittsburgh/DJI_0018-HDR_1600.jpg" alt="Featured Landscape Work" class="about-img" loading="lazy">
         </div>
       </div>
     </section>
 
-    <a href="professional.html"
-       class="btn"
-       style="background:transparent;border:2px solid var(--cta);color:var(--cta);margin-left:10px;">
-      View Professional Profile
-    </a>
-
-    <!-- Products/Gear -->
-    <section id="products" class="products-section fade-up">
-      <h2>Products & Gear I Use</h2>
-      <p>Here’s the exact gear and accessories I rely on for my shoots. All links are to Amazon — you’ll support my work if you purchase through them!</p>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <a href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">
-            <img src="images/sony-a7iii.jpg" alt="Sony a7III" loading="lazy">
-          </a>
-          <h3>Sony a7III</h3>
-          <p>The Sony a7III is my go-to camera for its exceptional low-light performance, fast autofocus, and incredible image quality.</p>
-          <a class="affiliate-link" href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    <!-- ── GEAR ── -->
+    <section class="gear-section">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-label">Equipment</div>
+          <h2>Gear I Shoot With</h2>
+          <p>The exact equipment I rely on for every shoot. Links go to Amazon — purchasing through them supports the studio.</p>
         </div>
-
-        <div class="product-card">
-          <a href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">
-            <img src="images/portable-tripod.jpg" alt="Lightweight Portable Tripod" loading="lazy">
-          </a>
-          <h3>Lightweight Portable Tripod</h3>
-          <p>Lightweight and portable — perfect for on-the-go shooting and reliably stable shots.</p>
-          <a class="affiliate-link" href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+        <div class="product-grid">
+          <div class="product-card reveal reveal-d1">
+            <a href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">
+              <img src="images/sony-a7iii.jpg" alt="Sony a7III" loading="lazy">
+            </a>
+            <h3>Sony a7III</h3>
+            <p>My go-to camera for exceptional low-light performance, fast autofocus, and full-frame image quality on every shoot.</p>
+            <a class="affiliate-link" href="https://amzn.to/4jRyrWJ" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+          </div>
+          <div class="product-card reveal reveal-d2">
+            <a href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">
+              <img src="images/portable-tripod.jpg" alt="Lightweight Portable Tripod" loading="lazy">
+            </a>
+            <h3>Portable Tripod</h3>
+            <p>Lightweight and travel-ready — perfect for on-location shoots requiring stable, precise framing in any environment.</p>
+            <a class="affiliate-link" href="https://amzn.to/3WZrqJM" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+          </div>
+          <div class="product-card reveal reveal-d3">
+            <a href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">
+              <img src="images/drone.jpg" alt="DJI Air 2s" loading="lazy">
+            </a>
+            <h3>DJI Air 2s</h3>
+            <p>Stable flight, 1-inch sensor, and 5.4K video. My FAA Part 107 certified aerial platform for every drone project.</p>
+            <a class="affiliate-link" href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+          </div>
         </div>
+        <p class="disclaimer">Disclosure: As an Amazon Associate, I earn from qualifying purchases.</p>
+      </div>
+    </section>
 
-        <div class="product-card">
-          <a href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">
-            <img src="images/drone.jpg" alt="Professional Drone" loading="lazy">
-          </a>
-          <h3>DJI Air 2s</h3>
-          <p>Stable flight and high-resolution aerial footage for unique perspectives and stunning visuals.</p>
-          <a class="affiliate-link" href="https://amzn.to/4gEWFk8" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+    <!-- ── PROFESSIONAL PROFILE CTA ── -->
+    <section class="profile-cta">
+      <div class="container">
+        <div class="profile-cta-inner reveal">
+          <div>
+            <h2>Want the Full Picture?</h2>
+            <p>View Andrew's professional background, experience, and credentials in detail.</p>
+          </div>
+          <a href="professional.html" class="btn-primary">View Professional Profile</a>
         </div>
       </div>
-
-      <p class="disclaimer">Disclosure: As an Amazon Associate, I earn from qualifying purchases.</p>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" loading="lazy">
-      </a>
-      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" loading="lazy">
-      </a>
+    <div class="footer-top">
+      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div class="footer-contact">
+        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        <span>Pittsburgh, Pennsylvania</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="year"></span> ASF Visuals LLC. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Nav (same behavior as portfolio page)
+    document.getElementById('year').textContent = new Date().getFullYear();
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if (btn && nav){
-        btn.addEventListener('click', ()=>{
-          const open = nav.classList.toggle('open');
-          btn.classList.toggle('open', open);
-          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 860){
-            document.body.classList.toggle('no-scroll', open);
-          }
-        });
-        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
-          if (window.innerWidth <= 860){
-            nav.classList.remove('open');
-            btn.classList.remove('open');
-            document.body.classList.remove('no-scroll');
-            btn.setAttribute('aria-expanded','false');
-          }
-        }));
-      }
-
-      // Hide header on scroll down, show on scroll up
+      if (!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+        if (window.innerWidth <= 860){ nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
+      }));
       let lastY = window.scrollY;
       const header = document.getElementById('header');
       window.addEventListener('scroll', ()=>{
         const y = window.scrollY;
-        if (!header) return;
+        header.classList.toggle('scrolled', y > 60);
         header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
         lastY = y;
       }, { passive:true });
     })();
-
-    // Fade-up animation
-    (function(){
-      const faders = document.querySelectorAll('.fade-up');
-      const io = new IntersectionObserver((entries, observer)=>{
-        entries.forEach(entry=>{
-          if (entry.isIntersecting){
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold:0.17 });
-      faders.forEach(el=>io.observe(el));
+    (function revealInit(){
+      const els = document.querySelectorAll('.reveal');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      els.forEach(el => obs.observe(el));
     })();
   </script>
 </body>

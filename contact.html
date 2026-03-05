@@ -1,214 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact – ASF Visuals LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact ASF Visuals LLC to book a shoot, inquire about services, or ask a question." />
-  <meta name="keywords" content="contact, photography, Pittsburgh, drone, booking" />
-  <link rel="canonical" href="https://www.asfvisualsllc.com/contact.html" />
-  <meta property="og:title" content="Contact – ASF Visuals LLC" />
-  <meta property="og:description" content="Book a shoot or ask a question. We’d love to hear from you." />
-  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#10437a" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – ASF Visuals LLC | Book a Shoot in Pittsburgh</title>
+  <meta name="description" content="Book a photography, drone, or web project with ASF Visuals LLC. Based in Pittsburgh — serving businesses across the region.">
+  <meta property="og:title" content="Contact – ASF Visuals LLC">
+  <meta property="og:description" content="Book a shoot or ask a question. We'd love to hear from you.">
+  <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0e1217">
+  <link rel="canonical" href="https://www.asfvisualsllc.com/contact.html">
+  <link rel="icon" href="images/ASF Logo.png" type="image/png">
 
-  <!-- Favicon + Fonts -->
-  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VBF13JPLGF');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
 
   <style>
     :root {
-      --primary: #10437a;
-      --accent: #e8bc56;
-      --bg: #fafbfc;
-      --card-bg: rgba(255,255,255,0.96);
-      --shadow: 0 8px 32px rgba(0,0,0,0.08);
-      --radius: 18px;
-      --ink: #172135;
-      --cta: #10437a;
-      --cta-hover: #e8bc56;
+      --black: #0e1217; --off-white: #eef3f7;
+      --accent: #4e8fa8; --accent-light: #72aec6;
+      --amber: #d4895a; --amber-light: #e8a878;
+      --warm-gray: #7a94a8; --dark-gray: #151d24;
+      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
+      --container: min(1200px, 92vw);
     }
-    *, *::before, *::after { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
 
-    html, body {
-      margin: 0; padding: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: var(--bg); color: var(--ink);
-      overflow-x:hidden;              /* ✅ no sideways scroll */
-    }
+    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
+    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
 
-    a { color: inherit; text-decoration: none; }
-
-    /* ===== HEADER (MATCH PORTFOLIO PAGE) ===== */
-    .site-header{
-      position:fixed;
-      inset-inline:0;
-      top:0;
-      z-index:1000;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px clamp(16px,4vw,64px);
-      background:rgba(255,255,255,.90);
-      backdrop-filter:saturate(140%) blur(10px);
-      box-shadow:0 1px 12px rgba(16,67,122,.06);
-      transition:transform .32s ease, top .32s ease;
-    }
-    .logo-link img{
-      height:62px;
-      width:auto;
-      max-width:180px;
-      object-fit:contain;
-      display:block;
-    }
-    .site-nav ul{
-      list-style:none;
-      display:flex;
-      gap:clamp(10px,2vw,28px);
-      margin:0;
-      padding:0;
-    }
-    .site-nav a{
-      color:var(--primary);
-      font-weight:600;
-      letter-spacing:.01em;
-      padding:8px 14px;
-      border-radius:999px;
-      transition:background .2s,color .2s;
-    }
-    .site-nav a:hover,
-    .site-nav a.active,
-    .site-nav a[aria-current="page"]{
-      background:var(--accent);
-      color:#111;
+    /* ── NAV ── */
+    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
+    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
+    .logo-link img { height:52px; width:auto; object-fit:contain; }
+    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
+    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
+    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
+    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
+    .nav-cta:hover { background:var(--amber-light); }
+    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
+    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
+    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
+    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    @media (max-width:860px) {
+      .menu-toggle { display:block; }
+      .nav-cta-wrap { display:none; }
+      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
+      .site-nav.open { transform:translateX(0); }
+      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
+      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
+      body.no-scroll { overflow:hidden; }
     }
 
-    .menu-toggle{
-      display:none;
-      width:44px;
-      height:44px;
-      border:none;
-      background:none;
-      cursor:pointer;
-      z-index:150;
+    /* ── PAGE BANNER ── */
+    .page-banner {
+      min-height: 42vh; display:flex; align-items:flex-end; padding: 0 0 4rem;
+      background: linear-gradient(175deg, rgba(14,18,23,0.85) 0%, rgba(20,35,50,0.55) 60%, rgba(14,18,23,0.80) 100%),
+                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+      margin-top: 74px;
     }
-    .menu-toggle .bar{
-      width:26px;
-      height:3px;
-      margin:5px auto;
-      background:var(--primary);
-      border-radius:2px;
-      transition:.3s;
-      display:block;
-    }
-    .menu-toggle.open .bar:nth-child(1){transform:translateY(8px) rotate(45deg);}
-    .menu-toggle.open .bar:nth-child(2){opacity:0;}
-    .menu-toggle.open .bar:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+    .banner-content { width: var(--container); margin-inline: auto; }
+    .section-label { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; display:flex; align-items:center; gap:.7rem; }
+    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+    .banner-content h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,6rem); line-height:.95; letter-spacing:.02em; color:#fff; }
+    .banner-content h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
 
-    @media (max-width:860px){
-      .menu-toggle{display:flex;align-items:center;justify-content:center;}
-      .site-nav{
-        position:fixed;
-        right:0;
-        top:74px;
-        width:min(68vw,360px);
-        height:calc(100dvh - 74px);
-        background:#fff;
-        transform:translateX(100%);
-        transition:transform .24s cubic-bezier(.4,2.2,.3,1);
-        box-shadow:-2px 0 18px rgba(0,0,0,.18);
-        z-index:101;
-        padding-top:0;
-      }
-      .site-nav.open{transform:translateX(0);}
-      .site-nav ul{
-        flex-direction:column;
-        gap:12px;
-        padding:26px;
-      }
-      body.no-scroll{overflow:hidden;}      /* ✅ lock scroll when menu open */
+    /* ── CONTACT LAYOUT ── */
+    .contact-section {
+      padding: 6rem 0;
+      background: var(--black);
+      background-image: radial-gradient(ellipse at 80% 0%, rgba(94,143,168,0.06) 0%, transparent 55%);
     }
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1.4fr;
+      gap: 5rem; align-items: start;
+    }
+    @media (max-width:860px) { .contact-grid { grid-template-columns:1fr; gap:3rem; } }
 
-    /* Skip link */
-    .skip-link {
-      position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; z-index: 101;
-      background: #fff; color: #103047; border-radius: 0 0 10px 10px; padding: 8px 22px;
-    }
-    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
+    /* Left info panel */
+    .contact-info h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2rem,3.5vw,3rem); letter-spacing:.04em; margin-bottom:1rem; }
+    .contact-info > p { font-size:.95rem; font-weight:300; line-height:1.8; color:var(--warm-gray); margin-bottom:2.5rem; }
 
-    /* Page intro spacing */
-    .page-hero {
-      margin-top: 96px;
-      padding: 0 5vw 10px;
+    .contact-details { display:flex; flex-direction:column; gap:1.5rem; }
+    .contact-item { display:flex; align-items:flex-start; gap:1rem; }
+    .contact-item-icon {
+      width:40px; height:40px; flex-shrink:0;
+      background:rgba(78,143,168,0.12); border:1px solid rgba(78,143,168,0.2);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1rem;
     }
+    .contact-item-text { display:flex; flex-direction:column; gap:.2rem; }
+    .contact-item-label { font-size:.7rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-light); }
+    .contact-item-value { font-size:.9rem; color:var(--off-white); }
+    .contact-item-value a { color:var(--off-white); transition:color .2s; }
+    .contact-item-value a:hover { color:var(--accent-light); }
 
-    /* Contact card */
-    .contact-main {
-      max-width: 780px;
-      width:min(780px,92vw);
-      margin: 112px auto 40px; /* clear header */
-      padding: 0;
+    .contact-social { margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.07); }
+    .contact-social-label { font-size:.7rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--warm-gray); margin-bottom:1rem; }
+    .social-links-row { display:flex; gap:1rem; }
+    .social-link {
+      display:inline-flex; align-items:center; gap:.5rem;
+      font-size:.75rem; font-weight:500; letter-spacing:.1em; text-transform:uppercase;
+      color:var(--accent-light); border:1px solid rgba(78,143,168,0.25);
+      padding:.5rem 1rem; transition:background .2s, border-color .2s;
     }
-    .contact-card {
-      background: #fff; border-radius: var(--radius); box-shadow: var(--shadow);
-      padding: 26px 22px;
-    }
-    .contact-title {
-      text-align: center; font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--primary);
-      margin: 0 0 12px;
-    }
-    .contact-form { display: grid; gap: 16px; }
-    .field { display: grid; gap: 8px; }
-    label { font-weight: 600; color: var(--primary); }
-    input, textarea {
-      padding: 0.9rem 1rem; border-radius: 10px; border: 1.5px solid #d5e4f3;
-      font: inherit; background: #f8fafc; color: var(--ink); outline: none; transition: border-color .2s;
+    .social-link:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
+
+    /* Right form */
+    .contact-form-wrap { background:var(--mid-gray); padding:2.5rem; }
+    .contact-form-wrap h3 { font-family:'Bebas Neue',sans-serif; font-size:1.8rem; letter-spacing:.06em; margin-bottom:2rem; }
+    .contact-form { display:grid; gap:1.2rem; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+    @media (max-width:600px) { .form-row { grid-template-columns:1fr; } }
+    .field { display:flex; flex-direction:column; gap:.5rem; }
+    .field label { font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-light); }
+    .field input, .field textarea, .field select {
+      background:rgba(255,255,255,0.04); border:1px solid rgba(94,143,168,0.2);
+      color:var(--off-white); font-family:inherit; font-size:.92rem; font-weight:300;
+      padding:.8rem 1rem; outline:none;
+      transition:border-color .2s, background .2s;
       width:100%;
     }
-    input:focus, textarea:focus { border-color: var(--primary); }
-    textarea { min-height: 120px; max-height: 340px; resize: vertical; }
-
-    .btn {
-      display: inline-block; background: var(--cta); color: #fff; font-weight: 700;
-      padding: 11px 28px; border-radius: var(--radius); border: 0; cursor: pointer;
-      box-shadow: var(--shadow); letter-spacing: .02em; transition: background .2s, color .2s;
+    .field input:focus, .field textarea:focus, .field select:focus {
+      border-color:var(--accent); background:rgba(78,143,168,0.06);
     }
-    .btn:hover, .btn:focus { background: var(--cta-hover); color: #111; }
+    .field input::placeholder, .field textarea::placeholder { color:rgba(168,191,204,0.35); }
+    .field textarea { min-height:130px; resize:vertical; }
+    .field select option { background:var(--mid-gray); color:var(--off-white); }
 
-    .contact-info { margin-top: 18px; text-align: center; color: #333; }
-    .contact-info a { color: var(--primary); font-weight: 700; }
-    .status { margin-top: 12px; font-size: .98rem; }
-    .status[hidden] { display: none; }
-    .status.ok { color: #106c3a; }
-    .status.err { color: #a11212; }
-
-    /* Footer */
-    .site-footer {
-      background: #10233a;
-      color: #f5f5f5;
-      text-align: center;
-      padding: 40px 6vw 28px;
-      border-radius: var(--radius) var(--radius) 0 0;
-      margin-top: 40px;
+    .btn-submit {
+      background:var(--amber); color:var(--black);
+      font-size:.8rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+      padding:.95rem 2.5rem; border:none; cursor:pointer;
+      transition:background .2s, transform .15s; width:100%; margin-top:.5rem;
     }
-    .social-links { display: flex; gap: 16px; justify-content: center; margin-top: 16px; }
-    .social-links img { width: 28px; height: 28px; border-radius: 50%; background: #fff; box-shadow: 0 1px 8px #0001; padding: 2px; }
+    .btn-submit:hover { background:var(--amber-light); transform:translateY(-1px); }
 
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-    }
+    .form-status { margin-top:.8rem; font-size:.88rem; font-weight:400; }
+    .form-status[hidden] { display:none; }
+    .form-status.ok { color:#5abf8a; }
+    .form-status.err { color:#e07070; }
+
+    /* ── FOOTER ── */
+    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); }
+    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,0.06); }
+    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
+    .footer-logo span { color:var(--accent-light); }
+    .footer-contact-links { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
+    .footer-contact-links a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
+    .footer-contact-links a:hover { color:var(--accent-light); }
+    .footer-contact-links span { font-size:.75rem; color:#4a5a6a; }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+    .footer-copy { font-size:.75rem; color:#4a5a6a; }
+    .footer-social { display:flex; gap:1.5rem; }
+    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
+    .footer-social a:hover { color:var(--accent-light); }
+
+    .reveal { opacity:0; transform:translateY(26px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-d1 { transition-delay:.15s; }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
   </style>
 </head>
 <body>
@@ -221,132 +182,184 @@
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html#top">Home</a></li>
-        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="clients.html">Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
   </header>
 
-  <main id="main" class="contact-main">
-    <section class="contact-card" role="region" aria-label="Contact form">
-      <h1 class="contact-title">Let’s Connect</h1>
+  <div class="page-banner">
+    <div class="banner-content">
+      <div class="section-label">Get in Touch</div>
+      <h1>Let's <em>Connect</em></h1>
+    </div>
+  </div>
 
-      <!-- Formspree AJAX (with graceful fallback) -->
-      <form id="contact-form" class="contact-form" action="https://formspree.io/f/xovvrygq" method="POST" novalidate>
-        <div class="field">
-          <label for="name">Your Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" placeholder="Name" required />
+  <main id="main">
+    <section class="contact-section">
+      <div style="width:var(--container);margin-inline:auto;">
+        <div class="contact-grid">
+
+          <!-- Left: info -->
+          <div class="contact-info reveal">
+            <div class="section-label">Contact</div>
+            <h2>Start a Project</h2>
+            <p>Whether it's a commercial shoot, drone coverage, a new website, or something else — fill out the form and I'll get back to you within 24 hours.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-item-icon">✉</div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value"><a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a></span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">📍</div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">Pittsburgh, Pennsylvania</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">⏱</div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Response Time</span>
+                  <span class="contact-item-value">Within 24 hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <div class="contact-social-label">Follow the Work</div>
+              <div class="social-links-row">
+                <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" class="social-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  Instagram
+                </a>
+                <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" class="social-link">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <div class="contact-form-wrap reveal reveal-d1">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xovvrygq" method="POST" novalidate>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="service">Service Interested In</label>
+                <select id="service" name="service">
+                  <option value="">— Select a service —</option>
+                  <option value="photography">Photography / Video</option>
+                  <option value="drone">Drone / Aerial</option>
+                  <option value="website">Website Build</option>
+                  <option value="seo">Local SEO / GBP</option>
+                  <option value="bundle">Multiple Services</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Tell Me About Your Project</label>
+                <textarea id="message" name="message" placeholder="What are you looking to accomplish? Location, timeline, any other details..." required></textarea>
+              </div>
+
+              <input type="hidden" name="_subject" value="New inquiry from ASF Visuals contact form">
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-5000px;opacity:0;" aria-hidden="true">
+
+              <button class="btn-submit" type="submit">Send Message</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+
         </div>
-
-        <div class="field">
-          <label for="email">Your Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="Email" required />
-        </div>
-
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
-        </div>
-
-        <input type="hidden" name="_subject" value="New message from ASF Visuals contact form" />
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-5000px;opacity:0;" aria-hidden="true" />
-
-        <button class="btn" type="submit">Send Message</button>
-        <p id="form-status" class="status" role="status" aria-live="polite" hidden></p>
-      </form>
-
-      <div class="contact-info">
-        <div>Email: <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a></div>
-        <div>Instagram: <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener noreferrer">@asfvisuals</a></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 ASF Visuals LLC. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <img src="images/linkedin-icon.png" alt="LinkedIn" width="24" height="24" loading="lazy" decoding="async" />
-      </a>
-      <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <img src="images/instagram-icon.png" alt="Instagram" width="24" height="24" loading="lazy" decoding="async" />
-      </a>
+    <div class="footer-top">
+      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div class="footer-contact-links">
+        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        <span>Pittsburgh, Pennsylvania</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="year"></span> ASF Visuals LLC. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener">Instagram</a>
+      </div>
     </div>
   </footer>
 
   <script>
-    // Nav (same pattern as portfolio / about)
+    document.getElementById('year').textContent = new Date().getFullYear();
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
-      if (btn && nav){
-        btn.addEventListener('click', ()=>{
-          const open = nav.classList.toggle('open');
-          btn.classList.toggle('open', open);
-          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-          if (window.innerWidth <= 860){
-            document.body.classList.toggle('no-scroll', open);
-          }
-        });
-        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
-          if (window.innerWidth <= 860){
-            nav.classList.remove('open');
-            btn.classList.remove('open');
-            document.body.classList.remove('no-scroll');
-            btn.setAttribute('aria-expanded','false');
-          }
-        }));
-      }
-
+      if (!btn || !nav) return;
+      btn.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
+      });
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+        if (window.innerWidth <= 860){ nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
+      }));
       let lastY = window.scrollY;
       const header = document.getElementById('header');
       window.addEventListener('scroll', ()=>{
         const y = window.scrollY;
-        if (!header) return;
+        header.classList.toggle('scrolled', y > 60);
         header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
         lastY = y;
       }, { passive:true });
     })();
-
-    // AJAX form submit (Formspree)
-    (function(){
+    (function revealInit(){
+      const els = document.querySelectorAll('.reveal');
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      els.forEach(el => obs.observe(el));
+    })();
+    (function formInit(){
       const form = document.getElementById('contact-form');
       const statusEl = document.getElementById('form-status');
       if (!form || !statusEl) return;
-
       form.addEventListener('submit', async (e)=>{
         if (!form.checkValidity()) return;
         e.preventDefault();
-
-        statusEl.hidden = false;
-        statusEl.className = 'status';
-        statusEl.textContent = 'Sending...';
-
+        statusEl.hidden = false; statusEl.className = 'form-status'; statusEl.textContent = 'Sending...';
         try {
-          const formData = new FormData(form);
-          const res = await fetch(form.action, {
-            method: 'POST',
-            headers: { 'Accept': 'application/json' },
-            body: formData
-          });
-
-          if (res.ok) {
-            statusEl.classList.add('ok');
-            statusEl.textContent = 'Thanks! Your message has been sent.';
-            form.reset();
-          } else {
-            const data = await res.json().catch(() => ({}));
-            throw new Error(data.error || 'Submission failed. Please try again.');
-          }
-        } catch (err) {
-          statusEl.classList.add('err');
-          statusEl.textContent = err.message || 'Something went wrong. Please try again or email us directly.';
-        }
+          const res = await fetch(form.action, { method:'POST', headers:{ 'Accept':'application/json' }, body: new FormData(form) });
+          if (res.ok){ statusEl.classList.add('ok'); statusEl.textContent = 'Message sent! I\'ll be in touch within 24 hours.'; form.reset(); }
+          else { const d = await res.json().catch(()=>({})); throw new Error(d.error||'Submission failed.'); }
+        } catch(err){ statusEl.classList.add('err'); statusEl.textContent = err.message || 'Something went wrong. Please email andrew@asfvisualsllc.com directly.'; }
       });
     })();
   </script>

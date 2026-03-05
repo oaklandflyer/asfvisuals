@@ -33,18 +33,18 @@
 
   <style>
     :root {
-      /* Pulled directly from the ASF Visuals logo:
-         sky = soft blue-gray mist, horizon = warm amber/gold, drone = deep charcoal */
+      /* ASF Visuals palette — sky blue is primary accent, amber only for CTAs & nav active */
       --black: #0e1217;           /* deep night sky charcoal */
       --off-white: #eef3f7;       /* cloud white */
       --cream: #dde8ef;           /* soft mist */
-      --gold: #d4895a;            /* warm horizon amber-orange */
-      --gold-light: #e8a878;      /* lighter sunrise tone */
+      --accent: #4e8fa8;          /* primary sky blue accent */
+      --accent-light: #72aec6;    /* lighter sky blue */
+      --amber: #d4895a;           /* CTA / nav-active amber */
+      --amber-light: #e8a878;     /* CTA hover amber */
       --warm-gray: #7a94a8;       /* blue-gray sky mid */
       --dark-gray: #151d24;       /* dark sky panel */
       --mid-gray: #1e2c38;        /* deep blue-gray panel */
       --ink: #a8bfcc;             /* sky text */
-      --sky-blue: #5e8fa8;        /* accent sky blue */
       --mist: #c4d8e4;            /* light mist highlight */
       --container: min(1200px, 92vw);
     }
@@ -64,7 +64,7 @@
     /* ── SKIP LINK ── */
     .skip-link {
       position: absolute; left: -999px; top: auto; width: 1px; height: 1px;
-      overflow: hidden; z-index: 101; background: var(--gold); color: var(--black);
+      overflow: hidden; z-index: 101; background: var(--accent); color: #fff;
       padding: 8px 22px; border-radius: 0 0 10px 10px;
     }
     .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
@@ -92,16 +92,16 @@
       transition: color 0.2s;
     }
     .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] {
-      color: var(--gold);
+      color: var(--amber);
     }
     .nav-cta {
       font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
       text-transform: uppercase; color: var(--black);
-      background: var(--gold); padding: 0.55rem 1.3rem;
+      background: var(--amber); padding: 0.55rem 1.3rem;
       transition: background 0.2s;
       white-space: nowrap;
     }
-    .nav-cta:hover { background: var(--gold-light); }
+    .nav-cta:hover { background: var(--amber-light); }
 
     .menu-toggle {
       display: none; width: 44px; height: 44px;
@@ -174,13 +174,13 @@
 
     .hero-tag {
       font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--gold);
+      text-transform: uppercase; color: var(--accent-light);
       margin-bottom: 1.4rem;
       display: flex; align-items: center; gap: 0.7rem;
       opacity: 0; animation: fadeUp 0.7s 0.2s ease forwards;
     }
     .hero-tag::before {
-      content: ''; display: block; width: 28px; height: 1px; background: var(--gold);
+      content: ''; display: block; width: 28px; height: 1px; background: var(--accent-light);
     }
 
     .hero h1 {
@@ -192,7 +192,7 @@
     }
     .hero h1 em {
       font-family: 'DM Serif Display', serif;
-      font-style: italic; color: var(--gold);
+      font-style: italic; color: var(--accent-light);
     }
 
     .hero-sub {
@@ -206,12 +206,12 @@
       opacity: 0; animation: fadeUp 0.7s 0.65s ease forwards;
     }
     .btn-primary {
-      display: inline-block; background: var(--gold); color: var(--black);
+      display: inline-block; background: var(--amber); color: var(--black);
       font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
       text-transform: uppercase; padding: 0.9rem 2rem;
       transition: background 0.2s, transform 0.15s;
     }
-    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-primary:hover { background: var(--amber-light); transform: translateY(-1px); }
     .btn-ghost {
       display: inline-flex; align-items: center; gap: 0.5rem;
       color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 400;
@@ -227,7 +227,7 @@
       display: flex; align-items: center; gap: 1.2rem;
       opacity: 0; animation: fadeUp 0.7s 0.8s ease forwards;
     }
-    .hero-proof .stars { color: var(--gold); font-size: 0.9rem; letter-spacing: 0.05em; }
+    .hero-proof .stars { color: var(--accent-light); font-size: 0.9rem; letter-spacing: 0.05em; }
     .hero-proof-text { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
     .hero-proof-text strong { color: rgba(255,255,255,0.85); font-weight: 500; }
 
@@ -246,7 +246,7 @@
     .hero-stat-num {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 2.4rem; line-height: 1;
-      color: var(--gold-light); letter-spacing: 0.04em;
+      color: var(--accent-light); letter-spacing: 0.04em;
     }
     .hero-stat-label {
       font-size: 0.7rem; font-weight: 500; letter-spacing: 0.14em;
@@ -261,7 +261,7 @@
 
     /* ── MARQUEE ── */
     .marquee-strip {
-      background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-light) 50%, var(--accent) 100%);
       padding: 0.7rem 0;
       overflow: hidden; white-space: nowrap;
     }
@@ -283,12 +283,12 @@
     .section { padding: 6rem 0; }
     .section-label {
       font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em;
-      text-transform: uppercase; color: var(--gold);
+      text-transform: uppercase; color: var(--accent-light);
       margin-bottom: 0.9rem;
       display: flex; align-items: center; gap: 0.7rem;
     }
     .section-label::before {
-      content: ''; display: block; width: 24px; height: 1px; background: var(--gold);
+      content: ''; display: block; width: 24px; height: 1px; background: var(--accent-light);
     }
     .section h2 {
       font-family: 'Bebas Neue', sans-serif;
@@ -327,16 +327,16 @@
       position: relative; overflow: hidden;
       transition: background 0.25s; cursor: default;
     }
-    .service-card:hover { background: #3a3630; }
+    .service-card:hover { background: #1a2c3d; }
     .service-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: var(--gold); transform: scaleX(0); transform-origin: left;
+      background: var(--accent); transform: scaleX(0); transform-origin: left;
       transition: transform 0.3s ease;
     }
     .service-card:hover::before { transform: scaleX(1); }
     .service-num {
       font-family: 'Bebas Neue', sans-serif; font-size: 3.2rem;
-      color: rgba(201,168,76,0.1); line-height: 1;
+      color: rgba(78,143,168,0.12); line-height: 1;
       margin-bottom: 1.2rem; display: block;
     }
     .service-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
@@ -346,13 +346,13 @@
     }
     .service-desc {
       font-size: 0.88rem; font-weight: 300; line-height: 1.7;
-      color: #8a8278; margin-bottom: 1.4rem;
+      color: var(--warm-gray); margin-bottom: 1.4rem;
     }
     .service-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; }
     .tag {
       font-size: 0.67rem; font-weight: 500; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--gold);
-      border: 1px solid rgba(201,168,76,0.28); padding: 0.22rem 0.6rem;
+      text-transform: uppercase; color: var(--accent-light);
+      border: 1px solid rgba(78,143,168,0.3); padding: 0.22rem 0.6rem;
     }
 
     /* ── CLIENTS ── */
@@ -361,10 +361,10 @@
       background-image: radial-gradient(ellipse at 20% 50%, rgba(94,143,168,0.05) 0%, transparent 60%);
     }
     .clients-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 2px;
     }
-    @media (max-width: 900px) { .clients-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 700px) { .clients-grid { grid-template-columns: 1fr; } }
 
     .client-card {
       background: var(--dark-gray); padding: 2rem;
@@ -385,21 +385,21 @@
       color: var(--warm-gray); flex: 1;
     }
     .client-metric {
-      display: inline-block; background: rgba(201,168,76,0.12);
-      color: var(--gold); font-size: 0.72rem; font-weight: 600;
+      display: inline-block; background: rgba(78,143,168,0.12);
+      color: var(--accent-light); font-size: 0.72rem; font-weight: 600;
       letter-spacing: 0.1em; text-transform: uppercase;
-      padding: 0.3rem 0.8rem; border: 1px solid rgba(201,168,76,0.25);
+      padding: 0.3rem 0.8rem; border: 1px solid rgba(78,143,168,0.25);
       align-self: flex-start;
     }
     .clients-cta { margin-top: 2rem; text-align: center; }
     .clients-cta a {
       display: inline-flex; align-items: center; gap: 0.5rem;
       font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--gold);
-      border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 0.2rem;
+      text-transform: uppercase; color: var(--accent-light);
+      border-bottom: 1px solid rgba(78,143,168,0.3); padding-bottom: 0.2rem;
       transition: border-color 0.2s;
     }
-    .clients-cta a:hover { border-color: var(--gold); }
+    .clients-cta a:hover { border-color: var(--accent-light); }
 
     /* ── TESTIMONIALS ── */
     .testimonials-bg {
@@ -419,11 +419,11 @@
     .review-link {
       display: inline-flex; align-items: center; gap: 0.5rem;
       font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--gold);
-      border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 0.2rem;
+      text-transform: uppercase; color: var(--accent-light);
+      border-bottom: 1px solid rgba(78,143,168,0.3); padding-bottom: 0.2rem;
       transition: border-color 0.2s;
     }
-    .review-link:hover { border-color: var(--gold); }
+    .review-link:hover { border-color: var(--accent-light); }
 
     .testimonials-cards { display: flex; flex-direction: column; gap: 1.2rem; }
     .t-card {
@@ -439,12 +439,12 @@
       color: var(--off-white);
     }
     .t-author-role { font-size: 0.72rem; color: var(--warm-gray); margin-top: 0.2rem; }
-    .t-stars { color: var(--gold-light); font-size: 0.8rem; letter-spacing: 0.06em; }
+    .t-stars { color: var(--accent-light); font-size: 0.8rem; letter-spacing: 0.06em; }
     .t-quote {
       font-size: 0.9rem; font-weight: 300; font-style: italic;
-      line-height: 1.75; color: #c0bbb3; margin: 0;
+      line-height: 1.75; color: var(--ink); margin: 0;
     }
-    .t-quote a { color: var(--gold); }
+    .t-quote a { color: var(--accent-light); }
     .t-quote a:hover { text-decoration: underline; }
 
     /* ── ABOUT STRIP ── */
@@ -472,7 +472,7 @@
     .about-corner {
       position: absolute; bottom: -0.8rem; right: -0.8rem;
       width: 100px; height: 100px;
-      border: 2px solid var(--gold); z-index: -1;
+      border: 2px solid var(--accent); z-index: -1;
       pointer-events: none;
     }
     .about-content p {
@@ -488,7 +488,7 @@
     .cred { display: flex; align-items: flex-start; gap: 0.65rem; }
     .cred-dot {
       width: 5px; height: 5px; border-radius: 50%;
-      background: var(--gold); margin-top: 0.5rem; flex-shrink: 0;
+      background: var(--accent); margin-top: 0.5rem; flex-shrink: 0;
     }
     .cred-text { font-size: 0.82rem; font-weight: 400; line-height: 1.5; color: #c0bbb3; }
 
@@ -511,20 +511,20 @@
     @media (max-width: 500px) { .pricing-cards { grid-template-columns: 1fr; } }
 
     .price-card { background: var(--mid-gray); padding: 1.6rem 1.4rem; }
-    .price-card.featured { background: var(--gold); }
+    .price-card.featured { background: var(--accent); }
     .price-label {
       font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
       text-transform: uppercase; color: var(--warm-gray);
       margin-bottom: 0.4rem;
     }
-    .price-card.featured .price-label { color: rgba(0,0,0,0.55); }
+    .price-card.featured .price-label { color: rgba(255,255,255,0.65); }
     .price-amount {
       font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem;
       letter-spacing: 0.04em; line-height: 1; margin-bottom: 0.3rem;
     }
-    .price-card.featured .price-amount { color: var(--black); }
+    .price-card.featured .price-amount { color: #fff; }
     .price-desc { font-size: 0.76rem; color: var(--warm-gray); }
-    .price-card.featured .price-desc { color: rgba(0,0,0,0.5); }
+    .price-card.featured .price-desc { color: rgba(255,255,255,0.6); }
 
     /* ── CTA BAND ── */
     .cta-band-bg { background: var(--black); }
@@ -557,13 +557,13 @@
       font-family: 'Bebas Neue', sans-serif;
       font-size: 1.6rem; letter-spacing: 0.1em;
     }
-    .footer-logo span { color: var(--gold); }
+    .footer-logo span { color: var(--accent-light); }
     .footer-contact { display: flex; flex-direction: column; gap: 0.4rem; text-align: right; }
     .footer-contact a {
       font-size: 0.82rem; color: var(--warm-gray);
       transition: color 0.2s;
     }
-    .footer-contact a:hover { color: var(--gold); }
+    .footer-contact a:hover { color: var(--accent-light); }
     .footer-contact span { font-size: 0.75rem; color: #4a4842; }
     .footer-bottom {
       display: flex; justify-content: space-between; align-items: center;
@@ -575,7 +575,7 @@
       font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
       text-transform: uppercase; color: #4a4842; transition: color 0.2s;
     }
-    .footer-social a:hover { color: var(--gold); }
+    .footer-social a:hover { color: var(--accent-light); }
 
     /* ── SCROLL REVEAL ── */
     .reveal {
@@ -745,7 +745,7 @@
         <div class="reveal">
           <div class="section-label">Clients & Results</div>
           <h2>Pittsburgh Businesses<br>We've Helped Grow</h2>
-          <p class="section-sub">A few highlights — see the full portfolio on the <a href="clients.html" style="color:var(--gold)">Clients page</a>.</p>
+          <p class="section-sub">A few highlights — see the full portfolio on the <a href="clients.html" style="color:var(--accent-light)">Clients page</a>.</p>
         </div>
 
         <div class="clients-grid">
@@ -768,6 +768,19 @@
             <div class="client-name">S&amp;G Asset Group LLC</div>
             <p class="client-desc">Commercial real estate photography for listings and investor materials — exteriors, interiors, and drone aerials.</p>
             <span class="client-metric">CRE photography & showcase</span>
+          </article>
+
+          <article class="client-card reveal reveal-d1">
+            <div class="client-logo" style="background:rgba(78,143,168,0.08);border-radius:8px;width:72px;height:72px;display:flex;align-items:center;justify-content:center;">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="18" cy="18" r="14" stroke="#72aec6" stroke-width="1.5" fill="none"/>
+                <path d="M10 22 Q18 10 26 22" stroke="#72aec6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <circle cx="18" cy="20" r="3" fill="#72aec6" opacity="0.6"/>
+              </svg>
+            </div>
+            <div class="client-name">Aqua Design Collective LLC</div>
+            <p class="client-desc">Visual media and web support for a design-forward collective — photography, branding assets, and digital presence.</p>
+            <span class="client-metric">Visual media & web</span>
           </article>
         </div>
 
@@ -926,7 +939,7 @@
     <div class="footer-top">
       <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
       <div class="footer-contact">
-        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="/cdn-cgi/l/email-protection#dabbb4bea8bfad9abba9bcacb3a9afbbb6a9b6b6b9f4b9b5b7"><span class="__cf_email__" data-cfemail="f2939c96809785b2938194849b8187939e819e9e91dc919d9f">[email&#160;protected]</span></a>
         <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
         <span>Pittsburgh, Pennsylvania</span>
       </div>
@@ -940,7 +953,7 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /* ── Footer year ── */
     document.getElementById('year').textContent = new Date().getFullYear();
 
