@@ -12,300 +12,169 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0e1217">
   <link rel="icon" href="images/ASF Logo.png" type="image/png">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
-
   <style>
-    :root {
-      --black: #0e1217; --off-white: #eef3f7;
-      --accent: #4e8fa8; --accent-light: #72aec6;
-      --amber: #d4895a; --amber-light: #e8a878;
-      --warm-gray: #7a94a8; --dark-gray: #151d24;
-      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
-      --container: min(1200px, 92vw);
+    :root{--black:#0e1217;--off-white:#eef3f7;--accent:#4e8fa8;--accent-light:#72aec6;--amber:#d4895a;--amber-light:#e8a878;--warm-gray:#7a94a8;--dark-gray:#151d24;--mid-gray:#1e2c38;--ink:#a8bfcc;--mist:#c4d8e4;--container:min(1200px,92vw);}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--off-white);overflow-x:hidden;}
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
+    p{line-height:1.65;}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:101;background:var(--accent);color:#fff;padding:8px 22px;}
+    .skip-link:focus{left:12px;top:6px;width:auto;height:auto;}
+    /* NAV */
+    .site-header{position:fixed;inset-inline:0;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1.2rem clamp(1rem,4vw,3rem);transition:background .35s,padding .3s,transform .32s;}
+    .site-header.scrolled{background:rgba(14,18,23,0.95);backdrop-filter:blur(14px);padding:.9rem clamp(1rem,4vw,3rem);border-bottom:1px solid rgba(94,143,168,0.15);}
+    .logo-link img{height:52px;width:auto;object-fit:contain;}
+    .site-nav ul{list-style:none;display:flex;gap:clamp(.6rem,2vw,1.8rem);}
+    .site-nav a{font-size:.78rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--warm-gray);padding:.45rem .65rem;transition:color .2s;}
+    .site-nav a:hover,.site-nav a.active,.site-nav a[aria-current="page"]{color:var(--amber);}
+    .nav-cta{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--black);background:var(--amber);padding:.5rem 1.2rem;transition:background .2s;white-space:nowrap;}
+    .nav-cta:hover{background:var(--amber-light);}
+    .menu-toggle{display:none;width:44px;height:44px;border:none;background:none;cursor:pointer;}
+    .menu-toggle .bar{display:block;width:26px;height:2px;margin:5px auto;background:var(--off-white);border-radius:2px;transition:.3s;}
+    .menu-toggle.open .bar:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    .menu-toggle.open .bar:nth-child(2){opacity:0;}
+    .menu-toggle.open .bar:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+    @media(max-width:860px){
+      .menu-toggle{display:block;}
+      .nav-cta-wrap{display:none;}
+      .site-nav{position:fixed;right:0;top:74px;width:min(72vw,320px);height:calc(100dvh - 74px);background:#0e1a24;transform:translateX(100%);transition:transform .26s cubic-bezier(.4,2,.3,1);box-shadow:-4px 0 24px rgba(0,0,0,.6);border-left:1px solid rgba(94,143,168,0.12);}
+      .site-nav.open{transform:translateX(0);}
+      .site-nav ul{flex-direction:column;padding:2rem 1.8rem;gap:.5rem;}
+      .site-nav a{font-size:1rem;display:block;padding:.75rem 0;color:var(--off-white);}
+      body.no-scroll{overflow:hidden;}
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
-    img { max-width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
-    p { line-height: 1.65; }
-
-    /* ── SKIP ── */
-    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
-    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
-
-    /* ── NAV ── */
-    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
-    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
-    .logo-link img { height:52px; width:auto; object-fit:contain; }
-    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
-    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
-    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
-    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
-    .nav-cta:hover { background:var(--amber-light); }
-    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
-    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
-    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
-    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-    @media (max-width:860px) {
-      .menu-toggle { display:block; }
-      .nav-cta-wrap { display:none; }
-      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
-      .site-nav.open { transform:translateX(0); }
-      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
-      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
-      body.no-scroll { overflow:hidden; }
-    }
-    .scrim { display:none; position:fixed; inset:74px 0 0 0; background:rgba(0,0,0,.4); backdrop-filter:blur(2px); z-index:999; }
-    .scrim.show { display:block; }
-
-    /* ── HERO ── */
-    .hero {
-      position:relative; min-height:55vh; display:flex; align-items:center; justify-content:center;
-      overflow:hidden; margin-top:74px;
-    }
-    .hero-bg { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1s ease; }
-    .hero-bg.show { opacity:1; }
-    .hero-overlay { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(175deg, rgba(14,18,23,.72) 0%, rgba(20,35,50,.42) 55%, rgba(14,18,23,.68) 100%); }
-    .hero-card { position:relative; z-index:2; text-align:center; padding:2.5rem 2rem; width:min(780px,92vw); }
-    .hero-tag { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:1rem; display:flex; align-items:center; justify-content:center; gap:.7rem; }
-    .hero-tag::before, .hero-tag::after { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
-    .hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,5.5rem); line-height:.95; letter-spacing:.02em; color:#fff; margin-bottom:.8rem; }
-    .hero h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
-    .hero p { font-size:.95rem; font-weight:300; color:rgba(255,255,255,.65); line-height:1.7; }
-
-    /* ── SECTION LABEL ── */
-    .section-label { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; display:flex; align-items:center; gap:.7rem; }
-    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
-
-    /* ── INTRO ── */
-    .intro-section { padding:4rem 0 2.5rem; }
-    .intro-section h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2rem,3.5vw,3rem); letter-spacing:.04em; margin-bottom:.6rem; }
-    .intro-section p { font-size:.95rem; font-weight:300; color:var(--warm-gray); max-width:560px; }
-
-    /* ── STATS BAR ── */
-    .stats-bar {
-      width:var(--container); margin:0 auto 3.5rem;
-      display:flex; gap:0; border:1px solid rgba(94,143,168,0.15);
-      overflow:hidden;
-    }
-    .stat-item {
-      flex:1; padding:1.4rem 1.2rem; text-align:center;
-      border-right:1px solid rgba(94,143,168,0.12);
-    }
-    .stat-item:last-child { border-right:none; }
-    .stat-num { font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:.06em; color:var(--amber); }
-    .stat-label { font-size:.65rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--warm-gray); margin-top:.2rem; }
-    @media(max-width:560px) { .stats-bar { display:grid; grid-template-columns:1fr 1fr; } .stat-item { border-right:1px solid rgba(94,143,168,0.12); } .stat-item:nth-child(2n) { border-right:none; } }
-
-    /* ── TAB CONTROLS ── */
-    .controls { width:var(--container); margin:0 auto 2.5rem; display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap; }
-    .dataset-toggle { display:flex; gap:.5rem; }
-    .pill {
-      background:var(--mid-gray); border:1px solid rgba(94,143,168,0.2);
-      color:var(--warm-gray); padding:.5rem 1.4rem;
-      font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
-      cursor:pointer; transition:background .2s, color .2s, border-color .2s;
-    }
-    .pill:hover { background:#253344; color:var(--off-white); }
-    .pill.active { background:var(--accent); border-color:var(--accent); color:#fff; }
-
-    /* ── CLIENT CARDS (new featured layout) ── */
-    .clients-section { width:var(--container); margin:0 auto; }
-
-    .featured-client {
-      display:grid; grid-template-columns:1fr 1fr; gap:0;
-      border:1px solid rgba(94,143,168,0.12);
-      margin-bottom:3px; overflow:hidden;
-      transition:border-color .3s;
-    }
-    .featured-client:hover { border-color:rgba(94,143,168,0.35); }
-    .featured-client.reverse { direction:rtl; }
-    .featured-client.reverse > * { direction:ltr; }
-
-    @media(max-width:760px) {
-      .featured-client, .featured-client.reverse { grid-template-columns:1fr; direction:ltr; }
-    }
-
-    .client-visual {
-      position:relative; aspect-ratio:16/10; overflow:hidden;
-      background:var(--mid-gray);
-    }
-    .client-visual img {
-      width:100%; height:100%; object-fit:cover;
-      transition:transform .6s ease; filter:brightness(.9);
-    }
-    .featured-client:hover .client-visual img { transform:scale(1.04); filter:brightness(1); }
-    .client-visual-placeholder {
-      width:100%; height:100%; display:flex; align-items:center; justify-content:center;
-      background:linear-gradient(135deg, var(--mid-gray) 0%, #0d1826 100%);
-      font-family:'Bebas Neue',sans-serif; font-size:3.5rem; letter-spacing:.08em;
-      color:rgba(94,143,168,0.25);
-    }
-    .client-visual-overlay {
-      position:absolute; inset:0;
-      background:linear-gradient(to right, transparent 60%, rgba(14,18,23,.5) 100%);
-      pointer-events:none;
-    }
-    .featured-client.reverse .client-visual-overlay {
-      background:linear-gradient(to left, transparent 60%, rgba(14,18,23,.5) 100%);
-    }
-    .client-badge {
-      position:absolute; top:1rem; left:1rem;
-      background:rgba(14,18,23,.75); backdrop-filter:blur(8px);
-      border:1px solid rgba(94,143,168,0.2);
-      padding:.3rem .75rem;
-      font-size:.65rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
-      color:var(--accent-light);
-    }
-
-    /* YouTube embed placeholder */
-    .yt-thumb {
-      position:relative; width:100%; height:100%; cursor:pointer;
-      background:#000;
-    }
-    .yt-thumb img { width:100%; height:100%; object-fit:cover; opacity:.75; transition:opacity .3s; }
-    .yt-thumb:hover img { opacity:.9; }
-    .yt-play {
-      position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-      pointer-events:none;
-    }
-    .yt-play svg { width:64px; height:64px; filter:drop-shadow(0 2px 12px rgba(0,0,0,.6)); }
-
-    .client-info {
-      background:var(--dark-gray);
-      padding:2.5rem 2.8rem;
-      display:flex; flex-direction:column; justify-content:center; gap:1.2rem;
-    }
-    @media(max-width:760px) { .client-info { padding:2rem 1.6rem; } }
-
-    .client-industry {
-      font-size:.65rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase;
-      color:var(--accent-light); display:flex; align-items:center; gap:.6rem;
-    }
-    .client-industry::before { content:''; display:block; width:18px; height:1px; background:var(--accent-light); }
-
-    .client-name {
-      font-family:'Bebas Neue',sans-serif;
-      font-size:clamp(1.8rem,3vw,2.8rem);
-      letter-spacing:.04em; line-height:1;
-      color:var(--off-white);
-    }
-
-    .client-desc {
-      font-size:.9rem; font-weight:300; color:var(--warm-gray); line-height:1.7;
-    }
-
-    .client-services {
-      display:flex; flex-wrap:wrap; gap:.4rem;
-    }
-    .service-tag {
-      background:rgba(78,143,168,0.1); border:1px solid rgba(78,143,168,0.2);
-      color:var(--accent-light); font-size:.67rem; font-weight:600;
-      letter-spacing:.12em; text-transform:uppercase;
-      padding:.3rem .7rem;
-    }
-
-    .client-actions { display:flex; gap:.7rem; flex-wrap:wrap; margin-top:.4rem; }
-    .btn {
-      display:inline-block; background:var(--amber); color:var(--black);
-      font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-      padding:.75rem 1.6rem; border:none; cursor:pointer;
-      transition:background .2s, transform .15s; white-space:nowrap;
-    }
-    .btn:hover { background:var(--amber-light); transform:translateY(-1px); }
-    .btn.outline {
-      background:transparent; color:var(--accent-light);
-      border:1px solid rgba(78,143,168,0.35);
-    }
-    .btn.outline:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
-    .btn.ghost {
-      background:transparent; color:var(--warm-gray);
-      border:1px solid rgba(255,255,255,0.1);
-    }
-    .btn.ghost:hover { background:rgba(255,255,255,.04); color:var(--off-white); }
-
-    /* coming soon state */
-    .coming-soon-note {
-      font-size:.78rem; color:rgba(122,148,168,.55);
-      font-style:italic; margin-top:.2rem;
-    }
-
-    /* ── PROJECTS tab (preserved deep-nav) ── */
-    .projects-section { width:var(--container); margin:0 auto; }
-    .album-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
-    @media (max-width:1000px) { .album-grid { grid-template-columns:repeat(2,1fr); } }
-    @media (max-width:600px)  { .album-grid { grid-template-columns:1fr; } }
-    .album-card { display:flex; flex-direction:column; cursor:pointer; }
-    .album-cover { position:relative; aspect-ratio:3/2; overflow:hidden; background:var(--mid-gray); }
-    .album-cover img { width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .35s, transform .4s; }
-    .album-cover img.loaded { opacity:1; }
-    .album-card:hover .album-cover img { transform:scale(1.04); }
-    .album-cover::before { content:"ASF VISUALS LLC"; position:absolute; right:10px; bottom:8px; padding:3px 7px; font:500 11px/1.2 'DM Sans',sans-serif; color:rgba(255,255,255,.85); background:rgba(0,0,0,.35); letter-spacing:.06em; pointer-events:none; z-index:2; }
-    .album-cover::after { content:""; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 24px, rgba(0,0,0,.04) 24px, rgba(0,0,0,.04) 48px); pointer-events:none; }
-    .album-caption { background:var(--dark-gray); padding:1rem 1.2rem; border-top:1px solid rgba(255,255,255,.04); }
-    .album-title { font-family:'Bebas Neue',sans-serif; font-size:1.1rem; letter-spacing:.08em; }
-    .album-sub { font-size:.7rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--warm-gray); margin-top:.2rem; }
-    .photo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
-    @media (max-width:1000px) { .photo-grid { grid-template-columns:repeat(2,1fr); } }
-    @media (max-width:600px)  { .photo-grid { grid-template-columns:1fr; } }
-    .photo { position:relative; aspect-ratio:3/2; overflow:hidden; background:var(--mid-gray); cursor:pointer; }
-    .photo img { width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .35s, transform .25s; }
-    .photo img.loaded { opacity:1; }
-    .photo:hover img { transform:scale(1.03); }
-    .photo::before { content:"ASF VISUALS LLC"; position:absolute; right:10px; bottom:8px; padding:3px 7px; font:500 11px/1.2 'DM Sans',sans-serif; color:rgba(255,255,255,.85); background:rgba(0,0,0,.35); letter-spacing:.06em; pointer-events:none; z-index:2; }
-    .photo::after { content:""; position:absolute; inset:0; background-image:repeating-linear-gradient(45deg, rgba(255,255,255,.025) 0, rgba(255,255,255,.025) 24px, rgba(0,0,0,.04) 24px, rgba(0,0,0,.04) 48px); pointer-events:none; }
-    .empty { padding:3rem; text-align:center; color:var(--warm-gray); font-size:.9rem; }
-    .breadcrumbs { display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; font-size:.82rem; font-weight:500; color:var(--warm-gray); }
-    .breadcrumbs a { color:var(--accent-light); transition:color .2s; }
-    .breadcrumbs a:hover { color:var(--off-white); }
-    .crumb-sep { opacity:.4; }
-    .back-btn { display:none; align-items:center; gap:.5rem; background:var(--mid-gray); border:1px solid rgba(94,143,168,0.2); padding:.6rem 1.2rem; font-size:.78rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-light); cursor:pointer; transition:background .2s; margin-bottom:1.5rem; }
-    .back-btn:hover { background:#253344; }
-
-    /* ── CTA BAND ── */
-    .cta-band {
-      width:var(--container); margin:4rem auto 5rem;
-      background:var(--mid-gray);
-      padding:2.5rem 3rem;
-      display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between;
-    }
-    @media (max-width:600px) { .cta-band { flex-direction:column; align-items:stretch; padding:2rem; } }
-    .cta-band h3 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.6rem,3vw,2.4rem); letter-spacing:.04em; }
-    .cta-band p { font-size:.88rem; font-weight:300; color:var(--warm-gray); margin-top:.3rem; }
-    .cta-actions { display:flex; gap:.8rem; flex-wrap:wrap; }
-
-    /* ── FOOTER ── */
-    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); }
-    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.06); }
-    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
-    .footer-logo span { color:var(--accent-light); }
-    .footer-contact { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
-    .footer-contact a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
-    .footer-contact a:hover { color:var(--accent-light); }
-    .footer-contact span { font-size:.75rem; color:#4a5a6a; }
-    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
-    .footer-copy { font-size:.75rem; color:#4a5a6a; }
-    .footer-social { display:flex; gap:1.5rem; }
-    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
-    .footer-social a:hover { color:var(--accent-light); }
-
-    /* Anti-copy */
-    .album-cover, .photo, .album-cover img, .photo img { -webkit-user-drag:none; -webkit-touch-callout:none; user-select:none; }
-
-    /* Reveal */
-    .reveal { opacity:0; transform:translateY(26px); transition:opacity .65s ease, transform .65s ease; }
-    .reveal.visible { opacity:1; transform:translateY(0); }
-
-    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+    .scrim{display:none;position:fixed;inset:74px 0 0 0;background:rgba(0,0,0,.4);backdrop-filter:blur(2px);z-index:999;}
+    .scrim.show{display:block;}
+    /* HERO */
+    .hero{position:relative;min-height:55vh;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:74px;}
+    .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease;}
+    .hero-bg.show{opacity:1;}
+    .hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(175deg,rgba(14,18,23,.72) 0%,rgba(20,35,50,.42) 55%,rgba(14,18,23,.68) 100%);}
+    .hero-card{position:relative;z-index:2;text-align:center;padding:2.5rem 2rem;width:min(780px,92vw);}
+    .hero-tag{font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-light);margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.7rem;}
+    .hero-tag::before,.hero-tag::after{content:'';display:block;width:24px;height:1px;background:var(--accent-light);}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,6vw,5.5rem);line-height:.95;letter-spacing:.02em;color:#fff;margin-bottom:.8rem;}
+    .hero h1 em{font-family:'DM Serif Display',serif;font-style:italic;color:var(--accent-light);}
+    .hero p{font-size:.95rem;font-weight:300;color:rgba(255,255,255,.65);line-height:1.7;}
+    .section-label{font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-light);margin-bottom:.8rem;display:flex;align-items:center;gap:.7rem;}
+    .section-label::before{content:'';display:block;width:24px;height:1px;background:var(--accent-light);}
+    /* INTRO */
+    .intro-section{padding:4rem 0 2.5rem;}
+    .intro-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.04em;margin-bottom:.6rem;}
+    .intro-section p{font-size:.95rem;font-weight:300;color:var(--warm-gray);max-width:560px;}
+    /* STATS */
+    .stats-bar{width:var(--container);margin:0 auto 3.5rem;display:flex;border:1px solid rgba(94,143,168,0.15);overflow:hidden;}
+    .stat-item{flex:1;padding:1.4rem 1.2rem;text-align:center;border-right:1px solid rgba(94,143,168,0.12);}
+    .stat-item:last-child{border-right:none;}
+    .stat-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.06em;color:var(--amber);}
+    .stat-label{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--warm-gray);margin-top:.2rem;}
+    @media(max-width:560px){.stats-bar{display:grid;grid-template-columns:1fr 1fr;}.stat-item{border-right:1px solid rgba(94,143,168,0.12);}.stat-item:nth-child(2n){border-right:none;}}
+    /* CONTROLS */
+    .controls{width:var(--container);margin:0 auto 2.5rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+    .dataset-toggle{display:flex;gap:.5rem;}
+    .pill{background:var(--mid-gray);border:1px solid rgba(94,143,168,0.2);color:var(--warm-gray);padding:.5rem 1.4rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s;}
+    .pill:hover{background:#253344;color:var(--off-white);}
+    .pill.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+    .breadcrumbs{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;font-size:.82rem;font-weight:500;color:var(--warm-gray);}
+    .breadcrumbs a{color:var(--accent-light);transition:color .2s;}
+    .breadcrumbs a:hover{color:var(--off-white);}
+    .crumb-sep{opacity:.4;}
+    .back-btn{display:none;align-items:center;gap:.5rem;background:var(--mid-gray);border:1px solid rgba(94,143,168,0.2);padding:.6rem 1.2rem;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-light);cursor:pointer;transition:background .2s;margin-bottom:1.5rem;}
+    .back-btn:hover{background:#253344;}
+    /* FEATURED CLIENT CARDS */
+    .clients-section{width:var(--container);margin:0 auto;}
+    .featured-client{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(94,143,168,0.12);margin-bottom:3px;overflow:hidden;transition:border-color .3s;cursor:pointer;}
+    .featured-client:hover{border-color:rgba(94,143,168,0.4);}
+    .featured-client.reverse{direction:rtl;}
+    .featured-client.reverse>*{direction:ltr;}
+    @media(max-width:760px){.featured-client,.featured-client.reverse{grid-template-columns:1fr;direction:ltr;}}
+    .client-visual{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--mid-gray);}
+    .client-visual img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;filter:brightness(.88);}
+    .featured-client:hover .client-visual img{transform:scale(1.04);filter:brightness(1);}
+    .client-visual-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--mid-gray) 0%,#0d1826 100%);font-family:'Bebas Neue',sans-serif;font-size:3.5rem;letter-spacing:.08em;color:rgba(94,143,168,0.25);}
+    .client-visual-overlay{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,rgba(14,18,23,.5) 100%);pointer-events:none;}
+    .featured-client.reverse .client-visual-overlay{background:linear-gradient(to left,transparent 60%,rgba(14,18,23,.5) 100%);}
+    .client-badge{position:absolute;top:1rem;left:1rem;background:rgba(14,18,23,.75);backdrop-filter:blur(8px);border:1px solid rgba(94,143,168,0.2);padding:.3rem .75rem;font-size:.65rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-light);}
+    .client-info{background:var(--dark-gray);padding:2.5rem 2.8rem;display:flex;flex-direction:column;justify-content:center;gap:1.2rem;}
+    @media(max-width:760px){.client-info{padding:2rem 1.6rem;}}
+    .client-industry{font-size:.65rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-light);display:flex;align-items:center;gap:.6rem;}
+    .client-industry::before{content:'';display:block;width:18px;height:1px;background:var(--accent-light);}
+    .client-name{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);letter-spacing:.04em;line-height:1;color:var(--off-white);}
+    .client-desc{font-size:.9rem;font-weight:300;color:var(--warm-gray);line-height:1.7;}
+    .client-services{display:flex;flex-wrap:wrap;gap:.4rem;}
+    .service-tag{background:rgba(78,143,168,0.1);border:1px solid rgba(78,143,168,0.2);color:var(--accent-light);font-size:.67rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .7rem;}
+    .client-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.4rem;}
+    .btn{display:inline-block;background:var(--amber);color:var(--black);font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.75rem 1.6rem;border:none;cursor:pointer;transition:background .2s,transform .15s;white-space:nowrap;}
+    .btn:hover{background:var(--amber-light);transform:translateY(-1px);}
+    .btn.outline{background:transparent;color:var(--accent-light);border:1px solid rgba(78,143,168,0.35);}
+    .btn.outline:hover{background:rgba(78,143,168,0.1);border-color:var(--accent-light);}
+    .btn.ghost{background:transparent;color:var(--warm-gray);border:1px solid rgba(255,255,255,0.1);}
+    .btn.ghost:hover{background:rgba(255,255,255,.04);color:var(--off-white);}
+    .view-gallery-hint{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-light);display:flex;align-items:center;gap:.4rem;margin-top:-.4rem;}
+    .view-gallery-hint::after{content:'→';transition:transform .2s;}
+    .featured-client:hover .view-gallery-hint::after{transform:translateX(4px);}
+    .coming-soon-note{font-size:.78rem;color:rgba(122,148,168,.55);font-style:italic;margin-top:.2rem;}
+    /* GALLERY DRILL-IN */
+    .gallery-view{width:var(--container);margin:0 auto;}
+    .gallery-client-header{padding:0 0 1.8rem;border-bottom:1px solid rgba(94,143,168,0.12);margin-bottom:2rem;}
+    .gallery-client-header h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3.5rem);letter-spacing:.04em;line-height:1;}
+    .gallery-client-header p{font-size:.88rem;font-weight:300;color:var(--warm-gray);margin-top:.4rem;}
+    /* ALBUM + PHOTO GRIDS */
+    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:4rem;}
+    @media(max-width:1000px){.album-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.album-grid{grid-template-columns:1fr;}}
+    .album-card{display:flex;flex-direction:column;cursor:pointer;}
+    .album-cover{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--mid-gray);}
+    .album-cover img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s,transform .4s;}
+    .album-cover img.loaded{opacity:1;}
+    .album-card:hover .album-cover img{transform:scale(1.04);}
+    .album-cover::before{content:"ASF VISUALS LLC";position:absolute;right:10px;bottom:8px;padding:3px 7px;font:500 11px/1.2 'DM Sans',sans-serif;color:rgba(255,255,255,.85);background:rgba(0,0,0,.35);letter-spacing:.06em;pointer-events:none;z-index:2;}
+    .album-cover::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0,rgba(255,255,255,.025) 24px,rgba(0,0,0,.04) 24px,rgba(0,0,0,.04) 48px);pointer-events:none;}
+    .album-caption{background:var(--dark-gray);padding:1rem 1.2rem;border-top:1px solid rgba(255,255,255,.04);}
+    .album-title{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;letter-spacing:.08em;}
+    .album-sub{font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--warm-gray);margin-top:.2rem;}
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:4rem;}
+    @media(max-width:1000px){.photo-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.photo-grid{grid-template-columns:1fr;}}
+    .photo{position:relative;aspect-ratio:3/2;overflow:hidden;background:var(--mid-gray);cursor:pointer;}
+    .photo img{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s,transform .25s;}
+    .photo img.loaded{opacity:1;}
+    .photo:hover img{transform:scale(1.03);}
+    .photo::before{content:"ASF VISUALS LLC";position:absolute;right:10px;bottom:8px;padding:3px 7px;font:500 11px/1.2 'DM Sans',sans-serif;color:rgba(255,255,255,.85);background:rgba(0,0,0,.35);letter-spacing:.06em;pointer-events:none;z-index:2;}
+    .photo::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0,rgba(255,255,255,.025) 24px,rgba(0,0,0,.04) 24px,rgba(0,0,0,.04) 48px);pointer-events:none;}
+    .empty{padding:3rem;text-align:center;color:var(--warm-gray);font-size:.9rem;}
+    /* CTA */
+    .cta-band{width:var(--container);margin:4rem auto 5rem;background:var(--mid-gray);padding:2.5rem 3rem;display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between;}
+    @media(max-width:600px){.cta-band{flex-direction:column;align-items:stretch;padding:2rem;}}
+    .cta-band h3{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:.04em;}
+    .cta-band p{font-size:.88rem;font-weight:300;color:var(--warm-gray);margin-top:.3rem;}
+    .cta-actions{display:flex;gap:.8rem;flex-wrap:wrap;}
+    /* FOOTER */
+    .site-footer{background:#090d11;padding:3rem clamp(1rem,4vw,3rem) 2rem;border-top:1px solid rgba(94,143,168,0.1);}
+    .footer-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;margin-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.06);}
+    .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.1em;}
+    .footer-logo span{color:var(--accent-light);}
+    .footer-contact{display:flex;flex-direction:column;gap:.4rem;text-align:right;}
+    .footer-contact a{font-size:.82rem;color:var(--warm-gray);transition:color .2s;}
+    .footer-contact a:hover{color:var(--accent-light);}
+    .footer-contact span{font-size:.75rem;color:#4a5a6a;}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+    .footer-copy{font-size:.75rem;color:#4a5a6a;}
+    .footer-social{display:flex;gap:1.5rem;}
+    .footer-social a{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4a5a6a;transition:color .2s;}
+    .footer-social a:hover{color:var(--accent-light);}
+    .album-cover,.photo,.album-cover img,.photo img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;}
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease;}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;}}
   </style>
 </head>
 <body>
@@ -331,7 +200,6 @@
     </button>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-bg" id="bgA" aria-hidden="true"></div>
     <div class="hero-bg" id="bgB" aria-hidden="true"></div>
@@ -344,35 +212,19 @@
   </section>
 
   <main id="main">
-
-    <!-- Intro -->
     <section class="intro-section reveal" style="width:var(--container);margin-inline:auto;">
       <div class="section-label">Portfolio</div>
       <h2>Featured Work</h2>
-      <p>A selection of clients and projects spanning photography, drone work, and full-stack web development.</p>
+      <p>A selection of clients spanning photography, drone work, and full-stack web development. Click any client to explore the full gallery.</p>
     </section>
 
-    <!-- Stats -->
     <div class="stats-bar reveal">
-      <div class="stat-item">
-        <div class="stat-num">6+</div>
-        <div class="stat-label">Clients</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">5</div>
-        <div class="stat-label">Industries</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">107</div>
-        <div class="stat-label">FAA Licensed</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">PGH</div>
-        <div class="stat-label">Based</div>
-      </div>
+      <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Clients</div></div>
+      <div class="stat-item"><div class="stat-num">330+</div><div class="stat-label">Photos</div></div>
+      <div class="stat-item"><div class="stat-num">107</div><div class="stat-label">FAA Licensed</div></div>
+      <div class="stat-item"><div class="stat-num">PGH</div><div class="stat-label">Based</div></div>
     </div>
 
-    <!-- Tab Controls -->
     <div class="controls">
       <div class="dataset-toggle" role="tablist" aria-label="Content type">
         <button class="pill active" id="tabClients" role="tab" aria-selected="true">Clients</button>
@@ -381,81 +233,99 @@
       <nav class="breadcrumbs" aria-label="Breadcrumbs" id="breadcrumbs"></nav>
     </div>
 
-    <!-- ── CLIENTS VIEW ── -->
-    <div id="clientsView">
+    <div style="width:var(--container);margin:0 auto;">
+      <button class="back-btn" id="backBtn" type="button" aria-label="Go back">&#9664; Back</button>
+    </div>
+
+    <!-- CLIENTS: featured cards -->
+    <div id="clientsCardsView">
       <div class="clients-section">
 
-        <!-- Pittsburgh Prestige Remodeling -->
-        <article class="featured-client reveal">
+        <article class="featured-client reveal" data-client="pittsburgh-prestige-remodeling" data-has-gallery="true">
           <div class="client-visual">
-            <img src="images/ppr.png" alt="Pittsburgh Prestige Remodeling" loading="lazy"
-                 onerror="this.parentElement.innerHTML='<div class=\'client-visual-placeholder\'>PPR</div>'">
-            <div class="client-badge">Web + CMS</div>
+            <img src="/clients/processed/clients/pittsburgh-prestige-remodeling/closet-cabinetry/ppr10-27-31_960.avif"
+                 onerror="this.src='/clients/processed/clients/pittsburgh-prestige-remodeling/closet-cabinetry/ppr10-27-31_960.jpg'"
+                 alt="Pittsburgh Prestige Remodeling" loading="lazy">
+            <div class="client-badge">Web + Photography</div>
             <div class="client-visual-overlay"></div>
           </div>
           <div class="client-info">
-            <div class="client-industry">Remodeling & Carpentry</div>
+            <div class="client-industry">Remodeling &amp; Carpentry</div>
             <div class="client-name">Pittsburgh Prestige Remodeling</div>
-            <p class="client-desc">Full website build featuring a Supabase-powered gallery CMS, hero slideshow, contact form integration, and dark/light theme toggle. The client can upload, categorize, and manage project photos independently — no developer needed.</p>
+            <p class="client-desc">Full website build with Supabase-powered gallery CMS, plus photography across four project categories — cutting boards, cabinetry, outdoor carpentry, and office builds.</p>
             <div class="client-services">
               <span class="service-tag">Web Development</span>
+              <span class="service-tag">Photography</span>
               <span class="service-tag">Gallery CMS</span>
-              <span class="service-tag">Supabase</span>
               <span class="service-tag">UI/UX Design</span>
             </div>
             <div class="client-actions">
-              <a class="btn" href="https://prestigepgh.com" target="_blank" rel="noopener">Visit Site</a>
-              <a class="btn outline" href="contact.html">Work With Me</a>
+              <a class="btn" href="https://prestigepgh.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">Visit Site</a>
+              <span class="btn outline">View Gallery</span>
             </div>
+            <div class="view-gallery-hint">Browse 68 photos</div>
           </div>
         </article>
 
-        <!-- Aqua Design Collective -->
-        <article class="featured-client reverse reveal">
+        <article class="featured-client reverse reveal" data-client="allegheny-sport-outdoor" data-has-gallery="true">
           <div class="client-visual">
-            <div class="client-visual-placeholder">ADC</div>
-            <div class="client-badge">Web Design</div>
+            <img src="/clients/processed/clients/allegheny-sport-outdoor/day-1/aso-004_960.avif"
+                 onerror="this.src='/clients/processed/clients/allegheny-sport-outdoor/day-1/aso-004_960.jpg'"
+                 alt="Allegheny Sport and Outdoor Summit" loading="lazy">
+            <div class="client-badge">Event Photography</div>
             <div class="client-visual-overlay"></div>
           </div>
           <div class="client-info">
-            <div class="client-industry">Design & Architecture</div>
-            <div class="client-name">Aqua Design Collective</div>
-            <p class="client-desc">Complete website redesign with a unified dark design system, Supabase-backed gallery CMS, and client admin portal. Photography coming soon as the partnership develops.</p>
+            <div class="client-industry">Sports &amp; Outdoors</div>
+            <div class="client-name">Allegheny Sport &amp; Outdoor</div>
+            <p class="client-desc">Event photography across two days of the ASO Summit — one of Pittsburgh's premier outdoor and sport industry gatherings — capturing speakers, attendees, and key moments.</p>
             <div class="client-services">
-              <span class="service-tag">Web Development</span>
-              <span class="service-tag">Gallery CMS</span>
-              <span class="service-tag">Supabase</span>
-              <span class="service-tag">Brand Design</span>
+              <span class="service-tag">Event Photography</span>
+              <span class="service-tag">Sports</span>
+              <span class="service-tag">Editorial</span>
             </div>
             <div class="client-actions">
-              <a class="btn" href="https://aquadesigncollective.netlify.app" target="_blank" rel="noopener">Visit Site</a>
-              <a class="btn outline" href="contact.html">Work With Me</a>
+              <a class="btn" href="https://www.alleghenysport.com/about-asosummit" target="_blank" rel="noopener" onclick="event.stopPropagation()">About the Summit</a>
+              <span class="btn outline">View Gallery</span>
             </div>
+            <div class="view-gallery-hint">Browse 22 photos</div>
           </div>
         </article>
 
-        <!-- University of Pittsburgh -->
-        <article class="featured-client reveal">
+        <article class="featured-client reveal" data-client="s-g-asset-group-llc" data-has-gallery="true">
           <div class="client-visual">
-            <div class="yt-thumb" id="pittThumb" onclick="openYT('https://www.youtube.com/@ASFVisualsLLC')">
-              <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
-                   alt="University of Pittsburgh soccer footage"
-                   onerror="this.src='images/DowntownCloudsReduced.webp'"
-                   loading="lazy">
-              <div class="yt-play">
-                <svg viewBox="0 0 68 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="68" height="48" rx="10" fill="rgba(0,0,0,0.7)"/>
-                  <path d="M45 24L28 33.5V14.5L45 24Z" fill="white"/>
-                </svg>
-              </div>
+            <img src="/clients/processed/clients/s-g-asset-group-llc/23-ghent-rd/rays-place-01_960.avif"
+                 onerror="this.src='/clients/processed/clients/s-g-asset-group-llc/23-ghent-rd/rays-place-01_960.jpg'"
+                 alt="S and G Asset Group commercial real estate" loading="lazy">
+            <div class="client-badge">Commercial Real Estate</div>
+            <div class="client-visual-overlay"></div>
+          </div>
+          <div class="client-info">
+            <div class="client-industry">Commercial Real Estate</div>
+            <div class="client-name">S&amp;G Asset Group LLC</div>
+            <p class="client-desc">Commercial real estate photography across two properties — 23 Ghent Rd and 3550 W Market St — delivering high-quality listing and marketing assets.</p>
+            <div class="client-services">
+              <span class="service-tag">Real Estate Photography</span>
+              <span class="service-tag">Commercial</span>
+              <span class="service-tag">Marketing Assets</span>
             </div>
-            <div class="client-badge">Sports Photography & Video</div>
+            <div class="client-actions">
+              <span class="btn outline">View Gallery</span>
+            </div>
+            <div class="view-gallery-hint">Browse 240 photos</div>
+          </div>
+        </article>
+
+        <article class="featured-client reverse reveal" data-client="pitt-soccer" data-has-gallery="false">
+          <div class="client-visual">
+            <div class="client-visual-placeholder">PITT</div>
+            <div class="client-badge">Sports Photography &amp; Video</div>
             <div class="client-visual-overlay"></div>
           </div>
           <div class="client-info">
             <div class="client-industry">Collegiate Athletics</div>
             <div class="client-name">University of Pittsburgh</div>
-            <p class="client-desc">Photography and drone videography for Pitt Men's Soccer (MSOC) and Women's Soccer (WSOC) — capturing match action, team moments, and aerial footage for both programs. Raw footage available on the ASF Visuals YouTube channel.</p>
+            <p class="client-desc">Photography and drone videography for Pitt Men's Soccer (MSOC) and Women's Soccer (WSOC) — capturing match action, team moments, and aerial footage for both programs.</p>
             <div class="client-services">
               <span class="service-tag">Sports Photography</span>
               <span class="service-tag">Drone Videography</span>
@@ -464,21 +334,45 @@
               <span class="service-tag">FAA Part 107</span>
             </div>
             <div class="client-actions">
-              <a class="btn" href="https://www.youtube.com/@ASFVisualsLLC" target="_blank" rel="noopener">Watch on YouTube</a>
-              <a class="btn outline" href="contact.html">Book Sports Coverage</a>
+              <a class="btn" href="https://www.youtube.com/@ASFVisualsLLC" target="_blank" rel="noopener" onclick="event.stopPropagation()">Watch on YouTube</a>
+              <a class="btn outline" href="contact.html" onclick="event.stopPropagation()">Book Sports Coverage</a>
             </div>
+            <p class="coming-soon-note">Photo gallery coming soon.</p>
           </div>
         </article>
 
-        <!-- Global Shapers Pittsburgh Hub -->
-        <article class="featured-client reverse reveal">
+        <article class="featured-client reveal" data-client="aqua-design-collective" data-has-gallery="false">
           <div class="client-visual">
-            <div class="client-visual-placeholder" id="gsPlaceholder">GS</div>
+            <div class="client-visual-placeholder">ADC</div>
+            <div class="client-badge">Web Design</div>
+            <div class="client-visual-overlay"></div>
+          </div>
+          <div class="client-info">
+            <div class="client-industry">Design &amp; Architecture</div>
+            <div class="client-name">Aqua Design Collective</div>
+            <p class="client-desc">Complete website redesign with a unified dark design system, Supabase-backed gallery CMS, and client admin portal. Photography partnership in development.</p>
+            <div class="client-services">
+              <span class="service-tag">Web Development</span>
+              <span class="service-tag">Gallery CMS</span>
+              <span class="service-tag">Supabase</span>
+              <span class="service-tag">Brand Design</span>
+            </div>
+            <div class="client-actions">
+              <a class="btn" href="https://aquadesigncollective.netlify.app" target="_blank" rel="noopener" onclick="event.stopPropagation()">Visit Site</a>
+              <a class="btn outline" href="contact.html" onclick="event.stopPropagation()">Work With Me</a>
+            </div>
+            <p class="coming-soon-note">Photography coming soon.</p>
+          </div>
+        </article>
+
+        <article class="featured-client reverse reveal" data-client="global-shapers" data-has-gallery="false">
+          <div class="client-visual">
+            <div class="client-visual-placeholder">GS</div>
             <div class="client-badge">Event Photography</div>
             <div class="client-visual-overlay"></div>
           </div>
           <div class="client-info">
-            <div class="client-industry">Civic & Non-Profit</div>
+            <div class="client-industry">Civic &amp; Non-Profit</div>
             <div class="client-name">Global Shapers Pittsburgh Hub</div>
             <p class="client-desc">Event photography for the World Economic Forum's Global Shapers Pittsburgh Hub — capturing community initiatives, leadership events, and civic programming across Pittsburgh.</p>
             <div class="client-services">
@@ -487,71 +381,34 @@
               <span class="service-tag">Civic Organizations</span>
             </div>
             <div class="client-actions">
-              <a class="btn ghost" href="contact.html">Photos Coming Soon</a>
+              <a class="btn ghost" href="contact.html" onclick="event.stopPropagation()">Photos Coming Soon</a>
             </div>
-            <p class="coming-soon-note">Gallery upload in progress — check back shortly.</p>
+            <p class="coming-soon-note">Gallery upload in progress.</p>
           </div>
         </article>
 
-        <!-- Allegheny Sport & Outdoor -->
-        <article class="featured-client reveal">
-          <div class="client-visual">
-            <div class="client-visual-placeholder">ASO</div>
-            <div class="client-badge">Event Photography</div>
-            <div class="client-visual-overlay"></div>
-          </div>
-          <div class="client-info">
-            <div class="client-industry">Sports & Outdoors</div>
-            <div class="client-name">Allegheny Sport & Outdoor</div>
-            <p class="client-desc">Event photography for the ASO Summit — capturing speakers, attendees, and programming at one of Pittsburgh's premier outdoor and sport industry gatherings.</p>
-            <div class="client-services">
-              <span class="service-tag">Event Photography</span>
-              <span class="service-tag">Sports</span>
-              <span class="service-tag">Editorial</span>
-            </div>
-            <div class="client-actions">
-              <a class="btn" href="https://www.alleghenysport.com/about-asosummit" target="_blank" rel="noopener">About the Summit</a>
-              <a class="btn outline" href="contact.html">Book Event Coverage</a>
-            </div>
-          </div>
-        </article>
+      </div>
+    </div>
 
-        <!-- S&G Asset Group LLC -->
-        <article class="featured-client reverse reveal">
-          <div class="client-visual">
-            <div class="client-visual-placeholder">S&G</div>
-            <div class="client-badge">Commercial Real Estate</div>
-            <div class="client-visual-overlay"></div>
-          </div>
-          <div class="client-info">
-            <div class="client-industry">Commercial Real Estate</div>
-            <div class="client-name">S&amp;G Asset Group LLC</div>
-            <p class="client-desc">Commercial real estate photography across two properties for S&G Asset Group — delivering high-quality listing and marketing assets that showcase each space at its best.</p>
-            <div class="client-services">
-              <span class="service-tag">Real Estate Photography</span>
-              <span class="service-tag">Commercial</span>
-              <span class="service-tag">Marketing Assets</span>
-            </div>
-            <div class="client-actions">
-              <a class="btn outline" href="contact.html">Book a Shoot</a>
-            </div>
-          </div>
-        </article>
+    <!-- CLIENTS: gallery drill-in -->
+    <div id="clientsGalleryView" style="display:none;">
+      <div class="gallery-view">
+        <div class="gallery-client-header" id="galleryHeader"></div>
+        <div id="galleryAlbumsGrid" class="album-grid"></div>
+        <div id="galleryPhotosGrid" class="photo-grid" style="display:none;"></div>
+        <p id="galleryEmpty" class="empty" hidden>No photos found.</p>
+      </div>
+    </div>
 
-      </div><!-- /clients-section -->
-    </div><!-- /clientsView -->
-
-    <!-- ── PROJECTS VIEW (deep-nav, preserved) ── -->
+    <!-- PROJECTS TAB -->
     <div id="projectsView" style="display:none;">
-      <div class="projects-section">
-        <button class="back-btn" id="backBtn" type="button" aria-label="Go back">◀ Back</button>
+      <div style="width:var(--container);margin:0 auto;">
         <section id="albumsView" class="album-grid" aria-label="Albums"></section>
         <section id="photosView" class="photo-grid" aria-label="Photos" style="display:none;"></section>
         <p id="emptyState" class="empty" hidden>No results found.</p>
       </div>
     </div>
 
-    <!-- CTA -->
     <div class="cta-band reveal">
       <div>
         <h3>Want results like these?</h3>
@@ -562,7 +419,6 @@
         <a class="btn outline" href="portfolio.html">See Portfolio</a>
       </div>
     </div>
-
   </main>
 
   <footer class="site-footer">
@@ -588,175 +444,279 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    function openYT(url){ window.open(url,'_blank','noopener,noreferrer'); }
-
-    /* ── Nav ── */
+    /* NAV */
     (function(){
-      const btn = document.getElementById('menuToggle');
-      const nav = document.getElementById('navbar');
-      const scrim = document.getElementById('scrim');
-      if (!btn || !nav) return;
-      function closeNav(){ nav.classList.remove('open'); btn.classList.remove('open'); btn.setAttribute('aria-expanded','false'); document.body.classList.remove('no-scroll'); scrim?.classList.remove('show'); }
-      btn.addEventListener('click', ()=>{
-        const open = nav.classList.toggle('open');
-        btn.classList.toggle('open', open); btn.setAttribute('aria-expanded', open?'true':'false');
-        if (window.innerWidth <= 860){ document.body.classList.toggle('no-scroll', open); scrim?.classList.toggle('show', open); }
-      });
-      scrim?.addEventListener('click', closeNav);
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
-      let lastY = window.scrollY;
-      const header = document.getElementById('header');
-      window.addEventListener('scroll', ()=>{
-        const y = window.scrollY;
-        header.classList.toggle('scrolled', y > 60);
-        header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
-        lastY = y;
-      }, { passive:true });
+      const btn=document.getElementById('menuToggle'),nav=document.getElementById('navbar'),scrim=document.getElementById('scrim');
+      if(!btn||!nav) return;
+      function closeNav(){nav.classList.remove('open');btn.classList.remove('open');btn.setAttribute('aria-expanded','false');document.body.classList.remove('no-scroll');scrim?.classList.remove('show');}
+      btn.addEventListener('click',()=>{const open=nav.classList.toggle('open');btn.classList.toggle('open',open);btn.setAttribute('aria-expanded',open?'true':'false');if(window.innerWidth<=860){document.body.classList.toggle('no-scroll',open);scrim?.classList.toggle('show',open);}});
+      scrim?.addEventListener('click',closeNav);
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
+      let lastY=window.scrollY;const header=document.getElementById('header');
+      window.addEventListener('scroll',()=>{const y=window.scrollY;header.classList.toggle('scrolled',y>60);header.style.transform=(y>lastY&&y>120)?'translateY(-100%)':'translateY(0)';lastY=y;},{passive:true});
     })();
 
-    /* ── Reveal ── */
+    /* REVEAL */
     (function(){
-      const els = document.querySelectorAll('.reveal');
-      const io = new IntersectionObserver((entries,o)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); o.unobserve(e.target); } }); }, { threshold:.1 });
+      const els=document.querySelectorAll('.reveal');
+      const io=new IntersectionObserver((entries,o)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}});},{threshold:.1});
       els.forEach(el=>io.observe(el));
     })();
 
-    /* ── Tab switch ── */
-    const tabClients  = document.getElementById('tabClients');
-    const tabProjects = document.getElementById('tabProjects');
-    const clientsView = document.getElementById('clientsView');
-    const projectsView= document.getElementById('projectsView');
-
-    tabClients.addEventListener('click', ()=>{
-      tabClients.classList.add('active'); tabClients.setAttribute('aria-selected','true');
-      tabProjects.classList.remove('active'); tabProjects.setAttribute('aria-selected','false');
-      clientsView.style.display='block'; projectsView.style.display='none';
-    });
-    tabProjects.addEventListener('click', ()=>{
-      tabProjects.classList.add('active'); tabProjects.setAttribute('aria-selected','true');
-      tabClients.classList.remove('active'); tabClients.setAttribute('aria-selected','false');
-      clientsView.style.display='none'; projectsView.style.display='block';
-      if(!PROJECTS_TREE){ initProjects(); } else { renderProjectRoot(); }
-    });
-
-    /* ── Manifest helpers (preserved) ── */
+    /* HELPERS */
+    const CLIENTS_MANIFEST_PATH  = '/data/clients-manifest.json';
     const PROJECTS_MANIFEST_PATH = '/data/projects-manifest.json';
 
     function pickThumbAndSrc(item){
-      const jpg  = item?.variants?.jpg  || {};
-      const avif = item?.variants?.avif || {};
-      const widths = (item?.widths || []).slice().sort((a,b)=>a-b);
-      const largest = widths[widths.length-1];
-      const mid = widths.find(w => w >= 960) || widths[0] || largest;
-      const thumb = avif?.[String(mid)] || jpg?.[String(mid)] || Object.values(avif)[0] || Object.values(jpg)[0];
-      const src   = jpg?.[String(largest)] || avif?.[String(largest)] || thumb;
-      return { thumb, src, title: item.alt || '' };
+      const jpg=item?.variants?.jpg||{},avif=item?.variants?.avif||{};
+      const widths=(item?.widths||[]).slice().sort((a,b)=>a-b);
+      const largest=widths[widths.length-1];
+      const mid=widths.find(w=>w>=960)||widths[0]||largest;
+      const thumb=avif?.[String(mid)]||jpg?.[String(mid)]||Object.values(avif)[0]||Object.values(jpg)[0];
+      const src=jpg?.[String(largest)]||avif?.[String(largest)]||thumb;
+      return{thumb,src,title:item.alt||''};
     }
 
-    async function loadJSON(url, fallback){
-      try{ const res = await fetch(url, { cache:'no-cache' }); if(!res.ok) throw new Error('HTTP '+res.status); return await res.json(); }
-      catch(e){ console.warn('Failed to load', url, e); return fallback; }
+    async function loadJSON(url,fallback){
+      try{const r=await fetch(url,{cache:'no-cache'});if(!r.ok) throw new Error();return await r.json();}
+      catch(e){console.warn('Failed:',url,e);return fallback;}
     }
-
-    function buildProjectsTree(man){
-      const root = new Map();
-      const ind = man.projects || {};
-      for (const industrySlug in ind){
-        const projects = ind[industrySlug] || {};
-        if(!root.has(industrySlug)) root.set(industrySlug, new Map());
-        const projMap = root.get(industrySlug);
-        for (const projectSlug in projects){
-          const albums = projects[projectSlug] || {};
-          if(!projMap.has(projectSlug)) projMap.set(projectSlug, new Map());
-          const albumMap = projMap.get(projectSlug);
-          for (const albumSlug in albums){
-            const photos = (albums[albumSlug] || []).map(p => pickThumbAndSrc(p));
-            albumMap.set(albumSlug, photos);
-          }
-        }
-      }
-      return root;
-    }
-
-    const albumsView  = document.getElementById('albumsView');
-    const photosView  = document.getElementById('photosView');
-    const emptyState  = document.getElementById('emptyState');
-    const backBtn     = document.getElementById('backBtn');
-    const breadcrumbsEl = document.getElementById('breadcrumbs');
-
-    const titleize = s => (s||'').toString().replace(/[-_]/g,' ').replace(/\b\w/g,m=>m.toUpperCase());
-    const pluralize = (n,sing,pl) => `${n} ${n===1?sing:pl}`.toUpperCase();
 
     function lazyImage(img){
-      const io=new IntersectionObserver((entries,obs)=>{ entries.forEach(entry=>{ if(!entry.isIntersecting) return; const el=entry.target; el.src=el.dataset.src; el.onload=()=>el.classList.add('loaded'); obs.unobserve(el); }); },{threshold:.15});
+      const io=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(!entry.isIntersecting) return;const el=entry.target;el.src=el.dataset.src;el.onload=()=>el.classList.add('loaded');obs.unobserve(el);});},{threshold:.15});
       io.observe(img);
     }
 
-    let PROJECTS_TREE = null;
-    let projPath = [];
+    const titleize=s=>(s||'').toString().replace(/[-_]/g,' ').replace(/\b\w/g,m=>m.toUpperCase());
+    const pluralize=(n,sing,pl)=>`${n} ${n===1?sing:pl}`.toUpperCase();
+
+    /* STATE */
+    let CLIENTS_MANIFEST=null, PROJECTS_TREE=null;
+    let currentView='clients-cards';
+    let currentClientSlug=null, currentProjectSlug=null;
+    let projPath=[];
+
+    const tabClients      = document.getElementById('tabClients');
+    const tabProjects     = document.getElementById('tabProjects');
+    const clientsCardsView= document.getElementById('clientsCardsView');
+    const clientsGallery  = document.getElementById('clientsGalleryView');
+    const projectsView    = document.getElementById('projectsView');
+    const backBtn         = document.getElementById('backBtn');
+    const breadcrumbsEl   = document.getElementById('breadcrumbs');
+    const albumsView      = document.getElementById('albumsView');
+    const photosView      = document.getElementById('photosView');
+    const emptyState      = document.getElementById('emptyState');
+
+    function showView(v){
+      clientsCardsView.style.display=v==='clients-cards'?'block':'none';
+      clientsGallery.style.display  =v==='clients-gallery'?'block':'none';
+      projectsView.style.display    =v==='projects'?'block':'none';
+      backBtn.style.display         =(v==='clients-gallery'||v==='projects')?'inline-flex':'none';
+      currentView=v;
+    }
+
+    function setBreadcrumb(parts){
+      breadcrumbsEl.innerHTML='';
+      const frag=document.createDocumentFragment();
+      parts.forEach((p,i)=>{
+        if(i>0){const sep=document.createElement('span');sep.className='crumb-sep';sep.textContent=' › ';frag.appendChild(sep);}
+        const span=document.createElement('span');span.textContent=p;frag.appendChild(span);
+      });
+      breadcrumbsEl.appendChild(frag);
+    }
+
+    /* CLIENT CARD CLICKS */
+    document.querySelectorAll('.featured-client[data-has-gallery="true"]').forEach(card=>{
+      card.addEventListener('click',()=>openClientGallery(card.dataset.client));
+    });
+
+    function openClientGallery(clientSlug){
+      if(!CLIENTS_MANIFEST){ return; }
+      const industries=CLIENTS_MANIFEST.industries||{};
+      let clientData=null;
+      for(const ind in industries){ if(industries[ind][clientSlug]){ clientData=industries[ind][clientSlug]; break; } }
+      if(!clientData){ return; }
+
+      currentClientSlug=clientSlug;
+      currentProjectSlug=null;
+
+      const projects=Object.keys(clientData).sort();
+      document.getElementById('galleryHeader').innerHTML=
+        `<h2>${titleize(clientSlug)}</h2><p>${projects.length} project album${projects.length!==1?'s':''} &middot; click to view photos</p>`;
+
+      setBreadcrumb([titleize(clientSlug)]);
+      tabClients.classList.add('active'); tabClients.setAttribute('aria-selected','true');
+      tabProjects.classList.remove('active'); tabProjects.setAttribute('aria-selected','false');
+      showView('clients-gallery');
+
+      const albumsGrid=document.getElementById('galleryAlbumsGrid');
+      const photosGrid=document.getElementById('galleryPhotosGrid');
+      albumsGrid.style.display='grid'; albumsGrid.innerHTML='';
+      photosGrid.style.display='none'; photosGrid.innerHTML='';
+
+      projects.forEach(projSlug=>{
+        const photos=(clientData[projSlug]||[]).map(p=>pickThumbAndSrc(p));
+        const cover=photos[0]?.thumb;
+        const card=document.createElement('a'); card.className='album-card'; card.href='#';
+        const coverDiv=document.createElement('div'); coverDiv.className='album-cover';
+        const img=document.createElement('img'); img.alt=titleize(projSlug);
+        img.dataset.src=cover||'images/social-preview.jpg'; img.setAttribute('draggable','false');
+        lazyImage(img); coverDiv.appendChild(img);
+        const cap=document.createElement('div'); cap.className='album-caption';
+        const t=document.createElement('div'); t.className='album-title'; t.textContent=titleize(projSlug);
+        const s=document.createElement('div'); s.className='album-sub'; s.textContent=pluralize(photos.length,'PHOTO','PHOTOS');
+        cap.appendChild(t); cap.appendChild(s); card.appendChild(coverDiv); card.appendChild(cap);
+        card.addEventListener('click',e=>{ e.preventDefault(); currentProjectSlug=projSlug; openProjectPhotos(clientSlug,projSlug,clientData[projSlug]); });
+        albumsGrid.appendChild(card);
+      });
+
+      window.scrollTo({top:document.getElementById('main').offsetTop-80,behavior:'smooth'});
+    }
+
+    function openProjectPhotos(clientSlug,projSlug,rawPhotos){
+      const photos=rawPhotos.map(p=>pickThumbAndSrc(p));
+      const albumsGrid=document.getElementById('galleryAlbumsGrid');
+      const photosGrid=document.getElementById('galleryPhotosGrid');
+      albumsGrid.style.display='none';
+      photosGrid.style.display='grid'; photosGrid.innerHTML='';
+      setBreadcrumb([titleize(clientSlug),titleize(projSlug)]);
+      document.getElementById('galleryHeader').innerHTML=
+        `<h2>${titleize(projSlug)}</h2><p>${photos.length} photo${photos.length!==1?'s':''}</p>`;
+      const groupKey=clientSlug+'-'+projSlug;
+      photos.forEach(p=>{
+        const a=document.createElement('a'); a.href=p.src; a.setAttribute('data-fancybox',groupKey);
+        if(p.title) a.setAttribute('data-caption',p.title);
+        const tile=document.createElement('div'); tile.className='photo';
+        const img=document.createElement('img'); img.alt=p.title||titleize(projSlug);
+        img.dataset.src=p.thumb||p.src; img.setAttribute('draggable','false');
+        lazyImage(img); tile.appendChild(img); a.appendChild(tile); photosGrid.appendChild(a);
+      });
+      Fancybox.bind(`[data-fancybox="${groupKey}"]`,{Toolbar:{display:['close']},Thumbs:{autoStart:false}});
+    }
+
+    /* BACK */
+    backBtn.addEventListener('click',()=>{
+      if(currentView==='clients-gallery'){
+        if(currentProjectSlug){ currentProjectSlug=null; openClientGallery(currentClientSlug); }
+        else{ showView('clients-cards'); setBreadcrumb([]); }
+      } else if(currentView==='projects'){
+        if(projPath.length>1){ projPath=projPath.slice(0,-1); renderProjLevel(projPath); }
+        else{ renderProjectRoot(); }
+      }
+    });
+
+    /* TABS */
+    tabClients.addEventListener('click',()=>{
+      tabClients.classList.add('active'); tabClients.setAttribute('aria-selected','true');
+      tabProjects.classList.remove('active'); tabProjects.setAttribute('aria-selected','false');
+      showView('clients-cards'); setBreadcrumb([]);
+    });
+    tabProjects.addEventListener('click',()=>{
+      tabProjects.classList.add('active'); tabProjects.setAttribute('aria-selected','true');
+      tabClients.classList.remove('active'); tabClients.setAttribute('aria-selected','false');
+      showView('projects'); setBreadcrumb([]);
+      if(!PROJECTS_TREE) initProjects(); else renderProjectRoot();
+    });
+
+    /* PROJECTS deep-nav */
+    function buildProjectsTree(man){
+      const root=new Map();
+      const ind=man.projects||{};
+      for(const i in ind){const projects=ind[i]||{};if(!root.has(i)) root.set(i,new Map());const pm=root.get(i);for(const proj in projects){const albums=projects[proj]||{};if(!pm.has(proj)) pm.set(proj,new Map());const am=pm.get(proj);for(const al in albums){am.set(al,(albums[al]||[]).map(p=>pickThumbAndSrc(p)));}}}
+      return root;
+    }
+
+    function makeAlbumCard(n,onClick){
+      const card=document.createElement('a');card.className='album-card';card.href='#';
+      const cover=document.createElement('div');cover.className='album-cover';
+      const img=document.createElement('img');img.alt=n.title;img.dataset.src=n.cover||'images/social-preview.jpg';img.setAttribute('draggable','false');
+      lazyImage(img);cover.appendChild(img);
+      const cap=document.createElement('div');cap.className='album-caption';
+      const t=document.createElement('div');t.className='album-title';t.textContent=n.title;
+      const s=document.createElement('div');s.className='album-sub';s.textContent=n.sub||'';
+      cap.appendChild(t);cap.appendChild(s);card.appendChild(cover);card.appendChild(cap);
+      card.addEventListener('click',e=>{e.preventDefault();onClick();});
+      return card;
+    }
 
     function renderProjectRoot(){
-      backBtn.style.display='none';
-      breadcrumbsEl.innerHTML='';
+      backBtn.style.display='none'; setBreadcrumb([]);
       photosView.style.display='none'; albumsView.style.display='grid'; albumsView.innerHTML='';
-      if(!PROJECTS_TREE){ emptyState.hidden=false; return; }
-      const nodes = Array.from(PROJECTS_TREE.keys()).sort().map(industry=>{
-        const projMap = PROJECTS_TREE.get(industry);
-        const firstProjKey = projMap.keys().next().value;
-        const firstAlbumMap = projMap.get(firstProjKey);
-        const firstAlbumKey = firstAlbumMap?.keys().next().value;
-        const firstPhotos = firstAlbumMap?.get(firstAlbumKey) || [];
-        return { id:industry, title:titleize(industry), cover:firstPhotos[0]?.thumb, sub:pluralize(projMap.size,'PROJECT','PROJECTS') };
+      if(!PROJECTS_TREE){emptyState.hidden=false;return;}
+      const nodes=Array.from(PROJECTS_TREE.keys()).sort().map(industry=>{
+        const pm=PROJECTS_TREE.get(industry);const fk=pm.keys().next().value;
+        const am=pm.get(fk);const ak=am?.keys().next().value;const ph=am?.get(ak)||[];
+        return{id:industry,title:titleize(industry),cover:ph[0]?.thumb,sub:pluralize(pm.size,'PROJECT','PROJECTS')};
       });
       emptyState.hidden=!!nodes.length;
-      nodes.forEach(n=>{ const card=makeAlbumCard(n, ()=>{ projPath=[n.id]; renderProjLevel(projPath); }); albumsView.appendChild(card); });
+      nodes.forEach(n=>{albumsView.appendChild(makeAlbumCard(n,()=>{projPath=[n.id];renderProjLevel(projPath);}));});
     }
 
     function renderProjLevel(path){
       backBtn.style.display='inline-flex';
       photosView.style.display='none'; albumsView.style.display='grid'; albumsView.innerHTML='';
-      const industry = PROJECTS_TREE.get(path[0]);
-      if(!industry){ renderProjectRoot(); return; }
+      const industry=PROJECTS_TREE.get(path[0]);
+      if(!industry){renderProjectRoot();return;}
       if(path.length===1){
-        const nodes = Array.from(industry.keys()).sort().map(proj=>{ const albumMap=industry.get(proj); const firstAlbumKey=albumMap.keys().next().value; const firstPhotos=albumMap.get(firstAlbumKey)||[]; return { id:proj, title:titleize(proj), cover:firstPhotos[0]?.thumb, sub:pluralize(albumMap.size,'ALBUM','ALBUMS') }; });
-        nodes.forEach(n=>{ const card=makeAlbumCard(n,()=>{ projPath=[path[0],n.id]; renderProjLevel(projPath); }); albumsView.appendChild(card); });
+        Array.from(industry.keys()).sort().forEach(proj=>{
+          const am=industry.get(proj);const ak=am.keys().next().value;const ph=am.get(ak)||[];
+          albumsView.appendChild(makeAlbumCard({id:proj,title:titleize(proj),cover:ph[0]?.thumb,sub:pluralize(am.size,'ALBUM','ALBUMS')},()=>{projPath=[path[0],proj];renderProjLevel(projPath);}));
+        });
       } else if(path.length===2){
-        const albumMap = industry.get(path[1]);
-        if(!albumMap){ projPath=[path[0]]; renderProjLevel(projPath); return; }
-        const nodes = Array.from(albumMap.keys()).sort().map(al=>{ const photos=albumMap.get(al)||[]; return { id:al, title:titleize(al), cover:photos[0]?.thumb, sub:pluralize(photos.length,'ASSET','ASSETS'), photos }; });
-        nodes.forEach(n=>{
-          if(n.photos){ const card=makeAlbumCard(n,()=>{ albumsView.style.display='none'; photosView.style.display='grid'; photosView.innerHTML=''; projPath=[path[0],path[1],n.id]; backBtn.style.display='inline-flex'; n.photos.forEach(p=>{ const a=document.createElement('a'); a.href=p.src; a.setAttribute('data-fancybox','proj'); if(p.title) a.setAttribute('data-caption',p.title); const tile=document.createElement('div'); tile.className='photo'; const img=document.createElement('img'); img.alt=p.title||n.title; img.dataset.src=p.thumb||p.src; lazyImage(img); tile.appendChild(img); a.appendChild(tile); photosView.appendChild(a); }); Fancybox.bind('[data-fancybox]',{Toolbar:{display:['close']},Thumbs:{autoStart:false}}); }); albumsView.appendChild(card); }
+        const am=industry.get(path[1]);if(!am){projPath=[path[0]];renderProjLevel(projPath);return;}
+        Array.from(am.keys()).sort().forEach(al=>{
+          const photos=am.get(al)||[];
+          albumsView.appendChild(makeAlbumCard({id:al,title:titleize(al),cover:photos[0]?.thumb,sub:pluralize(photos.length,'ASSET','ASSETS')},()=>{
+            albumsView.style.display='none';photosView.style.display='grid';photosView.innerHTML='';
+            photos.forEach(p=>{const a=document.createElement('a');a.href=p.src;a.setAttribute('data-fancybox','proj');if(p.title) a.setAttribute('data-caption',p.title);const tile=document.createElement('div');tile.className='photo';const img=document.createElement('img');img.alt=p.title||titleize(al);img.dataset.src=p.thumb||p.src;lazyImage(img);tile.appendChild(img);a.appendChild(tile);photosView.appendChild(a);});
+            Fancybox.bind('[data-fancybox="proj"]',{Toolbar:{display:['close']},Thumbs:{autoStart:false}});
+          }));
         });
       }
     }
 
-    function makeAlbumCard(n, onClick){
-      const card=document.createElement('a'); card.className='album-card'; card.href='#';
-      const cover=document.createElement('div'); cover.className='album-cover';
-      const img=document.createElement('img'); img.alt=n.title; img.dataset.src=n.cover||'images/social-preview.jpg'; img.setAttribute('draggable','false');
-      lazyImage(img); cover.appendChild(img);
-      const cap=document.createElement('div'); cap.className='album-caption';
-      const title=document.createElement('div'); title.className='album-title'; title.textContent=n.title;
-      const sub=document.createElement('div'); sub.className='album-sub'; sub.textContent=n.sub||'';
-      cap.appendChild(title); cap.appendChild(sub); card.appendChild(cover); card.appendChild(cap);
-      card.addEventListener('click',e=>{ e.preventDefault(); onClick(); });
-      return card;
-    }
-
-    backBtn?.addEventListener('click',()=>{
-      if(projPath.length>1){ projPath=projPath.slice(0,-1); renderProjLevel(projPath); }
-      else { renderProjectRoot(); }
-    });
-
     async function initProjects(){
-      const man = await loadJSON(PROJECTS_MANIFEST_PATH, { projects:{} });
-      PROJECTS_TREE = buildProjectsTree(man);
-      renderProjectRoot();
+      const man=await loadJSON(PROJECTS_MANIFEST_PATH,{projects:{}});
+      PROJECTS_TREE=buildProjectsTree(man);renderProjectRoot();
     }
 
-    /* ── Hero fallback ── */
-    document.getElementById('bgA').style.backgroundImage="url('images/DowntownCloudsReduced.webp')";
-    document.getElementById('bgA').classList.add('show');
+    /* HERO SLIDESHOW */
+    function collectHeroImages(clientsMan,projectsMan,max=20){
+      const out=[];
+      const ind=clientsMan?.industries||{};
+      for(const i in ind){const clients=ind[i]||{};for(const c in clients){const projects=clients[c]||{};for(const p in projects){(projects[p]||[]).forEach(item=>{const pic=pickThumbAndSrc(item);if(pic?.src) out.push(pic.src);});}}}
+      const proj=projectsMan?.projects||{};
+      for(const i in proj){const projects=proj[i]||{};for(const pr in projects){const albums=projects[pr]||{};for(const al in albums){(albums[al]||[]).forEach(item=>{const pic=pickThumbAndSrc(item);if(pic?.src) out.push(pic.src);});}}}
+      const dedup=Array.from(new Set(out));
+      for(let i=dedup.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[dedup[i],dedup[j]]=[dedup[j],dedup[i]];}
+      return dedup.slice(0,max);
+    }
+
+    function startHeroSlideshow(urls,intervalMs=5500){
+      const a=document.getElementById('bgA'),b=document.getElementById('bgB');
+      if(!a||!b||!urls.length) return;
+      let idx=0,showA=true;
+      function setBg(el,url){el.style.backgroundImage=`url("${url}")`;}
+      setBg(a,urls[0]);a.classList.add('show');
+      if(urls[1]) setBg(b,urls[1]);
+      setInterval(()=>{
+        const next=urls[idx=(idx+1)%urls.length];
+        const front=showA?b:a,back=showA?a:b;
+        setBg(front,next);front.classList.add('show');back.classList.remove('show');showA=!showA;
+      },intervalMs);
+    }
+
+    /* INIT */
+    (async function(){
+      const [clientsMan,projectsMan]=await Promise.all([
+        loadJSON(CLIENTS_MANIFEST_PATH,{industries:{}}),
+        loadJSON(PROJECTS_MANIFEST_PATH,{projects:{}})
+      ]);
+      CLIENTS_MANIFEST=clientsMan;
+      const heroUrls=collectHeroImages(clientsMan,projectsMan,24);
+      if(heroUrls.length){ startHeroSlideshow(heroUrls,5500); }
+      else{ document.getElementById('bgA').style.backgroundImage="url('images/DowntownCloudsReduced.webp')"; document.getElementById('bgA').classList.add('show'); }
+    })();
   </script>
 </body>
 </html>
