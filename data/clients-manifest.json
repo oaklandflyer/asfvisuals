@@ -6297,25 +6297,6 @@
       "global-shapers-pittsburgh-hub": {
         "hub-retreat": [
           {
-            "base": "clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23",
-            "alt": "global-shapers-1-24-23",
-            "widths": [
-              480,
-              960,
-              1600
-            ],
-            "variants": {
-              "avif": {
-                "480": "/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_480.avif",
-                "960": "/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_960.avif",
-                "1600": "/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_1600.avif"
-              },
-              "jpg": {
-                "1600": "/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_1600.jpg"
-              }
-            }
-          },
-          {
             "base": "clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-24",
             "alt": "global-shapers-1-24-24",
             "widths": [
