@@ -365,9 +365,11 @@
           </div>
         </article>
 
-        <article class="featured-client reverse reveal" data-client="global-shapers" data-has-gallery="false">
+        <article class="featured-client reverse reveal" data-client="global-shapers-pittsburgh-hub" data-has-gallery="true">
           <div class="client-visual">
-            <div class="client-visual-placeholder">GS</div>
+            <img src="/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_960.avif"
+                 onerror="this.src='/clients/processed/clients/global-shapers-pittsburgh-hub/hub-retreat/global-shapers-1-24-23_1600.jpg'"
+                 alt="Global Shapers Pittsburgh Hub event" loading="lazy">
             <div class="client-badge">Event Photography</div>
             <div class="client-visual-overlay"></div>
           </div>
@@ -381,9 +383,9 @@
               <span class="service-tag">Civic Organizations</span>
             </div>
             <div class="client-actions">
-              <a class="btn ghost" href="contact.html" onclick="event.stopPropagation()">Photos Coming Soon</a>
+              <span class="btn outline">View Gallery</span>
             </div>
-            <p class="coming-soon-note">Gallery upload in progress.</p>
+            <div class="view-gallery-hint">Browse 28 photos</div>
           </div>
         </article>
 
@@ -425,7 +427,7 @@
     <div class="footer-top">
       <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
       <div class="footer-contact">
-        <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+        <a href="/cdn-cgi/l/email-protection#60010e041205172001130616091315010c130c0c034e030f0d"><span class="__cf_email__" data-cfemail="2948474d5b4c5e69485a4f5f405a5c48455a45454a074a4644">[email&#160;protected]</span></a>
         <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
         <span>Pittsburgh, Pennsylvania</span>
       </div>
@@ -440,7 +442,7 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -714,7 +716,7 @@
       ]);
       CLIENTS_MANIFEST=clientsMan;
       const heroUrls=collectHeroImages(clientsMan,projectsMan,24);
-      if(heroUrls.length){ startHeroSlideshow(heroUrls,5500); }
+     if(heroUrls.length){ startHeroSlideshow(heroUrls,5500); }
       else{ document.getElementById('bgA').style.backgroundImage="url('images/DowntownCloudsReduced.webp')"; document.getElementById('bgA').classList.add('show'); }
     })();
   </script>
