@@ -1,525 +1,966 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Professional Profile – Andrew Coutinho | ASF Visuals LLC</title>
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="Professional background, experience, and credentials for Andrew Coutinho — founder of ASF Visuals LLC, WEF Global Shaper, FAA Part 107 pilot.">
-  <link rel="icon" href="images/ASF Logo.png" type="image/png">
+  <meta name="description" content="Andrew Coutinho — founder of ASF Visuals LLC. Professional background in photography, drone, web development, economics, and community leadership." />
+  <link rel="canonical" href="https://www.asfvisualsllc.com/professional.html" />
+  <meta name="theme-color" content="#0e1217" />
+  <link rel="icon" href="images/ASF Logo.png" type="image/png" />
+
+  <!-- Fonts — exact match to index.html -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="images/DowntownCloudsReduced.webp" imagesrcset="images/DowntownCloudsReduced.webp" imagesizes="100vw">
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBF13JPLGF"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VBF13JPLGF');</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-VBF13JPLGF');
+  </script>
 
   <style>
+    /* ── CSS VARIABLES — exact copy from index.html ── */
     :root {
-      --black: #0e1217; --off-white: #eef3f7;
-      --accent: #4e8fa8; --accent-light: #72aec6;
-      --amber: #d4895a; --amber-light: #e8a878;
-      --warm-gray: #7a94a8; --dark-gray: #151d24;
-      --mid-gray: #1e2c38; --ink: #a8bfcc; --mist: #c4d8e4;
-      --container: min(1100px, 92vw);
+      --black:        #0e1217;
+      --off-white:    #eef3f7;
+      --cream:        #dde8ef;
+      --accent:       #4e8fa8;
+      --accent-light: #72aec6;
+      --amber:        #d4895a;
+      --amber-light:  #e8a878;
+      --warm-gray:    #7a94a8;
+      --dark-gray:    #151d24;
+      --mid-gray:     #1e2c38;
+      --ink:          #a8bfcc;
+      --mist:         #c4d8e4;
+      --container:    min(1200px, 92vw);
     }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--black); color: var(--off-white); overflow-x: hidden; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--off-white);
+      overflow-x: hidden;
+    }
     img { max-width: 100%; display: block; }
     a { text-decoration: none; color: inherit; }
+    .container { width: var(--container); margin-inline: auto; }
 
-    .skip-link { position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden; z-index:101; background:var(--accent); color:#fff; padding:8px 22px; }
-    .skip-link:focus { left:12px; top:6px; width:auto; height:auto; }
-
-    /* ── NAV ── */
-    .site-header { position:fixed; inset-inline:0; top:0; z-index:1000; display:flex; align-items:center; justify-content:space-between; padding:1.2rem clamp(1rem,4vw,3rem); transition:background .35s, padding .3s, transform .32s; }
-    .site-header.scrolled { background:rgba(14,18,23,0.95); backdrop-filter:blur(14px); padding:.9rem clamp(1rem,4vw,3rem); border-bottom:1px solid rgba(94,143,168,0.15); }
-    .logo-link img { height:52px; width:auto; object-fit:contain; }
-    .site-nav ul { list-style:none; display:flex; gap:clamp(.6rem,2vw,1.8rem); }
-    .site-nav a { font-size:.78rem; font-weight:500; letter-spacing:.13em; text-transform:uppercase; color:var(--warm-gray); padding:.45rem .65rem; transition:color .2s; }
-    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] { color:var(--amber); }
-    .nav-cta { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--black); background:var(--amber); padding:.5rem 1.2rem; transition:background .2s; white-space:nowrap; }
-    .nav-cta:hover { background:var(--amber-light); }
-    .menu-toggle { display:none; width:44px; height:44px; border:none; background:none; cursor:pointer; }
-    .menu-toggle .bar { display:block; width:26px; height:2px; margin:5px auto; background:var(--off-white); border-radius:2px; transition:.3s; }
-    .menu-toggle.open .bar:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-    .menu-toggle.open .bar:nth-child(2) { opacity:0; }
-    .menu-toggle.open .bar:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-    @media (max-width:860px) {
-      .menu-toggle { display:block; }
-      .nav-cta-wrap { display:none; }
-      .site-nav { position:fixed; right:0; top:74px; width:min(72vw,320px); height:calc(100dvh - 74px); background:#0e1a24; transform:translateX(100%); transition:transform .26s cubic-bezier(.4,2,.3,1); box-shadow:-4px 0 24px rgba(0,0,0,.6); border-left:1px solid rgba(94,143,168,0.12); }
-      .site-nav.open { transform:translateX(0); }
-      .site-nav ul { flex-direction:column; padding:2rem 1.8rem; gap:.5rem; }
-      .site-nav a { font-size:1rem; display:block; padding:.75rem 0; color:var(--off-white); }
-      body.no-scroll { overflow:hidden; }
+    /* ── SKIP LINK — exact copy ── */
+    .skip-link {
+      position: absolute; left: -999px; top: auto; width: 1px; height: 1px;
+      overflow: hidden; z-index: 101; background: var(--accent); color: #fff;
+      padding: 8px 22px; border-radius: 0 0 10px 10px;
     }
+    .skip-link:focus { left: 12px; top: 6px; width: auto; height: auto; }
+
+    /* ── NAV — exact copy from index.html ── */
+    .site-header {
+      position: fixed; inset-inline: 0; top: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.3rem clamp(1rem, 4vw, 3rem);
+      transition: background 0.35s ease, padding 0.3s ease, transform 0.32s ease;
+    }
+    .site-header.scrolled {
+      background: rgba(14,18,23,0.95);
+      backdrop-filter: blur(14px);
+      padding: 0.9rem clamp(1rem, 4vw, 3rem);
+      border-bottom: 1px solid rgba(94,143,168,0.15);
+    }
+    .logo-link img { height: 54px; width: auto; object-fit: contain; }
+
+    .site-nav ul { list-style: none; display: flex; gap: clamp(0.8rem, 2vw, 2rem); }
+    .site-nav a {
+      font-size: 0.78rem; font-weight: 500; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--warm-gray);
+      padding: 0.5rem 0.7rem; border-radius: 4px;
+      transition: color 0.2s;
+    }
+    .site-nav a:hover, .site-nav a.active, .site-nav a[aria-current="page"] {
+      color: var(--amber);
+    }
+    .nav-cta {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--black);
+      background: var(--amber); padding: 0.55rem 1.3rem;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--amber-light); }
+
+    .menu-toggle {
+      display: none; width: 44px; height: 44px;
+      border: none; background: none; cursor: pointer;
+    }
+    .menu-toggle .bar {
+      display: block; width: 26px; height: 2px;
+      margin: 5px auto; background: var(--off-white);
+      border-radius: 2px; transition: 0.3s;
+    }
+    .menu-toggle.open .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle.open .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.open .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    @media (max-width: 860px) {
+      .menu-toggle { display: block; }
+      .nav-cta-wrap { display: none; }
+      .site-nav {
+        position: fixed; right: 0; top: 74px;
+        width: min(72vw, 320px); height: calc(100dvh - 74px);
+        background: #0e1a24;
+        transform: translateX(100%);
+        transition: transform 0.26s cubic-bezier(.4,2,.3,1);
+        box-shadow: -4px 0 24px rgba(0,0,0,0.6);
+        border-left: 1px solid rgba(94,143,168,0.12);
+      }
+      .site-nav.open { transform: translateX(0); }
+      .site-nav ul { flex-direction: column; padding: 2rem 1.8rem; gap: 0.5rem; }
+      .site-nav a { font-size: 1rem; display: block; padding: 0.75rem 0; color: var(--off-white); }
+      body.no-scroll { overflow: hidden; }
+    }
+
+    /* ── SHARED SECTION STYLES — match index.html ── */
+    .section-label {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--accent-light);
+      margin-bottom: 0.9rem;
+      display: flex; align-items: center; gap: 0.7rem;
+    }
+    .section-label::before {
+      content: ''; display: block; width: 24px; height: 1px; background: var(--accent-light);
+    }
+
+    /* ── BUTTONS — match index.html ── */
+    .btn-primary {
+      display: inline-block; background: var(--amber); color: var(--black);
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.9rem 2rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--amber-light); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: rgba(255,255,255,0.6); font-size: 0.8rem; font-weight: 400;
+      letter-spacing: 0.08em; transition: color 0.2s;
+    }
+    .btn-ghost:hover { color: #fff; }
+    .btn-outline {
+      display: inline-block;
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.9rem 2rem;
+      border: 1px solid rgba(94,143,168,0.4);
+      color: var(--accent-light);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { border-color: var(--accent-light); color: #fff; }
+
+    /* ── SCROLL REVEAL — match index.html ── */
+    .reveal {
+      opacity: 0; transform: translateY(26px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.1s; }
+    .reveal-d2 { transition-delay: 0.2s; }
+    .reveal-d3 { transition-delay: 0.3s; }
+
+    /* ── FOOTER — exact copy from index.html ── */
+    .site-footer {
+      background: #090d11;
+      padding: 3rem clamp(1rem,4vw,3rem) 2rem;
+      border-top: 1px solid rgba(94,143,168,0.1);
+    }
+    .footer-top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 2rem;
+      padding-bottom: 2rem; margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem; letter-spacing: 0.1em;
+    }
+    .footer-logo span { color: var(--accent-light); }
+    .footer-contact { display: flex; flex-direction: column; gap: 0.4rem; text-align: right; }
+    .footer-contact a {
+      font-size: 0.82rem; color: var(--warm-gray); transition: color 0.2s;
+    }
+    .footer-contact a:hover { color: var(--accent-light); }
+    .footer-contact span { font-size: 0.75rem; color: #4a4842; }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-copy { font-size: 0.75rem; color: #4a4842; }
+    .footer-social { display: flex; gap: 1.5rem; }
+    .footer-social a {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #4a4842; transition: color 0.2s;
+    }
+    .footer-social a:hover { color: var(--accent-light); }
+
+    /* ═══════════════════════════════════════════
+       PAGE-SPECIFIC STYLES
+    ═══════════════════════════════════════════ */
 
     /* ── HERO ── */
-    .hero {
-      position:relative; min-height:65vh; display:flex; align-items:center; justify-content:center;
-      overflow:hidden; margin-top:74px;
-      background: linear-gradient(175deg, rgba(14,18,23,.82) 0%, rgba(20,35,50,.55) 55%, rgba(14,18,23,.78) 100%),
-                  url('images/DowntownCloudsReduced.webp') center/cover no-repeat;
+    .prof-hero {
+      padding: clamp(7rem, 14vw, 10rem) 0 5rem;
+      background: var(--black);
+      background-image:
+        radial-gradient(ellipse at 70% 0%, rgba(78,143,168,0.08) 0%, transparent 55%),
+        radial-gradient(ellipse at 0% 100%, rgba(212,137,90,0.05) 0%, transparent 50%);
+      border-bottom: 1px solid rgba(94,143,168,0.1);
     }
-    .hero-bg { position:absolute; inset:0; z-index:0; opacity:0; background-position:center; background-size:cover; background-repeat:no-repeat; transition:opacity 1.1s ease; }
-    .hero-bg.is-active { opacity:1; }
-    .hero-overlay { position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(175deg, rgba(14,18,23,.78) 0%, rgba(20,35,50,.45) 55%, rgba(14,18,23,.72) 100%); }
-    .hero-content { position:relative; z-index:2; text-align:center; padding:2rem; width:var(--container); }
-    .hero-tag { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:1rem; display:flex; align-items:center; justify-content:center; gap:.7rem; }
-    .hero-tag::before, .hero-tag::after { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
-    .hero h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,6vw,6rem); line-height:.95; letter-spacing:.02em; color:#fff; margin-bottom:.6rem; }
-    .hero h1 em { font-family:'DM Serif Display',serif; font-style:italic; color:var(--accent-light); }
-    .hero p { font-size:.95rem; font-weight:300; color:rgba(255,255,255,.68); line-height:1.7; max-width:56ch; margin:0 auto 2rem; }
-    .hero-btns { display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap; }
-    .btn-primary { display:inline-block; background:var(--amber); color:var(--black); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:.8rem 1.8rem; border:none; cursor:pointer; transition:background .2s, transform .15s; }
-    .btn-primary:hover { background:var(--amber-light); transform:translateY(-1px); }
-    .btn-outline { display:inline-block; background:transparent; color:var(--accent-light); font-size:.78rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; padding:.75rem 1.6rem; border:1px solid rgba(78,143,168,0.35); transition:background .2s, border-color .2s; }
-    .btn-outline:hover { background:rgba(78,143,168,0.1); border-color:var(--accent-light); }
-
-    /* ── PAGE WRAP ── */
-    .page-wrap { width:var(--container); margin-inline:auto; padding:0 0 6rem; }
-
-    /* ── STICKY TOC ── */
-    .toc {
-      position:sticky; top:82px; z-index:5;
-      background:rgba(21,29,36,0.96); backdrop-filter:blur(10px);
-      border:1px solid rgba(94,143,168,0.15);
-      padding:.5rem; display:flex; gap:.3rem; flex-wrap:wrap;
-      align-items:center; justify-content:center; margin:2rem 0;
+    .hero-eyebrow {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--accent-light);
+      display: flex; align-items: center; gap: 0.7rem;
+      margin-bottom: 1.4rem;
+      opacity: 0; animation: fadeUp 0.7s 0.2s ease forwards;
     }
-    .toc a { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--warm-gray); padding:.5rem .9rem; transition:color .2s, background .2s; }
-    .toc a:hover, .toc a[aria-current="true"] { color:var(--amber); background:rgba(212,137,90,0.1); }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 28px; height: 1px; background: var(--accent-light);
+    }
+    h1.prof-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.4rem, 6vw, 6.2rem);
+      line-height: 0.93; letter-spacing: 0.02em;
+      color: #fff; margin-bottom: 1.6rem;
+      opacity: 0; animation: fadeUp 0.7s 0.35s ease forwards;
+    }
+    h1.prof-title em {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic; color: var(--accent-light);
+    }
+    .prof-sub {
+      font-size: 1rem; font-weight: 300; line-height: 1.75;
+      color: rgba(255,255,255,0.6); max-width: 520px;
+      margin-bottom: 2.4rem;
+      opacity: 0; animation: fadeUp 0.7s 0.5s ease forwards;
+    }
+    .hero-actions-row {
+      display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+      margin-bottom: 2rem;
+      opacity: 0; animation: fadeUp 0.7s 0.65s ease forwards;
+    }
 
-    /* ── SECTION LABEL ── */
-    .section-label { font-size:.72rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; display:flex; align-items:center; gap:.7rem; }
-    .section-label::before { content:''; display:block; width:24px; height:1px; background:var(--accent-light); }
+    /* Recruiter strip */
+    .recruiter-strip {
+      display: inline-flex; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+      background: rgba(212,137,90,0.08);
+      border: 1px solid rgba(212,137,90,0.25);
+      border-left: 3px solid var(--amber);
+      padding: 0.7rem 1.2rem;
+      font-size: 0.8rem; color: var(--warm-gray);
+      margin-bottom: 2.8rem;
+      opacity: 0; animation: fadeUp 0.7s 0.1s ease forwards;
+    }
+    .recruiter-strip a { color: var(--amber); font-weight: 600; }
+    .recruiter-strip a:hover { text-decoration: underline; }
+
+    /* Contact meta */
+    .hero-meta {
+      display: flex; flex-wrap: wrap; align-items: center;
+      gap: 0.4rem 1.4rem; font-size: 0.8rem; color: var(--warm-gray);
+      opacity: 0; animation: fadeUp 0.7s 0.8s ease forwards;
+    }
+    .hero-meta a { color: var(--warm-gray); transition: color 0.2s; }
+    .hero-meta a:hover { color: var(--accent-light); }
+    .avail-pip {
+      display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+      background: #3cba6e; box-shadow: 0 0 0 3px rgba(60,186,110,0.2);
+      margin-right: 5px; vertical-align: middle;
+    }
+    .meta-sep { color: rgba(255,255,255,0.12); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── SECTIONS ── */
+    .prof-section {
+      padding: 5rem 0;
+      border-top: 1px solid rgba(94,143,168,0.1);
+    }
+    .prof-section-alt { background: var(--dark-gray); }
+
+    h2.prof-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 3.2vw, 3rem);
+      letter-spacing: 0.04em; line-height: 1.05;
+      margin-bottom: 2.5rem; color: #fff;
+    }
+    h2.prof-h2 em {
+      font-family: 'DM Serif Display', serif;
+      font-style: italic; color: var(--accent-light);
+    }
 
     /* ── STAT CARDS ── */
-    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; margin:2rem 0; }
-    @media (max-width:700px) { .stats { grid-template-columns:1fr 1fr; } }
-    @media (max-width:480px) { .stats { grid-template-columns:1fr; } }
-    .stat { background:var(--mid-gray); padding:1.6rem 1.4rem; text-align:center; }
-    .stat h3 { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; letter-spacing:.04em; line-height:1; color:var(--accent-light); margin-bottom:.4rem; }
-    .stat p { font-size:.8rem; font-weight:300; color:var(--warm-gray); line-height:1.5; }
+    .stat-row {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 2px; margin-bottom: 2px;
+    }
+    @media (max-width: 700px) { .stat-row { grid-template-columns: 1fr; } }
 
-    /* ── MEDIA STRIP ── */
-    .media-strip { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3px; margin:2rem 0; }
-    @media (max-width:600px) { .media-strip { grid-template-columns:1fr; } }
-    .tile { position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--mid-gray); }
-    .tile img { width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.2,.75,.2,1); }
-    .tile:hover img { transform:scale(1.05); }
+    .stat-card {
+      background: var(--mid-gray);
+      padding: 2rem 1.8rem;
+    }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem; line-height: 1;
+      color: var(--accent-light); letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+    .stat-desc {
+      font-size: 0.8rem; font-weight: 300; line-height: 1.5;
+      color: var(--warm-gray);
+    }
 
-    /* ── SECTION HEADS ── */
-    .section-head { display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; margin:3.5rem 0 1.2rem; padding-bottom:.8rem; border-bottom:1px solid rgba(255,255,255,.06); }
-    .section-head h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.6rem); letter-spacing:.04em; }
-    .badge { display:inline-block; background:var(--accent); color:#fff; padding:.3rem .8rem; font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; }
+    /* Snapshot body text */
+    .snapshot-body {
+      background: var(--mid-gray);
+      padding: 2rem 2.2rem;
+      font-size: 0.95rem; font-weight: 300; line-height: 1.8;
+      color: var(--warm-gray); margin-bottom: 2px;
+    }
+    .snapshot-body strong { color: var(--off-white); font-weight: 500; }
 
-    /* ── CARDS ── */
-    .card { background:var(--dark-gray); border:1px solid rgba(94,143,168,0.08); padding:2rem; }
-    .grid { display:grid; gap:3px; }
-    .grid.cols-2 { grid-template-columns:1fr 1fr; }
-    @media (max-width:860px) { .grid.cols-2 { grid-template-columns:1fr; } }
+    /* Open-to banner */
+    .open-to {
+      background: rgba(78,143,168,0.07);
+      border: 1px solid rgba(78,143,168,0.18);
+      border-left: 3px solid var(--accent);
+      padding: 1.6rem 2rem;
+    }
+    .open-to-label {
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent-light);
+      margin-bottom: 0.9rem;
+    }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.9rem; }
+    .chip {
+      background: rgba(78,143,168,0.12);
+      border: 1px solid rgba(78,143,168,0.28);
+      color: var(--accent-light);
+      padding: 0.25rem 0.9rem;
+      font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em;
+    }
+    .open-to-note { font-size: 0.78rem; color: var(--warm-gray); }
 
-    /* ── TIMELINE ── */
-    .timeline { margin:0; padding:0; list-style:none; }
-    .t-item { position:relative; padding-left:1.4rem; margin:1.8rem 0; }
-    .t-item::before { content:""; position:absolute; left:0; top:.55rem; width:6px; height:6px; border-radius:50%; background:var(--accent); }
-    .t-item + .t-item { padding-top:1.8rem; border-top:1px solid rgba(255,255,255,.05); }
-    .t-role { font-weight:600; font-size:.95rem; color:var(--off-white); letter-spacing:.01em; }
-    .t-meta { color:var(--warm-gray); font-size:.82rem; margin:.2rem 0 .6rem; }
-    .list { margin:.5rem 0 0 1rem; padding:0; list-style:disc; }
-    .list li { font-size:.88rem; font-weight:300; line-height:1.7; color:var(--ink); margin:.3rem 0; }
-    .list li strong { color:var(--off-white); font-weight:500; }
+    /* ── EXPERIENCE CARDS ── */
+    .exp-stack { display: flex; flex-direction: column; gap: 2px; }
 
-    /* ── PILLS ── */
-    .pills { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.8rem; }
-    .pill { display:inline-block; background:rgba(78,143,168,0.1); border:1px solid rgba(78,143,168,0.2); color:var(--accent-light); padding:.25rem .75rem; font-size:.72rem; font-weight:500; letter-spacing:.08em; }
+    .exp-card {
+      background: var(--mid-gray);
+      transition: background 0.2s;
+    }
+    .exp-card:hover { background: #1a2d3d; }
+    .exp-card.is-active {
+      border-left: 2px solid var(--accent);
+    }
 
-    /* ── SKILLS GRID ── */
-    .skills-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
-    @media (max-width:700px) { .skills-grid { grid-template-columns:1fr 1fr; } }
-    @media (max-width:480px) { .skills-grid { grid-template-columns:1fr; } }
-    .skill-group { background:var(--mid-gray); padding:1.4rem 1.6rem; }
-    .skill-group-label { font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--accent-light); margin-bottom:.8rem; }
-    .skill-group .pills { margin-top:0; }
+    .exp-head {
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 1.5rem; padding: 1.8rem 2rem;
+      align-items: start;
+    }
+    @media (max-width: 560px) {
+      .exp-head { grid-template-columns: 1fr; }
+      .exp-where { text-align: left !important; }
+    }
 
-    /* ── CTA BAND ── */
-    .cta-band { background:var(--mid-gray); padding:3rem; margin-top:4rem; display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between; }
-    @media (max-width:600px) { .cta-band { flex-direction:column; align-items:stretch; padding:2rem; } }
-    .cta-band h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(1.8rem,3vw,2.8rem); letter-spacing:.04em; }
-    .cta-band p { font-size:.88rem; font-weight:300; color:var(--warm-gray); margin-top:.4rem; }
-    .cta-btns { display:flex; gap:.8rem; flex-wrap:wrap; }
+    .exp-badge {
+      display: inline-block;
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(78,143,168,0.12);
+      color: var(--accent-light);
+      border: 1px solid rgba(78,143,168,0.25);
+      padding: 0.18rem 0.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .exp-title {
+      font-size: 1rem; font-weight: 600;
+      color: var(--off-white); margin-bottom: 0.2rem;
+    }
+    .exp-org {
+      font-size: 0.82rem; color: var(--accent-light); font-weight: 400;
+    }
+    .exp-where {
+      font-size: 0.75rem; color: var(--warm-gray);
+      text-align: right; line-height: 1.6; white-space: nowrap;
+    }
 
-    /* ── FOOTER ── */
-    .site-footer { background:#090d11; padding:3rem clamp(1rem,4vw,3rem) 2rem; border-top:1px solid rgba(94,143,168,0.1); margin-top:0; }
-    .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,.06); }
-    .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
-    .footer-logo span { color:var(--accent-light); }
-    .footer-contact { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
-    .footer-contact a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
-    .footer-contact a:hover { color:var(--accent-light); }
-    .footer-contact span { font-size:.75rem; color:#4a5a6a; }
-    .footer-bottom { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
-    .footer-copy { font-size:.75rem; color:#4a5a6a; }
-    .footer-social { display:flex; gap:1.5rem; }
-    .footer-social a { font-size:.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#4a5a6a; transition:color .2s; }
-    .footer-social a:hover { color:var(--accent-light); }
+    .exp-body {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 1.4rem 2rem 1.8rem;
+    }
+    .exp-bullets { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.2rem; }
+    .exp-bullets li {
+      font-size: 0.87rem; font-weight: 300; line-height: 1.65;
+      color: var(--ink); padding-left: 1.1rem; position: relative;
+    }
+    .exp-bullets li::before {
+      content: ''; position: absolute; left: 0; top: 0.55em;
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--accent);
+    }
+    .exp-bullets li strong { color: var(--off-white); font-weight: 500; }
 
-    /* ── REVEAL ── */
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity .65s ease, transform .65s ease; }
-    .reveal.visible { opacity:1; transform:translateY(0); }
-    .reveal-d1 { transition-delay:.1s; } .reveal-d2 { transition-delay:.2s; }
-    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; } }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .exp-tag {
+      font-size: 0.67rem; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent-light);
+      border: 1px solid rgba(78,143,168,0.3); padding: 0.22rem 0.6rem;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-bottom: 2px; }
+    @media (max-width: 700px) { .edu-grid { grid-template-columns: 1fr; } }
+
+    .edu-card {
+      background: var(--mid-gray); padding: 2.2rem 2rem;
+    }
+    .edu-school {
+      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--amber);
+      margin-bottom: 0.6rem;
+    }
+    .edu-degree { font-size: 1.1rem; font-weight: 600; color: var(--off-white); margin-bottom: 0.25rem; }
+    .edu-sub    { font-size: 0.78rem; color: var(--warm-gray); margin-bottom: 1.3rem; }
+    .edu-list   { display: flex; flex-direction: column; gap: 0.5rem; }
+    .edu-list li {
+      font-size: 0.84rem; font-weight: 300; color: var(--ink);
+      padding-left: 1rem; position: relative; line-height: 1.55;
+    }
+    .edu-list li::before {
+      content: ''; position: absolute; left: 0; top: 0.5em;
+      width: 4px; height: 4px; border-radius: 50%; background: var(--amber);
+    }
+
+    .certs-card {
+      background: var(--dark-gray); padding: 2rem;
+    }
+    .certs-title {
+      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--amber); margin-bottom: 1rem;
+    }
+    .cert-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .cert-pill {
+      font-size: 0.72rem; font-weight: 400; letter-spacing: 0.06em;
+      color: var(--warm-gray);
+      border: 1px solid rgba(94,143,168,0.18);
+      padding: 0.25rem 0.7rem;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    @media (max-width: 860px) { .skills-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 540px)  { .skills-grid { grid-template-columns: 1fr; } }
+
+    .skill-group { background: var(--mid-gray); padding: 2rem 1.8rem; }
+    .skill-group-title {
+      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--amber); margin-bottom: 1.1rem;
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-pill {
+      font-size: 0.72rem; font-weight: 400;
+      color: var(--warm-gray);
+      border: 1px solid rgba(94,143,168,0.2);
+      padding: 0.25rem 0.65rem;
+    }
+
+    /* ── CTA BAND — mirrors index.html ── */
+    .cta-band-bg { background: var(--black); padding: 5rem 0; border-top: 1px solid rgba(94,143,168,0.1); }
+    .cta-band {
+      padding: 4rem; background: var(--mid-gray);
+      display: flex; flex-wrap: wrap; gap: 2rem;
+      align-items: center; justify-content: space-between;
+    }
+    .cta-band h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      letter-spacing: 0.04em; color: #fff;
+    }
+    .cta-band-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+    @media (max-width: 600px) {
+      .cta-band { padding: 2.5rem; flex-direction: column; align-items: stretch; }
+      .cta-band-actions { flex-direction: column; }
+      .cta-band-actions .btn-primary { text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
   </style>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- ===== HEADER — exact structure from index.html ===== -->
   <header class="site-header" id="header">
     <a href="index.html#top" class="logo-link" aria-label="ASF Visuals home">
-      <img src="images/TransparentLogo.png" alt="ASF Visuals Logo" loading="eager">
+      <img src="images/ASF_Visuals_logo_white.png" alt="ASF Visuals Logo" width="200" height="60" loading="eager" />
     </a>
     <nav id="navbar" class="site-nav" aria-label="Main Navigation">
       <ul>
         <li><a href="index.html#top">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="clients.html">Clients</a></li>
-        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
+    <div class="nav-cta-wrap">
+      <a href="contact.html" class="nav-cta">Get a Quote</a>
+    </div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="top" role="banner">
-    <div class="hero-bg is-active" id="bgA" aria-hidden="true"></div>
-    <div class="hero-bg" id="bgB" aria-hidden="true"></div>
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-content">
-      <div class="hero-tag">Andrew Coutinho</div>
-      <h1>Professional <em>Profile</em></h1>
-      <p>Founder, photographer, drone pilot, and web developer building purposeful visual work out of Pittsburgh, PA.</p>
-      <div class="hero-btns">
-        <a class="btn-primary" href="portfolio.html">See Portfolio</a>
-        <a class="btn-outline" href="contact.html">Work With Me</a>
-        <a class="btn-outline" href="https://www.linkedin.com/in/andrew-coutinho" target="_blank" rel="noopener">LinkedIn ↗</a>
-      </div>
-    </div>
-  </section>
-
   <main id="main">
-    <div class="page-wrap">
 
-      <!-- STICKY TOC -->
-      <nav class="toc reveal" aria-label="Section navigation">
-        <a href="#snapshot" aria-current="true">Snapshot</a>
-        <a href="#work">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#skills">Skills</a>
-        <a href="#cta">Contact</a>
-      </nav>
+    <!-- ===== HERO ===== -->
+    <section class="prof-hero" id="top">
+      <div class="container">
 
-      <!-- ── SNAPSHOT ── -->
-      <section id="snapshot" class="reveal" style="padding:1rem 0 0">
+        <div class="recruiter-strip">
+          📄 Recruiter?&nbsp;
+          <a href="https://www.linkedin.com/in/andrew-coutinho" target="_blank" rel="noopener">View LinkedIn ↗</a>
+          &nbsp;·&nbsp; Open to Project Management Roles · Pittsburgh / hybrid
+        </div>
+
+        <div class="hero-eyebrow">Andrew Coutinho · Pittsburgh, PA</div>
+        <h1 class="prof-title">Professional <em>Profile</em></h1>
+        <p class="prof-sub">Founder, photographer, drone pilot, and web developer building purposeful visual work out of Pittsburgh — with a background in economics, data analysis, and community leadership.</p>
+
+        <div class="hero-actions-row">
+          <a href="https://www.linkedin.com/in/andrew-coutinho" target="_blank" rel="noopener" class="btn-primary">LinkedIn ↗</a>
+          <a href="portfolio.html" class="btn-outline">See Portfolio</a>
+          <a href="contact.html" class="btn-ghost">Work With Me
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="avail-pip"></span>Open to opportunities</span>
+          <span class="meta-sep">·</span>
+          <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
+          <span class="meta-sep">·</span>
+          <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SNAPSHOT ===== -->
+    <section class="prof-section" id="snapshot">
+      <div class="container">
         <div class="section-label">Overview</div>
-        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,3.5vw,3rem);letter-spacing:.04em;margin-bottom:.8rem;">Snapshot</h2>
-        <p style="font-size:.95rem;font-weight:300;line-height:1.8;color:var(--warm-gray);max-width:78ch;margin-bottom:2rem;">
-          Pittsburgh-based founder with a dual B.A. in <strong style="color:var(--off-white);font-weight:500;">Economics &amp; Africana Studies</strong> (Pitt, 2025), <strong style="color:var(--off-white);font-weight:500;">Fulbright-Hays</strong> Tanzania cohort, and leadership across <strong style="color:var(--off-white);font-weight:500;">WEF Global Shapers</strong> and the national collegiate bodybuilding network. Clients include the <strong style="color:var(--off-white);font-weight:500;">University of Pittsburgh</strong>, Pitt Men's Soccer (D1), <strong style="color:var(--off-white);font-weight:500;">Pittsburgh Prestige Remodeling</strong>, <strong style="color:var(--off-white);font-weight:500;">Aqua Design Collective</strong>, and regional real estate partners.
-        </p>
+        <h2 class="prof-h2">Snapshot</h2>
 
-        <div class="stats">
-          <div class="stat reveal">
-            <h3>25+</h3>
-            <p>Client projects delivered — 100% on-time completion</p>
+        <div class="stat-row reveal">
+          <div class="stat-card">
+            <div class="stat-num">25+</div>
+            <div class="stat-desc">Client projects delivered — 100% on-time</div>
           </div>
-          <div class="stat reveal reveal-d1">
-            <h3>Part 107</h3>
-            <p>FAA sUAS certified — aerial + ground production</p>
+          <div class="stat-card">
+            <div class="stat-num">10+</div>
+            <div class="stat-desc">Universities connected via NCBO</div>
           </div>
-          <div class="stat reveal reveal-d2">
-            <h3>10+ Orgs</h3>
-            <p>Universities connected through NCBO collegiate network</p>
+          <div class="stat-card">
+            <div class="stat-num">50+</div>
+            <div class="stat-desc">Students advised on international programs</div>
           </div>
         </div>
 
-        <div class="media-strip">
-          <figure class="tile">
-            <img src="images/DJI_0006-Enhanced.jpg" alt="Pittsburgh in the Clouds — ASF Visuals aerial" loading="lazy"
-              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
-          </figure>
-          <figure class="tile">
-            <img src="images/pitt.JPG" alt="Pitt Men's Soccer D1 athletics content" loading="lazy"
-              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
-          </figure>
-          <figure class="tile">
-            <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group commercial real estate" loading="lazy"
-              onerror="this.style.background='#1e2c38';this.style.opacity='.5'">
-          </figure>
+        <div class="snapshot-body reveal">
+          Pittsburgh-based founder with a dual B.A. in <strong>Economics & Africana Studies</strong> (Pitt, 2025), <strong>Fulbright-Hays</strong> Tanzania cohort, and leadership across <strong>WEF Global Shapers</strong> and the national collegiate bodybuilding network. Clients include the <strong>University of Pittsburgh</strong>, Pitt Men's Soccer (D1), <strong>Pittsburgh Prestige Remodeling</strong>, <strong>Aqua Design Collective</strong>, and regional real estate partners.
         </div>
-      </section>
 
-      <!-- ── EXPERIENCE ── -->
-      <div class="section-head reveal" id="work">
-        <h2>Experience</h2>
-        <span class="badge">Active</span>
-      </div>
-      <div class="card reveal">
-        <ul class="timeline">
-
-          <li class="t-item">
-            <div class="t-role">Founder &amp; Creative Director — ASF Visuals LLC</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Oct 2022 – Present</div>
-            <ul class="list">
-              <li>Manage a certified drone media business overseeing end-to-end client engagement and content delivery.</li>
-              <li>Delivered <strong>25+ client projects</strong> with <strong>100% on-time completion</strong> while maintaining scope and brand standards.</li>
-              <li>Clients include the <strong>University of Pittsburgh</strong>, <strong>Pitt Men's Soccer</strong> (D1), <strong>Pittsburgh Prestige Remodeling</strong>, <strong>Aqua Design Collective</strong>, and regional real estate partners.</li>
-              <li>Designed and launched a custom portfolio website (HTML, CSS, JavaScript) with dynamic gallery, lightbox, and Pixieset print store.</li>
-              <li>Brand systems for clients: logos, palettes, social assets, and web collateral to support campaigns.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">FAA Part 107</span>
-              <span class="pill">Lightroom / Photoshop</span>
-              <span class="pill">HTML / CSS / JS</span>
-              <span class="pill">Client Management</span>
-              <span class="pill">Project Management</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Co-Founder — National Collegiate Bodybuilding Organization (NCBO)</div>
-            <div class="t-meta">Remote &nbsp;·&nbsp; Nov 2024 – Present</div>
-            <ul class="list">
-              <li>Lead national network of <strong>10+ university</strong> bodybuilding clubs; developed roadmap to scale NCBO's collegiate presence.</li>
-              <li>Analyzed member feedback to refine programs and advised <strong>5+ clubs</strong> on leadership and event planning.</li>
-              <li>Collaborated with Penn State University Bodybuilding Club to help 5+ collegiate clubs with effective management.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Program Development</span>
-              <span class="pill">Organizational Development</span>
-              <span class="pill">Stakeholder Management</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Global Experience Office Advisor — University of Pittsburgh</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Sep 2024 – May 2025</div>
-            <ul class="list">
-              <li>Designed and executed data-informed marketing initiatives, analyzing engagement metrics to <strong>increase study abroad participation by 35%</strong>.</li>
-              <li>Advised <strong>50+ students</strong> through one-on-one consultations, leveraging international field research experience from Tanzania and the UK to guide program selection.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Data Analysis</span>
-              <span class="pill">Marketing Strategy</span>
-              <span class="pill">Student Advising</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Resident Assistant — University of Pittsburgh</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Aug 2024 – May 2025</div>
-            <ul class="list">
-              <li>Fostered inclusive, safe residential communities; facilitated programming and served as a mentor and resource for residents.</li>
-            </ul>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Oakland Community Ambassador — University of Pittsburgh</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Aug 2023 – Aug 2024</div>
-            <ul class="list">
-              <li>Strengthened student-resident relations through safety, civic engagement, and resource outreach initiatives.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Community Outreach</span>
-              <span class="pill">Leadership</span>
-              <span class="pill">Communication</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Cyber Security Intern — Robin Home Care</div>
-            <div class="t-meta">London, United Kingdom &nbsp;·&nbsp; Jun 2023 – Aug 2023</div>
-            <ul class="list">
-              <li>Conducted systemwide IT security audits and deployed encryption and firewall protocols; <strong>improved data-protection compliance scores by 25%</strong> and prevented unauthorized access incidents.</li>
-              <li>Recommended and documented <strong>5 policy enhancements</strong> for network security governance and enterprise risk management compliance.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Security Audits</span>
-              <span class="pill">Network Security</span>
-              <span class="pill">Risk Management</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Social Media Marketing Intern — State Farm</div>
-            <div class="t-meta">Remote &nbsp;·&nbsp; Dec 2020 – Aug 2022</div>
-            <ul class="list">
-              <li>Planned and scheduled content to increase engagement; contributed to digital campaigns and brand visibility.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Social Strategy</span>
-              <span class="pill">Content Marketing</span>
-              <span class="pill">Copywriting</span>
-            </div>
-          </li>
-
-          <li class="t-item">
-            <div class="t-role">Sales Advisor — Best Buy</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; May 2021 – Jan 2022</div>
-            <ul class="list">
-              <li>Met sales targets through solution-based conversations; developed customer experience and cross-functional team skills.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Sales</span>
-              <span class="pill">Customer Experience</span>
-              <span class="pill">Strategic Thinking</span>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-      <!-- ── EDUCATION ── -->
-      <div class="section-head reveal" id="education">
-        <h2>Education &amp; Honors</h2>
-      </div>
-      <div class="grid cols-2 reveal">
-        <div class="card">
-          <div class="section-label">University of Pittsburgh</div>
-          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;margin-bottom:.6rem;">B.A. Economics &amp; Africana Studies</h3>
-          <p style="font-size:.85rem;color:var(--warm-gray);margin-bottom:.8rem;">Class of May 2025 &nbsp;·&nbsp; Pittsburgh, PA</p>
-          <p style="font-size:.8rem;font-weight:300;color:var(--warm-gray);margin-bottom:.8rem;">Coursework: Economic Data Analysis, Applied Econometrics, Macroeconomics, Africana Studies Capstone, Theories of Leadership</p>
-          <p style="font-size:.8rem;font-weight:300;color:var(--warm-gray);">Activities: Founder &amp; President, Bodybuilding Club; Oakland Community Ambassador; Global Experience Advisor; Resident Assistant</p>
-        </div>
-        <div class="card">
-          <div class="section-label">Fulbright-Hays Award</div>
-          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.04em;margin-bottom:.6rem;">Group Projects Abroad — Tanzania</h3>
-          <p style="font-size:.85rem;color:var(--warm-gray);margin-bottom:.8rem;">MS TCDC Arusha &nbsp;·&nbsp; May 2023</p>
-          <ul class="list" style="margin-left:0;list-style:none;padding:0;">
-            <li>Intensive Swahili language training through classroom instruction and community immersion.</li>
-            <li>Interdisciplinary lectures on African socialism, development, and regional history.</li>
-            <li>Fieldwork in Arusha, Dar es Salaam, Bagamoyo, and Zanzibar; brief study in Nairobi.</li>
-          </ul>
+        <div class="open-to reveal">
+          <div class="open-to-label">Currently open to roles in</div>
+          <div class="chip-row">
+            <span class="chip">Project Management</span>
+            <span class="chip">Program Management</span>
+            <span class="chip">Operations & Strategy</span>
+            <span class="chip">Product Management</span>
+          </div>
+          <p class="open-to-note">Targeting Pittsburgh-based or hybrid roles · Also exploring London / UK opportunities</p>
         </div>
       </div>
+    </section>
 
-      <!-- ── CERTIFICATIONS ── -->
-      <div class="card reveal" style="margin-top:3px;">
-        <div class="section-label">Certifications &amp; Tools</div>
-        <ul class="list" style="margin-left:0;list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.5rem .5rem;">
-          <li>FAA Part 107 (sUAS) — Commercial Drone Operations</li>
-          <li>Adobe Lightroom / Photoshop; Capture One (basic)</li>
-          <li>HTML, CSS, JavaScript; Git / GitHub; Supabase; Next.js</li>
-          <li>Microsoft Excel, PowerPoint; Google Analytics</li>
-          <li>Visual Studio Code; Git Bash</li>
-          <li>Shot planning, color management, export pipelines, Pixieset client delivery</li>
-        </ul>
-      </div>
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="prof-section prof-section-alt" id="work">
+      <div class="container">
+        <div class="section-label">Work History</div>
+        <h2 class="prof-h2">Experience</h2>
 
-      <!-- ── LEADERSHIP ── -->
-      <div class="section-head reveal" id="leadership">
-        <h2>Leadership &amp; Community</h2>
-      </div>
-      <div class="card reveal">
-        <ul class="timeline">
+        <div class="exp-stack">
 
-          <li class="t-item">
-            <div class="t-role">Vice Curator — Global Shapers Pittsburgh Hub (WEF)</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Jul 2024 – Present &nbsp;·&nbsp; Incoming Curator: Jul 2026 – Jun 2027</div>
-            <ul class="list">
-              <li>Serving as Project Coordinator for the <strong>Northeast Hub Regional Retreat</strong> (May 15–17, 2026, Pittsburgh) — 6+ months of planning for <strong>100+ participants</strong>.</li>
-              <li>Represented Pittsburgh at the <strong>Global Shapers Annual Summit in Geneva</strong>, collaborating with international peers on SDG-aligned initiatives.</li>
-              <li>Build partnerships with local organizations to support volunteerism, outreach, and impact-driven programming focused on economic empowerment.</li>
-              <li>Lead recruitment, project evaluation, events, and hub strategy as Vice Curator; transitioning to Curator for the 2026–2027 term.</li>
-            </ul>
-            <div class="pills">
-              <span class="pill">Program Management</span>
-              <span class="pill">International Collaboration</span>
-              <span class="pill">Community Strategy</span>
+          <!-- Nov 2024 – Present -->
+          <div class="exp-card is-active reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-badge">Active</div>
+                <div class="exp-title">Co-Founder</div>
+                <div class="exp-org">National Collegiate Bodybuilding Organization (NCBO)</div>
+              </div>
+              <div class="exp-where">Nov 2024 – Present<br>Remote</div>
             </div>
-          </li>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Lead national network of <strong>10+ university</strong> bodybuilding clubs; developed roadmap to scale NCBO's collegiate presence.</li>
+                <li>Analyzed member feedback to refine programs and advised <strong>5+ clubs</strong> on leadership and event planning.</li>
+                <li>Collaborated with Penn State University Bodybuilding Club on governance models across the network.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Program Development</span>
+                <span class="exp-tag">Org Development</span>
+                <span class="exp-tag">Stakeholder Management</span>
+              </div>
+            </div>
+          </div>
 
-          <li class="t-item">
-            <div class="t-role">Founder &amp; President — Bodybuilding Club at Pitt</div>
-            <div class="t-meta">Pittsburgh, PA &nbsp;·&nbsp; Jan 2022 – May 2025</div>
-            <ul class="list">
-              <li>Built D1-affiliated club from scratch, growing membership by <strong>50%</strong> in one year; increased social media reach by <strong>200%</strong> through media analytics.</li>
-              <li>Planned and executed socials, fundraisers, educational workshops, and in-club shows; managed a 6-member executive board.</li>
-              <li>NCBO co-founded from this network, connecting 10+ universities nationally.</li>
+          <!-- Oct 2022 – Present -->
+          <div class="exp-card is-active reveal reveal-d1">
+            <div class="exp-head">
+              <div>
+                <div class="exp-badge">Active</div>
+                <div class="exp-title">Founder & Creative Director</div>
+                <div class="exp-org">ASF Visuals LLC</div>
+              </div>
+              <div class="exp-where">Oct 2022 – Present<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Manage a certified drone media business overseeing end-to-end client engagement and content delivery.</li>
+                <li>Delivered <strong>25+ client projects</strong> with <strong>100% on-time completion</strong> while maintaining scope and brand standards.</li>
+                <li>Clients include the <strong>University of Pittsburgh</strong>, <strong>Pitt Men's Soccer</strong> (D1), <strong>Pittsburgh Prestige Remodeling</strong>, <strong>Aqua Design Collective</strong>, and regional real estate partners.</li>
+                <li>Designed and launched a custom portfolio website (HTML, CSS, JavaScript) with dynamic gallery, Supabase-backed admin panel, and Fancybox lightbox.</li>
+                <li>Developed brand systems for clients: logos, palettes, social assets, and web collateral.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">FAA Part 107</span>
+                <span class="exp-tag">Lightroom / PS</span>
+                <span class="exp-tag">HTML / CSS / JS</span>
+                <span class="exp-tag">Supabase</span>
+                <span class="exp-tag">Client Management</span>
+                <span class="exp-tag">Project Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jul 2024 – Present -->
+          <div class="exp-card is-active reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-badge">Active · Incoming Curator Jul 2026</div>
+                <div class="exp-title">Vice Curator</div>
+                <div class="exp-org">Global Shapers Pittsburgh Hub (WEF)</div>
+              </div>
+              <div class="exp-where">Jul 2024 – Present<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Project Coordinator for the <strong>Northeast Hub Regional Retreat</strong> (May 15–17, 2026, Pittsburgh) — 6+ months of planning for <strong>100+ participants</strong>.</li>
+                <li>Represented Pittsburgh at the <strong>Global Shapers Annual Summit in Geneva</strong>, collaborating on SDG-aligned initiatives.</li>
+                <li>Lead recruitment, project evaluation, events, and hub strategy; transitioning to Curator for the 2026–2027 term.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Program Management</span>
+                <span class="exp-tag">International Collaboration</span>
+                <span class="exp-tag">Community Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sep 2024 – May 2025 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Global Experience Office Advisor</div>
+                <div class="exp-org">University of Pittsburgh</div>
+              </div>
+              <div class="exp-where">Sep 2024 – May 2025<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Designed data-informed marketing initiatives, analyzing engagement metrics to <strong>increase study abroad participation by 35%</strong>.</li>
+                <li>Advised <strong>50+ students</strong> through one-on-one consultations, leveraging international field research experience from Tanzania and the UK.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Data Analysis</span>
+                <span class="exp-tag">Marketing Strategy</span>
+                <span class="exp-tag">Student Advising</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aug 2024 – May 2025 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Resident Assistant</div>
+                <div class="exp-org">University of Pittsburgh</div>
+              </div>
+              <div class="exp-where">Aug 2024 – May 2025<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Fostered inclusive, safe residential communities; facilitated programming and served as mentor and resource for residents.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Community Building</span>
+                <span class="exp-tag">Mentorship</span>
+                <span class="exp-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aug 2023 – Aug 2024 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Oakland Community Ambassador</div>
+                <div class="exp-org">University of Pittsburgh</div>
+              </div>
+              <div class="exp-where">Aug 2023 – Aug 2024<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Strengthened student-resident relations through safety, civic engagement, and resource outreach initiatives.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Community Outreach</span>
+                <span class="exp-tag">Leadership</span>
+                <span class="exp-tag">Communication</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jun – Aug 2023 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Cyber Security Intern</div>
+                <div class="exp-org">Robin Home Care</div>
+              </div>
+              <div class="exp-where">Jun – Aug 2023<br>London, UK</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Conducted systemwide IT security audits and deployed encryption and firewall protocols; <strong>improved data-protection compliance scores by 25%</strong>.</li>
+                <li>Recommended and documented <strong>5 policy enhancements</strong> for network security governance and enterprise risk management.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Security Audits</span>
+                <span class="exp-tag">Network Security</span>
+                <span class="exp-tag">Risk Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jan 2022 – May 2025 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Founder & President</div>
+                <div class="exp-org">Bodybuilding Club at Pitt</div>
+              </div>
+              <div class="exp-where">Jan 2022 – May 2025<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Built D1-affiliated club from scratch, growing membership by <strong>50%</strong> in one year; increased social media reach by <strong>200%</strong>.</li>
+                <li>Planned socials, fundraisers, educational workshops, and in-club shows; managed a 6-member executive board.</li>
+                <li>Co-founded NCBO from this network, connecting <strong>10+ universities</strong> nationally.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Org Building</span>
+                <span class="exp-tag">Event Planning</span>
+                <span class="exp-tag">Executive Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dec 2020 – Aug 2022 -->
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Social Media Marketing Intern</div>
+                <div class="exp-org">State Farm</div>
+              </div>
+              <div class="exp-where">Dec 2020 – Aug 2022<br>Remote</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Planned and scheduled content to increase engagement; contributed to digital campaigns and brand visibility.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Social Strategy</span>
+                <span class="exp-tag">Content Marketing</span>
+                <span class="exp-tag">Copywriting</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card reveal">
+            <div class="exp-head">
+              <div>
+                <div class="exp-title">Sales Advisor</div>
+                <div class="exp-org">Best Buy</div>
+              </div>
+              <div class="exp-where">May 2021 – Jan 2022<br>Pittsburgh, PA</div>
+            </div>
+            <div class="exp-body">
+              <ul class="exp-bullets">
+                <li>Met sales targets through solution-based conversations; developed customer experience and cross-functional team skills.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="exp-tag">Sales</span>
+                <span class="exp-tag">Customer Experience</span>
+                <span class="exp-tag">Strategic Thinking</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="prof-section" id="education">
+      <div class="container">
+        <div class="section-label">Academic Background</div>
+        <h2 class="prof-h2">Education & <em>Honors</em></h2>
+
+        <div class="edu-grid reveal">
+          <div class="edu-card">
+            <div class="edu-school">University of Pittsburgh</div>
+            <div class="edu-degree">B.A. Economics & Africana Studies</div>
+            <div class="edu-sub">Class of May 2025 · Pittsburgh, PA</div>
+            <ul class="edu-list">
+              <li>Economic Data Analysis, Applied Econometrics, Macroeconomics</li>
+              <li>Africana Studies Capstone · Theories of Leadership</li>
+              <li>Founder & President, Bodybuilding Club (grew to 100+ members)</li>
+              <li>Oakland Community Ambassador · GEO Advisor · Resident Assistant</li>
             </ul>
-          </li>
-
-        </ul>
-      </div>
-
-      <!-- ── SKILLS ── -->
-      <div class="section-head reveal" id="skills">
-        <h2>Skills</h2>
-      </div>
-      <div class="skills-grid reveal">
-        <div class="skill-group">
-          <div class="skill-group-label">Technical &amp; Tools</div>
-          <div class="pills">
-            <span class="pill">HTML / CSS / JS</span>
-            <span class="pill">Git / GitHub</span>
-            <span class="pill">Supabase</span>
-            <span class="pill">Next.js</span>
-            <span class="pill">Excel</span>
-            <span class="pill">PowerPoint</span>
-            <span class="pill">Google Analytics</span>
-            <span class="pill">VS Code / Git Bash</span>
-            <span class="pill">Adobe Lightroom</span>
-            <span class="pill">Photoshop</span>
+          </div>
+          <div class="edu-card">
+            <div class="edu-school">Fulbright-Hays Award</div>
+            <div class="edu-degree">Group Projects Abroad — Tanzania</div>
+            <div class="edu-sub">MS TCDC Arusha · May 2023</div>
+            <ul class="edu-list">
+              <li>Intensive Swahili language training via classroom and community immersion</li>
+              <li>Interdisciplinary lectures on African socialism, development, and regional history</li>
+              <li>Fieldwork in Arusha, Dar es Salaam, Bagamoyo, and Zanzibar; brief study in Nairobi</li>
+            </ul>
           </div>
         </div>
-        <div class="skill-group">
-          <div class="skill-group-label">Operations &amp; Strategy</div>
-          <div class="pills">
-            <span class="pill">Project Coordination</span>
-            <span class="pill">Timeline &amp; Milestones</span>
-            <span class="pill">Process Improvement</span>
-            <span class="pill">Cross-Functional Collaboration</span>
-            <span class="pill">Stakeholder Management</span>
-            <span class="pill">Community Building</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-group-label">Analysis &amp; Creative</div>
-          <div class="pills">
-            <span class="pill">Data Analysis</span>
-            <span class="pill">Performance Metrics</span>
-            <span class="pill">Marketing Strategy</span>
-            <span class="pill">Photography</span>
-            <span class="pill">Aerial Cinematography</span>
-            <span class="pill">Brand Design</span>
-            <span class="pill">Social Strategy</span>
+
+        <div class="certs-card reveal">
+          <div class="certs-title">Certifications & Tools</div>
+          <div class="cert-pills">
+            <span class="cert-pill">FAA Part 107 (sUAS)</span>
+            <span class="cert-pill">Adobe Lightroom / Photoshop</span>
+            <span class="cert-pill">Capture One</span>
+            <span class="cert-pill">HTML · CSS · JavaScript</span>
+            <span class="cert-pill">Git / GitHub</span>
+            <span class="cert-pill">Supabase</span>
+            <span class="cert-pill">Next.js</span>
+            <span class="cert-pill">Excel / PowerPoint</span>
+            <span class="cert-pill">Google Analytics</span>
+            <span class="cert-pill">VS Code · Git Bash</span>
+            <span class="cert-pill">Pixieset</span>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- ── CTA ── -->
-      <div class="cta-band reveal" id="cta">
-        <div>
-          <h2>Let's Build Something</h2>
-          <p>Available for photography, drone, web, and creative projects across Pittsburgh and beyond.</p>
-        </div>
-        <div class="cta-btns">
-          <a class="btn-primary" href="contact.html">Get a Quote</a>
-          <a class="btn-outline" href="portfolio.html">See Portfolio</a>
-          <a class="btn-outline" href="about.html">← Back to About</a>
+    <!-- ===== SKILLS ===== -->
+    <section class="prof-section" id="skills">
+      <div class="container">
+        <div class="section-label">Competencies</div>
+        <h2 class="prof-h2">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group-title">Technical & Tools</div>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML / CSS / JS</span>
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">Supabase</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">Excel</span>
+              <span class="skill-pill">PowerPoint</span>
+              <span class="skill-pill">Google Analytics</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Adobe Lightroom</span>
+              <span class="skill-pill">Photoshop</span>
+            </div>
+          </div>
+          <div class="skill-group reveal reveal-d1">
+            <div class="skill-group-title">Operations & Strategy</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Project Coordination</span>
+              <span class="skill-pill">Timeline & Milestones</span>
+              <span class="skill-pill">Process Improvement</span>
+              <span class="skill-pill">Cross-Functional Collab</span>
+              <span class="skill-pill">Stakeholder Management</span>
+              <span class="skill-pill">Community Building</span>
+            </div>
+          </div>
+          <div class="skill-group reveal reveal-d2">
+            <div class="skill-group-title">Analysis & Creative</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Data Analysis</span>
+              <span class="skill-pill">Performance Metrics</span>
+              <span class="skill-pill">Marketing Strategy</span>
+              <span class="skill-pill">Photography</span>
+              <span class="skill-pill">Aerial Cinematography</span>
+              <span class="skill-pill">Brand Design</span>
+              <span class="skill-pill">Social Strategy</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
+    <!-- ===== CTA BAND — mirrors index.html ===== -->
+    <div class="cta-band-bg">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <div class="section-label">Get in Touch</div>
+            <h2>Let's Build Something.</h2>
+          </div>
+          <div class="cta-band-actions">
+            <a href="contact.html" class="btn-primary">Get a Quote</a>
+            <a href="portfolio.html" class="btn-ghost">
+              See Portfolio
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
   </main>
 
+  <!-- ===== FOOTER — exact structure from index.html ===== -->
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
@@ -532,108 +973,56 @@
     <div class="footer-bottom">
       <p class="footer-copy">&copy; <span id="year"></span> ASF Visuals LLC. All rights reserved.</p>
       <div class="footer-social">
-        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/company/asfvisualsllc/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://www.instagram.com/asfvisuals/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
       </div>
     </div>
   </footer>
 
   <script>
+    /* ── Footer year ── */
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    /* ── Nav + scroll ── */
+    /* ── Mobile nav — exact copy from index.html ── */
     (function navInit(){
       const btn = document.getElementById('menuToggle');
       const nav = document.getElementById('navbar');
       if (!btn || !nav) return;
-      btn.addEventListener('click', ()=>{
+      btn.addEventListener('click', () => {
         const open = nav.classList.toggle('open');
-        btn.classList.toggle('open', open);
+        btn.classList.toggle('open');
         btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         if (window.innerWidth <= 860) document.body.classList.toggle('no-scroll', open);
       });
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
-        if (window.innerWidth <= 860){ nav.classList.remove('open'); btn.classList.remove('open'); document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false'); }
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        if (window.innerWidth <= 860) {
+          nav.classList.remove('open'); btn.classList.remove('open');
+          document.body.classList.remove('no-scroll'); btn.setAttribute('aria-expanded','false');
+        }
       }));
-      let lastY = window.scrollY;
+    })();
+
+    /* ── Header scroll behavior — exact copy from index.html ── */
+    (function headerScroll(){
       const header = document.getElementById('header');
-      window.addEventListener('scroll', ()=>{
+      let lastY = window.scrollY;
+      window.addEventListener('scroll', () => {
         const y = window.scrollY;
         header.classList.toggle('scrolled', y > 60);
         header.style.transform = (y > lastY && y > 120) ? 'translateY(-100%)' : 'translateY(0)';
         lastY = y;
-      }, { passive:true });
+      }, { passive: true });
     })();
 
-    /* ── Reveal ── */
+    /* ── Scroll reveal — exact copy from index.html ── */
     (function revealInit(){
       const els = document.querySelectorAll('.reveal');
       const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-      }, { threshold: 0.08 });
-      els.forEach(el => obs.observe(el));
-    })();
-
-    /* ── Active TOC spy ── */
-    (function tocSpy(){
-      const tocLinks = document.querySelectorAll('.toc a');
-      const sections = [...tocLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-      if (!sections.length) return;
-      const setActive = id => tocLinks.forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#'+id ? 'true' : 'false'));
-      const spy = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
-      }, { rootMargin:'-35% 0px -55% 0px', threshold: 0.01 });
-      sections.forEach(s => spy.observe(s));
-    })();
-  </script>
-
-  <!-- Hero background cycler (same logic as index.html) -->
-  <script>
-    (function cycleHero(){
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const A = document.getElementById('bgA');
-      const B = document.getElementById('bgB');
-      if (!A || !B) return;
-      const MANIFEST_PATH = '/gallery/imagePaths.json';
-      const INTERVAL_MS = 7000;
-      const FALLBACK = ['images/DowntownCloudsReduced.webp'];
-      const withOverlay = url => `linear-gradient(175deg, rgba(14,18,23,.78) 0%, rgba(20,35,50,.45) 55%, rgba(14,18,23,.72) 100%), url('${url}') center/cover no-repeat`;
-
-      async function loadManifest(){
-        try{ const res = await fetch(MANIFEST_PATH,{cache:'no-cache'}); if(!res.ok) throw new Error(); return await res.json(); }
-        catch(e){ return {categories:{}}; }
-      }
-      function collectUrls(man){
-        const urls=[];
-        Object.values(man.categories||{}).forEach(items=>{
-          (items||[]).forEach(item=>{
-            const widths=(item.widths||[]).slice().sort((a,b)=>a-b);
-            const target=widths.find(w=>w>=1600)||widths[widths.length-1];
-            const pick=(item.variants?.jpg?.[target])||(item.variants?.avif?.[target])||Object.values(item.variants?.jpg||{})[0]||Object.values(item.variants?.avif||{})[0];
-            if(pick) urls.push(pick);
-          });
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
         });
-        const uniq=[...new Set(urls)];
-        for(let i=uniq.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [uniq[i],uniq[j]]=[uniq[j],uniq[i]]; }
-        return uniq.length ? uniq : FALLBACK;
-      }
-      function preload(url){ return new Promise(res=>{ const img=new Image(); img.onload=()=>res(true); img.onerror=()=>res(false); img.src=url; }); }
-
-      let list=FALLBACK.slice(), idx=0, timer=null;
-      let active=A, next=B;
-      function swapTo(url){ next.style.backgroundImage=withOverlay(url); next.classList.add('is-active'); active.classList.remove('is-active'); const tmp=active; active=next; next=tmp; }
-      async function advance(){ if(!list.length) return; idx=(idx+1)%list.length; const ok=await preload(list[idx]); swapTo(ok?list[idx]:FALLBACK[0]); }
-      function start(){ if(timer||prefersReduced) return; timer=setInterval(advance,INTERVAL_MS); }
-      function stop(){ if(timer){ clearInterval(timer); timer=null; } }
-
-      (async()=>{
-        const man=await loadManifest();
-        list=collectUrls(man);
-        active.style.backgroundImage=withOverlay(list[0]||FALLBACK[0]);
-        active.classList.add('is-active');
-        if(!prefersReduced) start();
-      })();
-      document.addEventListener('visibilitychange',()=>{ if(document.hidden) stop(); else start(); });
+      }, { threshold: 0.1 });
+      els.forEach(el => obs.observe(el));
     })();
   </script>
 </body>
