@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T20:42:00.770Z",
+  "generatedAt": "2026-03-13T16:21:40.136Z",
   "industries": {
     "clients": {
       "allegheny-sport-outdoor": {
@@ -1723,6 +1723,1661 @@
               },
               "jpg": {
                 "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/office-cabinetry/ppr-8_1600.jpg"
+              }
+            }
+          }
+        ],
+        "installs": [
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's",
+            "alt": "melissa's",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-2",
+            "alt": "melissa's-2",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-2_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-2_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-2_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-2_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-3",
+            "alt": "melissa's-3",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-3_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-3_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-3_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-3_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-4",
+            "alt": "melissa's-4",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-4_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-4_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-4_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-4_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-5",
+            "alt": "melissa's-5",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-5_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-5_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-5_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-5_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-6",
+            "alt": "melissa's-6",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-6_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-6_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-6_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-6_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-7",
+            "alt": "melissa's-7",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-7_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-7_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-7_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-7_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-8",
+            "alt": "melissa's-8",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-8_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-8_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-8_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-8_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-12",
+            "alt": "melissa's-12",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-12_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-12_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-12_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-12_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-13",
+            "alt": "melissa's-13",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-13_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-13_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-13_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-13_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-14",
+            "alt": "melissa's-14",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-14_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-14_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-14_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-14_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-15",
+            "alt": "melissa's-15",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-15_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-15_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-15_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-15_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-16",
+            "alt": "melissa's-16",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-16_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-16_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-16_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-16_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-17",
+            "alt": "melissa's-17",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-17_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-17_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-17_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-17_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-18",
+            "alt": "melissa's-18",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-18_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-18_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-18_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-18_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-19",
+            "alt": "melissa's-19",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-19_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-19_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-19_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-19_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-20",
+            "alt": "melissa's-20",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-20_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-20_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-20_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-20_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-21",
+            "alt": "melissa's-21",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-21_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-21_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-21_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-21_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-22",
+            "alt": "melissa's-22",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-22_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-22_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-22_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-22_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-24",
+            "alt": "melissa's-24",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-24_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-24_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-24_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-24_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-25",
+            "alt": "melissa's-25",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-25_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-25_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-25_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-25_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-26",
+            "alt": "melissa's-26",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-26_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-26_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-26_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-26_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-27",
+            "alt": "melissa's-27",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-27_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-27_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-27_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-27_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-28",
+            "alt": "melissa's-28",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-28_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-28_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-28_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-28_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-29",
+            "alt": "melissa's-29",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-29_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-29_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-29_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-29_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-30",
+            "alt": "melissa's-30",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-30_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-30_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-30_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-30_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-31",
+            "alt": "melissa's-31",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-31_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-31_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-31_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-31_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-34",
+            "alt": "melissa's-34",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-34_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-34_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-34_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-34_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-35",
+            "alt": "melissa's-35",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-35_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-35_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-35_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-35_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-36",
+            "alt": "melissa's-36",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-36_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-36_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-36_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-36_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-37",
+            "alt": "melissa's-37",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-37_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-37_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-37_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-37_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-38",
+            "alt": "melissa's-38",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-38_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-38_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-38_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-38_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-39",
+            "alt": "melissa's-39",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-39_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-39_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-39_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-39_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-40",
+            "alt": "melissa's-40",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-40_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-40_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-40_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-40_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-41",
+            "alt": "melissa's-41",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-41_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-41_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-41_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-41_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-43",
+            "alt": "melissa's-43",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-43_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-43_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-43_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-43_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-45",
+            "alt": "melissa's-45",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-45_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-45_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-45_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-45_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-46",
+            "alt": "melissa's-46",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-46_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-46_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-46_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-46_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-47",
+            "alt": "melissa's-47",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-47_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-47_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-47_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-47_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-48",
+            "alt": "melissa's-48",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-48_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-48_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-48_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-48_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-49",
+            "alt": "melissa's-49",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-49_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-49_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-49_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-49_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-50",
+            "alt": "melissa's-50",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-50_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-50_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-50_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-50_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-55",
+            "alt": "melissa's-55",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-55_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-55_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-55_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-55_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-56",
+            "alt": "melissa's-56",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-56_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-56_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-56_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-56_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-57",
+            "alt": "melissa's-57",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-57_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-57_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-57_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-57_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-58",
+            "alt": "melissa's-58",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-58_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-58_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-58_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-58_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-59",
+            "alt": "melissa's-59",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-59_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-59_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-59_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-59_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-60",
+            "alt": "melissa's-60",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-60_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-60_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-60_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-60_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-61",
+            "alt": "melissa's-61",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-61_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-61_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-61_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-61_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-62",
+            "alt": "melissa's-62",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-62_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-62_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-62_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-62_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-63",
+            "alt": "melissa's-63",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-63_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-63_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-63_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-63_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-64",
+            "alt": "melissa's-64",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-64_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-64_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-64_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-64_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-65",
+            "alt": "melissa's-65",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-65_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-65_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-65_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-65_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-66",
+            "alt": "melissa's-66",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-66_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-66_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-66_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-66_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-67",
+            "alt": "melissa's-67",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-67_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-67_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-67_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-67_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-68",
+            "alt": "melissa's-68",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-68_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-68_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-68_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-68_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-69",
+            "alt": "melissa's-69",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-69_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-69_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-69_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-69_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-70",
+            "alt": "melissa's-70",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-70_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-70_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-70_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-70_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-71",
+            "alt": "melissa's-71",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-71_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-71_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-71_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-71_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-72",
+            "alt": "melissa's-72",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-72_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-72_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-72_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-72_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-73",
+            "alt": "melissa's-73",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-73_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-73_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-73_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-73_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-74",
+            "alt": "melissa's-74",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-74_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-74_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-74_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-74_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-75",
+            "alt": "melissa's-75",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-75_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-75_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-75_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-75_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-76",
+            "alt": "melissa's-76",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-76_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-76_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-76_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-76_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-77",
+            "alt": "melissa's-77",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-77_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-77_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-77_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-77_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-78",
+            "alt": "melissa's-78",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-78_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-78_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-78_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-78_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-79",
+            "alt": "melissa's-79",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-79_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-79_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-79_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-79_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-80",
+            "alt": "melissa's-80",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-80_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-80_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-80_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-80_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-81",
+            "alt": "melissa's-81",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-81_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-81_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-81_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-81_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-83",
+            "alt": "melissa's-83",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-83_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-83_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-83_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-83_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-84",
+            "alt": "melissa's-84",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-84_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-84_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-84_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-84_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-85",
+            "alt": "melissa's-85",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-85_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-85_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-85_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-85_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-86",
+            "alt": "melissa's-86",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-86_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-86_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-86_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-86_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-90",
+            "alt": "melissa's-90",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-90_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-90_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-90_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-90_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-91",
+            "alt": "melissa's-91",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-91_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-91_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-91_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-91_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-92",
+            "alt": "melissa's-92",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-92_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-92_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-92_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-92_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-93",
+            "alt": "melissa's-93",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-93_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-93_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-93_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-93_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-96",
+            "alt": "melissa's-96",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-96_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-96_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-96_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-96_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-97",
+            "alt": "melissa's-97",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-97_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-97_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-97_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-97_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-98",
+            "alt": "melissa's-98",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-98_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-98_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-98_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-98_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-100",
+            "alt": "melissa's-100",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-100_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-100_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-100_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-100_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-101",
+            "alt": "melissa's-101",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-101_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-101_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-101_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-101_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-102",
+            "alt": "melissa's-102",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-102_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-102_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-102_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-102_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-114",
+            "alt": "melissa's-114",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-114_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-114_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-114_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-114_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-115",
+            "alt": "melissa's-115",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-115_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-115_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-115_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-115_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-116",
+            "alt": "melissa's-116",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-116_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-116_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-116_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-116_1600.jpg"
+              }
+            }
+          },
+          {
+            "base": "clients/pittsburgh-prestige-remodeling/installs/melissa's-117",
+            "alt": "melissa's-117",
+            "widths": [
+              480,
+              960,
+              1600
+            ],
+            "variants": {
+              "avif": {
+                "480": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-117_480.avif",
+                "960": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-117_960.avif",
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-117_1600.avif"
+              },
+              "jpg": {
+                "1600": "/clients/processed/clients/pittsburgh-prestige-remodeling/installs/melissa's-117_1600.jpg"
               }
             }
           }
