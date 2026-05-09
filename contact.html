@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact – ASF Visuals LLC | Book a Shoot in Pittsburgh</title>
-  <meta name="description" content="Book a photography, drone, or web project with ASF Visuals LLC. Based in Pittsburgh — serving businesses across the region.">
-  <meta property="og:title" content="Contact – ASF Visuals LLC">
-  <meta property="og:description" content="Book a shoot or ask a question. We'd love to hear from you.">
+  <title>Contact – ASF Visuals LLC | Book a Discovery Call | Pittsburgh</title>
+  <meta name="description" content="Book a discovery call with ASF Visuals LLC — a Pittsburgh creative and strategy studio. Brand, digital, operations, and creative production for growing businesses.">
+  <meta property="og:title" content="Contact – ASF Visuals LLC | Pittsburgh">
+  <meta property="og:description" content="Book a free discovery call. We help growing businesses look better and run smarter.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0e1217">
@@ -156,6 +156,7 @@
     .footer-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:2rem; padding-bottom:2rem; margin-bottom:2rem; border-bottom:1px solid rgba(255,255,255,0.06); }
     .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:.1em; }
     .footer-logo span { color:var(--accent-light); }
+    .footer-tagline { font-size:.75rem; color:#4a5a66; margin-top:.3rem; letter-spacing:.08em; }
     .footer-contact-links { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
     .footer-contact-links a { font-size:.82rem; color:var(--warm-gray); transition:color .2s; }
     .footer-contact-links a:hover { color:var(--accent-light); }
@@ -188,7 +189,7 @@
         <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
-    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Get a Quote</a></div>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Book a Call</a></div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
@@ -209,8 +210,8 @@
           <!-- Left: info -->
           <div class="contact-info reveal">
             <div class="section-label">Contact</div>
-            <h2>Start a Project</h2>
-            <p>Whether it's a commercial shoot, drone coverage, a new website, or something else — fill out the form and I'll get back to you within 24 hours.</p>
+            <h2>Start the Conversation</h2>
+            <p>Whether you need a stronger digital presence, better business systems, professional creative production, or aren't sure where to start — fill out the form and I'll get back to you within 24 hours.</p>
 
             <div class="contact-details">
               <div class="contact-item">
@@ -253,7 +254,7 @@
 
           <!-- Right: form -->
           <div class="contact-form-wrap reveal reveal-d1">
-            <h3>Send a Message</h3>
+            <h3>Tell Me About Your Project</h3>
             <form id="contact-form" class="contact-form" action="https://formspree.io/f/xovvrygq" method="POST" novalidate>
 
               <div class="form-row">
@@ -268,21 +269,22 @@
               </div>
 
               <div class="field">
-                <label for="service">Service Interested In</label>
+                <label for="service">What Can We Help With</label>
                 <select id="service" name="service">
                   <option value="">— Select a service —</option>
+                  <option value="brand-digital">Brand &amp; Digital Strategy</option>
+                  <option value="operations">Operations &amp; Business Systems</option>
                   <option value="photography">Photography / Video</option>
                   <option value="drone">Drone / Aerial</option>
                   <option value="website">Website Build</option>
-                  <option value="seo">Local SEO / GBP</option>
                   <option value="bundle">Multiple Services</option>
-                  <option value="other">Other / Not Sure</option>
+                  <option value="other">Not Sure Yet</option>
                 </select>
               </div>
 
               <div class="field">
-                <label for="message">Tell Me About Your Project</label>
-                <textarea id="message" name="message" placeholder="What are you looking to accomplish? Location, timeline, any other details..." required></textarea>
+                <label for="message">Tell Me About Your Business</label>
+                <textarea id="message" name="message" placeholder="What are you trying to accomplish? What's not working right now? Any timeline or other details..." required></textarea>
               </div>
 
               <input type="hidden" name="_subject" value="New inquiry from ASF Visuals contact form">
@@ -300,10 +302,13 @@
 
   <footer class="site-footer">
     <div class="footer-top">
-      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div>
+        <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+        <div class="footer-tagline">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
+      </div>
       <div class="footer-contact-links">
         <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
-        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
+        <a href="https://www.asfvisualsllc.com">asfvisualsllc.com</a>
         <span>Pittsburgh, Pennsylvania</span>
       </div>
     </div>

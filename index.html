@@ -4,16 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>ASF Visuals LLC – Pittsburgh Photography, Drone & Web Design</title>
-  <meta name="description" content="Pittsburgh's go-to visual media studio. FAA Part 107 drone, commercial photography, video, websites, and local SEO — built for businesses that need content that converts." />
-  <meta name="keywords" content="Pittsburgh photography, Pittsburgh drone photography, commercial photography Pittsburgh, real estate photography Pittsburgh, web design Pittsburgh, local SEO Pittsburgh, ASF Visuals">
+  <title>ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh</title>
+  <meta name="description" content="ASF Visuals LLC is a Pittsburgh creative and strategy studio. We help growing businesses look better and run smarter — through brand, web, digital strategy, creative production, and operational systems." />
+  <meta name="keywords" content="creative strategy studio Pittsburgh, business strategy Pittsburgh, brand and digital Pittsburgh, web design Pittsburgh, drone photography Pittsburgh, business operations consulting Pittsburgh, ASF Visuals">
   <link rel="canonical" href="https://www.asfvisualsllc.com/">
-  <meta property="og:title" content="ASF Visuals LLC – Pittsburgh Photography, Drone & Web Design" />
-  <meta property="og:description" content="Pittsburgh's go-to visual media studio. Photo, video, drone, and web — built for businesses that need content that converts." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh" />
+  <meta property="og:description" content="We help growing businesses look better and run smarter — brand, web, digital strategy, creative production, and operational systems." />
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.asfvisualsllc.com/" />
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh" />
+  <meta name="twitter:description" content="Brand, web, digital strategy, and operational systems for growing businesses. Pittsburgh-based, built for results." />
+  <meta name="twitter:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
+
   <meta name="theme-color" content="#0e1217" />
   <link rel="icon" href="images/ASF Logo.png" type="image/png" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.asfvisualsllc.com/#organization",
+        "name": "ASF Visuals LLC",
+        "url": "https://www.asfvisualsllc.com",
+        "logo": "https://www.asfvisualsllc.com/images/ASF_Visuals_logo_white.png",
+        "image": "https://www.asfvisualsllc.com/images/social-preview.jpg",
+        "description": "ASF Visuals LLC is a Pittsburgh creative and strategy studio helping growing businesses look better and run smarter — through brand, web, digital strategy, creative production, and operational systems.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pittsburgh",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "areaServed": ["Pittsburgh, PA", "United States", "United Kingdom"],
+        "sameAs": [
+          "https://www.linkedin.com/company/asfvisualsllc/",
+          "https://www.instagram.com/asfvisuals/"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Andrew Coutinho",
+          "jobTitle": "Founder & Principal Consultant",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Global Shapers Community",
+            "url": "https://www.globalshapers.org"
+          }
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Studio Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Brand & Digital",
+                "description": "Web development, brand positioning, content strategy, and digital presence management for growing businesses."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Operations & Systems",
+                "description": "Business operations audit and implementation of smarter tools and workflows that reduce overhead and improve efficiency."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Creative Production",
+                "description": "Drone photography, commercial photography, video, and visual assets built to serve a business purpose."
+              }
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "2",
+          "bestRating": "5"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Michael" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+            "reviewBody": "His work completely blew me away. The way he captured the lighting, angles, and textures made the space look even better than I imagined."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Joe Noll" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+            "reviewBody": "Andrew did an excellent job photographing my buildings. I would highly recommend."
+          }
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.asfvisualsllc.com/#webpage",
+        "url": "https://www.asfvisualsllc.com/",
+        "name": "ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh",
+        "description": "A Pittsburgh creative and strategy studio helping growing businesses look better and run smarter.",
+        "isPartOf": { "@id": "https://www.asfvisualsllc.com/#organization" }
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +141,19 @@
   <style>
     :root {
       /* ASF Visuals palette — sky blue is primary accent, amber only for CTAs & nav active */
-      --black: #0e1217;           /* deep night sky charcoal */
-      --off-white: #eef3f7;       /* cloud white */
-      --cream: #dde8ef;           /* soft mist */
-      --accent: #4e8fa8;          /* primary sky blue accent */
-      --accent-light: #72aec6;    /* lighter sky blue */
-      --amber: #d4895a;           /* CTA / nav-active amber */
-      --amber-light: #e8a878;     /* CTA hover amber */
-      --warm-gray: #7a94a8;       /* blue-gray sky mid */
-      --dark-gray: #151d24;       /* dark sky panel */
-      --mid-gray: #1e2c38;        /* deep blue-gray panel */
-      --ink: #a8bfcc;             /* sky text */
-      --mist: #c4d8e4;            /* light mist highlight */
-      --container: min(1200px, 92vw);
+      --black:         #0e1217;
+      --off-white:     #eef3f7;
+      --cream:         #dde8ef;
+      --accent:        #4e8fa8;
+      --accent-light:  #72aec6;
+      --amber:         #d4895a;
+      --amber-light:   #e8a878;
+      --warm-gray:     #7a94a8;
+      --dark-gray:     #151d24;
+      --mid-gray:      #1e2c38;
+      --ink:           #a8bfcc;
+      --mist:          #c4d8e4;
+      --container:     min(1200px, 92vw);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -146,18 +253,15 @@
       transition: opacity 1.1s ease;
     }
     .hero-bg.is-active { opacity: 1; }
-
-    /* Dark gradient overlay always on top of bg images */
     .hero-overlay {
       position: absolute; inset: 0; z-index: 1; pointer-events: none;
       background: linear-gradient(
         175deg,
-        rgba(14,18,23,0.78) 0%,
-        rgba(20,35,50,0.50) 50%,
-        rgba(30,20,10,0.60) 100%
+        rgba(14,18,23,0.82) 0%,
+        rgba(20,35,50,0.55) 50%,
+        rgba(30,20,10,0.65) 100%
       );
     }
-
     .hero-content {
       position: relative; z-index: 2;
       width: var(--container);
@@ -171,7 +275,6 @@
       .hero-content { grid-template-columns: 1fr; padding: 7rem 0 4rem; }
       .hero-right-block { display: none; }
     }
-
     .hero-tag {
       font-size: 0.72rem; font-weight: 500; letter-spacing: 0.22em;
       text-transform: uppercase; color: var(--accent-light);
@@ -182,7 +285,6 @@
     .hero-tag::before {
       content: ''; display: block; width: 28px; height: 1px; background: var(--accent-light);
     }
-
     .hero h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(3.2rem, 5.5vw, 5.8rem);
@@ -194,13 +296,11 @@
       font-family: 'DM Serif Display', serif;
       font-style: italic; color: var(--accent-light);
     }
-
     .hero-sub {
       font-size: 1rem; font-weight: 300; line-height: 1.75;
-      color: rgba(255,255,255,0.72); max-width: 420px; margin-bottom: 2.4rem;
+      color: rgba(255,255,255,0.72); max-width: 440px; margin-bottom: 2.4rem;
       opacity: 0; animation: fadeUp 0.7s 0.5s ease forwards;
     }
-
     .hero-actions {
       display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
       opacity: 0; animation: fadeUp 0.7s 0.65s ease forwards;
@@ -220,7 +320,6 @@
     .btn-ghost:hover { color: #fff; }
     .btn-ghost svg { transition: transform 0.2s; }
     .btn-ghost:hover svg { transform: translateX(4px); }
-
     .hero-proof {
       margin-top: 3rem; padding-top: 2rem;
       border-top: 1px solid rgba(255,255,255,0.1);
@@ -230,8 +329,6 @@
     .hero-proof .stars { color: var(--accent-light); font-size: 0.9rem; letter-spacing: 0.05em; }
     .hero-proof-text { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
     .hero-proof-text strong { color: rgba(255,255,255,0.85); font-weight: 500; }
-
-    /* Right block: stat cards floating over hero */
     .hero-right-block {
       display: flex; flex-direction: column; gap: 1rem; align-items: flex-end;
       opacity: 0; animation: fadeUp 0.7s 0.6s ease forwards;
@@ -253,7 +350,6 @@
       text-transform: uppercase; color: var(--mist);
       opacity: 0.6; margin-top: 0.3rem;
     }
-
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -265,9 +361,7 @@
       padding: 0.7rem 0;
       overflow: hidden; white-space: nowrap;
     }
-    .marquee-inner {
-      display: inline-flex; animation: marquee 24s linear infinite;
-    }
+    .marquee-inner { display: inline-flex; animation: marquee 28s linear infinite; }
     .marquee-item {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 0.95rem; letter-spacing: 0.18em;
@@ -315,13 +409,11 @@
       font-size: 0.95rem; font-weight: 300; line-height: 1.7;
       color: var(--warm-gray); max-width: 380px;
     }
-
     .services-grid {
       display: grid; grid-template-columns: repeat(3, 1fr);
       gap: 2px;
     }
     @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
-
     .service-card {
       background: var(--mid-gray); padding: 2.5rem 2rem;
       position: relative; overflow: hidden;
@@ -339,7 +431,10 @@
       color: rgba(78,143,168,0.12); line-height: 1;
       margin-bottom: 1.2rem; display: block;
     }
-    .service-icon { font-size: 1.5rem; margin-bottom: 1rem; display: block; }
+    .service-icon {
+      font-size: 1.4rem; margin-bottom: 1rem; display: block;
+      color: var(--accent-light);
+    }
     .service-title {
       font-family: 'Bebas Neue', sans-serif; font-size: 1.55rem;
       letter-spacing: 0.06em; margin-bottom: 0.9rem;
@@ -355,7 +450,7 @@
       border: 1px solid rgba(78,143,168,0.3); padding: 0.22rem 0.6rem;
     }
 
-    /* ── CLIENTS ── */
+    /* ── CLIENTS / WORK ── */
     .clients-bg {
       background: var(--black);
       background-image: radial-gradient(ellipse at 20% 50%, rgba(94,143,168,0.05) 0%, transparent 60%);
@@ -365,7 +460,6 @@
       gap: 2px;
     }
     @media (max-width: 700px) { .clients-grid { grid-template-columns: 1fr; } }
-
     .client-card {
       background: var(--dark-gray); padding: 2rem;
       display: flex; flex-direction: column; gap: 1rem;
@@ -411,7 +505,6 @@
       gap: 5rem; align-items: start;
     }
     @media (max-width: 860px) { .testimonials-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
-
     .testimonials-left p {
       font-size: 0.9rem; font-weight: 300; line-height: 1.7;
       color: var(--warm-gray); margin: 1rem 0 1.5rem;
@@ -424,11 +517,10 @@
       transition: border-color 0.2s;
     }
     .review-link:hover { border-color: var(--accent-light); }
-
     .testimonials-cards { display: flex; flex-direction: column; gap: 1.2rem; }
     .t-card {
       background: var(--mid-gray); padding: 1.8rem 2rem;
-      border-left: 2px solid var(--sky-blue);
+      border-left: 2px solid var(--accent);
     }
     .t-card-header {
       display: flex; justify-content: space-between; align-items: flex-start;
@@ -447,7 +539,7 @@
     .t-quote a { color: var(--accent-light); }
     .t-quote a:hover { text-decoration: underline; }
 
-    /* ── ABOUT STRIP ── */
+    /* ── ABOUT ── */
     .about-bg {
       background: var(--black);
       background-image: radial-gradient(ellipse at 50% 100%, rgba(94,143,168,0.06) 0%, transparent 60%);
@@ -457,13 +549,13 @@
       gap: 5rem; align-items: center;
     }
     @media (max-width: 860px) { .about-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
-
     .about-img-wrap { position: relative; }
     .about-img-ph {
       width: 100%; aspect-ratio: 4/5;
       background: linear-gradient(160deg, var(--mid-gray) 0%, #1a2d3d 60%, #0e1d2a 100%);
       position: relative; overflow: hidden;
       display: flex; align-items: flex-end; padding: 1.5rem;
+      object-fit: cover;
     }
     .about-img-label {
       font-size: 0.65rem; font-weight: 500; letter-spacing: 0.2em;
@@ -497,35 +589,6 @@
       background: var(--dark-gray);
       background-image: radial-gradient(ellipse at 0% 50%, rgba(212,137,90,0.06) 0%, transparent 55%);
     }
-    .pricing-layout {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 4rem; align-items: center;
-    }
-    @media (max-width: 760px) { .pricing-layout { grid-template-columns: 1fr; gap: 2.5rem; } }
-
-    .pricing-left p {
-      font-size: 0.95rem; font-weight: 300; line-height: 1.7;
-      color: var(--warm-gray); margin: 0.8rem 0 1.5rem;
-    }
-    .pricing-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
-    @media (max-width: 500px) { .pricing-cards { grid-template-columns: 1fr; } }
-
-    .price-card { background: var(--mid-gray); padding: 1.6rem 1.4rem; }
-    .price-card.featured { background: var(--accent); }
-    .price-label {
-      font-size: 0.67rem; font-weight: 600; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--warm-gray);
-      margin-bottom: 0.4rem;
-    }
-    .price-card.featured .price-label { color: rgba(255,255,255,0.65); }
-    .price-amount {
-      font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem;
-      letter-spacing: 0.04em; line-height: 1; margin-bottom: 0.3rem;
-    }
-    .price-card.featured .price-amount { color: #fff; }
-    .price-desc { font-size: 0.76rem; color: var(--warm-gray); }
-    .price-card.featured .price-desc { color: rgba(255,255,255,0.6); }
-
     /* ── CTA BAND ── */
     .cta-band-bg { background: var(--black); }
     .cta-band {
@@ -558,6 +621,10 @@
       font-size: 1.6rem; letter-spacing: 0.1em;
     }
     .footer-logo span { color: var(--accent-light); }
+    .footer-tagline {
+      font-size: 0.75rem; color: #4a5a66; margin-top: 0.3rem;
+      letter-spacing: 0.08em;
+    }
     .footer-contact { display: flex; flex-direction: column; gap: 0.4rem; text-align: right; }
     .footer-contact a {
       font-size: 0.82rem; color: var(--warm-gray);
@@ -610,7 +677,7 @@
       </ul>
     </nav>
     <div class="nav-cta-wrap">
-      <a href="contact.html" class="nav-cta">Get a Quote</a>
+      <a href="contact.html" class="nav-cta">Book a Call</a>
     </div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -628,13 +695,13 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-left-block">
-            <div class="hero-tag">Pittsburgh Visual Media Studio</div>
-            <h1>Content That <em>Converts.</em></h1>
-            <p class="hero-sub">Photography, drone, video, and web — built for Pittsburgh businesses that need to look as good as they perform.</p>
+            <div class="hero-tag">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
+            <h1>We help businesses<br>look better and<br><em>run smarter.</em></h1>
+            <p class="hero-sub">Brand, web, visual production, and operational systems — built around what your business actually needs. No bloated retainers. No jargon. Just work that moves the needle.</p>
             <div class="hero-actions">
-              <a href="contact.html" class="btn-primary">Start a Project</a>
-              <a href="portfolio.html" class="btn-ghost">
-                View Portfolio
+              <a href="contact.html" class="btn-primary">Book a Discovery Call</a>
+              <a href="#services" class="btn-ghost">
+                See Our Services
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -642,12 +709,16 @@
               <div class="stars">★★★★★</div>
               <div class="hero-proof-text">
                 <strong>"His work completely blew me away."</strong><br>
-                5-star verified · Google Reviews · Pittsburgh, PA
+                Michael · Pittsburgh Prestige Remodeling · 5-star verified
               </div>
             </div>
           </div>
 
           <div class="hero-right-block" aria-hidden="true">
+            <div class="hero-stat">
+              <div class="hero-stat-num">AI</div>
+              <div class="hero-stat-label">Strategy &amp; Implementation</div>
+            </div>
             <div class="hero-stat">
               <div class="hero-stat-num">FAA</div>
               <div class="hero-stat-label">Part 107 Certified</div>
@@ -664,23 +735,23 @@
     <!-- ===== MARQUEE ===== -->
     <div class="marquee-strip" aria-hidden="true">
       <div class="marquee-inner">
-        <span class="marquee-item">Photo & Video</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Brand &amp; Digital</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Creative Production</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Operations &amp; Systems</span><span class="marquee-sep">·</span>
         <span class="marquee-item">FAA Part 107 Drone</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Real Estate Photography</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Web Design</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Local SEO</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Web Development</span><span class="marquee-sep">·</span>
         <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Athletics Coverage</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Commercial Photography</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Photography &amp; Video</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Growing Businesses</span><span class="marquee-sep">·</span>
         <!-- duplicate for seamless loop -->
-        <span class="marquee-item">Photo & Video</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Brand &amp; Digital</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Creative Production</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Operations &amp; Systems</span><span class="marquee-sep">·</span>
         <span class="marquee-item">FAA Part 107 Drone</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Real Estate Photography</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Web Design</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Local SEO</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Web Development</span><span class="marquee-sep">·</span>
         <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Athletics Coverage</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Commercial Photography</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Photography &amp; Video</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Growing Businesses</span><span class="marquee-sep">·</span>
       </div>
     </div>
 
@@ -690,93 +761,102 @@
         <div class="services-header reveal">
           <div>
             <div class="section-label">What We Do</div>
-            <h2>Visual Strategy,<br>End to End</h2>
+            <h2>Three Ways We<br>Build Your Business</h2>
           </div>
-          <p class="services-header-right">From the first shoot to the final search ranking — every deliverable is built to make your Pittsburgh business look sharper and close more leads.</p>
+          <p class="services-header-right">Some clients need to look the part. Some need to run leaner. Most need both. We work across brand, digital, creative, and operations — and figure out together which combination makes the most sense for where you are right now.</p>
         </div>
 
         <div class="services-grid">
           <div class="service-card reveal reveal-d1">
             <span class="service-num">01</span>
-            <span class="service-icon">📷</span>
-            <div class="service-title">Photo, Video & Drone</div>
-            <p class="service-desc">On-location shoots crafted for web, social, and print. FAA Part 107 certified aerial coverage available for every project.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
+            </span>
+            <div class="service-title">Brand &amp; Digital</div>
+            <p class="service-desc">Your digital presence — done properly. We build and manage your web, content strategy, and brand positioning on an ongoing basis. You get the thinking and execution of a dedicated digital hire, without the overhead of one.</p>
             <div class="service-tags">
-              <span class="tag">Drone / Aerial</span>
-              <span class="tag">Athletics</span>
-              <span class="tag">Real Estate</span>
-              <span class="tag">Events</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Brand Positioning</span>
+              <span class="tag">Content Strategy</span>
+              <span class="tag">SEO</span>
             </div>
           </div>
+
           <div class="service-card reveal reveal-d2">
             <span class="service-num">02</span>
-            <span class="service-icon">🖥️</span>
-            <div class="service-title">Websites & Local SEO</div>
-            <p class="service-desc">Fast, clean landing pages and Google Business Profile optimization that turn Pittsburgh search traffic into booked clients.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
+            </span>
+            <div class="service-title">Operations &amp; Systems</div>
+            <p class="service-desc">We look at how your business actually runs — where time is being lost, where things fall through the cracks — and build better systems. That might mean smarter tools, cleaner workflows, or both. The goal is always the same: you get more done with less friction.</p>
             <div class="service-tags">
-              <span class="tag">Landing Pages</span>
-              <span class="tag">GBP Setup</span>
-              <span class="tag">On-Page SEO</span>
-              <span class="tag">Portfolio Builds</span>
+              <span class="tag">Operations Audit</span>
+              <span class="tag">Workflow Design</span>
+              <span class="tag">Tool Implementation</span>
+              <span class="tag">Business Planning</span>
             </div>
           </div>
+
           <div class="service-card reveal reveal-d3">
             <span class="service-num">03</span>
-            <span class="service-icon">🎯</span>
-            <div class="service-title">Brand Content</div>
-            <p class="service-desc">Ongoing content creation for social media, ad campaigns, and marketing collateral — so your feed always looks like you mean business.</p>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 00-2 2v9a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+            </span>
+            <div class="service-title">Creative Production</div>
+            <p class="service-desc">Photography, drone, and video — produced to a professional standard and built to serve a purpose. Whether that's a listing that needs to stand out, a brand that needs a visual identity, or a business that just needs to look as good as it performs.</p>
             <div class="service-tags">
-              <span class="tag">Social Media</span>
-              <span class="tag">Ad Creative</span>
-              <span class="tag">Retainer</span>
+              <span class="tag">Drone / Aerial</span>
+              <span class="tag">Photography</span>
+              <span class="tag">Video</span>
+              <span class="tag">Brand Identity</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== CLIENTS ===== -->
-    <section class="section clients-bg" id="clients">
+    <!-- ===== CLIENTS / WORK ===== -->
+    <section class="section clients-bg" id="work">
       <div class="container">
         <div class="reveal">
-          <div class="section-label">Clients & Results</div>
-          <h2>Pittsburgh Businesses<br>We've Helped Grow</h2>
-          <p class="section-sub">A few highlights — see the full portfolio on the <a href="clients.html" style="color:var(--accent-light)">Clients page</a>.</p>
+          <div class="section-label">Our Work</div>
+          <h2>Businesses We've<br>Helped Grow</h2>
+          <p class="section-sub">Pittsburgh and beyond — see the full portfolio on the <a href="clients.html" style="color:var(--accent-light)">Clients page</a>.</p>
         </div>
 
         <div class="clients-grid">
           <article class="client-card reveal reveal-d1">
-            <img src="images/pitt.JPG" alt="University of Pittsburgh" class="client-logo" loading="lazy">
-            <div class="client-name">University of Pittsburgh</div>
-            <p class="client-desc">On-field photography for D1 Men's Soccer — consistent delivery for media day, game-day assets, and social channels.</p>
-            <span class="client-metric">Game-day assets & coverage</span>
+            <img src="images/robin-home-care-logo.png" alt="Robin Home Care" class="client-logo" loading="lazy">
+            <div class="client-name">Robin Home Care</div>
+            <p class="client-desc">CQC-regulated domiciliary care provider based in London, UK. Full operational audit followed by systems implementation across scheduling, compliance documentation, and client communication. Digital presence rebuilt from zero. Long-term business strategy framework delivered to owner-founders.</p>
+            <span class="client-metric">Operations &amp; systems · London, UK</span>
           </article>
 
           <article class="client-card reveal reveal-d2">
             <img src="images/ppr.png" alt="Pittsburgh Prestige Remodeling" class="client-logo" loading="lazy">
             <div class="client-name">Pittsburgh Prestige Remodeling</div>
-            <p class="client-desc">Full website build, copy, and portfolio photography to showcase cabinetry and installations for incoming leads.</p>
-            <span class="client-metric">New site + lead-ready gallery</span>
+            <p class="client-desc">Ongoing retainer. Repositioned from local contractor to premium remodeling brand — covering web development, content strategy, portfolio photography, and monthly digital direction.</p>
+            <span class="client-metric">Active retainer · Digital strategy + visual</span>
           </article>
 
           <article class="client-card reveal reveal-d3">
-            <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group LLC" class="client-logo" loading="lazy">
-            <div class="client-name">S&amp;G Asset Group LLC</div>
-            <p class="client-desc">Commercial real estate photography for listings and investor materials — exteriors, interiors, and drone aerials.</p>
-            <span class="client-metric">CRE photography & showcase</span>
+            <img src="images/ADC Logo 1.png" alt="Aqua Design Collective LLC" class="client-logo" loading="lazy">
+            <div class="client-name">Aqua Design Collective LLC</div>
+            <p class="client-desc">Full retainer engagement. Web development, visual identity, digital strategy, and ongoing content direction — all within a unified design system built to reflect their premium positioning.</p>
+            <span class="client-metric">Active retainer · Brand + digital</span>
           </article>
 
           <article class="client-card reveal reveal-d1">
-            <img src="images/ADC Logo.png" alt="Aqua Design Collective LLC" class="client-logo" loading="lazy">
-            <div class="client-name">Aqua Design Collective LLC</div>
-            <p class="client-desc">Visual media and web support for a design-forward collective — photography, branding assets, and digital presence.</p>
-            <span class="client-metric">Visual media & web</span>
+            <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group LLC" class="client-logo" loading="lazy">
+            <div class="client-name">S&amp;G Asset Group LLC</div>
+            <p class="client-desc">Commercial real estate photography for listings and investor materials — exteriors, interiors, and drone aerials that make properties stand out in competitive markets.</p>
+            <span class="client-metric">CRE photography &amp; drone</span>
           </article>
         </div>
 
         <div class="clients-cta reveal">
           <a href="clients.html">
-            See all clients
+            See all work
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -788,9 +868,9 @@
       <div class="container">
         <div class="testimonials-layout">
           <div class="testimonials-left reveal">
-            <div class="section-label">Reviews</div>
-            <h2>What Clients Say</h2>
-            <p>All verified 5-star reviews from real Pittsburgh businesses and individuals.</p>
+            <div class="section-label">What Clients Say</div>
+            <h2>Results that<br>speak for<br>themselves</h2>
+            <p>Verified 5-star reviews from real Pittsburgh businesses. Every word is theirs.</p>
             <a href="https://share.google/0lX3z5vkgebzNQuNx" target="_blank" rel="noopener" class="review-link">
               Read on Google
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -806,9 +886,7 @@
                 </div>
                 <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
               </div>
-              <p class="t-quote">
-                "His work completely blew me away. The way he captured the lighting, angles, and textures made the space look even better than I imagined. Every shot looked polished, professional, and ready for a high-end magazine. He clearly understands how to photograph interiors in a way that feels clean, modern, and authentic."
-              </p>
+              <p class="t-quote">"His work completely blew me away. The way he captured the lighting, angles, and textures made the space look even better than I imagined. Every shot looked polished, professional, and ready for a high-end magazine. He clearly understands how to make a business look as good as it actually is."</p>
             </article>
 
             <article class="t-card" aria-labelledby="t-joe">
@@ -819,23 +897,7 @@
                 </div>
                 <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
               </div>
-              <p class="t-quote">
-                "Andrew did an excellent job photographing my buildings. I was pleased with the amount of photos and how quickly I was able to receive them. He also took drone footage so I was able to have aerial shots of my properties. I would highly recommend."
-              </p>
-            </article>
-
-            <article class="t-card" aria-labelledby="t-deanna">
-              <div class="t-card-header">
-                <div>
-                  <div class="t-author-name" id="t-deanna">Deanna</div>
-                  <div class="t-author-role">Portrait Client</div>
-                </div>
-                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
-              </div>
-              <p class="t-quote">
-                "Andrew captured such beautiful memories from an unforgettable trip, and I'm so glad to have them in print to look back on. The photos turned out amazing — such great quality and truly special to me.
-                <a href="https://share.google/0lX3z5vkgebzNQuNx" target="_blank" rel="noopener">Read the original</a>."
-              </p>
+              <p class="t-quote">"Andrew did an excellent job photographing my buildings. I was pleased with the amount of photos and how quickly I was able to receive them. He also took drone footage so I was able to have aerial shots of my properties. I would highly recommend."</p>
             </article>
           </div>
         </div>
@@ -847,57 +909,65 @@
       <div class="container">
         <div class="about-layout">
           <div class="about-img-wrap reveal">
-            <img src="images/about-andrew.jpg" alt="Andrew, founder of ASF Visuals LLC" class="about-img-ph" loading="lazy">
-            <span class="about-img-label">Andrew · ASF Visuals LLC</span>
+            <img src="images/about-andrew.jpg" alt="Andrew Coutinho, founder of ASF Visuals LLC" class="about-img-ph" loading="lazy">
             <div class="about-corner" aria-hidden="true"></div>
           </div>
 
           <div class="about-content reveal reveal-d1">
             <div class="section-label">About</div>
-            <h2>Built by a<br>Photographer &amp;<br>Strategist</h2>
-            <p>ASF Visuals LLC is led by Andrew — a Pittsburgh-based visual media professional with a background spanning commercial photography, drone operations, web development, and business strategy.</p>
-            <p>Every project is built around one question: <em>does this make your business grow?</em></p>
+            <h2>Built by a Strategist<br>Who Executes</h2>
+            <p>ASF Visuals LLC is led by Andrew Coutinho — a Pittsburgh-based consultant, creative, and founder with a background spanning business strategy, AI implementation, drone operations, web development, and global leadership.</p>
+            <p>Every engagement is built around one question: <em>does this make your business measurably stronger?</em></p>
             <div class="credentials">
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">FAA Part 107 Drone Licensed</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Pitt D1 Athletics Photographer</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Fulbright-Hays East Africa Program</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">University of Pittsburgh Alum</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Full-Stack Web Development</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">WEF Global Shapers, Pittsburgh</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">WEF Global Shapers — Pittsburgh Hub, Incoming Curator (July 2026)</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Co-Founder &amp; President, NCBO — 10+ University Network</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Economics &amp; Africana Studies — University of Pittsburgh, 2025</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Fulbright-Hays Scholar — East Africa Field Research</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">FAA Part 107 Drone Licensed — Sony A7III</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Full-Stack Web Development — Framer, custom builds</div></div>
             </div>
-            <a href="about.html" class="btn-primary">More About Me</a>
+            <a href="about.html" class="btn-primary">More About Andrew</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== PRICING ANCHOR ===== -->
-    <section class="section pricing-bg" id="pricing">
+    <!-- ===== HOW WE WORK ===== -->
+    <section class="section pricing-bg" id="how-we-work">
       <div class="container">
-        <div class="pricing-layout reveal">
-          <div class="pricing-left">
-            <div class="section-label">Pricing</div>
-            <h2>Transparent<br>Starting Points</h2>
-            <p>Every project is scoped individually — but here's a sense of what to expect so there are no surprises.</p>
-            <a href="contact.html" class="btn-primary">Get a Custom Quote</a>
+        <div class="reveal" style="margin-bottom:3.5rem;">
+          <div class="section-label">How It Works</div>
+          <h2>Simple Process.<br>No Surprises.</h2>
+          <p class="section-sub" style="margin-bottom:0;">Every engagement starts the same way — a free 30-minute call. You talk. We listen. No pitch, no agenda.</p>
+        </div>
+        <div class="services-grid reveal">
+          <div class="service-card">
+            <span class="service-num">01</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </span>
+            <div class="service-title">Discovery Call</div>
+            <p class="service-desc">30 minutes to understand your business — where it is, where it needs to go, and what's actually getting in the way. We ask questions. You ask questions. No pressure, no pitch.</p>
           </div>
-          <div class="pricing-cards">
-            <div class="price-card">
-              <div class="price-label">Photography</div>
-              <div class="price-amount">$150+</div>
-              <div class="price-desc">Per session</div>
-            </div>
-            <div class="price-card featured">
-              <div class="price-label">Website Build</div>
-              <div class="price-amount">$500+</div>
-              <div class="price-desc">Landing page + SEO</div>
-            </div>
-            <div class="price-card">
-              <div class="price-label">Drone Add-On</div>
-              <div class="price-amount">$100+</div>
-              <div class="price-desc">Per session</div>
-            </div>
+          <div class="service-card">
+            <span class="service-num">02</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </span>
+            <div class="service-title">Clear Plan</div>
+            <p class="service-desc">If there's a fit, we put together a specific plan — what we'll do, in what order, and what it costs. Everything in writing. You know exactly what you're getting before anything starts.</p>
           </div>
+          <div class="service-card">
+            <span class="service-num">03</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </span>
+            <div class="service-title">Ongoing Work</div>
+            <p class="service-desc">We execute, you see results. Monthly check-ins keep things on track and let us adjust as your business evolves. You always know what we're working on, what it's producing, and what's next.</p>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:3rem;" class="reveal">
+          <a href="contact.html" class="btn-primary">Book Your Free Discovery Call</a>
         </div>
       </div>
     </section>
@@ -907,13 +977,13 @@
       <div class="container">
         <div class="cta-band reveal">
           <div>
-            <div class="section-label">Ready?</div>
-            <h2>Let's Make Your<br>Work Shine.</h2>
+            <div class="section-label">Start here</div>
+            <h2>Let's talk about<br>your business.</h2>
           </div>
           <div class="cta-band-actions">
-            <a href="contact.html" class="btn-primary">Get a Quote</a>
-            <a href="portfolio.html" class="btn-ghost" style="color:var(--warm-gray)">
-              See Portfolio
+            <a href="contact.html" class="btn-primary">Book a Free Discovery Call</a>
+            <a href="clients.html" class="btn-ghost" style="color:var(--warm-gray)">
+              See Our Work
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
@@ -926,10 +996,13 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
     <div class="footer-top">
-      <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+      <div>
+        <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
+        <div class="footer-tagline">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
+      </div>
       <div class="footer-contact">
-        <a href="https://asfvisualsllc.com">asfvisualsllc.com</a>
-        <span>Pittsburgh, Pennsylvania</span>
+        <a href="https://www.asfvisualsllc.com">asfvisualsllc.com</a>
+        <span>Pittsburgh, Pennsylvania · Creative &amp; Strategy Studio</span>
       </div>
     </div>
     <div class="footer-bottom">
@@ -941,7 +1014,8 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script>
     /* ── Footer year ── */
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -976,7 +1050,7 @@
       }, { passive: true });
     })();
 
-    /* ── Hero background cycler (preserved from original) ── */
+    /* ── Hero background cycler ── */
     (function cycleHero(){
       const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const A = document.getElementById('bgA');
@@ -987,7 +1061,7 @@
       const FALLBACK = ['images/DowntownCloudsReduced.webp'];
 
       function withOverlay(url){
-        return `linear-gradient(175deg, rgba(14,18,23,.78) 0%, rgba(20,35,50,.50) 50%, rgba(30,20,10,.60) 100%), url('${url}')`;
+        return `linear-gradient(175deg, rgba(14,18,23,.82) 0%, rgba(20,35,50,.55) 50%, rgba(30,20,10,.65) 100%), url('${url}')`;
       }
 
       async function loadManifest(){
