@@ -4,22 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh</title>
-  <meta name="description" content="ASF Visuals LLC is a Pittsburgh creative and strategy studio. We help growing businesses look better and run smarter — through brand, web, digital strategy, creative production, and operational systems." />
-  <meta name="keywords" content="creative strategy studio Pittsburgh, business strategy Pittsburgh, brand and digital Pittsburgh, web design Pittsburgh, drone photography Pittsburgh, business operations consulting Pittsburgh, ASF Visuals">
+  <title>Product Photography Pittsburgh | ASF Visuals LLC</title>
+  <meta name="description" content="Pittsburgh product photography studio. Clean, consistent product images for ecommerce, packaging, and paid ads, shot on a Sony A7III. FAA Part 107 aerial work and one-time website builds available." />
+  <meta name="keywords" content="product photography Pittsburgh, ecommerce product photos Pittsburgh, packaging photography Pittsburgh, commercial product photographer Pittsburgh, drone photography Pittsburgh, FAA Part 107 Pittsburgh, aerial photography Pittsburgh, ASF Visuals">
   <link rel="canonical" href="https://www.asfvisualsllc.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh" />
-  <meta property="og:description" content="We help growing businesses look better and run smarter — brand, web, digital strategy, creative production, and operational systems." />
+  <meta property="og:title" content="Product Photography Pittsburgh | ASF Visuals LLC" />
+  <meta property="og:description" content="Product photography for ecommerce, packaging, and paid ads. Fixed scope, fixed deliverable count, fixed turnaround. Aerial and drone work second, one-time website builds third." />
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.asfvisualsllc.com/" />
+  <meta property="og:site_name" content="ASF Visuals LLC" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh" />
-  <meta name="twitter:description" content="Brand, web, digital strategy, and operational systems for growing businesses. Pittsburgh-based, built for results." />
+  <meta name="twitter:title" content="Product Photography Pittsburgh | ASF Visuals LLC" />
+  <meta name="twitter:description" content="Pittsburgh product photography with fixed scope and fixed turnaround. FAA Part 107 aerial work and one-time website builds available." />
   <meta name="twitter:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg" />
 
   <meta name="theme-color" content="#0e1217" />
@@ -31,20 +33,25 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "ProfessionalService",
+        "@type": ["ProfessionalService", "PhotographyBusiness"],
         "@id": "https://www.asfvisualsllc.com/#organization",
         "name": "ASF Visuals LLC",
         "url": "https://www.asfvisualsllc.com",
         "logo": "https://www.asfvisualsllc.com/images/ASF_Visuals_logo_white.png",
         "image": "https://www.asfvisualsllc.com/images/social-preview.jpg",
-        "description": "ASF Visuals LLC is a Pittsburgh creative and strategy studio helping growing businesses look better and run smarter — through brand, web, digital strategy, creative production, and operational systems.",
+        "description": "ASF Visuals LLC is a Pittsburgh production studio specializing in product photography for ecommerce, packaging, and paid advertising, with FAA Part 107 aerial and drone work as a second line and one-time website builds as a third.",
+        "slogan": "Product photography that sells the product.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Pittsburgh",
           "addressRegion": "PA",
           "addressCountry": "US"
         },
-        "areaServed": ["Pittsburgh, PA", "United States", "United Kingdom"],
+        "areaServed": [
+          { "@type": "City", "name": "Pittsburgh" },
+          { "@type": "State", "name": "Pennsylvania" },
+          { "@type": "Country", "name": "United States" }
+        ],
         "sameAs": [
           "https://www.linkedin.com/company/asfvisualsllc/",
           "https://www.instagram.com/asfvisuals/"
@@ -52,7 +59,7 @@
         "founder": {
           "@type": "Person",
           "name": "Andrew Coutinho",
-          "jobTitle": "Founder & Principal Consultant",
+          "jobTitle": "Founder and Lead Photographer",
           "affiliation": {
             "@type": "Organization",
             "name": "Global Shapers Community",
@@ -61,30 +68,39 @@
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Studio Services",
+          "name": "Production Services",
           "itemListElement": [
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Brand & Digital",
-                "description": "Web development, brand positioning, content strategy, and digital presence management for growing businesses."
+                "serviceType": "Product Photography",
+                "name": "Product Photography",
+                "description": "Studio and on-location product photography for ecommerce listings, packaging, catalogs, and paid advertising. Includes styling, lighting, retouching, and web-ready exports.",
+                "areaServed": { "@type": "City", "name": "Pittsburgh" },
+                "provider": { "@id": "https://www.asfvisualsllc.com/#organization" }
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Operations & Systems",
-                "description": "Business operations audit and implementation of smarter tools and workflows that reduce overhead and improve efficiency."
+                "serviceType": "Aerial Photography",
+                "name": "Aerial and Drone Photography",
+                "description": "FAA Part 107 certified aerial photography and video for commercial property, construction progress, roof and site surveys, and event coverage.",
+                "areaServed": { "@type": "City", "name": "Pittsburgh" },
+                "provider": { "@id": "https://www.asfvisualsllc.com/#organization" }
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Creative Production",
-                "description": "Drone photography, commercial photography, video, and visual assets built to serve a business purpose."
+                "serviceType": "Web Design",
+                "name": "Website Build and Handover",
+                "description": "One-time website build. On delivery the repository, domain, and all accounts transfer to the client, who owns and operates the site. No hosting, no maintenance, no retainers.",
+                "areaServed": { "@type": "City", "name": "Pittsburgh" },
+                "provider": { "@id": "https://www.asfvisualsllc.com/#organization" }
               }
             }
           ]
@@ -114,9 +130,10 @@
         "@type": "WebPage",
         "@id": "https://www.asfvisualsllc.com/#webpage",
         "url": "https://www.asfvisualsllc.com/",
-        "name": "ASF Visuals LLC – Creative & Strategy Studio | Pittsburgh",
-        "description": "A Pittsburgh creative and strategy studio helping growing businesses look better and run smarter.",
-        "isPartOf": { "@id": "https://www.asfvisualsllc.com/#organization" }
+        "name": "Product Photography Pittsburgh | ASF Visuals LLC",
+        "description": "Pittsburgh product photography for ecommerce, packaging, and paid ads. Aerial and drone work second, one-time website builds third.",
+        "isPartOf": { "@id": "https://www.asfvisualsllc.com/#organization" },
+        "about": { "@id": "https://www.asfvisualsllc.com/#organization" }
       }
     ]
   }
@@ -450,6 +467,85 @@
       border: 1px solid rgba(78,143,168,0.3); padding: 0.22rem 0.6rem;
     }
 
+    .service-card--primary { grid-column: span 2; }
+    .service-card--wide { grid-column: 1 / -1; }
+    @media (max-width: 900px) {
+      .service-card--primary, .service-card--wide { grid-column: auto; }
+    }
+    .service-lead {
+      font-size: 1rem; font-weight: 300; line-height: 1.75;
+      color: var(--mist); margin-bottom: 1.1rem;
+    }
+    .service-list {
+      list-style: none; margin: 0 0 1.4rem; padding: 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1.4rem;
+    }
+    @media (max-width: 640px) { .service-list { grid-template-columns: 1fr; } }
+    .service-list li {
+      position: relative; padding-left: 1rem;
+      font-size: 0.85rem; font-weight: 300; line-height: 1.6; color: var(--warm-gray);
+    }
+    .service-list li::before {
+      content: ''; position: absolute; left: 0; top: 0.6rem;
+      width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+    }
+    .service-note {
+      font-size: 0.8rem; font-weight: 500; line-height: 1.6;
+      color: var(--amber-light); border-left: 2px solid var(--amber);
+      padding: 0.15rem 0 0.15rem 0.9rem; margin-bottom: 1.4rem;
+    }
+
+    /* ── PACKAGES ── */
+    .packages-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+    }
+    @media (max-width: 900px) { .packages-grid { grid-template-columns: 1fr; } }
+    .package-card {
+      background: var(--mid-gray); padding: 2.5rem 2rem;
+      display: flex; flex-direction: column;
+      position: relative; overflow: hidden; transition: background 0.25s;
+    }
+    .package-card:hover { background: #1a2c3d; }
+    .package-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: var(--accent); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .package-card:hover::before { transform: scaleX(1); }
+    .package-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.55rem;
+      letter-spacing: 0.06em; margin-bottom: 0.4rem;
+    }
+    .package-for {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent-light); margin-bottom: 1.4rem;
+    }
+    .package-price {
+      font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; line-height: 1;
+      color: var(--amber); letter-spacing: 0.04em;
+    }
+    .package-price-note {
+      font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--warm-gray);
+      margin: 0.4rem 0 1.6rem;
+    }
+    .package-specs {
+      list-style: none; margin: 0 0 1.8rem; padding: 1.4rem 0 0;
+      border-top: 1px solid rgba(94,143,168,0.15); flex: 1;
+    }
+    .package-specs li {
+      display: flex; justify-content: space-between; gap: 1rem;
+      font-size: 0.84rem; font-weight: 300; line-height: 1.5;
+      color: var(--warm-gray); padding: 0.5rem 0;
+    }
+    .package-specs li span:last-child {
+      color: var(--off-white); font-weight: 400; text-align: right;
+    }
+    .packages-footnote {
+      font-size: 0.85rem; font-weight: 300; line-height: 1.7;
+      color: var(--warm-gray); margin-top: 2.5rem; text-align: center;
+    }
+
     /* ── CLIENTS / WORK ── */
     .clients-bg {
       background: var(--black);
@@ -469,6 +565,13 @@
     .client-logo {
       width: 72px; height: 72px; object-fit: contain;
       background: rgba(255,255,255,0.05); border-radius: 8px; padding: 8px;
+    }
+    .client-logo-text {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.05); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem;
+      letter-spacing: 0.08em; color: var(--accent-light); flex-shrink: 0;
     }
     .client-name {
       font-family: 'Bebas Neue', sans-serif;
@@ -677,7 +780,7 @@
       </ul>
     </nav>
     <div class="nav-cta-wrap">
-      <a href="contact.html" class="nav-cta">Book a Call</a>
+      <a href="contact.html" class="nav-cta">Book a Shoot</a>
     </div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -695,13 +798,13 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-left-block">
-            <div class="hero-tag">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
-            <h1>We help businesses<br>look better and<br><em>run smarter.</em></h1>
-            <p class="hero-sub">Brand, web, visual production, and operational systems — built around what your business actually needs. No bloated retainers. No jargon. Just work that moves the needle.</p>
+            <div class="hero-tag">Product Photography Studio &middot; Pittsburgh, PA</div>
+            <h1>Product photos<br>that make people<br><em>hit buy.</em></h1>
+            <p class="hero-sub">Clean, consistent product images for ecommerce listings, packaging, catalogs, and paid ads. Fixed scope, fixed shot count, fixed turnaround. You know what you are getting and when you are getting it.</p>
             <div class="hero-actions">
-              <a href="contact.html" class="btn-primary">Book a Discovery Call</a>
-              <a href="#services" class="btn-ghost">
-                See Our Services
+              <a href="contact.html" class="btn-primary">Book a Shoot</a>
+              <a href="#packages" class="btn-ghost">
+                See Shoot Packages
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -709,15 +812,15 @@
               <div class="stars">★★★★★</div>
               <div class="hero-proof-text">
                 <strong>"His work completely blew me away."</strong><br>
-                Michael · Pittsburgh Prestige Remodeling · 5-star verified
+                Michael &middot; Pittsburgh Prestige Remodeling &middot; 5-star verified
               </div>
             </div>
           </div>
 
           <div class="hero-right-block" aria-hidden="true">
             <div class="hero-stat">
-              <div class="hero-stat-num">AI</div>
-              <div class="hero-stat-label">Strategy &amp; Implementation</div>
+              <div class="hero-stat-num">A7III</div>
+              <div class="hero-stat-label">Full-Frame Studio Kit</div>
             </div>
             <div class="hero-stat">
               <div class="hero-stat-num">FAA</div>
@@ -735,23 +838,23 @@
     <!-- ===== MARQUEE ===== -->
     <div class="marquee-strip" aria-hidden="true">
       <div class="marquee-inner">
-        <span class="marquee-item">Brand &amp; Digital</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Creative Production</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Operations &amp; Systems</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">FAA Part 107 Drone</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Web Development</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Photography &amp; Video</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Growing Businesses</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Product Photography</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Ecommerce &amp; Packaging</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Studio &amp; On-Location</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">FAA Part 107 Aerial</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Drone Video</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Fixed Scope, Fixed Turnaround</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">One-Time Website Builds</span><span class="marquee-sep">&middot;</span>
         <!-- duplicate for seamless loop -->
-        <span class="marquee-item">Brand &amp; Digital</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Creative Production</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Operations &amp; Systems</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">FAA Part 107 Drone</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Web Development</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Photography &amp; Video</span><span class="marquee-sep">·</span>
-        <span class="marquee-item">Growing Businesses</span><span class="marquee-sep">·</span>
+        <span class="marquee-item">Product Photography</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Ecommerce &amp; Packaging</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Studio &amp; On-Location</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">FAA Part 107 Aerial</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Drone Video</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Pittsburgh, PA</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">Fixed Scope, Fixed Turnaround</span><span class="marquee-sep">&middot;</span>
+        <span class="marquee-item">One-Time Website Builds</span><span class="marquee-sep">&middot;</span>
       </div>
     </div>
 
@@ -761,24 +864,37 @@
         <div class="services-header reveal">
           <div>
             <div class="section-label">What We Do</div>
-            <h2>Three Ways We<br>Build Your Business</h2>
+            <h2>Production First.<br>Product Photography Leads.</h2>
           </div>
-          <p class="services-header-right">Some clients need to look the part. Some need to run leaner. Most need both. We work across brand, digital, creative, and operations — and figure out together which combination makes the most sense for where you are right now.</p>
+          <p class="services-header-right">Most of what leaves this studio is product photography. Aerial and drone work is the second line. Websites get built once and handed to you. That is the whole menu, in that order.</p>
         </div>
 
         <div class="services-grid">
-          <div class="service-card reveal reveal-d1">
+          <div class="service-card service-card--primary reveal reveal-d1">
             <span class="service-num">01</span>
             <span class="service-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 00-2 2v9a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
             </span>
-            <div class="service-title">Brand &amp; Digital</div>
-            <p class="service-desc">Your digital presence — done properly. We build and manage your web, content strategy, and brand positioning on an ongoing basis. You get the thinking and execution of a dedicated digital hire, without the overhead of one.</p>
+            <div class="service-title">Product Photography</div>
+            <p class="service-lead">The core of the business. Product images built to sell on a listing page, a shelf, or a paid ad. Shot on a full-frame Sony A7III with controlled lighting, styled and retouched, delivered in the exact sizes your channels need.</p>
+            <ul class="service-list">
+              <li>Ecommerce listings on clean white or seamless color</li>
+              <li>Packaging and label detail work</li>
+              <li>Lifestyle and in-use context sets</li>
+              <li>Scale, texture, and macro detail shots</li>
+              <li>Flat lays, grouped sets, and hero angles</li>
+              <li>Catalog and lookbook runs</li>
+              <li>Paid social and ad creative crops</li>
+              <li>Studio or on-location at your space</li>
+            </ul>
+            <p class="service-desc">Every shoot comes back color-corrected, background-clean, and exported for web and print. Fixed shot counts and fixed turnaround, so you can plan a launch around it. Packages and turnaround are listed below.</p>
             <div class="service-tags">
-              <span class="tag">Web Development</span>
-              <span class="tag">Brand Positioning</span>
-              <span class="tag">Content Strategy</span>
-              <span class="tag">SEO</span>
+              <span class="tag">Ecommerce</span>
+              <span class="tag">Packaging</span>
+              <span class="tag">Lifestyle</span>
+              <span class="tag">Catalog</span>
+              <span class="tag">Ad Creative</span>
+              <span class="tag">Retouching</span>
             </div>
           </div>
 
@@ -787,31 +903,104 @@
             <span class="service-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/></svg>
             </span>
-            <div class="service-title">Operations &amp; Systems</div>
-            <p class="service-desc">We look at how your business actually runs — where time is being lost, where things fall through the cracks — and build better systems. That might mean smarter tools, cleaner workflows, or both. The goal is always the same: you get more done with less friction.</p>
+            <div class="service-title">Aerial &amp; Drone</div>
+            <p class="service-desc">FAA Part 107 certified, fully insured, and legal in controlled airspace. Aerial stills and video for commercial property, construction progress, land and site surveys, roof condition, and event coverage across the Pittsburgh region.</p>
+            <ul class="service-list" style="grid-template-columns:1fr;">
+              <li>Commercial real estate and listing aerials</li>
+              <li>Construction and site progress sets</li>
+              <li>Roof and property condition surveys</li>
+              <li>Aerial video for brand and event work</li>
+            </ul>
             <div class="service-tags">
-              <span class="tag">Operations Audit</span>
-              <span class="tag">Workflow Design</span>
-              <span class="tag">Tool Implementation</span>
-              <span class="tag">Business Planning</span>
+              <span class="tag">FAA Part 107</span>
+              <span class="tag">Aerial Stills</span>
+              <span class="tag">Drone Video</span>
+              <span class="tag">Site Surveys</span>
             </div>
           </div>
 
-          <div class="service-card reveal reveal-d3">
+          <div class="service-card service-card--wide reveal reveal-d3">
             <span class="service-num">03</span>
             <span class="service-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 00-2 2v9a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </span>
-            <div class="service-title">Creative Production</div>
-            <p class="service-desc">Photography, drone, and video — produced to a professional standard and built to serve a purpose. Whether that's a listing that needs to stand out, a brand that needs a visual identity, or a business that just needs to look as good as it performs.</p>
+            <div class="service-title">Web Design: Build Once, Then It Is Yours</div>
+            <p class="service-note">One-time build and full handover. No hosting, no maintenance, no retainers, no monthly fees. When the build is done, the repository, the domain, and every account transfer to you and the engagement ends.</p>
+            <p class="service-desc">I design and build the site, load your content, ship it live, and hand over the keys. You get the code, the accounts, the logins, and a written walkthrough of how to run it. After that you own it outright and you are free to run it yourself or hand it to anyone you like. If you want changes later, that is a new one-time project quoted on its own, not a standing arrangement.</p>
             <div class="service-tags">
-              <span class="tag">Drone / Aerial</span>
-              <span class="tag">Photography</span>
-              <span class="tag">Video</span>
-              <span class="tag">Brand Identity</span>
+              <span class="tag">One-Time Build</span>
+              <span class="tag">Full Repo Handover</span>
+              <span class="tag">Accounts Transferred</span>
+              <span class="tag">No Retainer</span>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== PACKAGES ===== -->
+    <section class="section pricing-bg" id="packages">
+      <div class="container">
+        <div class="reveal" style="margin-bottom:3.5rem;">
+          <div class="section-label">Shoot Packages</div>
+          <h2>Fixed Scope.<br>Fixed Count. Fixed Date.</h2>
+          <p class="section-sub" style="margin-bottom:0;">Three product photography packages. You know the shot count and the delivery date before the shoot is booked. Nothing here renews and nothing here bills monthly.</p>
+        </div>
+
+        <div class="packages-grid reveal">
+          <article class="package-card">
+            <div class="package-name">Starter Set</div>
+            <div class="package-for">Single product or small drop</div>
+            <div class="package-price">[PRICE TBD]</div>
+            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
+            <ul class="package-specs">
+              <li><span>Products covered</span><span>Up to 3</span></li>
+              <li><span>Final images</span><span>12 edited</span></li>
+              <li><span>Angles per product</span><span>4</span></li>
+              <li><span>Backgrounds</span><span>White or 1 seamless color</span></li>
+              <li><span>Shoot time</span><span>Half day, in studio</span></li>
+              <li><span>Turnaround</span><span>5 business days</span></li>
+              <li><span>Revisions</span><span>1 round</span></li>
+            </ul>
+            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Starter Set</a>
+          </article>
+
+          <article class="package-card">
+            <div class="package-name">Catalog Set</div>
+            <div class="package-for">Full line or seasonal refresh</div>
+            <div class="package-price">[PRICE TBD]</div>
+            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
+            <ul class="package-specs">
+              <li><span>Products covered</span><span>Up to 10</span></li>
+              <li><span>Final images</span><span>40 edited</span></li>
+              <li><span>Angles per product</span><span>4 plus 1 detail</span></li>
+              <li><span>Backgrounds</span><span>White plus 2 seamless colors</span></li>
+              <li><span>Shoot time</span><span>Full day, in studio</span></li>
+              <li><span>Turnaround</span><span>7 business days</span></li>
+              <li><span>Revisions</span><span>2 rounds</span></li>
+            </ul>
+            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Catalog Set</a>
+          </article>
+
+          <article class="package-card">
+            <div class="package-name">Campaign Set</div>
+            <div class="package-for">Launch, ads, and lifestyle</div>
+            <div class="package-price">[PRICE TBD]</div>
+            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
+            <ul class="package-specs">
+              <li><span>Products covered</span><span>Up to 6</span></li>
+              <li><span>Final images</span><span>50 edited</span></li>
+              <li><span>Shot mix</span><span>Studio plus lifestyle</span></li>
+              <li><span>Ad crops</span><span>4:5, 1:1, and 9:16</span></li>
+              <li><span>Shoot time</span><span>Full day, studio or location</span></li>
+              <li><span>Turnaround</span><span>10 business days</span></li>
+              <li><span>Revisions</span><span>2 rounds</span></li>
+            </ul>
+            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Campaign Set</a>
+          </article>
+        </div>
+
+        <p class="packages-footnote reveal">Every package is a one-time booking. Aerial and drone add-ons are quoted per shoot. Product outside a standard tabletop footprint, on-location travel past 30 miles, and rush turnaround are quoted separately before anything is booked.</p>
       </div>
     </section>
 
@@ -820,30 +1009,37 @@
       <div class="container">
         <div class="reveal">
           <div class="section-label">Our Work</div>
-          <h2>Businesses We've<br>Helped Grow</h2>
-          <p class="section-sub">Pittsburgh and beyond — see the full portfolio on the <a href="clients.html" style="color:var(--accent-light)">Clients page</a>.</p>
+          <h2>Recent Work</h2>
+          <p class="section-sub">Product, commercial, and aerial shoots across Pittsburgh, plus the sites built and handed over. Full portfolio on the <a href="clients.html" style="color:var(--accent-light)">Clients page</a>.</p>
         </div>
 
         <div class="clients-grid">
           <article class="client-card reveal reveal-d1">
             <img src="images/ppr.png" alt="Pittsburgh Prestige Remodeling" class="client-logo" loading="lazy">
             <div class="client-name">Pittsburgh Prestige Remodeling</div>
-            <p class="client-desc">Ongoing retainer. Repositioned from local contractor to premium remodeling brand — covering web development, content strategy, portfolio photography, and monthly digital direction.</p>
-            <span class="client-metric">Active retainer · Digital strategy + visual</span>
+            <p class="client-desc">Product and project photography across cutting boards, cabinetry, and custom carpentry, shot for listings and portfolio use. Website built once and handed over with the repo and accounts.</p>
+            <span class="client-metric">Product photography &middot; Site delivered</span>
           </article>
 
-          <article class="client-card reveal reveal-d3">
-            <img src="images/ADC Logo 1.png" alt="Aqua Design Collective LLC" class="client-logo" loading="lazy">
-            <div class="client-name">Aqua Design Collective LLC</div>
-            <p class="client-desc">Full retainer engagement. Web development, visual identity, digital strategy, and ongoing content direction — all within a unified design system built to reflect their premium positioning.</p>
-            <span class="client-metric">Active retainer · Brand + digital</span>
+          <article class="client-card reveal reveal-d2">
+            <div class="client-logo-text" aria-hidden="true">NCBO</div>
+            <div class="client-name">NCBO</div>
+            <p class="client-desc">National Collegiate Bodybuilding Organization. Website and companion app built for a 10-plus university network, covering athlete registration, event schedules, and results. Built once, repo and accounts transferred to the organization.</p>
+            <span class="client-metric">Website &amp; app development</span>
           </article>
 
           <article class="client-card reveal reveal-d1">
+            <img src="images/ADC Logo 1.png" alt="Aqua Design Collective LLC" class="client-logo" loading="lazy">
+            <div class="client-name">Aqua Design Collective LLC</div>
+            <p class="client-desc">Website design and build on a unified dark design system with a gallery CMS and client admin portal. Delivered as a one-time engagement with full handover.</p>
+            <span class="client-metric">Website build &middot; Handed over</span>
+          </article>
+
+          <article class="client-card reveal reveal-d3">
             <img src="clients/processed/clients/s-g-asset-group-llc/3550-w-market-st/s-g-property-001_1600.avif" alt="S&G Asset Group LLC" class="client-logo" loading="lazy">
             <div class="client-name">S&amp;G Asset Group LLC</div>
-            <p class="client-desc">Commercial real estate photography for listings and investor materials — exteriors, interiors, and drone aerials that make properties stand out in competitive markets.</p>
-            <span class="client-metric">CRE photography &amp; drone</span>
+            <p class="client-desc">Commercial real estate photography for listings and investor materials. Exteriors, interiors, and Part 107 drone aerials across two properties.</p>
+            <span class="client-metric">Aerial &amp; commercial photography</span>
           </article>
         </div>
 
@@ -863,7 +1059,7 @@
           <div class="testimonials-left reveal">
             <div class="section-label">What Clients Say</div>
             <h2>Results that<br>speak for<br>themselves</h2>
-            <p>Verified 5-star reviews from real Pittsburgh businesses. Every word is theirs.</p>
+            <p>Verified 5-star reviews from real Pittsburgh clients. Every word is theirs.</p>
             <a href="https://share.google/0lX3z5vkgebzNQuNx" target="_blank" rel="noopener" class="review-link">
               Read on Google
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -908,18 +1104,18 @@
 
           <div class="about-content reveal reveal-d1">
             <div class="section-label">About</div>
-            <h2>Built by a Strategist<br>Who Executes</h2>
-            <p>ASF Visuals LLC is led by Andrew Coutinho — a Pittsburgh-based consultant, creative, and founder with a background spanning business strategy, AI implementation, drone operations, web development, and global leadership.</p>
-            <p>Every engagement is built around one question: <em>does this make your business measurably stronger?</em></p>
+            <h2>One Photographer.<br>Start to Finish.</h2>
+            <p>ASF Visuals LLC is Andrew Coutinho, a Pittsburgh product and commercial photographer. He lights it, shoots it, edits it, and delivers it. There is no account layer between you and the person holding the camera.</p>
+            <p>Every shoot is built around one question: <em>does this image sell the product?</em></p>
             <div class="credentials">
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">WEF Global Shapers — Pittsburgh Hub, Incoming Curator (July 2026)</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Co-Founder &amp; President, NCBO — 10+ University Network</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Economics &amp; Africana Studies — University of Pittsburgh, 2025</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Fulbright-Hays Scholar — East Africa Field Research</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">FAA Part 107 Drone Licensed — Sony A7III</div></div>
-              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Full-Stack Web Development — Framer, custom builds</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">WEF Global Shapers &middot; Pittsburgh Hub, Incoming Curator (July 2026)</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Co-Founder &amp; President, NCBO &middot; 10+ University Network</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Economics &amp; Africana Studies &middot; University of Pittsburgh, 2025</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Fulbright-Hays Scholar &middot; East Africa Field Research</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">FAA Part 107 Drone Licensed &middot; Sony A7III full-frame</div></div>
+              <div class="cred"><div class="cred-dot"></div><div class="cred-text">Product, Packaging &amp; Commercial Photography</div></div>
             </div>
-            <a href="about.html" class="btn-primary">More About Andrew</a>
+            <a href="about.html" class="btn-primary">More About the Studio</a>
           </div>
         </div>
       </div>
@@ -930,8 +1126,8 @@
       <div class="container">
         <div class="reveal" style="margin-bottom:3.5rem;">
           <div class="section-label">How It Works</div>
-          <h2>Simple Process.<br>No Surprises.</h2>
-          <p class="section-sub" style="margin-bottom:0;">Every engagement starts the same way — a free 30-minute call. You talk. We listen. No pitch, no agenda.</p>
+          <h2>Book It.<br>Shoot It.<br>Done.</h2>
+          <p class="section-sub" style="margin-bottom:0;">Three steps, a fixed end date, and no standing commitment on the other side of it.</p>
         </div>
         <div class="services-grid reveal">
           <div class="service-card">
@@ -939,28 +1135,28 @@
             <span class="service-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
             </span>
-            <div class="service-title">Discovery Call</div>
-            <p class="service-desc">30 minutes to understand your business — where it is, where it needs to go, and what's actually getting in the way. We ask questions. You ask questions. No pressure, no pitch.</p>
+            <div class="service-title">Send the Brief</div>
+            <p class="service-desc">Tell me what the products are, how many, where the images are going, and when you need them. A short call or a filled-out form is enough. If a package fits, I say which one. If nothing fits, I say that too.</p>
           </div>
           <div class="service-card">
             <span class="service-num">02</span>
             <span class="service-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             </span>
-            <div class="service-title">Clear Plan</div>
-            <p class="service-desc">If there's a fit, we put together a specific plan — what we'll do, in what order, and what it costs. Everything in writing. You know exactly what you're getting before anything starts.</p>
+            <div class="service-title">Lock the Scope</div>
+            <p class="service-desc">Shot count, angles, backgrounds, shoot date, delivery date, and price, all in writing before anything is booked. Nothing gets added to that list mid-shoot without a new number attached to it.</p>
           </div>
           <div class="service-card">
             <span class="service-num">03</span>
             <span class="service-icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
             </span>
-            <div class="service-title">Ongoing Work</div>
-            <p class="service-desc">We execute, you see results. Monthly check-ins keep things on track and let us adjust as your business evolves. You always know what we're working on, what it's producing, and what's next.</p>
+            <div class="service-title">Shoot and Deliver</div>
+            <p class="service-desc">We shoot, I edit, and the finished files land in your hands on the promised date, sized for the channels you named. Your revision rounds run from there. Then the job is closed. Book the next one whenever you need it.</p>
           </div>
         </div>
         <div style="text-align:center; margin-top:3rem;" class="reveal">
-          <a href="contact.html" class="btn-primary">Book Your Free Discovery Call</a>
+          <a href="contact.html" class="btn-primary">Start a Shoot Brief</a>
         </div>
       </div>
     </section>
@@ -971,12 +1167,12 @@
         <div class="cta-band reveal">
           <div>
             <div class="section-label">Start here</div>
-            <h2>Let's talk about<br>your business.</h2>
+            <h2>Let's shoot<br>your product.</h2>
           </div>
           <div class="cta-band-actions">
-            <a href="contact.html" class="btn-primary">Book a Free Discovery Call</a>
+            <a href="contact.html" class="btn-primary">Book a Shoot</a>
             <a href="clients.html" class="btn-ghost" style="color:var(--warm-gray)">
-              See Our Work
+              See the Work
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
@@ -991,11 +1187,11 @@
     <div class="footer-top">
       <div>
         <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
-        <div class="footer-tagline">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
+        <div class="footer-tagline">Product Photography Studio &middot; Pittsburgh, PA</div>
       </div>
       <div class="footer-contact">
         <a href="https://www.asfvisualsllc.com">asfvisualsllc.com</a>
-        <span>Pittsburgh, Pennsylvania · Creative &amp; Strategy Studio</span>
+        <span>Pittsburgh, Pennsylvania &middot; Product, Aerial &amp; Commercial Photography</span>
       </div>
     </div>
     <div class="footer-bottom">

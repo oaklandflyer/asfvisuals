@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /gallery.html
+Disallow: /services.html
+Disallow: /media.html
+
+Sitemap: https://www.asfvisualsllc.com/sitemap.xml

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact – ASF Visuals LLC | Book a Discovery Call | Pittsburgh</title>
-  <meta name="description" content="Book a discovery call with ASF Visuals LLC — a Pittsburgh creative and strategy studio. Brand, digital, operations, and creative production for growing businesses.">
-  <meta property="og:title" content="Contact – ASF Visuals LLC | Pittsburgh">
-  <meta property="og:description" content="Book a free discovery call. We help growing businesses look better and run smarter.">
+  <title>Book a Product Photography Shoot | ASF Visuals LLC Pittsburgh</title>
+  <meta name="description" content="Book a product photography shoot with ASF Visuals LLC in Pittsburgh. Fixed scope, fixed shot count, fixed turnaround. Aerial and drone work and one-time website builds also available.">
+  <meta property="og:title" content="Book a Product Photography Shoot | ASF Visuals LLC">
+  <meta property="og:description" content="Tell me what you are shooting, how many products, and when you need the files. Pittsburgh product photography with fixed scope and fixed turnaround.">
   <meta property="og:image" content="https://www.asfvisualsllc.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0e1217">
@@ -90,6 +90,16 @@
     /* Left info panel */
     .contact-info h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2rem,3.5vw,3rem); letter-spacing:.04em; margin-bottom:1rem; }
     .contact-info > p { font-size:.95rem; font-weight:300; line-height:1.8; color:var(--warm-gray); margin-bottom:2.5rem; }
+
+    .scope-note {
+      border-left:2px solid var(--amber); padding:.15rem 0 .15rem 1rem;
+      margin:0 0 2.5rem;
+    }
+    .scope-note strong {
+      display:block; font-size:.72rem; font-weight:600; letter-spacing:.16em;
+      text-transform:uppercase; color:var(--amber-light); margin-bottom:.5rem;
+    }
+    .scope-note p { font-size:.88rem; font-weight:300; line-height:1.7; color:var(--warm-gray); margin:0; }
 
     .contact-details { display:flex; flex-direction:column; gap:1.5rem; }
     .contact-item { display:flex; align-items:flex-start; gap:1rem; }
@@ -189,7 +199,7 @@
         <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
-    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Book a Call</a></div>
+    <div class="nav-cta-wrap"><a href="contact.html" class="nav-cta">Book a Shoot</a></div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
@@ -198,7 +208,7 @@
   <div class="page-banner">
     <div class="banner-content">
       <div class="section-label">Get in Touch</div>
-      <h1>Let's <em>Connect</em></h1>
+      <h1>Book a <em>Shoot</em></h1>
     </div>
   </div>
 
@@ -210,8 +220,13 @@
           <!-- Left: info -->
           <div class="contact-info reveal">
             <div class="section-label">Contact</div>
-            <h2>Start the Conversation</h2>
-            <p>Whether you need a stronger digital presence, better business systems, professional creative production, or aren't sure where to start — fill out the form and I'll get back to you within 24 hours.</p>
+            <h2>Tell Me What You Are Shooting</h2>
+            <p>Product count, where the images are going, and your deadline are enough to start. Fill out the form and you will hear back within 24 hours with the package that fits or an honest no.</p>
+
+            <div class="scope-note">
+              <strong>Before you write</strong>
+              <p>Websites are built once and handed over. The repository, the domain, and every account become yours on delivery. I do not host sites, I do not maintain them, and I do not take retainers or monthly fees. If you are looking for someone to keep a site running month to month, I am not that person and I would rather tell you now than three emails from here.</p>
+            </div>
 
             <div class="contact-details">
               <div class="contact-item">
@@ -254,7 +269,7 @@
 
           <!-- Right: form -->
           <div class="contact-form-wrap reveal reveal-d1">
-            <h3>Tell Me About Your Project</h3>
+            <h3>Shoot Brief</h3>
             <form id="contact-form" class="contact-form" action="https://formspree.io/f/xovvrygq" method="POST" novalidate>
 
               <div class="form-row">
@@ -269,22 +284,22 @@
               </div>
 
               <div class="field">
-                <label for="service">What Can We Help With</label>
+                <label for="service">What Are We Shooting</label>
                 <select id="service" name="service">
-                  <option value="">— Select a service —</option>
-                  <option value="brand-digital">Brand &amp; Digital Strategy</option>
-                  <option value="operations">Operations &amp; Business Systems</option>
-                  <option value="photography">Photography / Video</option>
-                  <option value="drone">Drone / Aerial</option>
-                  <option value="website">Website Build</option>
-                  <option value="bundle">Multiple Services</option>
+                  <option value="">&mdash; Select a service &mdash;</option>
+                  <option value="product-photography">Product Photography</option>
+                  <option value="packaging-photography">Packaging &amp; Label Photography</option>
+                  <option value="lifestyle-photography">Lifestyle &amp; Ad Creative</option>
+                  <option value="drone">Aerial / Drone (FAA Part 107)</option>
+                  <option value="commercial">Commercial / Real Estate Photography</option>
+                  <option value="website">Website Build (one-time, full handover)</option>
                   <option value="other">Not Sure Yet</option>
                 </select>
               </div>
 
               <div class="field">
-                <label for="message">Tell Me About Your Business</label>
-                <textarea id="message" name="message" placeholder="What are you trying to accomplish? What's not working right now? Any timeline or other details..." required></textarea>
+                <label for="message">Details</label>
+                <textarea id="message" name="message" placeholder="How many products, roughly what size, where the images are going (listing, packaging, ads), and the date you need files by..." required></textarea>
               </div>
 
               <input type="hidden" name="_subject" value="New inquiry from ASF Visuals contact form">
@@ -304,7 +319,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-logo">ASF <span>Visuals</span> LLC</div>
-        <div class="footer-tagline">Creative &amp; Strategy Studio — Pittsburgh, PA</div>
+        <div class="footer-tagline">Product Photography Studio &middot; Pittsburgh, PA</div>
       </div>
       <div class="footer-contact-links">
         <a href="mailto:andrew@asfvisualsllc.com">andrew@asfvisualsllc.com</a>
