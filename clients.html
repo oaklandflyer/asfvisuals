@@ -99,6 +99,8 @@
     .client-visual{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--mid-gray);}
     .client-visual img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;filter:brightness(.88);}
     .featured-client:hover .client-visual img{transform:scale(1.04);filter:brightness(1);}
+    .client-visual img.logo-contain{object-fit:contain;padding:clamp(1.5rem,4vw,3rem);background:linear-gradient(135deg,var(--mid-gray) 0%,#0d1826 100%);filter:none;}
+    .featured-client:hover .client-visual img.logo-contain{transform:none;}
     .client-visual-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--mid-gray) 0%,#0d1826 100%);font-family:'Bebas Neue',sans-serif;font-size:3.5rem;letter-spacing:.08em;color:rgba(94,143,168,0.25);}
     .client-visual-overlay{position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,rgba(14,18,23,.5) 100%);pointer-events:none;}
     .featured-client.reverse .client-visual-overlay{background:linear-gradient(to left,transparent 60%,rgba(14,18,23,.5) 100%);}
@@ -367,7 +369,7 @@
 
         <article class="featured-client reverse reveal" data-client="ncbo" data-has-gallery="false">
           <div class="client-visual">
-            <div class="client-visual-placeholder">NCBO</div>
+            <img src="images/ncbo-logo.png" alt="National Collegiate Bodybuilding Organization logo" class="logo-contain" loading="lazy">
             <div class="client-badge">Website &amp; App Development</div>
             <div class="client-visual-overlay"></div>
           </div>

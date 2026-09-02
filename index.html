@@ -495,57 +495,6 @@
       padding: 0.15rem 0 0.15rem 0.9rem; margin-bottom: 1.4rem;
     }
 
-    /* ── PACKAGES ── */
-    .packages-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
-    }
-    @media (max-width: 900px) { .packages-grid { grid-template-columns: 1fr; } }
-    .package-card {
-      background: var(--mid-gray); padding: 2.5rem 2rem;
-      display: flex; flex-direction: column;
-      position: relative; overflow: hidden; transition: background 0.25s;
-    }
-    .package-card:hover { background: #1a2c3d; }
-    .package-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: var(--accent); transform: scaleX(0); transform-origin: left;
-      transition: transform 0.3s ease;
-    }
-    .package-card:hover::before { transform: scaleX(1); }
-    .package-name {
-      font-family: 'Bebas Neue', sans-serif; font-size: 1.55rem;
-      letter-spacing: 0.06em; margin-bottom: 0.4rem;
-    }
-    .package-for {
-      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--accent-light); margin-bottom: 1.4rem;
-    }
-    .package-price {
-      font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; line-height: 1;
-      color: var(--amber); letter-spacing: 0.04em;
-    }
-    .package-price-note {
-      font-size: 0.7rem; font-weight: 500; letter-spacing: 0.12em;
-      text-transform: uppercase; color: var(--warm-gray);
-      margin: 0.4rem 0 1.6rem;
-    }
-    .package-specs {
-      list-style: none; margin: 0 0 1.8rem; padding: 1.4rem 0 0;
-      border-top: 1px solid rgba(94,143,168,0.15); flex: 1;
-    }
-    .package-specs li {
-      display: flex; justify-content: space-between; gap: 1rem;
-      font-size: 0.84rem; font-weight: 300; line-height: 1.5;
-      color: var(--warm-gray); padding: 0.5rem 0;
-    }
-    .package-specs li span:last-child {
-      color: var(--off-white); font-weight: 400; text-align: right;
-    }
-    .packages-footnote {
-      font-size: 0.85rem; font-weight: 300; line-height: 1.7;
-      color: var(--warm-gray); margin-top: 2.5rem; text-align: center;
-    }
-
     /* ── CLIENTS / WORK ── */
     .clients-bg {
       background: var(--black);
@@ -565,13 +514,6 @@
     .client-logo {
       width: 72px; height: 72px; object-fit: contain;
       background: rgba(255,255,255,0.05); border-radius: 8px; padding: 8px;
-    }
-    .client-logo-text {
-      width: 72px; height: 72px;
-      background: rgba(255,255,255,0.05); border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-family: 'Bebas Neue', sans-serif; font-size: 1.25rem;
-      letter-spacing: 0.08em; color: var(--accent-light); flex-shrink: 0;
     }
     .client-name {
       font-family: 'Bebas Neue', sans-serif;
@@ -803,8 +745,8 @@
             <p class="hero-sub">Clean, consistent product images for ecommerce listings, packaging, catalogs, and paid ads. Fixed scope, fixed shot count, fixed turnaround. You know what you are getting and when you are getting it.</p>
             <div class="hero-actions">
               <a href="contact.html" class="btn-primary">Book a Shoot</a>
-              <a href="#packages" class="btn-ghost">
-                See Shoot Packages
+              <a href="#services" class="btn-ghost">
+                See What We Shoot
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -887,7 +829,7 @@
               <li>Paid social and ad creative crops</li>
               <li>Studio or on-location at your space</li>
             </ul>
-            <p class="service-desc">Every shoot comes back color-corrected, background-clean, and exported for web and print. Fixed shot counts and fixed turnaround, so you can plan a launch around it. Packages and turnaround are listed below.</p>
+            <p class="service-desc">Every shoot comes back color-corrected, background-clean, and exported for web and print. Shot count and turnaround are fixed in writing before the shoot is booked, so you can plan a launch around it.</p>
             <div class="service-tags">
               <span class="tag">Ecommerce</span>
               <span class="tag">Packaging</span>
@@ -938,72 +880,6 @@
       </div>
     </section>
 
-    <!-- ===== PACKAGES ===== -->
-    <section class="section pricing-bg" id="packages">
-      <div class="container">
-        <div class="reveal" style="margin-bottom:3.5rem;">
-          <div class="section-label">Shoot Packages</div>
-          <h2>Fixed Scope.<br>Fixed Count. Fixed Date.</h2>
-          <p class="section-sub" style="margin-bottom:0;">Three product photography packages. You know the shot count and the delivery date before the shoot is booked. Nothing here renews and nothing here bills monthly.</p>
-        </div>
-
-        <div class="packages-grid reveal">
-          <article class="package-card">
-            <div class="package-name">Starter Set</div>
-            <div class="package-for">Single product or small drop</div>
-            <div class="package-price">[PRICE TBD]</div>
-            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
-            <ul class="package-specs">
-              <li><span>Products covered</span><span>Up to 3</span></li>
-              <li><span>Final images</span><span>12 edited</span></li>
-              <li><span>Angles per product</span><span>4</span></li>
-              <li><span>Backgrounds</span><span>White or 1 seamless color</span></li>
-              <li><span>Shoot time</span><span>Half day, in studio</span></li>
-              <li><span>Turnaround</span><span>5 business days</span></li>
-              <li><span>Revisions</span><span>1 round</span></li>
-            </ul>
-            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Starter Set</a>
-          </article>
-
-          <article class="package-card">
-            <div class="package-name">Catalog Set</div>
-            <div class="package-for">Full line or seasonal refresh</div>
-            <div class="package-price">[PRICE TBD]</div>
-            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
-            <ul class="package-specs">
-              <li><span>Products covered</span><span>Up to 10</span></li>
-              <li><span>Final images</span><span>40 edited</span></li>
-              <li><span>Angles per product</span><span>4 plus 1 detail</span></li>
-              <li><span>Backgrounds</span><span>White plus 2 seamless colors</span></li>
-              <li><span>Shoot time</span><span>Full day, in studio</span></li>
-              <li><span>Turnaround</span><span>7 business days</span></li>
-              <li><span>Revisions</span><span>2 rounds</span></li>
-            </ul>
-            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Catalog Set</a>
-          </article>
-
-          <article class="package-card">
-            <div class="package-name">Campaign Set</div>
-            <div class="package-for">Launch, ads, and lifestyle</div>
-            <div class="package-price">[PRICE TBD]</div>
-            <div class="package-price-note">Placeholder &middot; fill in before launch</div>
-            <ul class="package-specs">
-              <li><span>Products covered</span><span>Up to 6</span></li>
-              <li><span>Final images</span><span>50 edited</span></li>
-              <li><span>Shot mix</span><span>Studio plus lifestyle</span></li>
-              <li><span>Ad crops</span><span>4:5, 1:1, and 9:16</span></li>
-              <li><span>Shoot time</span><span>Full day, studio or location</span></li>
-              <li><span>Turnaround</span><span>10 business days</span></li>
-              <li><span>Revisions</span><span>2 rounds</span></li>
-            </ul>
-            <a href="contact.html" class="btn-primary" style="text-align:center;">Book Campaign Set</a>
-          </article>
-        </div>
-
-        <p class="packages-footnote reveal">Every package is a one-time booking. Aerial and drone add-ons are quoted per shoot. Product outside a standard tabletop footprint, on-location travel past 30 miles, and rush turnaround are quoted separately before anything is booked.</p>
-      </div>
-    </section>
-
     <!-- ===== CLIENTS / WORK ===== -->
     <section class="section clients-bg" id="work">
       <div class="container">
@@ -1022,7 +898,7 @@
           </article>
 
           <article class="client-card reveal reveal-d2">
-            <div class="client-logo-text" aria-hidden="true">NCBO</div>
+            <img src="images/ncbo-logo.png" alt="National Collegiate Bodybuilding Organization" class="client-logo" loading="lazy">
             <div class="client-name">NCBO</div>
             <p class="client-desc">National Collegiate Bodybuilding Organization. Website and companion app built for a 10-plus university network, covering athlete registration, event schedules, and results. Built once, repo and accounts transferred to the organization.</p>
             <span class="client-metric">Website &amp; app development</span>
