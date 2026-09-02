@@ -566,6 +566,7 @@
       width: 72px; height: 72px; object-fit: contain;
       background: rgba(255,255,255,0.05); border-radius: 8px; padding: 8px;
     }
+    .client-logo-text[hidden] { display: none; }
     .client-logo-text {
       width: 72px; height: 72px;
       background: rgba(255,255,255,0.05); border-radius: 8px;
@@ -1022,7 +1023,9 @@
           </article>
 
           <article class="client-card reveal reveal-d2">
-            <div class="client-logo-text" aria-hidden="true">NCBO</div>
+            <img src="images/ncbo.png" alt="National Collegiate Bodybuilding Organization" class="client-logo"
+                 onerror="this.hidden=true;this.nextElementSibling.hidden=false;">
+            <div class="client-logo-text" aria-hidden="true" hidden>NCBO</div>
             <div class="client-name">NCBO</div>
             <p class="client-desc">National Collegiate Bodybuilding Organization. Website and companion app built for a 10-plus university network, covering athlete registration, event schedules, and results. Built once, repo and accounts transferred to the organization.</p>
             <span class="client-metric">Website &amp; app development</span>
